@@ -110,6 +110,44 @@ class CfgMods
 		};
 	};
 
+	class FishSoupCan: SpaghettiCan
+	{
+		displayName="Fish Soup";
+		descriptionShort="A nutritious and long-lasting can of fish soup that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+		hiddenSelectionsTextures[]=
+		{
+			"CookZ\data\canned_fish_soup_co.paa"
+		};
+	};
+	class FishSoupCan_Opened: SpaghettiCan_Opened
+	{
+		displayName="Fish Soup";
+		descriptionShort="A nutritious can of fish soup. Eat up before it spoils.";
+		hiddenSelectionsTextures[]=
+		{
+			"CookZ\data\canned_fish_soup_co.paa"
+		};
+	};
+
+	class FishAndChipsCan: SpaghettiCan
+	{
+		displayName="Fish And Chips";
+		descriptionShort="A nutritious and long-lasting can of fish and chips that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+		hiddenSelectionsTextures[]=
+		{
+			"CookZ\data\canned_fish_and_chips_co.paa"
+		};
+	};
+	class FishAndChipsCan_Opened: SpaghettiCan_Opened
+	{
+		displayName="Fish And Chips";
+		descriptionShort="A nutritious can of fish and chips. Eat up before it spoils.";
+		hiddenSelectionsTextures[]=
+		{
+			"CookZ\data\canned_fish_and_chips_co.paa"
+		};
+	};
+
 	class AppleMarmalade: Marmalade
 	{
 		displayName="Apple Marmalade";

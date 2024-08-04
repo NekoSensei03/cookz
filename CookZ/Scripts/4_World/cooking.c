@@ -21,21 +21,28 @@ modded class Cooking
 	typename COOKING_INGREDIENT_DEER_STEAK_MEAT			= DeerSteakMeat;
 	typename COOKING_INGREDIENT_RABBIT_LEG_MEAT			= RabbitLegMeat;
 
-	string COOKING_RESULT_FRIED_POTATOES				= "FriedPotatoesCan";
-	string COOKING_RESULT_GOULASH						= "GoulashCan";
-	string COOKING_RESULT_STIR_FRY						= "StirFryCan";
-	string COOKING_RESULT_PUMPKIN_SOUP					= "PumpkinSoupCan";
-	string COOKING_RESULT_APPLE_MARMALADE				= "AppleMarmalade";
-	string COOKING_RESULT_PLUM_MARMALADE				= "PlumMarmalade";
-	string COOKING_RESULT_PEAR_MARMALADE				= "PearMarmalade";
-	
+	typename COOKING_INGREDIENT_CARP_FILLET_MEAT		= CarpFilletMeat
+	typename COOKING_INGREDIENT_MACKEREL_FILLET_MEAT	= MackerelFilletMeat
+	typename COOKING_INGREDIENT_SARDINES				= Sardines
+	typename COOKING_INGREDIENT_BITTERLINGS				= Bitterlings
+
+	string DISH_FRIED_POTATOES							= "FriedPotatoesCan";
+	string DISH_GOULASH									= "GoulashCan";
+	string DISH_STIR_FRY								= "StirFryCan";
+	string DISH_PUMPKIN_SOUP							= "PumpkinSoupCan";
+	string DISH_FISH_SOUP								= "FishSoupCan";
+	string DISH_FISH_AND_CHIPS							= "FishAndChipsCan";
+	string DISH_APPLE_MARMALADE							= "AppleMarmalade";
+	string DISH_PLUM_MARMALADE							= "PlumMarmalade";
+	string DISH_PEAR_MARMALADE							= "PearMarmalade";
+
 	//COOKING PROCESS
 	//--- Cooking with equipment (pot)
 	//Returns 1 if the item changed its cooking stage, 0 if not
 	override int CookWithEquipment(ItemBase cooking_equipment, float cooking_time_coef = 1)
 	{
 		bool is_empty;
-		
+
 		//check cooking conditions
 		if (cooking_equipment == null)
 		{
@@ -46,24 +53,24 @@ modded class Cooking
 		{
 			return 0;
 		}
-		
+
 		//manage items in cooking equipment
 		Param2<bool, bool> stateFlags = new Param2<bool, bool>(false, false); // 1st - done; 2nd - burned
 		Param2<CookingMethodType, float> cookingMethodWithTime = GetCookingMethodWithTimeOverride(cooking_equipment);
 		bool done = false;
 		bool burned = false;
-		
+
 		//! cooking time coef override
 		if (cooking_time_coef != 1)
 		{
 			cookingMethodWithTime.param2 = cooking_time_coef;
 		}
-		
+
 		CargoBase cargo = cooking_equipment.GetInventory().GetCargo();
 		if (cargo)
 		{
 			is_empty = cargo.GetItemCount() == 0;
-			
+
 			//process items
 			for (int i = 0; i < cargo.GetItemCount(); i++)
 			{
@@ -96,26 +103,26 @@ modded class Cooking
 			done = stateFlags.param1;
 			burned = stateFlags.param2;
 		}
-		
+
 		//manage cooking equipment
 		Bottle_Base bottle_base = Bottle_Base.Cast(cooking_equipment);
 		if (bottle_base)
 		{
 			float cookingEquipmentTemp = cooking_equipment.GetTemperature();
-			
+
 			//handle water boiling
 			if (cookingEquipmentTemp >= LIQUID_BOILING_POINT)
 			{
 				//remove agents
 				cooking_equipment.RemoveAllAgents();
-				
+
 				if (cooking_equipment.GetQuantity() > 0)
 				{
 					//vaporize liquid
 					cooking_equipment.AddQuantity(-LIQUID_VAPOR_QUANTITY);
 				}
 			}
-			
+
 			//handle audio visuals
 			bottle_base.RefreshAudioVisualsOnClient(cookingMethodWithTime.param1, done, is_empty, burned);
 		}
@@ -126,7 +133,7 @@ modded class Cooking
 			//handle audio visuals
 			frying_pan.RefreshAudioVisualsOnClient(cookingMethodWithTime.param1, done, is_empty, burned);
 		}
-		
+
 		return 1;
 	}
 
@@ -162,6 +169,11 @@ modded class Cooking
 		int numHumanSteakMeat = 0;
 		int numDeerSteakMeat = 0;
 		int numRabbitLegMeat = 0;
+
+		int numCarpFilletMeat = 0;
+		int numMackerelFilletMeat = 0;
+		int numSardines = 0;
+		int numBitterlings = 0;
 
 		for (int i = 0; i < cargo.GetItemCount(); i++)
 		{
@@ -228,23 +240,42 @@ modded class Cooking
 					numRabbitLegMeat++;
 					break;
 
+				case COOKING_INGREDIENT_CARP_FILLET_MEAT:
+					numCarpFilletMeat++;
+					break;
+				case COOKING_INGREDIENT_MACKEREL_FILLET_MEAT:
+					numMackerelFilletMeat++;
+					break;
+				case COOKING_INGREDIENT_SARDINES:
+					numSardines++;
+					break;
+				case COOKING_INGREDIENT_BITTERLINGS:
+					numBitterlings++;
+					break;
+
 				default:
 					// no valid recipe if there is a non supported ingredient in the cooking equipment
 					return "";
 			}
 		}
 		int numMeat = numPigSteakMeat + numWolfSteakMeat + numGoatSteakMeat + numBearSteakMeat + numSheepSteakMeat + numBoarSteakMeat + numCowSteakMeat + numHumanSteakMeat + numDeerSteakMeat + numRabbitLegMeat;
+		int numFish = numCarpFilletMeat + numMackerelFilletMeat + numSardines + numBitterlings;
+		int numFishFillet = numCarpFilletMeat + numMackerelFilletMeat;
 
 		// handle frying pan recipes
 		if (cooking_equipment.Type() == COOKING_EQUIPMENT_FRYINGPAN)
 		{
 			if (numPotato == 4 && numLard == 1 && cargo.GetItemCount() == 5)
 			{
-				return COOKING_RESULT_FRIED_POTATOES;
+				return DISH_FRIED_POTATOES;
 			}
 			if (numPotato == 1 && numGreenBellPepper == 1 && numTomato == 1 && numZucchini == 1 && numLard == 1 && cargo.GetItemCount() == 5)
 			{
-				return COOKING_RESULT_STIR_FRY;
+				return DISH_STIR_FRY;
+			}
+			if (numFishFillet == 1 && numPotato == 2 && numLard == 1 && cargo.GetItemCount() == 4)
+			{
+				return DISH_FISH_AND_CHIPS;
 			}
 		}
 
@@ -256,11 +287,15 @@ modded class Cooking
 			{
 				if (numPotato == 2 && numGreenBellPepper == 1 && numMeat == 1 && cargo.GetItemCount() == 4)
 				{
-					return COOKING_RESULT_GOULASH;
+					return DISH_GOULASH			;
 				}
 				if (numSlicedPumpkin == 2 && cargo.GetItemCount() == 2)
 				{
-					return COOKING_RESULT_PUMPKIN_SOUP;
+					return DISH_PUMPKIN_SOUP;
+				}
+				if (numFish == 2 && numPotato == 1 && numTomato == 1 && numGreenBellPepper == 1 && cargo.GetItemCount() == 5)
+				{
+					return DISH_FISH_SOUP;
 				}
 			}
 			// without water
@@ -268,15 +303,15 @@ modded class Cooking
 			{
 				if (numPlum == 6 && cargo.GetItemCount() == 6)
 				{
-					return COOKING_RESULT_PLUM_MARMALADE;
+					return DISH_PLUM_MARMALADE;
 				}
 				if (numApple == 6 && cargo.GetItemCount() == 6)
 				{
-					return COOKING_RESULT_APPLE_MARMALADE;
+					return DISH_APPLE_MARMALADE;
 				}
 				if (numPear == 4 && cargo.GetItemCount() == 4)
 				{
-					return COOKING_RESULT_PEAR_MARMALADE;
+					return DISH_PEAR_MARMALADE;
 				}
 			}
 		}
