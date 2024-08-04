@@ -74,8 +74,8 @@ modded class Cooking
 
 			if (done && !burned)
 			{
-				string result = GetReceipt(cooking_equipment);
-				if (result != "")
+				string dish = GetDishForIngredients(cooking_equipment);
+				if (dish != "")
 				{
 					// clear all items from cooking equipment (bottom to top for index safety)
 					int itemCount = cargo.GetItemCount();
@@ -85,8 +85,8 @@ modded class Cooking
 					}
 					// remove ALL liquid for now so that spawned items will not get wet
 					cooking_equipment.AddQuantity(-cooking_equipment.GetQuantity());
-					// add result cooked item
-					cooking_equipment.GetInventory().CreateInInventory(result);
+					// add dish to cooking equipment
+					cooking_equipment.GetInventory().CreateInInventory(dish);
 				}
 			}
 		}
@@ -130,8 +130,8 @@ modded class Cooking
 		return 1;
 	}
 
-	// returns a recipe string or "" if no valid recipe detected
-	string GetReceipt(ItemBase cooking_equipment)
+	// returns a dish string or "" if no valid recipe detected
+	string GetDishForIngredients(ItemBase cooking_equipment)
 	{
 		CargoBase cargo = cooking_equipment.GetInventory().GetCargo();
 		if (!cargo)
@@ -140,17 +140,17 @@ modded class Cooking
 		}
 
 		// count ingredients in cooking equipment
-		int numLards = 0;
+		int numLard = 0;
 
-		int numPotatoes = 0;
-		int numGreenBellPeppers = 0;
-		int numZucchinis = 0;
-		int numTomatoes = 0;
-		int numSlicesPumpkins = 0;
+		int numPotato = 0;
+		int numGreenBellPepper = 0;
+		int numZucchini = 0;
+		int numTomato = 0;
+		int numSlicedPumpkin = 0;
 
-		int numPlums = 0;
-		int numPears = 0;
-		int numApples = 0;
+		int numPlum = 0;
+		int numPear = 0;
+		int numApple = 0;
 
 		int numPigSteakMeat = 0;
 		int numWolfSteakMeat = 0;
@@ -168,33 +168,33 @@ modded class Cooking
 			switch(cargo.GetItem(i).Type())
 			{
 				case COOKING_INGREDIENT_LARD:
-					numLards++;
+					numLard++;
 					break;
 
 				case COOKING_INGREDIENT_POTATO:
-					numPotatoes++;
+					numPotato++;
 					break;
 				case COOKING_INGREDIENT_GREEN_BELL_PEPPER:
-					numGreenBellPeppers++;
+					numGreenBellPepper++;
 					break;
 				case COOKING_INGREDIENT_ZUCCHINI:
-					numZucchinis++;
+					numZucchini++;
 					break;
 				case COOKING_INGREDIENT_TOMATO:
-					numTomatoes++;
+					numTomato++;
 					break;
 				case COOKING_INGREDIENT_SLICED_PUMPKIN:
-					numSlicesPumpkins++;
+					numSlicedPumpkin++;
 					break;
 
 				case COOKING_INGREDIENT_PLUM:
-					numPlums++;
+					numPlum++;
 					break;
 				case COOKING_INGREDIENT_PEAR:
-					numPears++;
+					numPear++;
 					break;
 				case COOKING_INGREDIENT_APPLE:
-					numApples++;
+					numApple++;
 					break;
 
 				case COOKING_INGREDIENT_PIG_STEAK_MEAT:
@@ -238,11 +238,11 @@ modded class Cooking
 		// handle frying pan recipes
 		if (cooking_equipment.Type() == COOKING_EQUIPMENT_FRYINGPAN)
 		{
-			if (numPotatoes == 4 && numLards == 1 && cargo.GetItemCount() == 5)
+			if (numPotato == 4 && numLard == 1 && cargo.GetItemCount() == 5)
 			{
 				return COOKING_RESULT_FRIED_POTATOES;
 			}
-			if (numPotatoes == 1 && numGreenBellPeppers == 1 && numTomatoes == 1 && numZucchinis == 1 && numLards == 1 && cargo.GetItemCount() == 5)
+			if (numPotato == 1 && numGreenBellPepper == 1 && numTomato == 1 && numZucchini == 1 && numLard == 1 && cargo.GetItemCount() == 5)
 			{
 				return COOKING_RESULT_STIR_FRY;
 			}
@@ -254,11 +254,11 @@ modded class Cooking
 			// with water
 			if (cooking_equipment.GetQuantity() >= 500)
 			{
-				if (numPotatoes == 2 && numGreenBellPeppers == 1 && numMeat == 1 && cargo.GetItemCount() == 4)
+				if (numPotato == 2 && numGreenBellPepper == 1 && numMeat == 1 && cargo.GetItemCount() == 4)
 				{
 					return COOKING_RESULT_GOULASH;
 				}
-				if (numSlicesPumpkins == 2 && cargo.GetItemCount() == 2)
+				if (numSlicedPumpkin == 2 && cargo.GetItemCount() == 2)
 				{
 					return COOKING_RESULT_PUMPKIN_SOUP;
 				}
@@ -266,15 +266,15 @@ modded class Cooking
 			// without water
 			else
 			{
-				if (numPlums == 6 && cargo.GetItemCount() == 6)
+				if (numPlum == 6 && cargo.GetItemCount() == 6)
 				{
 					return COOKING_RESULT_PLUM_MARMALADE;
 				}
-				if (numApples == 6 && cargo.GetItemCount() == 6)
+				if (numApple == 6 && cargo.GetItemCount() == 6)
 				{
 					return COOKING_RESULT_APPLE_MARMALADE;
 				}
-				if (numPears == 4 && cargo.GetItemCount() == 4)
+				if (numPear == 4 && cargo.GetItemCount() == 4)
 				{
 					return COOKING_RESULT_PEAR_MARMALADE;
 				}
