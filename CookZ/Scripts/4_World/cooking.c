@@ -20,11 +20,19 @@ modded class Cooking
 	typename COOKING_INGREDIENT_HUMAN_STEAK_MEAT		= HumanSteakMeat;
 	typename COOKING_INGREDIENT_DEER_STEAK_MEAT			= DeerSteakMeat;
 	typename COOKING_INGREDIENT_RABBIT_LEG_MEAT			= RabbitLegMeat;
+	typename COOKING_INGREDIENT_CHICKEN_BREAST_MEAT		= ChickenBreastMeat;
 
-	typename COOKING_INGREDIENT_CARP_FILLET_MEAT		= CarpFilletMeat
-	typename COOKING_INGREDIENT_MACKEREL_FILLET_MEAT	= MackerelFilletMeat
-	typename COOKING_INGREDIENT_SARDINES				= Sardines
-	typename COOKING_INGREDIENT_BITTERLINGS				= Bitterlings
+	typename COOKING_INGREDIENT_CARP_FILLET_MEAT		= CarpFilletMeat;
+	typename COOKING_INGREDIENT_MACKEREL_FILLET_MEAT	= MackerelFilletMeat;
+	typename COOKING_INGREDIENT_SARDINES				= Sardines;
+	typename COOKING_INGREDIENT_BITTERLINGS				= Bitterlings;
+
+	typename COOKING_INGREDIENT_AGARICUS_MUSHROOM		= AgaricusMushroom;
+    typename COOKING_INGREDIENT_AURICULARIA_MUSHROOM	= AuriculariaMushroom;
+    typename COOKING_INGREDIENT_BOLETUS_MUSHROOM		= BoletusMushroom;
+    typename COOKING_INGREDIENT_LACTARIUS_MUSHROOM		= LactariusMushroom;
+    typename COOKING_INGREDIENT_MACROLEPIOTA_MUSHROOM	= MacrolepiotaMushroom;
+    typename COOKING_INGREDIENT_PLEUROTUS_MUSHROOM		= PleurotusMushroom;
 
 	string DISH_FRIED_POTATOES							= "FriedPotatoesCan";
 	string DISH_GOULASH									= "GoulashCan";
@@ -169,11 +177,19 @@ modded class Cooking
 		int numHumanSteakMeat = 0;
 		int numDeerSteakMeat = 0;
 		int numRabbitLegMeat = 0;
+		int numChickenBreastMeat = 0;
 
 		int numCarpFilletMeat = 0;
 		int numMackerelFilletMeat = 0;
 		int numSardines = 0;
 		int numBitterlings = 0;
+
+		int numAgaricusMushroom = 0;
+		int numAuriculariaMushroom = 0;
+		int numBoletusMushroom = 0;
+		int numLactariusMushroom = 0;
+		int numMacrolepiotaMushroom = 0;
+		int numPleurotusMushroom = 0;
 
 		for (int i = 0; i < cargo.GetItemCount(); i++)
 		{
@@ -239,6 +255,9 @@ modded class Cooking
 				case COOKING_INGREDIENT_RABBIT_LEG_MEAT:
 					numRabbitLegMeat++;
 					break;
+				case COOKING_INGREDIENT_CHICKEN_BREAST_MEAT:
+					numChickenBreastMeat++;
+					break;
 
 				case COOKING_INGREDIENT_CARP_FILLET_MEAT:
 					numCarpFilletMeat++;
@@ -253,27 +272,47 @@ modded class Cooking
 					numBitterlings++;
 					break;
 
+				case COOKING_INGREDIENT_AGARICUS_MUSHROOM:
+					numAgaricusMushroom++;
+					break;
+				case COOKING_INGREDIENT_AURICULARIA_MUSHROOM:
+					numAuriculariaMushroom++;
+					break;
+				case COOKING_INGREDIENT_BOLETUS_MUSHROOM:
+					numBoletusMushroom++;
+					break;
+				case COOKING_INGREDIENT_LACTARIUS_MUSHROOM:
+					numLactariusMushroom++;
+					break;
+				case COOKING_INGREDIENT_MACROLEPIOTA_MUSHROOM:
+					numMacrolepiotaMushroom++;
+					break;
+				case COOKING_INGREDIENT_PLEUROTUS_MUSHROOM:
+					numPleurotusMushroom++;
+					break;
+
 				default:
 					// no valid recipe if there is a non supported ingredient in the cooking equipment
 					return "";
 			}
 		}
-		int numMeat = numPigSteakMeat + numWolfSteakMeat + numGoatSteakMeat + numBearSteakMeat + numSheepSteakMeat + numBoarSteakMeat + numCowSteakMeat + numHumanSteakMeat + numDeerSteakMeat + numRabbitLegMeat;
+		int numMeat = numPigSteakMeat + numWolfSteakMeat + numGoatSteakMeat + numBearSteakMeat + numSheepSteakMeat + numBoarSteakMeat + numCowSteakMeat + numHumanSteakMeat + numDeerSteakMeat + numRabbitLegMeat + numChickenBreastMeat;
 		int numFish = numCarpFilletMeat + numMackerelFilletMeat + numSardines + numBitterlings;
 		int numFishFillet = numCarpFilletMeat + numMackerelFilletMeat;
+		int numMushrooms = numAgaricusMushroom + numAuriculariaMushroom + numBoletusMushroom + numLactariusMushroom + numMacrolepiotaMushroom + numPleurotusMushroom;
 
 		// handle frying pan recipes
 		if (cooking_equipment.Type() == COOKING_EQUIPMENT_FRYINGPAN)
 		{
-			if (numPotato == 4 && numLard == 1 && cargo.GetItemCount() == 5)
+			if (cargo.GetItemCount() == 5 && numPotato == 4 && numLard == 1)
 			{
 				return DISH_FRIED_POTATOES;
 			}
-			if (numPotato == 1 && numGreenBellPepper == 1 && numTomato == 1 && numZucchini == 1 && numLard == 1 && cargo.GetItemCount() == 5)
+			if (cargo.GetItemCount() == 5 && numPotato == 1 && numGreenBellPepper == 1 && numTomato == 1 && numZucchini == 1 && numLard == 1)
 			{
 				return DISH_STIR_FRY;
 			}
-			if (numFishFillet == 1 && numPotato == 2 && numLard == 1 && cargo.GetItemCount() == 4)
+			if (cargo.GetItemCount() == 4 && numFishFillet == 1 && numPotato == 2 && numLard == 1)
 			{
 				return DISH_FISH_AND_CHIPS;
 			}
@@ -285,15 +324,15 @@ modded class Cooking
 			// with water
 			if (cooking_equipment.GetQuantity() >= 500)
 			{
-				if (numPotato == 2 && numGreenBellPepper == 1 && numMeat == 1 && cargo.GetItemCount() == 4)
+				if (cargo.GetItemCount() == 4 && numPotato == 2 && numGreenBellPepper == 1 && numMeat == 1)
 				{
-					return DISH_GOULASH			;
+					return DISH_GOULASH;
 				}
-				if (numSlicedPumpkin == 2 && cargo.GetItemCount() == 2)
+				if (cargo.GetItemCount() == 2 && numSlicedPumpkin == 2)
 				{
 					return DISH_PUMPKIN_SOUP;
 				}
-				if (numFish == 2 && numPotato == 1 && numTomato == 1 && numGreenBellPepper == 1 && cargo.GetItemCount() == 5)
+				if (cargo.GetItemCount() == 5 && numFish == 2 && numPotato == 1 && numTomato == 1 && numGreenBellPepper == 1)
 				{
 					return DISH_FISH_SOUP;
 				}
@@ -301,15 +340,15 @@ modded class Cooking
 			// without water
 			else
 			{
-				if (numPlum == 6 && cargo.GetItemCount() == 6)
+				if (cargo.GetItemCount() == 6 && numPlum == 6)
 				{
 					return DISH_PLUM_MARMALADE;
 				}
-				if (numApple == 6 && cargo.GetItemCount() == 6)
+				if (cargo.GetItemCount() == 6 && numApple == 6)
 				{
 					return DISH_APPLE_MARMALADE;
 				}
-				if (numPear == 4 && cargo.GetItemCount() == 4)
+				if (cargo.GetItemCount() == 4 && numPear == 4)
 				{
 					return DISH_PEAR_MARMALADE;
 				}
