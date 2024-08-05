@@ -343,7 +343,7 @@ modded class Cooking
 				}
 			}
 			// without water
-			else
+			if (cooking_equipment.GetQuantity() == 0)
 			{
 				if (cargo.GetItemCount() == 6 && numPlum == 6)
 				{
