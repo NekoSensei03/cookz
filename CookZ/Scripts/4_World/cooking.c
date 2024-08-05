@@ -4,6 +4,7 @@ modded class Cooking
 	typename COOKING_INGREDIENT_GREEN_BELL_PEPPER		= GreenBellPepper;
 	typename COOKING_INGREDIENT_ZUCCHINI				= Zucchini;
 	typename COOKING_INGREDIENT_TOMATO 					= Tomato;
+	typename COOKING_INGREDIENT_PUMPKIN					= Pumpkin;
 	typename COOKING_INGREDIENT_SLICED_PUMPKIN			= SlicedPumpkin;
 
 	typename COOKING_INGREDIENT_PLUM					= Plum;
@@ -161,6 +162,7 @@ modded class Cooking
 		int numGreenBellPepper = 0;
 		int numZucchini = 0;
 		int numTomato = 0;
+		int numPumpkin = 0;
 		int numSlicedPumpkin = 0;
 
 		int numPlum = 0;
@@ -210,6 +212,9 @@ modded class Cooking
 					break;
 				case COOKING_INGREDIENT_TOMATO:
 					numTomato++;
+					break;
+				case COOKING_INGREDIENT_PUMPKIN:
+					numPumpkin++;
 					break;
 				case COOKING_INGREDIENT_SLICED_PUMPKIN:
 					numSlicedPumpkin++;

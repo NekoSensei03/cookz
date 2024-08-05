@@ -28,12 +28,12 @@ class CfgMods
 	};
 };
 
-	class CfgVehicles
+class CfgVehicles
 {
 	class SpaghettiCan;
 	class SpaghettiCan_Opened;
 	class Marmalade;
-	
+
 	class FriedPotatoesCan: SpaghettiCan
 	{
 		displayName="Canned Fried Potatoes";
