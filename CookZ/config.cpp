@@ -36,14 +36,15 @@ class CfgVehicles
 
     class Recipes
     {
-        class FriedPotatoesCan
+		// add a recipe here
+        class FriedPotatoesCan 			// name needs to be name of dish to be created
         {
-            allowPot = false;
-            allowCauldron = false;
-            allowPan = true;
-            needsWater = false;
+            allowPot = false;			// can pot be used for recipe?
+            allowCauldron = false;		// can cauldron be used for recipe?
+            allowPan = true;			// can pan be used for recipe?
+            needsWater = false;			// is water needed? only makes sense if pot or cauldron is allowed
             ingredients[] = {
-				"Potato,4",
+				"Potato,4",				// <NAME>,<QUANITY>, name must be the food item name OR AnyMeat etc
                 "Lard,1"
             };
         };
