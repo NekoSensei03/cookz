@@ -107,6 +107,19 @@ class CfgVehicles
                 "Tomato,1"
             };
         };
+		class UkhaCan
+        {
+            allowPot = true;
+            allowCauldron = true;
+            allowPan = false;
+            needsWater = true;
+            ingredients[] = {
+                "AnyFish,2",
+                "Potato,1",
+                "Tomato,1",
+				"DisinfectantAlcohol,1"
+            };
+        };
         class AppleMarmalade
         {
             allowPot = true;
@@ -241,6 +254,25 @@ class CfgVehicles
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\canned_fish_soup_co.paa"
+        };
+    };
+
+	class UkhaCan: SpaghettiCan
+    {
+        displayName="Ukha";
+        descriptionShort="A nutritious and long-lasting can of Ukha that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_ukha_co.paa"
+        };
+    };
+    class UkhaCan_Opened: SpaghettiCan_Opened
+    {
+        displayName="Ukha";
+        descriptionShort="A nutritious can of Ukha. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_ukha_co.paa"
         };
     };
 
