@@ -121,6 +121,18 @@ class CfgVehicles
 				"DisinfectantAlcohol,1"
             };
         };
+        class LecsoCan
+        {
+            allowPot = true;
+            allowCauldron = true;
+            allowPan = false;
+            needsWater = true;
+            ingredients[] = {
+                "GreenBellPepper,2",
+                "Tomato,2",
+                "Lard,1"
+            };
+        };
         class AppleMarmalade
         {
             allowPot = true;
@@ -170,6 +182,16 @@ class CfgVehicles
         {
             "CookZ\data\canned_fried_potatoes_co.paa"
         };
+        varQuantityInit=1000;
+        varQuantityMax=1000;
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=260;
+            water=30;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     };
 
     class GoulashCan: SpaghettiCan
@@ -193,7 +215,7 @@ class CfgVehicles
         varQuantityMax=800;
         class Nutrition
         {
-            fullnessIndex=2;
+            fullnessIndex=3;
             energy=215.625;
             water=70.8125;
             nutritionalIndex=1;
@@ -218,6 +240,16 @@ class CfgVehicles
         {
             "CookZ\data\canned_stir_fry_co.paa"
         };
+        varQuantityInit=850
+        varQuantityMax=850
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=250.0;
+            water=52.94;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     };
 
     class PumpkinSoupCan: SpaghettiCan
@@ -236,6 +268,16 @@ class CfgVehicles
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\canned_pumpkin_soup_co.paa"
+        };
+        varQuantityInit=500
+        varQuantityMax=500
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=125.0;
+            water=100.0;
+            nutritionalIndex=1;
+            toxicity=0;
         };
     };
 
@@ -256,6 +298,16 @@ class CfgVehicles
         {
             "CookZ\data\canned_fish_soup_co.paa"
         };
+        varQuantityInit=1300
+        varQuantityMax=1300
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=155.77;
+            water=123.23;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     };
 
 	class UkhaCan: SpaghettiCan
@@ -274,6 +326,45 @@ class CfgVehicles
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\canned_ukha_co.paa"
+        };
+        varQuantityInit=1500
+        varQuantityMax=1500
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=161.67;
+            water=106.8;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class LecsoCan: SpaghettiCan
+    {
+        displayName="Lecso";
+        descriptionShort="A nutritious and long-lasting can of Lecso that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_lecso_co.paa"
+        };
+    };
+    class LecsoCan_Opened: SpaghettiCan_Opened
+    {
+        displayName="Lecso";
+        descriptionShort="A nutritious can of Lecso. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_lecso_co.paa"
+        };
+        varQuantityInit=700
+        varQuantityMax=700
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=192.86;
+            water=110.71;
+            nutritionalIndex=1;
+            toxicity=0;
         };
     };
 
@@ -294,23 +385,63 @@ class CfgVehicles
         {
             "CookZ\data\canned_fish_and_chips_co.paa"
         };
+        varQuantityInit=1100
+        varQuantityMax=1100
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=227.27;
+            water=45.45;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     };
 
     class AppleMarmalade: Marmalade
     {
         displayName="Apple Marmalade";
         descriptionShort="A nutritious and long-lasting jar of apple marmalade. Will last two to five years depending on storage conditions.";
+        varQuantityInit=750
+        varQuantityMax=750
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=250.0;
+            water=75.0;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     };
 
     class PlumMarmalade: Marmalade
     {
         displayName="Plum Marmalade";
         descriptionShort="A nutritious and long-lasting jar of plum marmalade. Will last two to five years depending on storage conditions.";
+        varQuantityInit=450
+        varQuantityMax=450
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=300.0;
+            water=125.0;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     };
 
     class PearMarmalade: Marmalade
     {
         displayName="Pear Marmalade";
         descriptionShort="A nutritious and long-lasting jar of pear marmalade. Will last two to five years depending on storage conditions.";
+        varQuantityInit=600
+        varQuantityMax=600
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=300.0;
+            water=50.0;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     };
 }
