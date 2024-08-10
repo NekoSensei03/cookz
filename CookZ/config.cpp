@@ -74,6 +74,18 @@ class CfgVehicles
                 "Lard,1"
             };
         };
+        class RicePuddingBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            allowPan = false;
+            needsWater = true;
+            ingredients[] = {
+                "Rice,1",
+                "PowderedMilk,1",
+                "AnyFruit,2"
+            };
+        };
         class GoulashCan
         {
             allowPot = true;
@@ -454,6 +466,36 @@ class CfgVehicles
             fullnessIndex=3;
             energy=227.27;
             water=45.45;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+    
+    class RicePuddingBox: CookZ_Box_Base
+    {
+        displayName="Rice Pudding";
+        descriptionShort="A nutritious and long-lasting box of rice pudding. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_rice_pudding_co.paa"
+        };
+    };
+    class RicePuddingBox_Opened: CookZ_BoxOpened_Base
+    {
+        displayName="Rice Pudding";
+        descriptionShort="A nutritious box of rice pudding. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_rice_pudding_co.paa",
+            "CookZ\data\box_food_rice_pudding_co.paa"
+        };
+        varQuantityInit=1000
+        varQuantityMax=1000
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=205.0;
+            water=80.0;
             nutritionalIndex=1;
             toxicity=0;
         };

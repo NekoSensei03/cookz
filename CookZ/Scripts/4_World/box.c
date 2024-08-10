@@ -22,6 +22,14 @@ class FishAndChipsBox : CookZ_Box_Base
     }
 }
 
+class RicePuddingBox : CookZ_Box_Base
+{
+    override void Open()
+    {
+        ReplaceEdibleWithNew("RicePuddingBox_Opened");
+    }
+}
+
 class CookZ_Box_Base: Edible_Base
 {
     override bool IsOpen()

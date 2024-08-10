@@ -40,6 +40,8 @@ class CookZ_Cookbook
     const string COOKING_INGREDIENT_PLEUROTUS_MUSHROOM        = "PleurotusMushroom";
 
     const string COOKING_INGREDIENT_ANY_MEAT                  = "AnyMeat";
+    const string COOKING_INGREDIENT_ANY_FRUIT                 = "AnyFruit";
+    const string COOKING_INGREDIENT_ANY_VEG                   = "AnyVeg";
     const string COOKING_INGREDIENT_ANY_FISH                  = "AnyFish";
     const string COOKING_INGREDIENT_ANY_FISH_FILLET           = "AnyFishFillet";
     const string COOKING_INGREDIENT_ANY_MUSHROOM              = "AnyMushroom";
@@ -114,10 +116,14 @@ class CookZ_Cookbook
 
         // accumulate food groups
         int numMeat = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PIG_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_WOLF_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_GOAT_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BEAR_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_SHEEP_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BOAR_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_COW_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_HUMAN_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_DEER_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_RABBIT_LEG_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_CHICKEN_BREAST_MEAT);
+        int numFruit = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PLUM) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PEAR) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_APPLE);
+        int numVeg = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_POTATO) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_GREEN_BELL_PEPPER) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_ZUCCHINI) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_TOMATO) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PUMPKIN) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_SLICED_PUMPKIN);
         int numFish = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_CARP_FILLET_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_MACKEREL_FILLET_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_SARDINES) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BITTERLINGS);
         int numFishFillet = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_CARP_FILLET_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_MACKEREL_FILLET_MEAT);
         int numMushroom = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_AGARICUS_MUSHROOM) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_AURICULARIA_MUSHROOM) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BOLETUS_MUSHROOM) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_LACTARIUS_MUSHROOM) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_MACROLEPIOTA_MUSHROOM) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PLEUROTUS_MUSHROOM);
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_MEAT, numMeat);
+        ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_FRUIT, numFruit);
+        ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_VEG, numVeg);
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_FISH, numFish);
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_FISH_FILLET, numFishFillet);
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_MUSHROOM, numMushroom);
