@@ -254,7 +254,7 @@ class CfgVehicles
 			{
 				class openTunaCan
 				{
-					soundSet="openTunaCan_SoundSet";
+					soundSet="ammoboxUnpack_SoundSet";
 					id=204;
 				};
 				class Eating_TakeFood
@@ -354,7 +354,7 @@ class CfgVehicles
 			{
 				class openTunaCan
 				{
-					soundSet="openTunaCan_SoundSet";
+					soundSet="ammoboxUnpack_SoundSet";
 					id=204;
 				};
 				class Eating_TakeFood
