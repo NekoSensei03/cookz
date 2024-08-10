@@ -1,6 +1,7 @@
 modded class Cooking
 {
 	ref CookZ_Cookbook cookbook;
+	static ref array<typename> EXCLUDE_FROM_COOKING = { Rice, PowderedMilk, DisinfectantAlcohol };
 
 	void Cooking()
 	{
@@ -45,7 +46,12 @@ modded class Cooking
 			//process items
 			for (int i = 0; i < cargo.GetItemCount(); i++)
 			{
-				ProcessItemToCook(ItemBase.Cast(cargo.GetItem(i)), cooking_equipment, cookingMethodWithTime, stateFlags);
+				ItemBase itemToCook = ItemBase.Cast(cargo.GetItem(i));
+				if (ExcludeFromCooking(itemToCook.Type()))
+				{
+					continue;
+				}
+				ProcessItemToCook(itemToCook, cooking_equipment, cookingMethodWithTime, stateFlags);
 				done = done || stateFlags.param1;
 				burned = burned || stateFlags.param2;
 			}
@@ -106,5 +112,14 @@ modded class Cooking
 		}
 
 		return 1;
+	}
+
+	bool ExcludeFromCooking(typename typeToCheck) {
+		foreach (typename excludeType : EXCLUDE_FROM_COOKING) {
+			if (typeToCheck == excludeType) {
+				return true;
+			}
+		}
+		return false;
 	}
 }
