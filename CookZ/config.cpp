@@ -37,7 +37,7 @@ class CfgVehicles
     class Recipes
     {
 		// add a recipe here
-        class FriedPotatoesCan 			// name needs to be name of dish to be created
+        class FriedPotatoesBox 			// name needs to be name of dish to be created
         {
             allowPot = false;			// can pot be used for recipe?
             allowCauldron = false;		// can cauldron be used for recipe?
@@ -48,7 +48,7 @@ class CfgVehicles
                 "Lard,1"
             };
         };
-        class StirFryCan
+        class StirFryBox
         {
             allowPot = false;
             allowCauldron = false;
@@ -62,7 +62,7 @@ class CfgVehicles
                 "Lard,1"
             };
         };
-        class FishAndChipsCan
+        class FishAndChipsBox
         {
             allowPot = false;
             allowCauldron = false;
@@ -165,22 +165,227 @@ class CfgVehicles
         };
     }
 
-    class FriedPotatoesCan: SpaghettiCan
+    class Edible_Base;
+    class CookZ_Box_Base: Edible_Base
     {
-        displayName="Canned Fried Potatoes";
-        descriptionShort="A nutritious and long-lasting can of fried potatoes that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        scope=2;
+		debug_ItemCategory=6;
+		rotationFlags=32;
+		itemSize[]={2,2};
+		weight=265;
+		varQuantityInit=0;
+		varQuantityMin=0;
+		varQuantityMax=0;
+		isMeleeWeapon=1;
+		model="CookZ\data\food_box.p3d";
+        hiddenSelections[]=
+		{
+			"box"
+		};
+		soundImpactType="metal";
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=70;
+					healthLevels[]=
+					{
+						
+						{
+							1,
+							
+							{
+								"DZ\gear\food\data\tuna.rvmat"
+							}
+						},
+						
+						{
+							0.69999999,
+							
+							{
+								"DZ\gear\food\data\tuna.rvmat"
+							}
+						},
+						
+						{
+							0.5,
+							
+							{
+								"DZ\gear\food\data\tuna_damage.rvmat"
+							}
+						},
+						
+						{
+							0.30000001,
+							
+							{
+								"DZ\gear\food\data\tuna_damage.rvmat"
+							}
+						},
+						
+						{
+							0,
+							
+							{
+								"DZ\gear\food\data\tuna_destruct.rvmat"
+							}
+						}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class openTunaCan
+				{
+					soundSet="openTunaCan_SoundSet";
+					id=204;
+				};
+				class Eating_TakeFood
+				{
+					soundSet="Eating_TakeFood_Soundset";
+					id=889;
+				};
+				class Eating_BoxOpen
+				{
+					soundSet="Eating_BoxOpen_Soundset";
+					id=893;
+				};
+				class Eating_BoxShake
+				{
+					soundSet="Eating_BoxShake_Soundset";
+					id=894;
+				};
+				class Eating_BoxEnd
+				{
+					soundSet="Eating_BoxEnd_Soundset";
+					id=895;
+				};
+			};
+		};
+    }
+    class CookZ_BoxOpened_Base: Edible_Base
+    {
+        scope=2;
+		debug_ItemCategory=6;
+		itemSize[]={2,2};
+		weight=15;
+		varQuantityMin=0;
+		isMeleeWeapon=1;
+		model="CookZ\data\food_box_opened.p3d";
+        hiddenSelections[]=
+		{
+			"box_opened",
+            "food"
+		};
+		soundImpactType="metal";
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=70;
+					healthLevels[]=
+					{
+						
+						{
+							1,
+							
+							{
+								"DZ\gear\food\data\tuna.rvmat"
+							}
+						},
+						
+						{
+							0.69999999,
+							
+							{
+								"DZ\gear\food\data\tuna.rvmat"
+							}
+						},
+						
+						{
+							0.5,
+							
+							{
+								"DZ\gear\food\data\tuna_damage.rvmat"
+							}
+						},
+						
+						{
+							0.30000001,
+							
+							{
+								"DZ\gear\food\data\tuna_damage.rvmat"
+							}
+						},
+						
+						{
+							0,
+							
+							{
+								"DZ\gear\food\data\tuna_destruct.rvmat"
+							}
+						}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class openTunaCan
+				{
+					soundSet="openTunaCan_SoundSet";
+					id=204;
+				};
+				class Eating_TakeFood
+				{
+					soundSet="Eating_TakeFood_Soundset";
+					id=889;
+				};
+				class Eating_BoxOpen
+				{
+					soundSet="Eating_BoxOpen_Soundset";
+					id=893;
+				};
+				class Eating_BoxShake
+				{
+					soundSet="Eating_BoxShake_Soundset";
+					id=894;
+				};
+				class Eating_BoxEnd
+				{
+					soundSet="Eating_BoxEnd_Soundset";
+					id=895;
+				};
+			};
+		};
+    }
+
+    class FriedPotatoesBox: CookZ_Box_Base
+    {
+        displayName="Fried Potatoes";
+        descriptionShort="A nutritious and long-lasting box of fried potatoes. Will last two to five years depending on storage conditions.";
         hiddenSelectionsTextures[]=
         {
-            "CookZ\data\canned_fried_potatoes_co.paa"
+            "CookZ\data\box_fried_potatoes_co.paa"
         };
     };
-    class FriedPotatoesCan_Opened: SpaghettiCan_Opened
+    class FriedPotatoesBox_Opened: CookZ_BoxOpened_Base
     {
-        displayName="Canned Fried Potatoes";
-        descriptionShort="A nutritious can of fried potatoes. Eat up before it spoils.";
+        displayName="Fried Potatoes";
+        descriptionShort="A nutritious box of fried potatoes. Eat up before it spoils.";
         hiddenSelectionsTextures[]=
         {
-            "CookZ\data\canned_fried_potatoes_co.paa"
+            "CookZ\data\box_fried_potatoes_co.paa",
+            "CookZ\data\box_food_fried_potatoes_co.paa"
         };
         varQuantityInit=1000;
         varQuantityMax=1000;
@@ -189,6 +394,66 @@ class CfgVehicles
             fullnessIndex=3;
             energy=260;
             water=30;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class StirFryBox: CookZ_Box_Base
+    {
+        displayName="Stir Fry";
+        descriptionShort="A nutritious and long-lasting box of stir fry. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_stir_fry_co.paa"
+        };
+    };
+    class StirFryBox_Opened: CookZ_BoxOpened_Base
+    {
+        displayName="Stir Fry";
+        descriptionShort="A nutritious box of stir fry. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_stir_fry_co.paa",
+            "CookZ\data\box_food_stir_fry_co.paa"
+        };
+        varQuantityInit=850
+        varQuantityMax=850
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=250.0;
+            water=52.94;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class FishAndChipsBox: CookZ_Box_Base
+    {
+        displayName="Fish And Chips";
+        descriptionShort="A nutritious and long-lasting box of fish and chips. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_fish_and_chips_co.paa"
+        };
+    };
+    class FishAndChipsBox_Opened: CookZ_BoxOpened_Base
+    {
+        displayName="Fish And Chips";
+        descriptionShort="A nutritious box of fish and chips. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_fish_and_chips_co.paa",
+            "CookZ\data\box_food_fish_and_chips_co.paa"
+        };
+        varQuantityInit=1100
+        varQuantityMax=1100
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=227.27;
+            water=45.45;
             nutritionalIndex=1;
             toxicity=0;
         };
@@ -218,35 +483,6 @@ class CfgVehicles
             fullnessIndex=3;
             energy=215.625;
             water=70.8125;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
-    };
-
-    class StirFryCan: SpaghettiCan
-    {
-        displayName="Canned Stir Fry";
-        descriptionShort="A nutritious and long-lasting can of stir fry that can be opened with a can opener. Will last two to five years depending on storage conditions.";
-        hiddenSelectionsTextures[]=
-        {
-            "CookZ\data\canned_stir_fry_co.paa"
-        };
-    };
-    class StirFryCan_Opened: SpaghettiCan_Opened
-    {
-        displayName="Canned Stir Fry";
-        descriptionShort="A nutritious can of stir fry. Eat up before it spoils.";
-        hiddenSelectionsTextures[]=
-        {
-            "CookZ\data\canned_stir_fry_co.paa"
-        };
-        varQuantityInit=850
-        varQuantityMax=850
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=250.0;
-            water=52.94;
             nutritionalIndex=1;
             toxicity=0;
         };
@@ -363,35 +599,6 @@ class CfgVehicles
             fullnessIndex=3;
             energy=192.86;
             water=110.71;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
-    };
-
-    class FishAndChipsCan: SpaghettiCan
-    {
-        displayName="Fish And Chips";
-        descriptionShort="A nutritious and long-lasting can of fish and chips that can be opened with a can opener. Will last two to five years depending on storage conditions.";
-        hiddenSelectionsTextures[]=
-        {
-            "CookZ\data\canned_fish_and_chips_co.paa"
-        };
-    };
-    class FishAndChipsCan_Opened: SpaghettiCan_Opened
-    {
-        displayName="Fish And Chips";
-        descriptionShort="A nutritious can of fish and chips. Eat up before it spoils.";
-        hiddenSelectionsTextures[]=
-        {
-            "CookZ\data\canned_fish_and_chips_co.paa"
-        };
-        varQuantityInit=1100
-        varQuantityMax=1100
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=227.27;
-            water=45.45;
             nutritionalIndex=1;
             toxicity=0;
         };
