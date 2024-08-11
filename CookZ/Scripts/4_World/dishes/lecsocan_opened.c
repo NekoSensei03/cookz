@@ -1,9 +1,4 @@
-class FriedPotatoesBox_Opened : CookZ_BoxOpened_Base {}
-class StirFryBox_Opened : CookZ_BoxOpened_Base {}
-class FishAndChipsBox_Opened : CookZ_BoxOpened_Base {}
-class RicePuddingBox_Opened : CookZ_BoxOpened_Base {}
-
-class CookZ_BoxOpened_Base: Edible_Base
+class CookZ_LecsoCan_Opened: Edible_Base
 {
     override bool CanDecay()
     {

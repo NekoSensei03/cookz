@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <types>
-    <type name="FriedPotatoesBox">
+    <type name="CookZ_FriedPotatoesBox">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -12,7 +12,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="FriedPotatoesBox_Opened">
+    <type name="CookZ_FriedPotatoesBox_Opened">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -24,7 +24,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="GoulashCan">
+    <type name="CookZ_GoulashCan">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -36,7 +36,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="GoulashCan_Opened">
+    <type name="CookZ_GoulashCan_Opened">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -48,7 +48,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="StirFryBox">
+    <type name="CookZ_StirFryBox">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -60,7 +60,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="StirFryBox_Opened">
+    <type name="CookZ_StirFryBox_Opened">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -72,7 +72,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="PumpkinSoupCan">
+    <type name="CookZ_PumpkinSoupCan">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -84,7 +84,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="PumpkinSoupCan_Opened">
+    <type name="CookZ_PumpkinSoupCan_Opened">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -96,7 +96,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="FishSoupCan">
+    <type name="CookZ_FishSoupCan">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -108,7 +108,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="FishSoupCan_Opened">
+    <type name="CookZ_FishSoupCan_Opened">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -120,7 +120,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="FishAndChipsBox">
+    <type name="CookZ_FishAndChipsBox">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -132,7 +132,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="FishAndChipsBox_Opened">
+    <type name="CookZ_FishAndChipsBox_Opened">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -144,7 +144,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="RicePuddingBox">
+    <type name="CookZ_RicePuddingBox">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -156,7 +156,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="RicePuddingBox_Opened">
+    <type name="CookZ_RicePuddingBox_Opened">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -168,7 +168,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="UkhaCan">
+    <type name="CookZ_UkhaCan">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -180,7 +180,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="UkhaCan_Opened">
+    <type name="CookZ_UkhaCan_Opened">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -192,7 +192,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="LecsoCan">
+    <type name="CookZ_LecsoCan">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -204,7 +204,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="LecsoCan_Opened">
+    <type name="CookZ_LecsoCan_Opened">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -216,7 +216,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="AppleMarmalade">
+    <type name="CookZ_AppleMarmalade">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -228,7 +228,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="PlumMarmalade">
+    <type name="CookZ_PlumMarmalade">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
@@ -240,7 +240,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="PearMarmalade">
+    <type name="CookZ_PearMarmalade">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>

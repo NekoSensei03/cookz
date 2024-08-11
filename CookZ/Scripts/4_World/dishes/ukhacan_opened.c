@@ -1,4 +1,4 @@
-class UkhaCan_Opened: Edible_Base
+class CookZ_UkhaCan_Opened: Edible_Base
 {
     override bool CanDecay()
     {

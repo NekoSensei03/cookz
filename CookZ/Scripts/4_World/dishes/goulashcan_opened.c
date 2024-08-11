@@ -1,4 +1,4 @@
-class PumpkinSoupCan_Opened: Edible_Base
+class CookZ_GoulashCan_Opened: Edible_Base
 {
     override bool CanDecay()
     {

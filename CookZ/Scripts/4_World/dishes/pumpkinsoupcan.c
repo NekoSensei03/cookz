@@ -1,8 +1,8 @@
-class PumpkinSoupCan : Edible_Base
+class CookZ_PumpkinSoupCan : Edible_Base
 {
     override void Open()
     {
-        ReplaceEdibleWithNew("PumpkinSoupCan_Opened");
+        ReplaceEdibleWithNew("CookZ_PumpkinSoupCan_Opened");
     }
     
     override bool IsOpen()

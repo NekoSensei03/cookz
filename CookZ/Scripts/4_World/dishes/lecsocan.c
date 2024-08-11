@@ -1,8 +1,8 @@
-class UkhaCan : Edible_Base
+class CookZ_LecsoCan : Edible_Base
 {
     override void Open()
     {
-        ReplaceEdibleWithNew("UkhaCan_Opened");
+        ReplaceEdibleWithNew("CookZ_LecsoCan_Opened");
     }
     
     override bool IsOpen()

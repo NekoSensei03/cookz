@@ -32,10 +32,10 @@ class CfgVehicles
 {
     // define recipes ----------------------------------------
 
-    class Recipes
+    class CookZ_Recipes
     {
 		// add a recipe here
-        class FriedPotatoesBox 			// name needs to be name of dish to be created
+        class CookZ_FriedPotatoesBox 			// name needs to be name of dish to be created
         {
             allowPot = false;			// can pot be used for recipe?
             allowCauldron = false;		// can cauldron be used for recipe?
@@ -46,7 +46,7 @@ class CfgVehicles
                 "Lard,1"
             };
         };
-        class StirFryBox
+        class CookZ_StirFryBox
         {
             allowPot = false;
             allowCauldron = false;
@@ -60,7 +60,7 @@ class CfgVehicles
                 "Lard,1"
             };
         };
-        class FishAndChipsBox
+        class CookZ_FishAndChipsBox
         {
             allowPot = false;
             allowCauldron = false;
@@ -72,7 +72,7 @@ class CfgVehicles
                 "Lard,1"
             };
         };
-        class RicePuddingBox
+        class CookZ_RicePuddingBox
         {
             allowPot = true;
             allowCauldron = true;
@@ -84,7 +84,7 @@ class CfgVehicles
                 "AnyFruit,2"
             };
         };
-        class GoulashCan
+        class CookZ_GoulashCan
         {
             allowPot = true;
             allowCauldron = true;
@@ -96,7 +96,7 @@ class CfgVehicles
                 "AnyMeat,1"
             };
         };
-        class PumpkinSoupCan
+        class CookZ_PumpkinSoupCan
         {
             allowPot = true;
             allowCauldron = true;
@@ -106,7 +106,7 @@ class CfgVehicles
                 "SlicedPumpkin,2"
             };
         };
-        class FishSoupCan
+        class CookZ_FishSoupCan
         {
             allowPot = true;
             allowCauldron = true;
@@ -118,7 +118,7 @@ class CfgVehicles
                 "Tomato,1"
             };
         };
-		class UkhaCan
+		class CookZ_UkhaCan
         {
             allowPot = true;
             allowCauldron = true;
@@ -131,7 +131,7 @@ class CfgVehicles
 				"DisinfectantAlcohol,1"
             };
         };
-        class LecsoCan
+        class CookZ_LecsoCan
         {
             allowPot = true;
             allowCauldron = true;
@@ -143,7 +143,7 @@ class CfgVehicles
                 "Lard,1"
             };
         };
-        class AppleMarmalade
+        class CookZ_AppleMarmalade
         {
             allowPot = true;
             allowCauldron = true;
@@ -153,7 +153,7 @@ class CfgVehicles
                 "Apple,6"
             };
         };
-        class PlumMarmalade
+        class CookZ_PlumMarmalade
         {
             allowPot = true;
             allowCauldron = true;
@@ -163,7 +163,7 @@ class CfgVehicles
                 "Plum,6"
             };
         };
-        class PearMarmalade
+        class CookZ_PearMarmalade
         {
             allowPot = true;
             allowCauldron = true;
@@ -384,7 +384,7 @@ class CfgVehicles
 		};
     }
 
-    class FriedPotatoesBox: CookZ_Box_Base
+    class CookZ_FriedPotatoesBox: CookZ_Box_Base
     {
         displayName="Fried Potatoes";
         descriptionShort="A nutritious and long-lasting box of fried potatoes. Will last two to five years depending on storage conditions.";
@@ -393,7 +393,7 @@ class CfgVehicles
             "CookZ\data\box_fried_potatoes_co.paa"
         };
     };
-    class FriedPotatoesBox_Opened: CookZ_BoxOpened_Base
+    class CookZ_FriedPotatoesBox_Opened: CookZ_BoxOpened_Base
     {
         displayName="Fried Potatoes";
         descriptionShort="A nutritious box of fried potatoes. Eat up before it spoils.";
@@ -414,7 +414,7 @@ class CfgVehicles
         };
     };
 
-    class StirFryBox: CookZ_Box_Base
+    class CookZ_StirFryBox: CookZ_Box_Base
     {
         displayName="Stir Fry";
         descriptionShort="A nutritious and long-lasting box of stir fry. Will last two to five years depending on storage conditions.";
@@ -423,7 +423,7 @@ class CfgVehicles
             "CookZ\data\box_stir_fry_co.paa"
         };
     };
-    class StirFryBox_Opened: CookZ_BoxOpened_Base
+    class CookZ_StirFryBox_Opened: CookZ_BoxOpened_Base
     {
         displayName="Stir Fry";
         descriptionShort="A nutritious box of stir fry. Eat up before it spoils.";
@@ -444,7 +444,7 @@ class CfgVehicles
         };
     };
 
-    class FishAndChipsBox: CookZ_Box_Base
+    class CookZ_FishAndChipsBox: CookZ_Box_Base
     {
         displayName="Fish And Chips";
         descriptionShort="A nutritious and long-lasting box of fish and chips. Will last two to five years depending on storage conditions.";
@@ -453,7 +453,7 @@ class CfgVehicles
             "CookZ\data\box_fish_and_chips_co.paa"
         };
     };
-    class FishAndChipsBox_Opened: CookZ_BoxOpened_Base
+    class CookZ_FishAndChipsBox_Opened: CookZ_BoxOpened_Base
     {
         displayName="Fish And Chips";
         descriptionShort="A nutritious box of fish and chips. Eat up before it spoils.";
@@ -474,7 +474,7 @@ class CfgVehicles
         };
     };
     
-    class RicePuddingBox: CookZ_Box_Base
+    class CookZ_RicePuddingBox: CookZ_Box_Base
     {
         displayName="Rice Pudding";
         descriptionShort="A nutritious and long-lasting box of rice pudding. Will last two to five years depending on storage conditions.";
@@ -483,7 +483,7 @@ class CfgVehicles
             "CookZ\data\box_rice_pudding_co.paa"
         };
     };
-    class RicePuddingBox_Opened: CookZ_BoxOpened_Base
+    class CookZ_RicePuddingBox_Opened: CookZ_BoxOpened_Base
     {
         displayName="Rice Pudding";
         descriptionShort="A nutritious box of rice pudding. Eat up before it spoils.";
@@ -504,7 +504,7 @@ class CfgVehicles
         };
     };
 
-    class GoulashCan: SpaghettiCan
+    class CookZ_GoulashCan: SpaghettiCan
     {
         displayName="Canned Goulash";
         descriptionShort="A nutritious and long-lasting can of goulash that can be opened with a can opener. Will last two to five years depending on storage conditions.";
@@ -513,7 +513,7 @@ class CfgVehicles
             "CookZ\data\canned_goulash_co.paa"
         };
     };
-    class GoulashCan_Opened: SpaghettiCan_Opened
+    class CookZ_GoulashCan_Opened: SpaghettiCan_Opened
     {
         displayName="Canned Goulash";
         descriptionShort="A nutritious can of goulash. Eat up before it spoils.";
@@ -533,7 +533,7 @@ class CfgVehicles
         };
     };
 
-    class PumpkinSoupCan: SpaghettiCan
+    class CookZ_PumpkinSoupCan: SpaghettiCan
     {
         displayName="Pumpkin Soup";
         descriptionShort="A nutritious and long-lasting can of pumpkin soup that can be opened with a can opener. Will last two to five years depending on storage conditions.";
@@ -542,7 +542,7 @@ class CfgVehicles
             "CookZ\data\canned_pumpkin_soup_co.paa"
         };
     };
-    class PumpkinSoupCan_Opened: SpaghettiCan_Opened
+    class CookZ_PumpkinSoupCan_Opened: SpaghettiCan_Opened
     {
         displayName="Pumpkin Soup";
         descriptionShort="A nutritious can of pumpkin soup. Eat up before it spoils.";
@@ -562,7 +562,7 @@ class CfgVehicles
         };
     };
 
-    class FishSoupCan: SpaghettiCan
+    class CookZ_FishSoupCan: SpaghettiCan
     {
         displayName="Fish Soup";
         descriptionShort="A nutritious and long-lasting can of fish soup that can be opened with a can opener. Will last two to five years depending on storage conditions.";
@@ -571,7 +571,7 @@ class CfgVehicles
             "CookZ\data\canned_fish_soup_co.paa"
         };
     };
-    class FishSoupCan_Opened: SpaghettiCan_Opened
+    class CookZ_FishSoupCan_Opened: SpaghettiCan_Opened
     {
         displayName="Fish Soup";
         descriptionShort="A nutritious can of fish soup. Eat up before it spoils.";
@@ -591,7 +591,7 @@ class CfgVehicles
         };
     };
 
-	class UkhaCan: SpaghettiCan
+	class CookZ_UkhaCan: SpaghettiCan
     {
         displayName="Ukha";
         descriptionShort="A nutritious and long-lasting can of Ukha that can be opened with a can opener. Will last two to five years depending on storage conditions.";
@@ -600,7 +600,7 @@ class CfgVehicles
             "CookZ\data\canned_ukha_co.paa"
         };
     };
-    class UkhaCan_Opened: SpaghettiCan_Opened
+    class CookZ_UkhaCan_Opened: SpaghettiCan_Opened
     {
         displayName="Ukha";
         descriptionShort="A nutritious can of Ukha. Eat up before it spoils.";
@@ -620,7 +620,7 @@ class CfgVehicles
         };
     };
 
-    class LecsoCan: SpaghettiCan
+    class CookZ_LecsoCan: SpaghettiCan
     {
         displayName="Lecso";
         descriptionShort="A nutritious and long-lasting can of Lecso that can be opened with a can opener. Will last two to five years depending on storage conditions.";
@@ -629,7 +629,7 @@ class CfgVehicles
             "CookZ\data\canned_lecso_co.paa"
         };
     };
-    class LecsoCan_Opened: SpaghettiCan_Opened
+    class CookZ_LecsoCan_Opened: SpaghettiCan_Opened
     {
         displayName="Lecso";
         descriptionShort="A nutritious can of Lecso. Eat up before it spoils.";
@@ -649,7 +649,7 @@ class CfgVehicles
         };
     };
 
-    class AppleMarmalade: Marmalade
+    class CookZ_AppleMarmalade: Marmalade
     {
         displayName="Apple Marmalade";
         descriptionShort="A nutritious and long-lasting jar of apple marmalade. Will last two to five years depending on storage conditions.";
@@ -665,7 +665,7 @@ class CfgVehicles
         };
     };
 
-    class PlumMarmalade: Marmalade
+    class CookZ_PlumMarmalade: Marmalade
     {
         displayName="Plum Marmalade";
         descriptionShort="A nutritious and long-lasting jar of plum marmalade. Will last two to five years depending on storage conditions.";
@@ -681,7 +681,7 @@ class CfgVehicles
         };
     };
 
-    class PearMarmalade: Marmalade
+    class CookZ_PearMarmalade: Marmalade
     {
         displayName="Pear Marmalade";
         descriptionShort="A nutritious and long-lasting jar of pear marmalade. Will last two to five years depending on storage conditions.";

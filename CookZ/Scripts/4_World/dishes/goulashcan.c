@@ -1,8 +1,8 @@
-class FishSoupCan : Edible_Base
+class CookZ_GoulashCan : Edible_Base
 {
     override void Open()
     {
-        ReplaceEdibleWithNew("FishSoupCan_Opened");
+        ReplaceEdibleWithNew("CookZ_GoulashCan_Opened");
     }
     
     override bool IsOpen()
