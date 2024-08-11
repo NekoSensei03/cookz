@@ -93,7 +93,8 @@ class CfgVehicles
             ingredients[] = {
                 "Potato,2",
                 "GreenBellPepper,1",
-                "AnyMeat,1"
+                "AnyMeat,1",
+                "CookZ_EmptyCan,1"
             };
         };
         class CookZ_PumpkinSoupCan
@@ -103,7 +104,8 @@ class CfgVehicles
             allowPan = false;
             needsWater = true;
             ingredients[] = {
-                "SlicedPumpkin,2"
+                "SlicedPumpkin,2",
+                "CookZ_EmptyCan,1"
             };
         };
         class CookZ_FishSoupCan
@@ -115,7 +117,8 @@ class CfgVehicles
             ingredients[] = {
                 "AnyFish,2",
                 "Potato,1",
-                "Tomato,1"
+                "Tomato,1",
+                "CookZ_EmptyCan,1"
             };
         };
 		class CookZ_UkhaCan
@@ -128,7 +131,8 @@ class CfgVehicles
                 "AnyFish,2",
                 "Potato,1",
                 "Tomato,1",
-				"DisinfectantAlcohol,1"
+				"DisinfectantAlcohol,1",
+                "CookZ_EmptyCan,1"
             };
         };
         class CookZ_LecsoCan
@@ -140,7 +144,8 @@ class CfgVehicles
             ingredients[] = {
                 "GreenBellPepper,2",
                 "Tomato,2",
-                "Lard,1"
+                "Lard,1",
+                "CookZ_EmptyCan,1"
             };
         };
         class CookZ_AppleMarmalade
@@ -647,6 +652,31 @@ class CfgVehicles
             nutritionalIndex=1;
             toxicity=0;
         };
+    };
+
+    class Inventory_Base;
+    class CookZ_EmptyCan: Inventory_Base
+    {
+        scope=2;
+        displayName="Empty Can";
+        descriptionShort="An empty can. Can be used to put cooked food inside.";
+        itemSize[]={1,2};
+        model="\dz\gear\food\food_can.p3d";
+        hiddenSelections[]=
+		{
+			"camoGround"
+		};
+        hiddenSelectionsTextures[]=
+        {
+            "dz\gear\food\data\UnknownFoodCan_co.paa"
+        };
+        weight=36.279999;
+        soundImpactType="metal";
+        canBeSplit=1;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=10;
+		varQuantityDestroyOnMin=1;
     };
 
     class CookZ_AppleMarmalade: Marmalade

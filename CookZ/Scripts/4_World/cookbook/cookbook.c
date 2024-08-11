@@ -52,7 +52,7 @@ class CookZ_Cookbook
     void CookZ_Cookbook()
     {
         allRecipes = new array<ref CookZ_Recipe>();
-        LoadRecipesFromConfig();    
+        LoadRecipesFromConfig();
     }
 
     void LoadRecipesFromConfig()

@@ -1,7 +1,8 @@
 modded class Cooking
 {
 	ref CookZ_Cookbook cookbook;
-	static ref array<typename> EXCLUDE_FROM_COOKING = { Rice, PowderedMilk, DisinfectantAlcohol };
+	static ref array<typename> EXCLUDE_FROM_COOKING = { Rice, PowderedMilk, DisinfectantAlcohol, CookZ_EmptyCan, Paper };
+	typename EMPTY_CAN_TYPE = CookZ_EmptyCan;
 
 	void Cooking()
 	{
@@ -62,15 +63,28 @@ modded class Cooking
 				if (dish != "")
 				{
 					// clear all items from cooking equipment (bottom to top for index safety)
+					int leftOverEmptyCans = 0;
 					int itemCount = cargo.GetItemCount();
 					for (int j = itemCount - 1; j >= 0; j--)
 					{
-						cooking_equipment.GetInventory().LocalDestroyEntity(ItemBase.Cast(cargo.GetItem(j)));
+						ItemBase usedItem = ItemBase.Cast(cargo.GetItem(j));
+						if (usedItem.Type() == EMPTY_CAN_TYPE)
+						{
+							// remove empty cans and add left over quantity at the end - so that there will be enough space for the dish
+							leftOverEmptyCans = usedItem.GetQuantity() - 1;
+						}
+						cooking_equipment.GetInventory().LocalDestroyEntity(usedItem);
 					}
 					// remove ALL liquid for now so that spawned items will not get wet
 					cooking_equipment.AddQuantity(-cooking_equipment.GetQuantity());
 					// add dish to cooking equipment
 					cooking_equipment.GetInventory().CreateInInventory(dish);
+					// add left over empty cans
+					if (leftOverEmptyCans > 0)
+					{
+						EntityAI emptyCans = cooking_equipment.GetInventory().CreateInInventory(EMPTY_CAN_TYPE.ToString());
+						ItemBase.Cast(emptyCans).SetQuantity(leftOverEmptyCans);
+					}
 				}
 			}
 		}
