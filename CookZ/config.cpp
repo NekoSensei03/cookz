@@ -159,6 +159,18 @@ class CfgVehicles
                 "CookZ_EmptyCan,1"
             };
         };
+        class TacticalBaconCan
+        {
+            allowPot = true;
+            allowCauldron = true;
+            allowPan = true;
+            needsWater = false;
+            ingredients[] = {
+                "PigSteakMeat,2",
+                "Lard,1",
+                "CookZ_EmptyCan,1"
+            };
+        }
         class CookZ_AppleMarmalade
         {
             allowPot = true;
