@@ -171,6 +171,18 @@ class CfgVehicles
                 "CookZ_EmptyCan,1"
             };
         }
+        class CookZ_MysteryMeatCan
+        {
+            allowPot = true;
+            allowCauldron = true;
+            allowPan = true;
+            needsWater = false;
+            ingredients[] = {
+                "AnyMeat,3",
+                "Lard,1",
+                "CookZ_EmptyCan,1"
+            };
+        }
         class CookZ_AppleMarmalade
         {
             allowPot = true;
@@ -702,6 +714,35 @@ class CfgVehicles
             fullnessIndex=3;
             energy=192.86;
             water=110.71;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_MysteryMeatCan: SpaghettiCan
+    {
+        displayName="Mystery Meat";
+        descriptionShort="A nutritious and long-lasting can of mixed meats that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_mystery_meat_co.paa"
+        };
+    };
+    class CookZ_MysteryMeatCan_Opened: SpaghettiCan_Opened
+    {
+        displayName="Mystery Meat";
+        descriptionShort="A nutritious can of mixed meats. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_mystery_meat_co.paa"
+        };
+        varQuantityInit=950
+        varQuantityMax=950
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=300.0;
+            water=50.0;
             nutritionalIndex=1;
             toxicity=0;
         };

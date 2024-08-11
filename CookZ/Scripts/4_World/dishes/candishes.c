@@ -3,6 +3,7 @@ class CookZ_GoulashCan : CookZ_Can_Base {}
 class CookZ_LecsoCan : CookZ_Can_Base {}
 class CookZ_PumpkinSoupCan : CookZ_Can_Base {}
 class CookZ_UkhaCan : CookZ_Can_Base {}
+class CookZ_MysteryMeatCan : CookZ_Can_Base {}
 
 class CookZ_Can_Base: Edible_Base
 {
@@ -22,6 +23,7 @@ class CookZ_GoulashCan_Opened: CookZ_CanOpened_Base {}
 class CookZ_LecsoCan_Opened: CookZ_CanOpened_Base {}
 class CookZ_PumpkinSoupCan_Opened: CookZ_CanOpened_Base {}
 class CookZ_UkhaCan_Opened: CookZ_CanOpened_Base {}
+class CookZ_MysteryMeatCan_Opened: CookZ_CanOpened_Base {}
 
 class CookZ_CanOpened_Base: Edible_Base
 {
