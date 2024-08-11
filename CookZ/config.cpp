@@ -30,9 +30,7 @@ class CfgMods
 
 class CfgVehicles
 {
-    class SpaghettiCan;
-    class SpaghettiCan_Opened;
-    class Marmalade;
+    // define recipes ----------------------------------------
 
     class Recipes
     {
@@ -177,7 +175,12 @@ class CfgVehicles
         };
     }
 
+    // define dishes - closed and opened ----------------------------------------
+
     class Edible_Base;
+    class SpaghettiCan;
+    class SpaghettiCan_Opened;
+    class Marmalade;
     class CookZ_Box_Base: Edible_Base
     {
         scope=2;
