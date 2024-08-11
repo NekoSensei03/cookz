@@ -30,6 +30,14 @@ class CookZ_RicePuddingBox : CookZ_Box_Base
     }
 }
 
+class CookZ_MushroomRisottoBox : CookZ_Box_Base
+{
+    override void Open()
+    {
+        ReplaceEdibleWithNew("CookZ_MushroomRisottoBox_Opened");
+    }
+}
+
 class CookZ_Box_Base: Edible_Base
 {
     override bool IsOpen()

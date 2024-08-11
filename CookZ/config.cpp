@@ -84,6 +84,17 @@ class CfgVehicles
                 "AnyFruit,2"
             };
         };
+        class CookZ_MushroomRisottoBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            allowPan = false;
+            needsWater = true;
+            ingredients[] = {
+                "Rice,1",
+                "AnyMushroom,2"
+            };
+        };
         class CookZ_GoulashCan
         {
             allowPot = true;
@@ -504,6 +515,36 @@ class CfgVehicles
             fullnessIndex=3;
             energy=205.0;
             water=80.0;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_MushroomRisottoBox: CookZ_Box_Base
+    {
+        displayName="Mushroom Risotto";
+        descriptionShort="A nutritious and long-lasting box of mushroom risotto. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_mushroom_risotto_co.paa"
+        };
+    };
+    class CookZ_MushroomRisottoBox_Opened: CookZ_BoxOpened_Base
+    {
+        displayName="Mushroom Risotto";
+        descriptionShort="A nutritious box of mushroom risotto. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_mushroom_risotto_co.paa",
+            "CookZ\data\box_food_mushroom_risotto_co.paa"
+        };
+        varQuantityInit=800
+        varQuantityMax=800
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=156.25;
+            water=256.25;
             nutritionalIndex=1;
             toxicity=0;
         };
