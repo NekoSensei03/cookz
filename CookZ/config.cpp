@@ -223,6 +223,20 @@ class CfgVehicles
                 "Lard,1"
             };
         }
+        class CookZ_ZucchiniCaviarCan
+        {
+            allowPot = true;
+            allowCauldron = true;
+            allowPan = false;
+            needsWater = true;
+            needsEmptyCan = true;
+            needsEmptyBox = false;
+            ingredients[] = {
+                "Zucchini,3",
+                "GreenBellPepper,1",
+                "Tomato,1"
+            };
+        }
         class CookZ_AppleMarmalade
         {
             allowPot = true;
@@ -789,6 +803,35 @@ class CfgVehicles
             fullnessIndex=3;
             energy=300.0;
             water=50.0;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_ZucchiniCaviarCan: SpaghettiCan
+    {
+        displayName="Zucchini Caviar";
+        descriptionShort="A nutritious and long-lasting can of zucchini caviar that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_zucchini_caviar_co.paa"
+        };
+    };
+    class CookZ_ZucchiniCaviarCan_Opened: SpaghettiCan_Opened
+    {
+        displayName="Zucchini Caviar";
+        descriptionShort="A nutritious can of zucchini caviar. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_zucchini_caviar_co.paa"
+        };
+        varQuantityInit=850
+        varQuantityMax=850
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=191.18;
+            water=139.71;
             nutritionalIndex=1;
             toxicity=0;
         };
