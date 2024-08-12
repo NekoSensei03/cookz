@@ -35,7 +35,7 @@ class CfgVehicles
     class CookZ_Recipes
     {
 		// add a recipe here
-        class CookZ_FriedPotatoesBox 			// name needs to be name of dish to be created
+        class CookZ_FriedPotatoesBox 	// name needs to be name of dish to be created
         {
             allowPot = false;			// can pot be used for recipe?
             allowCauldron = false;		// can cauldron be used for recipe?
@@ -748,31 +748,6 @@ class CfgVehicles
         };
     };
 
-    class Inventory_Base;
-    class CookZ_EmptyCan: Inventory_Base
-    {
-        scope=2;
-        displayName="Empty Can";
-        descriptionShort="An empty can. Can be used to put cooked food inside.";
-        itemSize[]={1,2};
-        model="\dz\gear\food\food_can.p3d";
-        hiddenSelections[]=
-		{
-			"camoGround"
-		};
-        hiddenSelectionsTextures[]=
-        {
-            "dz\gear\food\data\UnknownFoodCan_co.paa"
-        };
-        weight=36.279999;
-        soundImpactType="metal";
-        canBeSplit=1;
-		varQuantityInit=1;
-		varQuantityMin=0;
-		varQuantityMax=10;
-		varQuantityDestroyOnMin=1;
-    };
-
     class CookZ_AppleMarmalade: Marmalade
     {
         displayName="Apple Marmalade";
@@ -819,5 +794,56 @@ class CfgVehicles
             nutritionalIndex=1;
             toxicity=0;
         };
+    };
+
+    // define crafting materials ----------------------------------------
+
+    class Inventory_Base;
+    class CookZ_EmptyCan: Inventory_Base
+    {
+        scope=2;
+        displayName="Empty Can";
+        descriptionShort="An empty can. Can be used to put cooked food inside.";
+        itemSize[]={1,2};
+        model="\dz\gear\food\food_can.p3d";
+        hiddenSelections[]=
+		{
+			"camoGround"
+		};
+        hiddenSelectionsTextures[]=
+        {
+            "dz\gear\food\data\UnknownFoodCan_co.paa"
+        };
+        weight=36.279999;
+        soundImpactType="metal";
+        canBeSplit=1;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=10;
+		varQuantityDestroyOnMin=1;
+    };
+
+    class CookZ_EmptyBox: Inventory_Base
+    {
+        scope=2;
+        displayName="Empty Box";
+        descriptionShort="An empty box. Can be used to put cooked food inside.";
+        itemSize[]={2,1};
+        model="CookZ\data\food_box.p3d";
+        hiddenSelections[]=
+		{
+			"box"
+		};
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_co.paa"
+        };
+        weight=36.279999;
+        soundImpactType="metal";
+        canBeSplit=1;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=10;
+		varQuantityDestroyOnMin=1;
     };
 }
