@@ -1,0 +1,20 @@
+ImageSetClass {
+ Name "empty_box_icon"
+ RefSize 170 170
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{7AD247B8A428A3B1}CookZ/GUI/ImageSets/empty_box_icon.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass empty_box_icon {
+   Name "empty_box_icon"
+   Pos 16 19
+   Size 132 133
+   Flags 0
+  }
+ }
+ Groups {
+ }
+}

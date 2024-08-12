@@ -59,31 +59,37 @@ modded class Cooking
 
 			if (done && !burned)
 			{
-				string dish = cookbook.GetDishForIngredients(cooking_equipment);
-				if (dish != "")
+				CookZ_Recipe dish = cookbook.GetDishForIngredients(cooking_equipment);
+				if (dish)
 				{
 					// clear all items from cooking equipment (bottom to top for index safety)
-					int leftOverEmptyCans = 0;
 					int itemCount = cargo.GetItemCount();
 					for (int j = itemCount - 1; j >= 0; j--)
 					{
 						ItemBase usedItem = ItemBase.Cast(cargo.GetItem(j));
-						if (usedItem.Type() == EMPTY_CAN_TYPE)
-						{
-							// remove empty cans and add left over quantity at the end - so that there will be enough space for the dish
-							leftOverEmptyCans = usedItem.GetQuantity() - 1;
-						}
 						cooking_equipment.GetInventory().LocalDestroyEntity(usedItem);
 					}
 					// remove ALL liquid for now so that spawned items will not get wet
 					cooking_equipment.AddQuantity(-cooking_equipment.GetQuantity());
 					// add dish to cooking equipment
-					cooking_equipment.GetInventory().CreateInInventory(dish);
-					// add left over empty cans
-					if (leftOverEmptyCans > 0)
+					cooking_equipment.GetInventory().CreateInInventory(dish.name);
+					// update empty can quantity
+					if (dish.needsEmptyCan)
 					{
-						EntityAI emptyCans = cooking_equipment.GetInventory().CreateInInventory(EMPTY_CAN_TYPE.ToString());
-						ItemBase.Cast(emptyCans).SetQuantity(leftOverEmptyCans);
+						ItemBase emptyCans = ItemBase.Cast(cooking_equipment.FindAttachmentBySlotName("CookZ_EmptyCans"));
+						if (emptyCans)
+						{
+							emptyCans.SetQuantity(emptyCans.GetQuantity() - 1);
+						}
+					}
+					// update empty box quantity
+					if (dish.needsEmptyBox)
+					{
+        				ItemBase emptyBoxes = ItemBase.Cast(cooking_equipment.FindAttachmentBySlotName("CookZ_EmptyBoxes"));
+						if (emptyBoxes)
+						{
+							emptyBoxes.SetQuantity(emptyBoxes.GetQuantity() - 1);
+						}
 					}
 				}
 			}

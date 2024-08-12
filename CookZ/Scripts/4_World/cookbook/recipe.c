@@ -6,8 +6,10 @@ class CookZ_Recipe
     bool allowCauldron;
     bool allowPan;
     bool needsWater;
+    bool needsEmptyCan;
+    bool needsEmptyBox;
 
-    void CookZ_Recipe(string name, bool allowPot, bool allowCauldron, bool allowPan, bool needsWater)
+    void CookZ_Recipe(string name, bool allowPot, bool allowCauldron, bool allowPan, bool needsWater, bool needsEmptyCan, bool needsEmptyBox)
     {
         this.ingredients = new array<ref CookZ_Ingredient>();
         this.name = name;
@@ -15,6 +17,8 @@ class CookZ_Recipe
         this.allowCauldron = allowCauldron;
         this.allowPan = allowPan;
         this.needsWater = needsWater;
+        this.needsEmptyCan = needsEmptyCan;
+        this.needsEmptyBox = needsEmptyBox;
     }
 
     void AddIngredient(CookZ_Ingredient ingredient)

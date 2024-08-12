@@ -24,7 +24,30 @@ class CfgMods
                 value = "";
                 files[] = { "CookZ/Scripts/4_World" };
             };
+            class imageSets
+            {
+                files[] = {
+                    "CookZ\GUI\ImageSets\empty_box_icon.imageset",
+                    "CookZ\GUI\ImageSets\empty_can_icon.imageset"
+                };
+            };
         };
+    };
+};
+
+class CfgSlots
+{
+    class Slot_CookZ_EmptyCans
+    {
+        name = "CookZ_EmptyCans";
+        displayName = "Empty Cans";
+        ghostIcon = "set:empty_can_icon image:empty_can_icon";
+    };
+    class Slot_CookZ_EmptyBoxes
+    {
+        name = "CookZ_EmptyBoxes";
+        displayName = "Empty Boxes";
+        ghostIcon = "set:empty_box_icon image:empty_box_icon";
     };
 };
 
@@ -41,6 +64,8 @@ class CfgVehicles
             allowCauldron = false;		// can cauldron be used for recipe?
             allowPan = true;			// can pan be used for recipe?
             needsWater = false;			// is water needed? only makes sense if pot or cauldron is allowed
+            needsEmptyCan = false;      // is an empty can needed
+            needsEmptyBox = true;       // is an empty box needed
             ingredients[] = {
 				"Potato,4",				// <NAME>,<QUANITY>, name must be the food item name OR AnyMeat etc
                 "Lard,1"
@@ -52,6 +77,8 @@ class CfgVehicles
             allowCauldron = false;
             allowPan = true;
             needsWater = false;
+            needsEmptyCan = false;
+            needsEmptyBox = true;
             ingredients[] = {
                 "Potato,1",
                 "Tomato,1",
@@ -66,6 +93,8 @@ class CfgVehicles
             allowCauldron = false;
             allowPan = true;
             needsWater = false;
+            needsEmptyCan = false;
+            needsEmptyBox = true;
             ingredients[] = {
                 "Potato,2",
                 "AnyFishFillet,1",
@@ -78,6 +107,8 @@ class CfgVehicles
             allowCauldron = true;
             allowPan = false;
             needsWater = true;
+            needsEmptyCan = false;
+            needsEmptyBox = true;
             ingredients[] = {
                 "Rice,1",
                 "PowderedMilk,1",
@@ -90,6 +121,8 @@ class CfgVehicles
             allowCauldron = true;
             allowPan = false;
             needsWater = true;
+            needsEmptyCan = false;
+            needsEmptyBox = true;
             ingredients[] = {
                 "Rice,1",
                 "AnyMushroom,2"
@@ -101,11 +134,12 @@ class CfgVehicles
             allowCauldron = true;
             allowPan = false;
             needsWater = true;
+            needsEmptyCan = true;
+            needsEmptyBox = false;
             ingredients[] = {
                 "Potato,2",
                 "GreenBellPepper,1",
-                "AnyMeat,1",
-                "CookZ_EmptyCan,1"
+                "AnyMeat,1"
             };
         };
         class CookZ_PumpkinSoupCan
@@ -114,9 +148,10 @@ class CfgVehicles
             allowCauldron = true;
             allowPan = false;
             needsWater = true;
+            needsEmptyCan = true;
+            needsEmptyBox = false;
             ingredients[] = {
-                "SlicedPumpkin,2",
-                "CookZ_EmptyCan,1"
+                "SlicedPumpkin,2"
             };
         };
         class CookZ_FishSoupCan
@@ -125,11 +160,12 @@ class CfgVehicles
             allowCauldron = true;
             allowPan = false;
             needsWater = true;
+            needsEmptyCan = true;
+            needsEmptyBox = false;
             ingredients[] = {
                 "AnyFish,2",
                 "Potato,1",
-                "Tomato,1",
-                "CookZ_EmptyCan,1"
+                "Tomato,1"
             };
         };
 		class CookZ_UkhaCan
@@ -138,12 +174,13 @@ class CfgVehicles
             allowCauldron = true;
             allowPan = false;
             needsWater = true;
+            needsEmptyCan = true;
+            needsEmptyBox = false;
             ingredients[] = {
                 "AnyFish,2",
                 "Potato,1",
                 "Tomato,1",
-				"DisinfectantAlcohol,1",
-                "CookZ_EmptyCan,1"
+				"DisinfectantAlcohol,1"
             };
         };
         class CookZ_LecsoCan
@@ -152,11 +189,12 @@ class CfgVehicles
             allowCauldron = true;
             allowPan = false;
             needsWater = true;
+            needsEmptyCan = true;
+            needsEmptyBox = false;
             ingredients[] = {
                 "GreenBellPepper,2",
                 "Tomato,2",
-                "Lard,1",
-                "CookZ_EmptyCan,1"
+                "Lard,1"
             };
         };
         class TacticalBaconCan
@@ -165,10 +203,11 @@ class CfgVehicles
             allowCauldron = true;
             allowPan = true;
             needsWater = false;
+            needsEmptyCan = true;
+            needsEmptyBox = false;
             ingredients[] = {
                 "PigSteakMeat,2",
-                "Lard,1",
-                "CookZ_EmptyCan,1"
+                "Lard,1"
             };
         }
         class CookZ_MysteryMeatCan
@@ -177,10 +216,11 @@ class CfgVehicles
             allowCauldron = true;
             allowPan = true;
             needsWater = false;
+            needsEmptyCan = true;
+            needsEmptyBox = false;
             ingredients[] = {
                 "AnyMeat,3",
-                "Lard,1",
-                "CookZ_EmptyCan,1"
+                "Lard,1"
             };
         }
         class CookZ_AppleMarmalade
@@ -189,6 +229,8 @@ class CfgVehicles
             allowCauldron = true;
             allowPan = false;
             needsWater = false;
+            needsEmptyCan = false;
+            needsEmptyBox = false;
             ingredients[] = {
                 "Apple,6"
             };
@@ -199,6 +241,8 @@ class CfgVehicles
             allowCauldron = true;
             allowPan = false;
             needsWater = false;
+            needsEmptyCan = false;
+            needsEmptyBox = false;
             ingredients[] = {
                 "Plum,6"
             };
@@ -209,6 +253,8 @@ class CfgVehicles
             allowCauldron = true;
             allowPan = false;
             needsWater = false;
+            needsEmptyCan = false;
+            needsEmptyBox = false;
             ingredients[] = {
                 "Pear,4"
             };
@@ -821,6 +867,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=10;
 		varQuantityDestroyOnMin=1;
+        inventorySlot[] = {"CookZ_EmptyCans"};
     };
 
     class CookZ_EmptyBox: Inventory_Base
@@ -828,7 +875,7 @@ class CfgVehicles
         scope=2;
         displayName="Empty Box";
         descriptionShort="An empty box. Can be used to put cooked food inside.";
-        itemSize[]={2,1};
+        itemSize[]={1,2};
         model="CookZ\data\food_box.p3d";
         hiddenSelections[]=
 		{
@@ -845,5 +892,58 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=10;
 		varQuantityDestroyOnMin=1;
+        inventorySlot[] = {"CookZ_EmptyBoxes"};
     };
-}
+
+    // define equipment slots ----------------------------------------
+
+    class Bottle_Base;
+    class Pot: Bottle_Base
+    {
+        attachments[]=
+		{
+			"CookZ_EmptyCans",
+			"CookZ_EmptyBoxes"
+		};
+        class InventoryEquipment
+        {
+            playerSlots[]=
+			{
+                "Slot_CookZ_EmptyCans",
+                "Slot_CookZ_EmptyBoxes"
+            };
+        };
+    };
+    class Cauldron: Bottle_Base
+    {
+        attachments[]=
+		{
+			"CookZ_EmptyCans",
+			"CookZ_EmptyBoxes"
+		};
+        class InventoryEquipment
+        {
+            playerSlots[]=
+			{
+                "Slot_CookZ_EmptyCans",
+                "Slot_CookZ_EmptyBoxes"
+            };
+        };
+    };
+    class FryingPan: Inventory_Base
+    {
+        attachments[]=
+		{
+			"CookZ_EmptyCans",
+			"CookZ_EmptyBoxes"
+		};
+        class InventoryEquipment
+        {
+            playerSlots[]=
+			{
+                "Slot_CookZ_EmptyCans",
+                "Slot_CookZ_EmptyBoxes"
+            };
+        };
+    };
+};

@@ -1,0 +1,20 @@
+ImageSetClass {
+ Name "empty_can_icon"
+ RefSize 170 170
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{4A0D69BC563A65CC}CookZ/GUI/ImageSets/empty_can_icon.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass empty_can_icon {
+   Name "empty_can_icon"
+   Pos 20 18
+   Size 124 130
+   Flags 0
+  }
+ }
+ Groups {
+ }
+}

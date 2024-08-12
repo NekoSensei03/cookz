@@ -69,12 +69,16 @@ class CookZ_Cookbook
             string allowCauldron;
             string allowPan;
             string needsWater;
+            string needsEmptyCan;
+            string needsEmptyBox;
             GetGame().ConfigGetText(string.Format("%1 %2 allowPot", recipesPath, recipeName), allowPot);
             GetGame().ConfigGetText(string.Format("%1 %2 allowCauldron", recipesPath, recipeName), allowCauldron);
             GetGame().ConfigGetText(string.Format("%1 %2 allowPan", recipesPath, recipeName), allowPan);
             GetGame().ConfigGetText(string.Format("%1 %2 needsWater", recipesPath, recipeName), needsWater);
+            GetGame().ConfigGetText(string.Format("%1 %2 needsEmptyCan", recipesPath, recipeName), needsEmptyCan);
+            GetGame().ConfigGetText(string.Format("%1 %2 needsEmptyBox", recipesPath, recipeName), needsEmptyBox);
 
-            CookZ_Recipe recipe = new CookZ_Recipe(recipeName, allowPot == "true", allowCauldron == "true", allowPan == "true", needsWater == "true");
+            CookZ_Recipe recipe = new CookZ_Recipe(recipeName, allowPot == "true", allowCauldron == "true", allowPan == "true", needsWater == "true", needsEmptyCan == "true", needsEmptyBox == "true");
 
             array<string> ingredientsArray = new array<string>;
             GetGame().ConfigGetTextArray(string.Format("%1 %2 ingredients", recipesPath, recipeName), ingredientsArray);
@@ -98,15 +102,18 @@ class CookZ_Cookbook
     }
 
     // returns a dish string or "" if no valid recipe detected
-    string GetDishForIngredients(ItemBase cooking_equipment)
+    CookZ_Recipe GetDishForIngredients(ItemBase cooking_equipment)
     {
         CargoBase cargo = cooking_equipment.GetInventory().GetCargo();
         if (!cargo)
         {
-            return "";
+            return null;
         }
 
         ref map<string, int> ingredientTypeInEquipment = new map<string, int>();
+        
+        ItemBase emptyCans = ItemBase.Cast(cooking_equipment.FindAttachmentBySlotName("CookZ_EmptyCans"));
+        ItemBase emptyBoxes = ItemBase.Cast(cooking_equipment.FindAttachmentBySlotName("CookZ_EmptyBoxes"));
 
         for (int i = 0; i < cargo.GetItemCount(); i++)
         {
@@ -148,6 +155,15 @@ class CookZ_Cookbook
             {
                 continue;
             }
+            // check empty cans and boxes
+            if (recipe.needsEmptyCan && !emptyCans)
+            {
+                continue;
+            }
+            if (recipe.needsEmptyBox && !emptyBoxes)
+            {
+                continue;
+            }
             // check water
             if (recipe.needsWater && cooking_equipment.GetQuantity() < 500)
             {
@@ -169,10 +185,10 @@ class CookZ_Cookbook
             }
             if(areIngredientsValid)
             {
-                return recipe.name;
+                return recipe;
             }
         }
 
-        return "";
+        return null;
     }
 }
