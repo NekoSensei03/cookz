@@ -128,6 +128,20 @@ class CfgVehicles
                 "AnyMushroom,2"
             };
         };
+        class CookZ_PilafBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            allowPan = false;
+            needsWater = true;
+            needsEmptyCan = false;
+            needsEmptyBox = true;
+            ingredients[] = {
+                "Rice,1",
+                "GreenBellPepper,2",
+                "Tomato,2"
+            };
+        };
         class CookZ_GoulashCan
         {
             allowPot = true;
@@ -629,6 +643,36 @@ class CfgVehicles
             fullnessIndex=3;
             energy=156.25;
             water=256.25;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_PilafBox: CookZ_Box_Base
+    {
+        displayName="Pilaf";
+        descriptionShort="A nutritious and long-lasting box of pilaf. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_pilaf_co.paa"
+        };
+    };
+    class CookZ_PilafBox_Opened: CookZ_BoxOpened_Base
+    {
+        displayName="Pilaf";
+        descriptionShort="A nutritious box of pilaf. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_pilaf_co.paa",
+            "CookZ\data\box_food_pilaf_co.paa"
+        };
+        varQuantityInit=1000
+        varQuantityMax=1000
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=135.0;
+            water=82.5;
             nutritionalIndex=1;
             toxicity=0;
         };
