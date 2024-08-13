@@ -251,37 +251,37 @@ class CfgVehicles
                 "Tomato,1"
             };
         }
-        class CookZ_AppleMarmalade
+        class CookZ_AppleMarmaladeCan
         {
             allowPot = true;
             allowCauldron = true;
             allowPan = false;
             needsWater = false;
-            needsEmptyCan = false;
+            needsEmptyCan = true;
             needsEmptyBox = false;
             ingredients[] = {
                 "Apple,6"
             };
         };
-        class CookZ_PlumMarmalade
+        class CookZ_PlumMarmaladeCan
         {
             allowPot = true;
             allowCauldron = true;
             allowPan = false;
             needsWater = false;
-            needsEmptyCan = false;
+            needsEmptyCan = true;
             needsEmptyBox = false;
             ingredients[] = {
                 "Plum,6"
             };
         };
-        class CookZ_PearMarmalade
+        class CookZ_PearMarmaladeCan
         {
             allowPot = true;
             allowCauldron = true;
             allowPan = false;
             needsWater = false;
-            needsEmptyCan = false;
+            needsEmptyCan = true;
             needsEmptyBox = false;
             ingredients[] = {
                 "Pear,4"
@@ -881,10 +881,23 @@ class CfgVehicles
         };
     };
 
-    class CookZ_AppleMarmalade: Marmalade
+    class CookZ_AppleMarmaladeCan: SpaghettiCan
     {
         displayName="Apple Marmalade";
-        descriptionShort="A nutritious and long-lasting jar of apple marmalade. Will last two to five years depending on storage conditions.";
+        descriptionShort="A nutritious and long-lasting can of apple marmalade that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_apple_marmalade_co.paa"
+        };
+    };
+    class CookZ_AppleMarmaladeCan_Opened: SpaghettiCan_Opened
+    {
+        displayName="Apple Marmalade";
+        descriptionShort="A nutritious can of apple marmalade. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_apple_marmalade_co.paa"
+        };
         varQuantityInit=750
         varQuantityMax=750
         class Nutrition
@@ -897,10 +910,23 @@ class CfgVehicles
         };
     };
 
-    class CookZ_PlumMarmalade: Marmalade
+    class CookZ_PlumMarmaladeCan: SpaghettiCan
     {
         displayName="Plum Marmalade";
-        descriptionShort="A nutritious and long-lasting jar of plum marmalade. Will last two to five years depending on storage conditions.";
+        descriptionShort="A nutritious and long-lasting can of plum marmalade that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_plum_marmalade_co.paa"
+        };
+    };
+    class CookZ_PlumMarmaladeCan_Opened: SpaghettiCan_Opened
+    {
+        displayName="Plum Marmalade";
+        descriptionShort="A nutritious can of plum marmalade. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_plum_marmalade_co.paa"
+        };
         varQuantityInit=450
         varQuantityMax=450
         class Nutrition
@@ -913,10 +939,23 @@ class CfgVehicles
         };
     };
 
-    class CookZ_PearMarmalade: Marmalade
+    class CookZ_PearMarmaladeCan: SpaghettiCan
     {
         displayName="Pear Marmalade";
-        descriptionShort="A nutritious and long-lasting jar of pear marmalade. Will last two to five years depending on storage conditions.";
+        descriptionShort="A nutritious and long-lasting can of pear marmalade that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_pear_marmalade_co.paa"
+        };
+    };
+    class CookZ_PearMarmaladeCan_Opened: SpaghettiCan_Opened
+    {
+        displayName="Pear Marmalade";
+        descriptionShort="A nutritious can of pear marmalade. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_pear_marmalade_co.paa"
+        };
         varQuantityInit=600
         varQuantityMax=600
         class Nutrition

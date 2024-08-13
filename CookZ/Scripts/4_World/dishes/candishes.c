@@ -5,6 +5,9 @@ class CookZ_PumpkinSoupCan : CookZ_Can_Base {}
 class CookZ_UkhaCan : CookZ_Can_Base {}
 class CookZ_MysteryMeatCan : CookZ_Can_Base {}
 class CookZ_ZucchiniCaviarCan : CookZ_Can_Base {}
+class CookZ_AppleMarmaladeCan : CookZ_Can_Base {}
+class CookZ_PearMarmaladeCan : CookZ_Can_Base {}
+class CookZ_PlumMarmaladeCan : CookZ_Can_Base {}
 
 class CookZ_Can_Base: Edible_Base
 {
@@ -26,6 +29,9 @@ class CookZ_PumpkinSoupCan_Opened: CookZ_CanOpened_Base {}
 class CookZ_UkhaCan_Opened: CookZ_CanOpened_Base {}
 class CookZ_MysteryMeatCan_Opened: CookZ_CanOpened_Base {}
 class CookZ_ZucchiniCaviarCan_Opened: CookZ_CanOpened_Base {}
+class CookZ_AppleMarmaladeCan_Opened : CookZ_CanOpened_Base {}
+class CookZ_PearMarmaladeCan_Opened : CookZ_CanOpened_Base {}
+class CookZ_PlumMarmaladeCan_Opened : CookZ_CanOpened_Base {}
 
 class CookZ_CanOpened_Base: Edible_Base
 {
