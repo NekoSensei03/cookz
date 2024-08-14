@@ -8,13 +8,14 @@ modded class MissionGameplay
 		if (pBase && pBase.IsReadingCookbook())
 		{
 			pBase.ToggleCookbookReading();
-			InventoryItem book = pBase.GetItemInHands();
-			BookMenu bookMenu = BookMenu.Cast( GetUIManager().EnterScriptedMenu(MENU_BOOK, NULL) );
-			if (bookMenu)
+			CookZ_Cookbook_Item cookbook = CookZ_Cookbook_Item.Cast(pBase.GetItemInHands());
+			// const int MENU_BOOK = 23; use menu book id plus prefix
+			CookbookMenu cookbookMenu = CookbookMenu.Cast( GetUIManager().EnterScriptedMenu(133723, NULL) );
+			if (cookbook && cookbookMenu)
 			{
 				AddActiveInputExcludes({"inventory"});
 				AddActiveInputRestriction(EInputRestrictors.INVENTORY);
-				bookMenu.ReadBook(book);
+				cookbookMenu.ReadBook(cookbook);
 			}
 		}
 	}
@@ -28,10 +29,10 @@ modded class MissionGameplay
 			UIScriptedMenu menu = m_UIManager.GetMenu();
 			if (menu)
 			{
-				BookMenu bookMenu = BookMenu.Cast(menu);
-				if (bookMenu)
+				CookbookMenu cookbookMenu = CookbookMenu.Cast(menu);
+				if (cookbookMenu)
 				{
-					bookMenu.Close();
+					cookbookMenu.Close();
 				}
 			}
 		}

@@ -1,4 +1,4 @@
-modded class BookMenu
+class CookbookMenu extends BookMenu
 {
 	override Widget Init()
 	{
