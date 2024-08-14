@@ -24,6 +24,11 @@ class CfgMods
                 value = "";
                 files[] = { "CookZ/Scripts/4_World" };
             };
+            class missionScriptModule
+			{
+				value = "";
+				files[] = {"CookZ/Scripts/5_Mission"};
+			};
             class imageSets
             {
                 files[] = {
@@ -1072,4 +1077,22 @@ class CfgVehicles
             };
         };
     };
+
+    // define readable cookbook ----------------------------------------
+
+	class CookZ_Cookbook_Item: Inventory_Base
+	{
+        model = "dZ\gear\books\Book_kniga.p3d";
+		rotationFlags = 1;
+		weight = 150;
+		itemSize[] = {2,2};
+		hiddenSelections[] = {"zbytek"};
+		title = "Cooking for Survivors";
+		author = "By a Survivor";
+		file = "CookZ\data\cookbook.html";
+		displayName = "Survivor Cookbook";
+		descriptionShort = "A cookbook for survivors.";
+		scope = 2;
+		hiddenSelectionsTextures[] = {"CookZ\data\cookbook.paa"};
+	};
 };
