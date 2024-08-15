@@ -3,9 +3,9 @@ class CookZ_Ingredient
     string name;
     int quantity;
 
-    void CookZ_Ingredient(string name, int quantity)
+    void CookZ_Ingredient(string pName, int pQuantity)
     {
-        this.name = name;
-        this.quantity = quantity;
+        name = pName;
+        quantity = pQuantity;
     }
 }
