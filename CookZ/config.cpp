@@ -133,6 +133,19 @@ class CfgVehicles
                 "AnyMushroom,2"
             };
         };
+        class CookZ_StuffedPeppersBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            allowPan = false;
+            needsWater = false;
+            needsEmptyCan = false;
+            needsEmptyBox = true;
+            ingredients[] = {
+                "GreenBellPepper,3",
+                "AnyMeat,2"
+            };
+        };
         class CookZ_PilafBox
         {
             allowPot = true;
@@ -678,6 +691,36 @@ class CfgVehicles
             fullnessIndex=3;
             energy=135.0;
             water=82.5;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_StuffedPeppersBox: CookZ_Box_Base
+    {
+        displayName="Suffed Peppers";
+        descriptionShort="A nutritious and long-lasting box of stuffed peppers. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_stuffed_peppers_co.paa"
+        };
+    };
+    class CookZ_StuffedPeppersBox_Opened: CookZ_BoxOpened_Base
+    {
+        displayName="Suffed Peppers";
+        descriptionShort="A nutritious box of stuffed peppers. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_stuffed_peppers_co.paa",
+            "CookZ\data\box_food_stuffed_peppers_co.paa"
+        };
+        varQuantityInit=950
+        varQuantityMax=950
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=276.32;
+            water=50.0;
             nutritionalIndex=1;
             toxicity=0;
         };
