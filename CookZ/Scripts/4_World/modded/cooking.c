@@ -14,8 +14,6 @@ modded class Cooking
 	//Returns 1 if the item changed its cooking stage, 0 if not
 	override int CookWithEquipment(ItemBase cooking_equipment, float cooking_time_coef = 1)
 	{
-		bool is_empty;
-
 		//check cooking conditions
 		if (cooking_equipment == null)
 		{
@@ -26,6 +24,13 @@ modded class Cooking
 		{
 			return 0;
 		}
+
+		CargoBase cargo = cooking_equipment.GetInventory().GetCargo();
+		if (!cargo)
+		{
+			return 0;
+		}
+		bool is_empty = cargo.GetItemCount() == 0;
 
 		CookZ_Recipe dish = cookbook.GetDishForIngredients(cooking_equipment);
 		if (!dish)
@@ -45,62 +50,50 @@ modded class Cooking
 			cookingMethodWithTime.param2 = cooking_time_coef;
 		}
 
-		CargoBase cargo = cooking_equipment.GetInventory().GetCargo();
-		if (cargo)
+		//process items
+		for (int i = 0; i < cargo.GetItemCount(); i++)
 		{
-			is_empty = cargo.GetItemCount() == 0;
-
-			//process items
-			for (int i = 0; i < cargo.GetItemCount(); i++)
+			ItemBase itemToCook = ItemBase.Cast(cargo.GetItem(i));
+			if (ExcludeFromCooking(itemToCook.Type()))
 			{
-				ItemBase itemToCook = ItemBase.Cast(cargo.GetItem(i));
-				if (ExcludeFromCooking(itemToCook.Type()))
-				{
-					continue;
-				}
-				ProcessItemToCook(itemToCook, cooking_equipment, cookingMethodWithTime, stateFlags);
-				done = done || stateFlags.param1;
-				burned = burned || stateFlags.param2;
+				continue;
 			}
-
-			if (done && !burned)
-			{
-				// clear all items from cooking equipment (bottom to top for index safety)
-				int itemCount = cargo.GetItemCount();
-				for (int j = itemCount - 1; j >= 0; j--)
-				{
-					ItemBase usedItem = ItemBase.Cast(cargo.GetItem(j));
-					cooking_equipment.GetInventory().LocalDestroyEntity(usedItem);
-				}
-				// remove ALL liquid for now so that spawned items will not get wet
-				cooking_equipment.AddQuantity(-cooking_equipment.GetQuantity());
-				// add dish to cooking equipment
-				cooking_equipment.GetInventory().CreateInInventory(dish.name);
-				// update empty can quantity
-				if (dish.needsEmptyCan)
-				{
-					ItemBase emptyCans = ItemBase.Cast(cooking_equipment.FindAttachmentBySlotName("CookZ_EmptyCans"));
-					if (emptyCans)
-					{
-						emptyCans.SetQuantity(emptyCans.GetQuantity() - 1);
-					}
-				}
-				// update empty box quantity
-				if (dish.needsEmptyBox)
-				{
-					ItemBase emptyBoxes = ItemBase.Cast(cooking_equipment.FindAttachmentBySlotName("CookZ_EmptyBoxes"));
-					if (emptyBoxes)
-					{
-						emptyBoxes.SetQuantity(emptyBoxes.GetQuantity() - 1);
-					}
-				}
-			}
+			ProcessItemToCook(itemToCook, cooking_equipment, cookingMethodWithTime, stateFlags);
+			done = done || stateFlags.param1;
+			burned = burned || stateFlags.param2;
 		}
-		else
+
+		if (done && !burned)
 		{
-			ProcessItemToCook(cooking_equipment, cooking_equipment, cookingMethodWithTime, stateFlags);
-			done = stateFlags.param1;
-			burned = stateFlags.param2;
+			// clear all items from cooking equipment (bottom to top for index safety)
+			int itemCount = cargo.GetItemCount();
+			for (int j = itemCount - 1; j >= 0; j--)
+			{
+				ItemBase usedItem = ItemBase.Cast(cargo.GetItem(j));
+				cooking_equipment.GetInventory().LocalDestroyEntity(usedItem);
+			}
+			// remove ALL liquid for now so that spawned items will not get wet
+			cooking_equipment.AddQuantity(-cooking_equipment.GetQuantity());
+			// add dish to cooking equipment
+			cooking_equipment.GetInventory().CreateInInventory(dish.name);
+			// update empty can quantity
+			if (dish.needsEmptyCan)
+			{
+				ItemBase emptyCans = ItemBase.Cast(cooking_equipment.FindAttachmentBySlotName("CookZ_EmptyCans"));
+				if (emptyCans)
+				{
+					emptyCans.SetQuantity(emptyCans.GetQuantity() - 1);
+				}
+			}
+			// update empty box quantity
+			if (dish.needsEmptyBox)
+			{
+				ItemBase emptyBoxes = ItemBase.Cast(cooking_equipment.FindAttachmentBySlotName("CookZ_EmptyBoxes"));
+				if (emptyBoxes)
+				{
+					emptyBoxes.SetQuantity(emptyBoxes.GetQuantity() - 1);
+				}
+			}
 		}
 
 		//manage cooking equipment
