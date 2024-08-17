@@ -4,6 +4,7 @@ class CfgPatches
     {
         requiredAddons[] =
         {
+            "DZ_Data", "DZ_Gear", "DZ_Gear_Medical"
         };
     };
 };
@@ -15,7 +16,7 @@ class CfgMods
         type = "mod";
         dependencies[] =
         {
-            "World"
+            "Game", "World", "Mission"
         };
         class defs
         {
@@ -728,7 +729,7 @@ class CfgVehicles
 
     class CookZ_GoulashCan: SpaghettiCan
     {
-        displayName="Canned Goulash";
+        displayName="Goulash";
         descriptionShort="A nutritious and long-lasting can of goulash that can be opened with a can opener. Will last two to five years depending on storage conditions.";
         hiddenSelectionsTextures[]=
         {
@@ -737,7 +738,7 @@ class CfgVehicles
     };
     class CookZ_GoulashCan_Opened: SpaghettiCan_Opened
     {
-        displayName="Canned Goulash";
+        displayName="Goulash";
         descriptionShort="A nutritious can of goulash. Eat up before it spoils.";
         hiddenSelectionsTextures[]=
         {
@@ -1138,4 +1139,41 @@ class CfgVehicles
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CookZ\data\cookbook.paa"};
 	};
+
+    // make some items able to get hot ----------------------------------------
+
+    class Rag: Inventory_Base
+    {
+        varTemperatureInit=0;
+		varTemperatureMin=0;
+		varTemperatureMax=100;
+    }
+
+    class DisinfectantAlcohol: Edible_Base
+    {
+        varTemperatureInit=0;
+		varTemperatureMin=0;
+		varTemperatureMax=100;
+    }
+
+    class Rice: Edible_Base
+    {
+        varTemperatureInit=0;
+		varTemperatureMin=0;
+		varTemperatureMax=100;
+    }
+
+    class Worm: Edible_Base
+    {
+        varTemperatureInit=0;
+		varTemperatureMin=0;
+		varTemperatureMax=100;
+    }
+    
+    class PowderedMilk: Edible_Base
+    {
+        varTemperatureInit=0;
+		varTemperatureMin=0;
+		varTemperatureMax=100;
+    }
 };

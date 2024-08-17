@@ -1,8 +1,8 @@
 modded class Cooking
 {
 	ref CookZ_Cookbook cookbook;
-	static ref array<typename> EXCLUDE_FROM_COOKING = { Rice, PowderedMilk, DisinfectantAlcohol, CookZ_EmptyCan, Paper };
-	typename EMPTY_CAN_TYPE = CookZ_EmptyCan;
+	// non edible items that should still be processed (based on gained temperature)
+	static ref array<typename> NON_EDIBLE_ITEMS = { Rag };
 
 	void Cooking()
 	{
@@ -54,11 +54,7 @@ modded class Cooking
 		for (int i = 0; i < cargo.GetItemCount(); i++)
 		{
 			ItemBase itemToCook = ItemBase.Cast(cargo.GetItem(i));
-			if (ExcludeFromCooking(itemToCook.Type()))
-			{
-				continue;
-			}
-			ProcessItemToCook(itemToCook, cooking_equipment, cookingMethodWithTime, stateFlags);
+			CookZ_ProcessItemToCook(itemToCook, cooking_equipment, cookingMethodWithTime, stateFlags);
 			done = done || stateFlags.param1;
 			burned = burned || stateFlags.param2;
 		}
@@ -70,7 +66,10 @@ modded class Cooking
 			for (int j = itemCount - 1; j >= 0; j--)
 			{
 				ItemBase usedItem = ItemBase.Cast(cargo.GetItem(j));
-				cooking_equipment.GetInventory().LocalDestroyEntity(usedItem);
+				if (usedItem)
+				{
+					cooking_equipment.GetInventory().LocalDestroyEntity(usedItem);
+				}
 			}
 			// remove ALL liquid for now so that spawned items will not get wet
 			cooking_equipment.AddQuantity(-cooking_equipment.GetQuantity());
@@ -129,12 +128,126 @@ modded class Cooking
 		return 1;
 	}
 
-	bool ExcludeFromCooking(typename typeToCheck) {
-		foreach (typename excludeType : EXCLUDE_FROM_COOKING) {
+	void CookZ_ProcessItemToCook(notnull ItemBase pItem, ItemBase cookingEquip, Param2<CookingMethodType, float> pCookingMethod, out Param2<bool, bool> pStateFlags)
+	{
+		Edible_Base item_to_cook = Edible_Base.Cast(pItem);
+		
+		//! state flags are in order: is_done, is_burned
+		pStateFlags = new Param2<bool, bool>(false, false);
+				
+		if (item_to_cook && item_to_cook.CanBeCooked())
+		{
+			//! enable cooking SoundEvent
+			item_to_cook.MakeSoundsOnClient(true, pCookingMethod.param1);
+
+			//! update food
+			UpdateCookingState(item_to_cook, pCookingMethod.param1, cookingEquip, pCookingMethod.param2);
+			
+			//check for done state for boiling and drying
+			if (item_to_cook.IsFoodBoiled() || item_to_cook.IsFoodDried())
+			{
+				pStateFlags.param1 = true;
+			}
+			//! check for done state from baking (exclude Lard from baked items)
+			else if (item_to_cook.IsFoodBaked() && item_to_cook.Type() != Lard)
+			{
+				pStateFlags.param1 = true;
+			}
+			//! check for burned state
+			else if (item_to_cook.IsFoodBurned())
+			{
+				pStateFlags.param2 = true;
+			}
+		}
+		else if (item_to_cook) // edible, but not cookable
+		{
+			if (CookZ_IsNonCookableFinished(item_to_cook, cookingEquip, pCookingMethod.param2))
+			{
+				pStateFlags.param1 = true;
+			}
+		}
+		else if (NonEdibleItemToProcess(pItem.Type())) // not edible, but flagged to be processed
+		{
+			if (CookZ_IsNonEdibleFinished(pItem, cookingEquip))
+			{
+				pStateFlags.param1 = true;
+			}
+		}
+		else // vanilla processing of non edible items
+		{
+			pItem.DecreaseHealth("", "", PARAM_BURN_DAMAGE_COEF * 100);
+			AddTemperatureToItem(pItem, null, 0);
+		}
+	}
+
+	bool NonEdibleItemToProcess(typename typeToCheck) {
+		foreach (typename excludeType : NON_EDIBLE_ITEMS) {
 			if (typeToCheck == excludeType) {
 				return true;
 			}
 		}
 		return false;
+	}
+
+	//This is a dumped down version of Cooking.UpdateCookingState for items that are edible but not cookable (edible_item.CanBeCooked() == false).
+	//The cooking is seen as finished after some time passed. But there is no actual state change in the food.
+	//Can be used for items like Rice, PowderedMilk, DisinfectantAlcohol, Worm, ... 
+	protected bool CookZ_IsNonCookableFinished(Edible_Base item_to_cook, ItemBase cooking_equipment, float cooking_time_coef)
+	{
+		float item_temperature = item_to_cook.GetTemperature();
+		float item_min_temp 	= 100;
+		float item_time_to_cook = 40;
+		
+		//add temperature
+		AddTemperatureToItem(item_to_cook, cooking_equipment, 0);
+		
+		//add cooking time if the food can be cooked by this method
+		if (item_temperature >= item_min_temp)
+		{
+			float new_cooking_time = item_to_cook.GetCookingTime() + COOKING_FOOD_TIME_INC_VALUE * cooking_time_coef;
+			item_to_cook.SetCookingTime(new_cooking_time);
+			
+			if (item_to_cook.GetCookingTime() >= item_time_to_cook)
+			{
+				item_to_cook.SetCookingTime(0);
+				return true;
+			}
+		}
+		
+		return false;
+	}
+
+	//This is a dumped down version of Cooking.UpdateCookingState for items that are not edible.
+	//Slowly add temperature to the item. Item is finished when temp is 100 - basically use the temperature as a timer.
+	//Used for non edible items, e.g. rags (disinfect)
+	protected bool CookZ_IsNonEdibleFinished(ItemBase pItem, ItemBase cooking_equipment)
+	{
+		if (!pItem || !cooking_equipment)
+		{
+			return false;
+		}
+
+		float item_finished_temperature = 100;
+		
+		if (pItem.GetTemperatureMax() >= FireplaceBase.PARAM_ITEM_HEAT_MIN_TEMP)
+		{
+			float item_temperature = pItem.GetTemperature();
+			float equipment_cooking_temp = cooking_equipment.GetTemperature();
+			
+			//add temperature
+			if (equipment_cooking_temp > item_temperature)
+			{
+				item_temperature += 10;
+				item_temperature = Math.Clamp( item_temperature, 0, FOOD_MAX_COOKING_TEMPERATURE );
+				
+				//set new temperature
+				if ( GetGame() && GetGame().IsServer() )
+				{
+					pItem.SetTemperature( item_temperature );
+				}
+			}
+		}
+		
+		return item_temperature >= item_finished_temperature;
 	}
 }
