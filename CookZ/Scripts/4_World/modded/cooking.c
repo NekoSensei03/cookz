@@ -59,7 +59,7 @@ modded class Cooking
 			burned = burned || stateFlags.param2;
 		}
 
-		if (done && !burned)
+		if (!dish.doNotReplaceIngredients && done && !burned)
 		{
 			// clear all items from cooking equipment (bottom to top for index safety)
 			int itemCount = cargo.GetItemCount();
@@ -237,7 +237,7 @@ modded class Cooking
 			//add temperature
 			if (equipment_cooking_temp > item_temperature)
 			{
-				item_temperature += 10;
+				item_temperature += 20;
 				item_temperature = Math.Clamp( item_temperature, 0, FOOD_MAX_COOKING_TEMPERATURE );
 				
 				//set new temperature
@@ -248,6 +248,18 @@ modded class Cooking
 			}
 		}
 		
-		return item_temperature >= item_finished_temperature;
+		if (item_temperature >= item_finished_temperature)
+		{
+			// disinfect rags
+			if (pItem.Type() == Rag)
+			{
+				pItem.RemoveAllAgentsExcept(eAgents.BRAIN);
+				pItem.SetCleanness(1);
+			}
+
+			return true;
+		}
+
+		return false;
 	}
 }

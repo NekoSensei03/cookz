@@ -318,6 +318,19 @@ class CfgVehicles
                 "Pear,4"
             };
         };
+        class CookZ_DisinfectRags
+        {
+            allowPot = true;
+            allowCauldron = true;
+            allowPan = false;
+            needsWater = true;
+            needsEmptyCan = false;
+            needsEmptyBox = false;
+            doNotReplaceIngredients = true;
+            ingredients[] = {
+                "Rag,-1"    // -1 any number of rag stacks > 0
+            };
+        };
     }
 
     // define dishes - closed and opened ----------------------------------------

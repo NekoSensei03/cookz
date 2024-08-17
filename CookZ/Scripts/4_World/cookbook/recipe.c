@@ -8,8 +8,9 @@ class CookZ_Recipe
     bool needsWater;
     bool needsEmptyCan;
     bool needsEmptyBox;
+    bool doNotReplaceIngredients;
 
-    void CookZ_Recipe(string pName, bool pAllowPot, bool pAllowCauldron, bool pAllowPan, bool pNeedsWater, bool pNeedsEmptyCan, bool pNeedsEmptyBox)
+    void CookZ_Recipe(string pName, bool pAllowPot, bool pAllowCauldron, bool pAllowPan, bool pNeedsWater, bool pNeedsEmptyCan, bool pNeedsEmptyBox, bool pDoNotReplaceIngredients)
     {
         ingredients = new array<ref CookZ_Ingredient>();
         name = pName;
@@ -19,20 +20,11 @@ class CookZ_Recipe
         needsWater = pNeedsWater;
         needsEmptyCan = pNeedsEmptyCan;
         needsEmptyBox = pNeedsEmptyBox;
+        doNotReplaceIngredients = pDoNotReplaceIngredients;
     }
 
     void AddIngredient(CookZ_Ingredient ingredient)
     {
         ingredients.Insert(ingredient);
-    }
-
-    int GetNumIngredients()
-    {
-        int result = 0;
-        foreach (CookZ_Ingredient ingredient : ingredients)
-        {
-            result += ingredient.quantity;
-        }
-        return result;
     }
 }

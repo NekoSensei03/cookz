@@ -71,14 +71,16 @@ class CookZ_Cookbook
             string needsWater;
             string needsEmptyCan;
             string needsEmptyBox;
+            string doNotReplaceIngredients;
             GetGame().ConfigGetText(string.Format("%1 %2 allowPot", recipesPath, recipeName), allowPot);
             GetGame().ConfigGetText(string.Format("%1 %2 allowCauldron", recipesPath, recipeName), allowCauldron);
             GetGame().ConfigGetText(string.Format("%1 %2 allowPan", recipesPath, recipeName), allowPan);
             GetGame().ConfigGetText(string.Format("%1 %2 needsWater", recipesPath, recipeName), needsWater);
             GetGame().ConfigGetText(string.Format("%1 %2 needsEmptyCan", recipesPath, recipeName), needsEmptyCan);
             GetGame().ConfigGetText(string.Format("%1 %2 needsEmptyBox", recipesPath, recipeName), needsEmptyBox);
+            GetGame().ConfigGetText(string.Format("%1 %2 doNotReplaceIngredients", recipesPath, recipeName), doNotReplaceIngredients);
 
-            CookZ_Recipe recipe = new CookZ_Recipe(recipeName, allowPot == "true", allowCauldron == "true", allowPan == "true", needsWater == "true", needsEmptyCan == "true", needsEmptyBox == "true");
+            CookZ_Recipe recipe = new CookZ_Recipe(recipeName, allowPot == "true", allowCauldron == "true", allowPan == "true", needsWater == "true", needsEmptyCan == "true", needsEmptyBox == "true", doNotReplaceIngredients == "true");
 
             array<string> ingredientsArray = new array<string>;
             GetGame().ConfigGetTextArray(string.Format("%1 %2 ingredients", recipesPath, recipeName), ingredientsArray);
@@ -104,6 +106,7 @@ class CookZ_Cookbook
     // returns a dish string or "" if no valid recipe detected
     CookZ_Recipe GetDishForIngredients(ItemBase cooking_equipment)
     {
+        // count ingredients in cooking equipment
         CargoBase cargo = cooking_equipment.GetInventory().GetCargo();
         if (!cargo)
         {
@@ -121,6 +124,8 @@ class CookZ_Cookbook
             ingredientTypeInEquipment.Set(currentIngredientTypeName, ingredientTypeInEquipment.Get(currentIngredientTypeName) + 1);
         }
 
+        int numDistinctIngidientsInEquipment = ingredientTypeInEquipment.Count();
+
         // accumulate food groups
         int numMeat = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PIG_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_WOLF_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_GOAT_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BEAR_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_SHEEP_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BOAR_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_COW_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_HUMAN_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_DEER_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_RABBIT_LEG_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_CHICKEN_BREAST_MEAT);
         int numFruit = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PLUM) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PEAR) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_APPLE);
@@ -135,9 +140,10 @@ class CookZ_Cookbook
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_FISH_FILLET, numFishFillet);
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_MUSHROOM, numMushroom);
 
+        // check recipes
         foreach (CookZ_Recipe recipe : allRecipes)
         {
-            if (recipe.GetNumIngredients() != cargo.GetItemCount())
+            if (recipe.ingredients.Count() != numDistinctIngidientsInEquipment)
             {
                 // early check - num ingredients in container does not fit
                 continue;
@@ -177,6 +183,9 @@ class CookZ_Cookbook
             bool areIngredientsValid = true;
             foreach (CookZ_Ingredient ingredient : recipe.ingredients)
             {
+                int quantityInRecipe = ingredient.quantity;
+                int quantityInEquipment = ingredientTypeInEquipment.Get(ingredient.name);
+                if ((quantityInRecipe == -1 && quantityInEquipment < 1) || (quantityInRecipe != -1 && quantityInRecipe != quantityInEquipment))
                 if (ingredient.quantity != ingredientTypeInEquipment.Get(ingredient.name))
                 {
                     areIngredientsValid = false;
