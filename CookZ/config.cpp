@@ -161,6 +161,18 @@ class CfgVehicles
                 "Tomato,2"
             };
         };
+        class CookZ_GaghBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            allowPan = false;
+            needsWater = true;
+            needsEmptyCan = false;
+            needsEmptyBox = true;
+            ingredients[] = {
+                "Worm,8"
+            };
+        };
         class CookZ_GoulashCan
         {
             allowPot = true;
@@ -692,6 +704,36 @@ class CfgVehicles
             fullnessIndex=3;
             energy=135.0;
             water=82.5;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_GaghBox: CookZ_Box_Base
+    {
+        displayName="Gagh";
+        descriptionShort="A nutritious and long-lasting box of gagh. Will last two to five years depending on storage conditions. Earth-Style: the worms are cooked.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_gagh_co.paa"
+        };
+    };
+    class CookZ_GaghBox_Opened: CookZ_BoxOpened_Base
+    {
+        displayName="Gagh";
+        descriptionShort="A nutritious box of gagh. Eat up before it spoils. Earth-Style: the worms are cooked.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_gagh_co.paa",
+            "CookZ\data\box_food_gagh_co.paa"
+        };
+        varQuantityInit=800
+        varQuantityMax=800
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=150;
+            water=80;
             nutritionalIndex=1;
             toxicity=0;
         };

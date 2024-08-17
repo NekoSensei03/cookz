@@ -5,6 +5,7 @@ class CookZ_RicePuddingBox : CookZ_Box_Base {}
 class CookZ_MushroomRisottoBox : CookZ_Box_Base {}
 class CookZ_PilafBox : CookZ_Box_Base {}
 class CookZ_StuffedPeppersBox : CookZ_Box_Base {}
+class CookZ_GaghBox : CookZ_Box_Base {}
 
 class CookZ_Box_Base: Edible_Base
 {
@@ -33,6 +34,7 @@ class CookZ_RicePuddingBox_Opened : CookZ_BoxOpened_Base {}
 class CookZ_MushroomRisottoBox_Opened : CookZ_BoxOpened_Base {}
 class CookZ_PilafBox_Opened : CookZ_BoxOpened_Base {}
 class CookZ_StuffedPeppersBox_Opened : CookZ_BoxOpened_Base {}
+class CookZ_GaghBox_Opened : CookZ_BoxOpened_Base {}
 
 class CookZ_BoxOpened_Base: Edible_Base
 {
