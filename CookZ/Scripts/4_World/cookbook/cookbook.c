@@ -197,7 +197,6 @@ class CookZ_Cookbook
                 int quantityInRecipe = ingredient.quantity;
                 int quantityInEquipment = ingredientTypeInEquipment.Get(ingredient.name);
                 if ((quantityInRecipe == -1 && quantityInEquipment < 1) || (quantityInRecipe != -1 && quantityInRecipe != quantityInEquipment))
-                if (ingredient.quantity != ingredientTypeInEquipment.Get(ingredient.name))
                 {
                     areIngredientsValid = false;
                     break;
