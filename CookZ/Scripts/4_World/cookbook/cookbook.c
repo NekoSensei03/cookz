@@ -1,3 +1,14 @@
+ref CookZ_Cookbook cookz_cookbook;
+CookZ_Cookbook CookZ_GetCookbook()
+{
+    if (!cookz_cookbook)
+    {
+        cookz_cookbook = new CookZ_Cookbook();
+    }
+
+    return cookz_cookbook;
+}
+
 class CookZ_Cookbook
 {
     typename COOKING_EQUIPMENT_POT                      = Pot;

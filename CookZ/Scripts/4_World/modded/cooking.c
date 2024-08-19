@@ -1,13 +1,7 @@
 modded class Cooking
 {
-	ref CookZ_Cookbook cookbook;
 	// non edible items that should still be processed (based on gained temperature)
 	static ref array<typename> NON_EDIBLE_ITEMS = { Rag };
-
-	void Cooking()
-	{
-		cookbook = new CookZ_Cookbook();
-	}
 
 	//COOKING PROCESS
 	//--- Cooking with equipment (pot)
@@ -32,7 +26,7 @@ modded class Cooking
 		}
 		bool is_empty = cargo.GetItemCount() == 0;
 
-		CookZ_Recipe dish = cookbook.GetDishForIngredients(cooking_equipment);
+		CookZ_Recipe dish = CookZ_GetCookbook().GetDishForIngredients(cooking_equipment);
 		if (!dish)
 		{
 			return super.CookWithEquipment(cooking_equipment, cooking_time_coef);
