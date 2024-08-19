@@ -131,7 +131,26 @@ class CookZ_Cookbook
 
         for (int i = 0; i < cargo.GetItemCount(); i++)
         {
-            string currentIngredientTypeName = cargo.GetItem(i).Type().ToString();
+            EntityAI entityInCookingEquipment = cargo.GetItem(i);
+
+            ItemBase itemInCookingEquipment = ItemBase.Cast(entityInCookingEquipment);
+            if (itemInCookingEquipment && itemInCookingEquipment.GetQuantityMax() > 0)
+            {
+                if (itemInCookingEquipment.GetQuantity() / itemInCookingEquipment.GetQuantityMax() < 0.6)
+                {
+                    // not at least 60 quantity
+                    return null;
+                }
+            }
+
+            Edible_Base edibleItem = Edible_Base.Cast(itemInCookingEquipment);
+            if (edibleItem && edibleItem.CanBeCooked() && !edibleItem.IsFoodRaw())
+            {
+                // not raw
+                return null;
+            }
+
+            string currentIngredientTypeName = entityInCookingEquipment.Type().ToString();
             ingredientTypeInEquipment.Set(currentIngredientTypeName, ingredientTypeInEquipment.Get(currentIngredientTypeName) + 1);
         }
 
