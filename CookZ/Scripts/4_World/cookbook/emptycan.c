@@ -1,1 +1,0 @@
-class CookZ_EmptyCan: Inventory_Base {}
