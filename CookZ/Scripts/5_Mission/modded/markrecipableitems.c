@@ -1,3 +1,6 @@
+// all here is meant for marking items in a cooking equipment green if a recipe is met
+// i.e., trigger the check if an item or attachment is added or removed or if the water quantity changes
+
 modded class Icon
 {
     void SetValidRecipeColor(int color)

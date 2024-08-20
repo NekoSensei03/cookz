@@ -154,8 +154,6 @@ class CookZ_Cookbook
             ingredientTypeInEquipment.Set(currentIngredientTypeName, ingredientTypeInEquipment.Get(currentIngredientTypeName) + 1);
         }
 
-        int numDistinctIngidientsInEquipment = ingredientTypeInEquipment.Count();
-
         // accumulate food groups
         int numMeat = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PIG_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_WOLF_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_GOAT_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BEAR_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_SHEEP_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BOAR_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_COW_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_HUMAN_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_DEER_STEAK_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_RABBIT_LEG_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_CHICKEN_BREAST_MEAT);
         int numFruit = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PLUM) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PEAR) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_APPLE);
@@ -173,11 +171,6 @@ class CookZ_Cookbook
         // check recipes
         foreach (CookZ_Recipe recipe : allRecipes)
         {
-            if (recipe.ingredients.Count() != numDistinctIngidientsInEquipment)
-            {
-                // early check - num ingredients in container does not fit
-                continue;
-            }
             // check cooking equipment
             if (cooking_equipment.Type() == COOKING_EQUIPMENT_FRYINGPAN && !recipe.allowPan)
             {
@@ -210,18 +203,39 @@ class CookZ_Cookbook
                 continue;
             }
             // check ingredients
-            bool areIngredientsValid = true;
+            int numExpectedIngredientsInEquipment = 0;
+            bool areIngredientsInEquipment = true;
             foreach (CookZ_Ingredient ingredient : recipe.ingredients)
             {
                 int quantityInRecipe = ingredient.quantity;
                 int quantityInEquipment = ingredientTypeInEquipment.Get(ingredient.name);
-                if ((quantityInRecipe == -1 && quantityInEquipment < 1) || (quantityInRecipe != -1 && quantityInRecipe != quantityInEquipment))
+                if (quantityInRecipe == -1)
                 {
-                    areIngredientsValid = false;
-                    break;
+                    if (quantityInEquipment < 1)
+                    {
+                        areIngredientsInEquipment = false;
+                        break;
+                    }
+                    else
+                    {
+                        numExpectedIngredientsInEquipment += quantityInEquipment;
+                    }
+                }
+                else
+                {
+                    if (quantityInRecipe != quantityInEquipment)
+                    {
+                        areIngredientsInEquipment = false;
+                        break;
+                    }
+                    else
+                    {
+                        numExpectedIngredientsInEquipment += quantityInEquipment;
+                    }
                 }
             }
-            if(areIngredientsValid)
+            // are needed ingredints in equipment and nothing else
+            if(areIngredientsInEquipment && numExpectedIngredientsInEquipment == cargo.GetItemCount())
             {
                 return recipe;
             }
