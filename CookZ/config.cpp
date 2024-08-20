@@ -173,6 +173,19 @@ class CfgVehicles
                 "Worm,8"
             };
         };
+        class CookZ_HaggisBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            allowPan = false;
+            needsWater = true;
+            needsEmptyCan = false;
+            needsEmptyBox = true;
+            ingredients[] = {
+                "Guts,1",
+                "Potato,2"
+            };
+        };
         class CookZ_GoulashCan
         {
             allowPot = true;
@@ -747,6 +760,36 @@ class CfgVehicles
             fullnessIndex=3;
             energy=150;
             water=80;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_HaggisBox: CookZ_Box_Base
+    {
+        displayName="Haggis with Mashed Potatoes";
+        descriptionShort="A nutritious and long-lasting box of haggis with mashed potatoes. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_haggis_co.paa"
+        };
+    };
+    class CookZ_HaggisBox_Opened: CookZ_BoxOpened_Base
+    {
+        displayName="Haggis with Mashed Potatoes";
+        descriptionShort="A nutritious box of haggis with mashed potatoes. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_haggis_co.paa",
+            "CookZ\data\box_food_haggis_co.paa"
+        };
+        varQuantityInit=900
+        varQuantityMax=900
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=227.78;
+            water=83.78;
             nutritionalIndex=1;
             toxicity=0;
         };
