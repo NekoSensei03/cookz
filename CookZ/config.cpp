@@ -4,7 +4,7 @@ class CfgPatches
     {
         requiredAddons[] =
         {
-            "DZ_Data", "DZ_Gear", "DZ_Gear_Medical"
+            "DZ_Data", "DZ_Gear_Medical"
         };
     };
 };
