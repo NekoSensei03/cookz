@@ -3,13 +3,13 @@ modded class ActionConstructor
 	override void RegisterActions(TTypenameArray actions)
 	{
 		super.RegisterActions(actions);
-		actions.Insert(ActionReadBook);
+		actions.Insert(CookZ_ActionReadBook);
 	}
 };
 
-class ActionReadBook extends ActionSingleUseBase
+class CookZ_ActionReadBook extends ActionSingleUseBase
 {
-	void ActionReadBook()
+	void CookZ_ActionReadBook()
 	{
 		m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_DROPITEM_HANDS;
 		m_FullBody = false;

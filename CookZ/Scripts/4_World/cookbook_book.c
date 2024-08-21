@@ -4,6 +4,6 @@ class CookZ_Cookbook_Item extends ItemBase
 	{
 		super.SetActions();
 
-		AddAction(ActionReadBook);
+		AddAction(CookZ_ActionReadBook);
 	}
 }
