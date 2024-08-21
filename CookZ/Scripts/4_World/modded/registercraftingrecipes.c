@@ -257,6 +257,7 @@ class CookZ_CraftCookbook extends RecipeBase
         //INGREDIENTS
         //ingredient 1
         InsertIngredient(0,"Paper");
+        InsertIngredient(0,"CookZ_EmptyBox");
 
         m_IngredientAddHealth[0] = 0;// 0 = do nothing
         m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -266,6 +267,7 @@ class CookZ_CraftCookbook extends RecipeBase
 
         //ingredient 2
         InsertIngredient(1,"Paper");
+        InsertIngredient(1,"CookZ_EmptyBox");
 
         m_IngredientAddHealth[1] = 0;// 0 = do nothing
         m_IngredientSetHealth[1] = -1; // -1 = do nothing
