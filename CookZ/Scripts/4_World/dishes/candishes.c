@@ -1,55 +1,21 @@
-class CookZ_FishSoupCan : CookZ_Can_Base {}
-class CookZ_GoulashCan : CookZ_Can_Base {}
-class CookZ_LecsoCan : CookZ_Can_Base {}
-class CookZ_PumpkinSoupCan : CookZ_Can_Base {}
-class CookZ_UkhaCan : CookZ_Can_Base {}
-class CookZ_MysteryMeatCan : CookZ_Can_Base {}
-class CookZ_ZucchiniCaviarCan : CookZ_Can_Base {}
-class CookZ_AppleMarmaladeCan : CookZ_Can_Base {}
-class CookZ_PearMarmaladeCan : CookZ_Can_Base {}
-class CookZ_PlumMarmaladeCan : CookZ_Can_Base {}
+class CookZ_FishSoupCan : CookZ_ClosedDish {}
+class CookZ_GoulashCan : CookZ_ClosedDish {}
+class CookZ_LecsoCan : CookZ_ClosedDish {}
+class CookZ_PumpkinSoupCan : CookZ_ClosedDish {}
+class CookZ_UkhaCan : CookZ_ClosedDish {}
+class CookZ_MysteryMeatCan : CookZ_ClosedDish {}
+class CookZ_ZucchiniCaviarCan : CookZ_ClosedDish {}
+class CookZ_AppleMarmaladeCan : CookZ_ClosedDish {}
+class CookZ_PearMarmaladeCan : CookZ_ClosedDish {}
+class CookZ_PlumMarmaladeCan : CookZ_ClosedDish {}
 
-class CookZ_Can_Base: Edible_Base
-{
-    override void Open()
-    {
-        ReplaceEdibleWithNew(string.Format("%1_Opened", this.Type().ToString()));
-    }
-
-    override bool IsOpen()
-    {
-        return false;
-    }
-}
-
-class CookZ_FishSoupCan_Opened: CookZ_CanOpened_Base {}
-class CookZ_GoulashCan_Opened: CookZ_CanOpened_Base {}
-class CookZ_LecsoCan_Opened: CookZ_CanOpened_Base {}
-class CookZ_PumpkinSoupCan_Opened: CookZ_CanOpened_Base {}
-class CookZ_UkhaCan_Opened: CookZ_CanOpened_Base {}
-class CookZ_MysteryMeatCan_Opened: CookZ_CanOpened_Base {}
-class CookZ_ZucchiniCaviarCan_Opened: CookZ_CanOpened_Base {}
-class CookZ_AppleMarmaladeCan_Opened : CookZ_CanOpened_Base {}
-class CookZ_PearMarmaladeCan_Opened : CookZ_CanOpened_Base {}
-class CookZ_PlumMarmaladeCan_Opened : CookZ_CanOpened_Base {}
-
-class CookZ_CanOpened_Base: Edible_Base
-{
-    override bool CanDecay()
-    {
-        return true;
-    }
-    
-    override bool CanProcessDecay()
-    {
-        return !(GetAgents() & eAgents.FOOD_POISON);
-    }
-    
-    override void SetActions()
-    {
-        super.SetActions();
-        
-        AddAction(ActionForceFeedCan);
-        AddAction(ActionEatCan);
-    }
-}
+class CookZ_FishSoupCan_Opened: CookZ_OpenedDish {}
+class CookZ_GoulashCan_Opened: CookZ_OpenedDish {}
+class CookZ_LecsoCan_Opened: CookZ_OpenedDish {}
+class CookZ_PumpkinSoupCan_Opened: CookZ_OpenedDish {}
+class CookZ_UkhaCan_Opened: CookZ_OpenedDish {}
+class CookZ_MysteryMeatCan_Opened: CookZ_OpenedDish {}
+class CookZ_ZucchiniCaviarCan_Opened: CookZ_OpenedDish {}
+class CookZ_AppleMarmaladeCan_Opened : CookZ_OpenedDish {}
+class CookZ_PearMarmaladeCan_Opened : CookZ_OpenedDish {}
+class CookZ_PlumMarmaladeCan_Opened : CookZ_OpenedDish {}

@@ -8,53 +8,21 @@ class CookZ_StuffedPeppersBox : CookZ_Box_Base {}
 class CookZ_GaghBox : CookZ_Box_Base {}
 class CookZ_HaggisBox : CookZ_Box_Base {}
 
-class CookZ_Box_Base: Edible_Base
+class CookZ_Box_Base: CookZ_ClosedDish
 {
-    override void Open()
-    {
-        ReplaceEdibleWithNew(string.Format("%1_Opened", this.Type().ToString()));
-    }
-
-    override bool IsOpen()
-    {
-        return false;
-    }
-
     override void SetActions()
 	{
 		super.SetActions();
-		
 		AddAction(ActionOpen);
 	}
 }
 
-class CookZ_FriedPotatoesBox_Opened : CookZ_BoxOpened_Base {}
-class CookZ_StirFryBox_Opened : CookZ_BoxOpened_Base {}
-class CookZ_FishAndChipsBox_Opened : CookZ_BoxOpened_Base {}
-class CookZ_RicePuddingBox_Opened : CookZ_BoxOpened_Base {}
-class CookZ_MushroomRisottoBox_Opened : CookZ_BoxOpened_Base {}
-class CookZ_PilafBox_Opened : CookZ_BoxOpened_Base {}
-class CookZ_StuffedPeppersBox_Opened : CookZ_BoxOpened_Base {}
-class CookZ_GaghBox_Opened : CookZ_BoxOpened_Base {}
-class CookZ_HaggisBox_Opened : CookZ_BoxOpened_Base {}
-
-class CookZ_BoxOpened_Base: Edible_Base
-{
-    override bool CanDecay()
-    {
-        return true;
-    }
-    
-    override bool CanProcessDecay()
-    {
-        return !(GetAgents() & eAgents.FOOD_POISON);
-    }
-    
-    override void SetActions()
-    {
-        super.SetActions();
-        
-        AddAction(ActionForceFeedCan);
-        AddAction(ActionEatCan);
-    }
-}
+class CookZ_FriedPotatoesBox_Opened : CookZ_OpenedDish {}
+class CookZ_StirFryBox_Opened : CookZ_OpenedDish {}
+class CookZ_FishAndChipsBox_Opened : CookZ_OpenedDish {}
+class CookZ_RicePuddingBox_Opened : CookZ_OpenedDish {}
+class CookZ_MushroomRisottoBox_Opened : CookZ_OpenedDish {}
+class CookZ_PilafBox_Opened : CookZ_OpenedDish {}
+class CookZ_StuffedPeppersBox_Opened : CookZ_OpenedDish {}
+class CookZ_GaghBox_Opened : CookZ_OpenedDish {}
+class CookZ_HaggisBox_Opened : CookZ_OpenedDish {}

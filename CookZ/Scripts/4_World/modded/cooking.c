@@ -56,19 +56,33 @@ modded class Cooking
 		if (!dish.doNotReplaceIngredients && done && !burned)
 		{
 			// clear all items from cooking equipment (bottom to top for index safety)
-			int itemCount = cargo.GetItemCount();
-			for (int j = itemCount - 1; j >= 0; j--)
+			int sumQuantity = 0;
+			for (int j = cargo.GetItemCount() - 1; j >= 0; j--)
 			{
 				ItemBase usedItem = ItemBase.Cast(cargo.GetItem(j));
 				if (usedItem)
 				{
+					int itemQuantity = usedItem.GetQuantity();
+					if (itemQuantity == 0)
+					{
+						// todo change here if this should be different for items that have no quantity
+						sumQuantity += 100;
+					}
+					else
+					{
+						sumQuantity += itemQuantity;
+					}
 					cooking_equipment.GetInventory().LocalDestroyEntity(usedItem);
 				}
 			}
 			// remove ALL liquid for now so that spawned items will not get wet
 			cooking_equipment.AddQuantity(-cooking_equipment.GetQuantity());
 			// add dish to cooking equipment
-			cooking_equipment.GetInventory().CreateInInventory(dish.name);
+			CookZ_ClosedDish createdItem = CookZ_ClosedDish.Cast(cooking_equipment.GetInventory().CreateInInventory(dish.name));
+			if (createdItem)
+			{
+				createdItem.CookZ_SetQuantity(sumQuantity);
+			}
 			// update empty can quantity
 			if (dish.needsEmptyCan)
 			{
