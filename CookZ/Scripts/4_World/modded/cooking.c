@@ -1,7 +1,7 @@
 modded class Cooking
 {
-	// non edible items that should still be processed (based on gained temperature)
-	static ref array<typename> NON_EDIBLE_ITEMS = { Rag };
+	// non edible items or edible items that have no food stage that should still be processed (based on gained temperature)
+	static ref array<typename> NON_EDIBLE_ITEMS = { Rag, DisinfectantAlcohol, Rice, PowderedMilk };
 
 	//COOKING PROCESS
 	//--- Cooking with equipment (pot)
@@ -167,7 +167,7 @@ modded class Cooking
 				pStateFlags.param2 = true;
 			}
 		}
-		else if (item_to_cook) // edible, but not cookable
+		else if (item_to_cook && item_to_cook.GetFoodStage()) // edible, but not cookable
 		{
 			if (CookZ_IsNonCookableFinished(item_to_cook, cookingEquip, pCookingMethod.param2))
 			{
@@ -197,9 +197,10 @@ modded class Cooking
 		return false;
 	}
 
-	//This is a dumped down version of Cooking.UpdateCookingState for items that are edible but not cookable (edible_item.CanBeCooked() == false).
+	//This is a dumped down version of Cooking.UpdateCookingState for items that are edible but not cookable (edible_item.CanBeCooked() == false)
+	//AND have a food stage (here the cooking time is stored).
 	//The cooking is seen as finished after some time passed. But there is no actual state change in the food.
-	//Can be used for items like Rice, PowderedMilk, DisinfectantAlcohol, Worm, ... 
+	//Can be used for items like worms
 	protected bool CookZ_IsNonCookableFinished(Edible_Base item_to_cook, ItemBase cooking_equipment, float cooking_time_coef)
 	{
 		float item_temperature = item_to_cook.GetTemperature();
@@ -227,7 +228,7 @@ modded class Cooking
 
 	//This is a dumped down version of Cooking.UpdateCookingState for items that are not edible.
 	//Slowly add temperature to the item. Item is finished when temp is 100 - basically use the temperature as a timer.
-	//Used for non edible items, e.g. rags (disinfect)
+	//Used for non edible items, e.g. rags (disinfect) or edible items without a food stage, e.g. disinfected alcohol, rice, powdered milk.
 	protected bool CookZ_IsNonEdibleFinished(ItemBase pItem, ItemBase cooking_equipment)
 	{
 		if (!pItem || !cooking_equipment)
