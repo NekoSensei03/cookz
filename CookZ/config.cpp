@@ -191,6 +191,20 @@ class CfgVehicles
                 "Potato,2"
             };
         };
+        class CookZ_PommdoenerBox
+        {
+            allowPot = false;
+            allowCauldron = false;
+            allowPan = true;
+            needsWater = false;
+            needsEmptyCan = false;
+            needsEmptyBox = true;
+            ingredients[] = {
+                "CowSteakMeat,1",
+                "Lard,1",
+                "Potato,2"
+            };
+        };
         class CookZ_GoulashCan
         {
             allowPot = true;
@@ -298,6 +312,34 @@ class CfgVehicles
                 "Zucchini,3",
                 "GreenBellPepper,1",
                 "Tomato,1"
+            };
+        }
+        class CookZ_CreamyTomatoSoupCan
+        {
+            allowPot = true;
+            allowCauldron = true;
+            allowPan = false;
+            needsWater = true;
+            needsEmptyCan = true;
+            needsEmptyBox = false;
+            ingredients[] = {
+                "Tomato,6",
+                "PowderedMilk,1"
+            };
+        }
+        class CookZ_BeefStewCan
+        {
+            allowPot = true;
+            allowCauldron = true;
+            allowPan = false;
+            needsWater = true;
+            needsEmptyCan = true;
+            needsEmptyBox = false;
+            ingredients[] = {
+                "CowSteakMeat,1",
+                "GreenBellPepper,1",
+                "Potato,1",
+                "Tomato,2"
             };
         }
         class CookZ_AppleMarmaladeCan
@@ -830,6 +872,36 @@ class CfgVehicles
         };
     };
 
+    class CookZ_PommdoenerBox: CookZ_Box_Base
+    {
+        displayName="Pommdoener";
+        descriptionShort="A nutritious and long-lasting box of pommdoener. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_pommdoener_co.paa"
+        };
+    };
+    class CookZ_PommdoenerBox_Opened: CookZ_BoxOpened_Base
+    {
+        displayName="Pommdoener";
+        descriptionShort="A nutritious box of pommdoener. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_pommdoener_co.paa",
+            "CookZ\data\box_food_pommdoener_co.paa"
+        };
+        varQuantityInit=1100
+        varQuantityMax=1100
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=281.82;
+            water=40.91;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
     class CookZ_GoulashCan: SpaghettiCan
     {
         displayName="Goulash";
@@ -1028,6 +1100,64 @@ class CfgVehicles
             fullnessIndex=3;
             energy=191.18;
             water=139.71;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_CreamyTomatoSoupCan: SpaghettiCan
+    {
+        displayName="Creamy Tomato Soup";
+        descriptionShort="A nutritious and long-lasting can of creamy tomato soup that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_creamy_tomato_soup_co.paa"
+        };
+    };
+    class CookZ_CreamyTomatoSoupCan_Opened: SpaghettiCan_Opened
+    {
+        displayName="Creamy Tomato Soup";
+        descriptionShort="A nutritious can of creamy tomato soup. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_creamy_tomato_soup_co.paa"
+        };
+        varQuantityInit=800
+        varQuantityMax=800
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=193.75;
+            water=87.5;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_BeefStewCan: SpaghettiCan
+    {
+        displayName="Beef Stew";
+        descriptionShort="A nutritious and long-lasting can of beef stew that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_beef_stew_co.paa"
+        };
+    };
+    class CookZ_BeefStewCan_Opened: SpaghettiCan_Opened
+    {
+        displayName="Beef Stew";
+        descriptionShort="A nutritious can of beef stew. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_beef_stew_co.paa"
+        };
+        varQuantityInit=1050
+        varQuantityMax=1050
+        class Nutrition
+        {
+            fullnessIndex=3;
+            energy=209.52;
+            water=108.52;
             nutritionalIndex=1;
             toxicity=0;
         };
