@@ -9,8 +9,7 @@ modded class MissionGameplay
 		{
 			pBase.ToggleCookbookReading();
 			CookZ_Cookbook_Item cookbook = CookZ_Cookbook_Item.Cast(pBase.GetItemInHands());
-			// const int MENU_BOOK = 23; use menu book id plus prefix
-			CookbookMenu cookbookMenu = CookbookMenu.Cast( GetUIManager().EnterScriptedMenu(133723, NULL) );
+			CookbookMenu cookbookMenu = CookbookMenu.Cast( GetUIManager().EnterScriptedMenu(COOKZ_COOKBOOK_MENU, NULL) );
 			if (cookbook && cookbookMenu)
 			{
 				AddActiveInputExcludes({"inventory"});

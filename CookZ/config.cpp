@@ -20,10 +20,15 @@ class CfgMods
         };
         class defs
         {
+            class gameScriptModule
+			{
+				value = "";
+				files[] = {"CookZ/Scripts/3_Game"};
+			};
             class worldScriptModule
             {
                 value = "";
-                files[] = { "CookZ/Scripts/4_World" };
+                files[] = {"CookZ/Scripts/4_World"};
             };
             class missionScriptModule
 			{

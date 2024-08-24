@@ -3,3 +3,4 @@
     by gulvtaepper
     under https://creativecommons.org/licenses/by/4.0/
 * other models and textures based on vanilla assets
+* json configuration inspired by same feature in mod RaG_Hunting_Cabin

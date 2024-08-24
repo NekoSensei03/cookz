@@ -68,6 +68,11 @@ class CookZ_CraftEmptyCan extends RecipeBase
 
     override bool CanDo( ItemBase ingredients[], PlayerBase player )
     {
+        CookZ_Config config = GetDayZGame().GetCookZ_Config();
+		if (config)
+		{
+			return config.CanCraftEmptyCans;
+		}
         return true;
     }
 
@@ -136,6 +141,11 @@ class CookZ_CraftEmptyBoxFromPaper extends RecipeBase
 
     override bool CanDo( ItemBase ingredients[], PlayerBase player )
     {
+        CookZ_Config config = GetDayZGame().GetCookZ_Config();
+		if (config)
+		{
+			return config.CanCraftEmptyBoxes;
+		}
         return true;
     }
 
@@ -221,6 +231,11 @@ class CookZ_CraftEmptyBoxFromBark extends RecipeBase
 
     override bool CanDo( ItemBase ingredients[], PlayerBase player )
     {
+        CookZ_Config config = GetDayZGame().GetCookZ_Config();
+		if (config)
+		{
+			return config.CanCraftEmptyBoxes;
+		}
         return true;
     }
 
@@ -291,6 +306,11 @@ class CookZ_CraftCookbook extends RecipeBase
 
     override bool CanDo( ItemBase ingredients[], PlayerBase player )
     {
+        CookZ_Config config = GetDayZGame().GetCookZ_Config();
+		if (config)
+		{
+			return config.CanCraftCookBook;
+		}
         return true;
     }
 

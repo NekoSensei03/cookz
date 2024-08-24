@@ -10,8 +10,7 @@ modded class MissionBase
 
         switch (id)
         {
-            // const int MENU_BOOK = 23;  use menu book id plus prefix
-            case 133723:
+            case COOKZ_COOKBOOK_MENU:
                 menu = new CookbookMenu;
                 break;
         }
