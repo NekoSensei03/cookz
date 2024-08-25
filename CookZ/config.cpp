@@ -77,6 +77,8 @@ class CfgVehicles
             needsWater = false;			// is water needed? only makes sense if pot or cauldron is allowed
             needsEmptyCan = false;      // is an empty can needed
             needsEmptyBox = true;       // is an empty box needed
+            doNotReplaceIngredients = false; // do not replace ingredients by dish (e.g. disenfecting rags)
+            doNotCalculateDynamicNutritionProfile = false; // do not calculate nutrition values dynamically (e.g. if a vanilla food item is created or non at all)
             ingredients[] = {
 				"Potato,4",				// <NAME>,<QUANITY>, name must be the food item name OR AnyMeat etc
                 "Lard,1"
@@ -84,11 +86,7 @@ class CfgVehicles
         };
         class CookZ_StirFryBox
         {
-            allowPot = false;
-            allowCauldron = false;
             allowPan = true;
-            needsWater = false;
-            needsEmptyCan = false;
             needsEmptyBox = true;
             ingredients[] = {
                 "Potato,1",
@@ -100,11 +98,7 @@ class CfgVehicles
         };
         class CookZ_FishAndChipsBox
         {
-            allowPot = false;
-            allowCauldron = false;
             allowPan = true;
-            needsWater = false;
-            needsEmptyCan = false;
             needsEmptyBox = true;
             ingredients[] = {
                 "Potato,2",
@@ -116,9 +110,7 @@ class CfgVehicles
         {
             allowPot = true;
             allowCauldron = true;
-            allowPan = false;
             needsWater = true;
-            needsEmptyCan = false;
             needsEmptyBox = true;
             ingredients[] = {
                 "Rice,1",
@@ -130,9 +122,7 @@ class CfgVehicles
         {
             allowPot = true;
             allowCauldron = true;
-            allowPan = false;
             needsWater = true;
-            needsEmptyCan = false;
             needsEmptyBox = true;
             ingredients[] = {
                 "Rice,1",
@@ -143,9 +133,6 @@ class CfgVehicles
         {
             allowPot = true;
             allowCauldron = true;
-            allowPan = false;
-            needsWater = false;
-            needsEmptyCan = false;
             needsEmptyBox = true;
             ingredients[] = {
                 "GreenBellPepper,3",
@@ -156,9 +143,7 @@ class CfgVehicles
         {
             allowPot = true;
             allowCauldron = true;
-            allowPan = false;
             needsWater = true;
-            needsEmptyCan = false;
             needsEmptyBox = true;
             ingredients[] = {
                 "Rice,1",
@@ -170,9 +155,7 @@ class CfgVehicles
         {
             allowPot = true;
             allowCauldron = true;
-            allowPan = false;
             needsWater = true;
-            needsEmptyCan = false;
             needsEmptyBox = true;
             ingredients[] = {
                 "Worm,8"
@@ -182,9 +165,7 @@ class CfgVehicles
         {
             allowPot = true;
             allowCauldron = true;
-            allowPan = false;
             needsWater = true;
-            needsEmptyCan = false;
             needsEmptyBox = true;
             ingredients[] = {
                 "Guts,1",
@@ -193,11 +174,7 @@ class CfgVehicles
         };
         class CookZ_PommdoenerBox
         {
-            allowPot = false;
-            allowCauldron = false;
             allowPan = true;
-            needsWater = false;
-            needsEmptyCan = false;
             needsEmptyBox = true;
             ingredients[] = {
                 "CowSteakMeat,1",
@@ -209,10 +186,8 @@ class CfgVehicles
         {
             allowPot = true;
             allowCauldron = true;
-            allowPan = false;
             needsWater = true;
             needsEmptyCan = true;
-            needsEmptyBox = false;
             ingredients[] = {
                 "Potato,2",
                 "GreenBellPepper,1",
@@ -223,10 +198,8 @@ class CfgVehicles
         {
             allowPot = true;
             allowCauldron = true;
-            allowPan = false;
             needsWater = true;
             needsEmptyCan = true;
-            needsEmptyBox = false;
             ingredients[] = {
                 "SlicedPumpkin,2"
             };
@@ -235,10 +208,8 @@ class CfgVehicles
         {
             allowPot = true;
             allowCauldron = true;
-            allowPan = false;
             needsWater = true;
             needsEmptyCan = true;
-            needsEmptyBox = false;
             ingredients[] = {
                 "AnyFish,2",
                 "Potato,1",
@@ -249,10 +220,8 @@ class CfgVehicles
         {
             allowPot = true;
             allowCauldron = true;
-            allowPan = false;
             needsWater = true;
             needsEmptyCan = true;
-            needsEmptyBox = false;
             ingredients[] = {
                 "AnyFish,2",
                 "Potato,1",
@@ -264,10 +233,8 @@ class CfgVehicles
         {
             allowPot = true;
             allowCauldron = true;
-            allowPan = false;
             needsWater = true;
             needsEmptyCan = true;
-            needsEmptyBox = false;
             ingredients[] = {
                 "GreenBellPepper,2",
                 "Tomato,2",
@@ -279,9 +246,8 @@ class CfgVehicles
             allowPot = true;
             allowCauldron = true;
             allowPan = true;
-            needsWater = false;
             needsEmptyCan = true;
-            needsEmptyBox = false;
+            doNotCalculateDynamicNutritionProfile = true;
             ingredients[] = {
                 "PigSteakMeat,2",
                 "Lard,1"
@@ -292,9 +258,7 @@ class CfgVehicles
             allowPot = true;
             allowCauldron = true;
             allowPan = true;
-            needsWater = false;
             needsEmptyCan = true;
-            needsEmptyBox = false;
             ingredients[] = {
                 "AnyMeat,3",
                 "Lard,1"
@@ -304,10 +268,8 @@ class CfgVehicles
         {
             allowPot = true;
             allowCauldron = true;
-            allowPan = false;
             needsWater = true;
             needsEmptyCan = true;
-            needsEmptyBox = false;
             ingredients[] = {
                 "Zucchini,3",
                 "GreenBellPepper,1",
@@ -318,10 +280,8 @@ class CfgVehicles
         {
             allowPot = true;
             allowCauldron = true;
-            allowPan = false;
             needsWater = true;
             needsEmptyCan = true;
-            needsEmptyBox = false;
             ingredients[] = {
                 "Tomato,6",
                 "PowderedMilk,1"
@@ -331,10 +291,8 @@ class CfgVehicles
         {
             allowPot = true;
             allowCauldron = true;
-            allowPan = false;
             needsWater = true;
             needsEmptyCan = true;
-            needsEmptyBox = false;
             ingredients[] = {
                 "CowSteakMeat,1",
                 "GreenBellPepper,1",
@@ -346,10 +304,7 @@ class CfgVehicles
         {
             allowPot = true;
             allowCauldron = true;
-            allowPan = false;
-            needsWater = false;
             needsEmptyCan = true;
-            needsEmptyBox = false;
             ingredients[] = {
                 "Apple,6"
             };
@@ -358,10 +313,7 @@ class CfgVehicles
         {
             allowPot = true;
             allowCauldron = true;
-            allowPan = false;
-            needsWater = false;
             needsEmptyCan = true;
-            needsEmptyBox = false;
             ingredients[] = {
                 "Plum,6"
             };
@@ -370,10 +322,7 @@ class CfgVehicles
         {
             allowPot = true;
             allowCauldron = true;
-            allowPan = false;
-            needsWater = false;
             needsEmptyCan = true;
-            needsEmptyBox = false;
             ingredients[] = {
                 "Pear,4"
             };
@@ -382,11 +331,9 @@ class CfgVehicles
         {
             allowPot = true;
             allowCauldron = true;
-            allowPan = false;
             needsWater = true;
-            needsEmptyCan = false;
-            needsEmptyBox = false;
             doNotReplaceIngredients = true;
+            doNotCalculateDynamicNutritionProfile = true;
             ingredients[] = {
                 "Rag,-1"    // -1 any number of rag stacks > 0
             };
@@ -622,14 +569,6 @@ class CfgVehicles
         };
         varQuantityInit=1000;
         varQuantityMax=1000;
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=260;
-            water=30;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
     class CookZ_StirFryBox: CookZ_Box_Base
@@ -652,14 +591,6 @@ class CfgVehicles
         };
         varQuantityInit=850
         varQuantityMax=850
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=250.0;
-            water=52.94;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
     class CookZ_FishAndChipsBox: CookZ_Box_Base
@@ -682,14 +613,6 @@ class CfgVehicles
         };
         varQuantityInit=1100
         varQuantityMax=1100
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=227.27;
-            water=45.45;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
     
     class CookZ_RicePuddingBox: CookZ_Box_Base
@@ -710,16 +633,8 @@ class CfgVehicles
             "CookZ\data\box_rice_pudding_co.paa",
             "CookZ\data\box_food_rice_pudding_co.paa"
         };
-        varQuantityInit=1000
-        varQuantityMax=1000
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=205.0;
-            water=80.0;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
+        varQuantityInit=950
+        varQuantityMax=950
     };
 
     class CookZ_MushroomRisottoBox: CookZ_Box_Base
@@ -742,14 +657,6 @@ class CfgVehicles
         };
         varQuantityInit=800
         varQuantityMax=800
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=156.25;
-            water=256.25;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
     class CookZ_PilafBox: CookZ_Box_Base
@@ -772,14 +679,6 @@ class CfgVehicles
         };
         varQuantityInit=1000
         varQuantityMax=1000
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=135.0;
-            water=82.5;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
     class CookZ_GaghBox: CookZ_Box_Base
@@ -802,14 +701,6 @@ class CfgVehicles
         };
         varQuantityInit=800
         varQuantityMax=800
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=150;
-            water=80;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
     class CookZ_HaggisBox: CookZ_Box_Base
@@ -832,14 +723,6 @@ class CfgVehicles
         };
         varQuantityInit=900
         varQuantityMax=900
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=227.78;
-            water=83.78;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
     class CookZ_StuffedPeppersBox: CookZ_Box_Base
@@ -862,14 +745,6 @@ class CfgVehicles
         };
         varQuantityInit=950
         varQuantityMax=950
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=276.32;
-            water=50.0;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
     class CookZ_PommdoenerBox: CookZ_Box_Base
@@ -892,14 +767,6 @@ class CfgVehicles
         };
         varQuantityInit=1100
         varQuantityMax=1100
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=281.82;
-            water=40.91;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
     class CookZ_GoulashCan: SpaghettiCan
@@ -921,14 +788,6 @@ class CfgVehicles
         };
         varQuantityInit=800;
         varQuantityMax=800;
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=215.625;
-            water=70.8125;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
     class CookZ_PumpkinSoupCan: SpaghettiCan
@@ -950,14 +809,6 @@ class CfgVehicles
         };
         varQuantityInit=500
         varQuantityMax=500
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=125.0;
-            water=100.0;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
     class CookZ_FishSoupCan: SpaghettiCan
@@ -979,14 +830,6 @@ class CfgVehicles
         };
         varQuantityInit=1300
         varQuantityMax=1300
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=155.77;
-            water=123.23;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
 	class CookZ_UkhaCan: SpaghettiCan
@@ -1008,14 +851,6 @@ class CfgVehicles
         };
         varQuantityInit=1500
         varQuantityMax=1500
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=161.67;
-            water=106.8;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
     class CookZ_LecsoCan: SpaghettiCan
@@ -1037,14 +872,6 @@ class CfgVehicles
         };
         varQuantityInit=700
         varQuantityMax=700
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=192.86;
-            water=110.71;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
     class CookZ_MysteryMeatCan: SpaghettiCan
@@ -1066,14 +893,6 @@ class CfgVehicles
         };
         varQuantityInit=950
         varQuantityMax=950
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=300.0;
-            water=50.0;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
     class CookZ_ZucchiniCaviarCan: SpaghettiCan
@@ -1095,14 +914,6 @@ class CfgVehicles
         };
         varQuantityInit=850
         varQuantityMax=850
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=191.18;
-            water=139.71;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
     class CookZ_CreamyTomatoSoupCan: SpaghettiCan
@@ -1124,14 +935,6 @@ class CfgVehicles
         };
         varQuantityInit=800
         varQuantityMax=800
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=193.75;
-            water=87.5;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
     class CookZ_BeefStewCan: SpaghettiCan
@@ -1153,14 +956,6 @@ class CfgVehicles
         };
         varQuantityInit=1050
         varQuantityMax=1050
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=209.52;
-            water=108.52;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
     class CookZ_AppleMarmaladeCan: SpaghettiCan
@@ -1182,14 +977,6 @@ class CfgVehicles
         };
         varQuantityInit=750
         varQuantityMax=750
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=250.0;
-            water=75.0;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
     class CookZ_PlumMarmaladeCan: SpaghettiCan
@@ -1211,14 +998,6 @@ class CfgVehicles
         };
         varQuantityInit=450
         varQuantityMax=450
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=300.0;
-            water=125.0;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
     class CookZ_PearMarmaladeCan: SpaghettiCan
@@ -1240,14 +1019,6 @@ class CfgVehicles
         };
         varQuantityInit=600
         varQuantityMax=600
-        class Nutrition
-        {
-            fullnessIndex=3;
-            energy=300.0;
-            water=50.0;
-            nutritionalIndex=1;
-            toxicity=0;
-        };
     };
 
     // define crafting materials ----------------------------------------

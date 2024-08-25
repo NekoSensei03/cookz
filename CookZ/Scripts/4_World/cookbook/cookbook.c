@@ -11,9 +11,9 @@ CookZ_Cookbook CookZ_GetCookbook()
 
 class CookZ_Cookbook
 {
-    typename COOKING_EQUIPMENT_POT                      = Pot;
-    typename COOKING_EQUIPMENT_FRYINGPAN                = FryingPan;
-    typename COOKING_EQUIPMENT_CAULDRON                 = Cauldron;
+    typename COOKING_EQUIPMENT_POT                            = Pot;
+    typename COOKING_EQUIPMENT_FRYINGPAN                      = FryingPan;
+    typename COOKING_EQUIPMENT_CAULDRON                       = Cauldron;
 
     const string COOKING_INGREDIENT_POTATO                    = "Potato";
     const string COOKING_INGREDIENT_GREEN_BELL_PEPPER         = "GreenBellPepper";
@@ -50,13 +50,62 @@ class CookZ_Cookbook
     const string COOKING_INGREDIENT_MACROLEPIOTA_MUSHROOM     = "MacrolepiotaMushroom";
     const string COOKING_INGREDIENT_PLEUROTUS_MUSHROOM        = "PleurotusMushroom";
 
-    const string COOKING_INGREDIENT_ANY_MEAT                  = "AnyMeat";
-    const string COOKING_INGREDIENT_ANY_FRUIT                 = "AnyFruit";
-    const string COOKING_INGREDIENT_ANY_VEG                   = "AnyVeg";
-    const string COOKING_INGREDIENT_ANY_FISH                  = "AnyFish";
-    const string COOKING_INGREDIENT_ANY_FISH_FILLET           = "AnyFishFillet";
-    const string COOKING_INGREDIENT_ANY_MUSHROOM              = "AnyMushroom";
+    static const string COOKING_INGREDIENT_ANY_MEAT           = "AnyMeat";
+    static const string COOKING_INGREDIENT_ANY_FRUIT          = "AnyFruit";
+    static const string COOKING_INGREDIENT_ANY_VEG            = "AnyVeg";
+    static const string COOKING_INGREDIENT_ANY_FISH           = "AnyFish";
+    static const string COOKING_INGREDIENT_ANY_FISH_FILLET    = "AnyFishFillet";
+    static const string COOKING_INGREDIENT_ANY_MUSHROOM       = "AnyMushroom";
 
+    // static map for calculating nutrition values - use the deputy for nutrition values
+    static ref map<string, string> anyIngredientMapToDeputy = InitDeputyMap();
+    static map<string, string> InitDeputyMap()
+    {
+        map<string, string> tempMap = new map<string, string>;
+        tempMap.Insert(COOKING_INGREDIENT_ANY_MEAT,         "PigSteakMeat");
+        tempMap.Insert(COOKING_INGREDIENT_ANY_FRUIT,        "Apple");
+        tempMap.Insert(COOKING_INGREDIENT_ANY_VEG,          "GreenBellPepper");
+        tempMap.Insert(COOKING_INGREDIENT_ANY_FISH,         "CarpFilletMeat");
+        tempMap.Insert(COOKING_INGREDIENT_ANY_FISH_FILLET,  "CarpFilletMeat");
+        tempMap.Insert(COOKING_INGREDIENT_ANY_MUSHROOM,     "BoletusMushroom");
+        return tempMap;
+    }
+    // static maps for calculating energy/water/quantityMax value - for ingredients that do not have those (or reasonable values)
+    static ref map<string, int> ingredientMapToEnergy = InitEnergyMap();
+    static map<string, int> InitEnergyMap()
+    {
+        map<string, int> tempMap = new map<string, int>;
+        tempMap.Insert("Rice",                  100);
+        tempMap.Insert("PowderedMilk",          500);
+        tempMap.Insert("Worm",                  150);
+        tempMap.Insert("Guts",                  250);
+        tempMap.Insert("DisinfectantAlcohol",   200);
+        tempMap.Insert("Rag",                   0);
+        return tempMap;
+    }
+    static ref map<string, int> ingredientMapToWater = InitWaterMap();
+    static map<string, int> InitWaterMap()
+    {
+        map<string, int> tempMap = new map<string, int>;
+        tempMap.Insert("Rice",                  50);
+        tempMap.Insert("PowderedMilk",          50);
+        tempMap.Insert("Worm",                  80);
+        tempMap.Insert("Guts",                  150);
+        tempMap.Insert("DisinfectantAlcohol",   0);
+        tempMap.Insert("Rag",                   0);
+        return tempMap;
+    }
+    static ref map<string, int> ingredientMapToQuantityMax = InitQuantityMaxMap();
+    static map<string, int> InitQuantityMaxMap()
+    {
+        map<string, int> tempMap = new map<string, int>;
+        tempMap.Insert("Worm",  100);
+        tempMap.Insert("Rag",   0);
+        return tempMap;
+    }
+
+    // map from opened dishes to nutrition profiles - used when consumend
+    ref map<string, ref NutritionalProfile> openedDishToNutritionProfile;
 
     ref array<ref CookZ_Recipe> allRecipes;
 
@@ -68,6 +117,8 @@ class CookZ_Cookbook
 
     void LoadRecipesFromConfig()
     {
+        openedDishToNutritionProfile = new map<string, ref NutritionalProfile>();
+
         string recipesPath = "CfgVehicles CookZ_Recipes";
 
         int recipeCount = GetGame().ConfigGetChildrenCount(recipesPath);
@@ -76,13 +127,14 @@ class CookZ_Cookbook
             string recipeName;
             GetGame().ConfigGetChildName(recipesPath, i, recipeName);
 
-            string allowPot;
-            string allowCauldron;
-            string allowPan;
-            string needsWater;
-            string needsEmptyCan;
-            string needsEmptyBox;
-            string doNotReplaceIngredients;
+            string allowPot = "";
+            string allowCauldron = "";
+            string allowPan = "";
+            string needsWater = "";
+            string needsEmptyCan = "";
+            string needsEmptyBox = "";
+            string doNotReplaceIngredients = "";
+            string doNotCalculateDynamicNutritionProfile = "";
             GetGame().ConfigGetText(string.Format("%1 %2 allowPot", recipesPath, recipeName), allowPot);
             GetGame().ConfigGetText(string.Format("%1 %2 allowCauldron", recipesPath, recipeName), allowCauldron);
             GetGame().ConfigGetText(string.Format("%1 %2 allowPan", recipesPath, recipeName), allowPan);
@@ -90,8 +142,9 @@ class CookZ_Cookbook
             GetGame().ConfigGetText(string.Format("%1 %2 needsEmptyCan", recipesPath, recipeName), needsEmptyCan);
             GetGame().ConfigGetText(string.Format("%1 %2 needsEmptyBox", recipesPath, recipeName), needsEmptyBox);
             GetGame().ConfigGetText(string.Format("%1 %2 doNotReplaceIngredients", recipesPath, recipeName), doNotReplaceIngredients);
+            GetGame().ConfigGetText(string.Format("%1 %2 doNotCalculateDynamicNutritionProfile", recipesPath, recipeName), doNotCalculateDynamicNutritionProfile);
 
-            CookZ_Recipe recipe = new CookZ_Recipe(recipeName, allowPot == "true", allowCauldron == "true", allowPan == "true", needsWater == "true", needsEmptyCan == "true", needsEmptyBox == "true", doNotReplaceIngredients == "true");
+            CookZ_Recipe recipe = new CookZ_Recipe(recipeName, allowPot == "true", allowCauldron == "true", allowPan == "true", needsWater == "true", needsEmptyCan == "true", needsEmptyBox == "true", doNotReplaceIngredients == "true", doNotCalculateDynamicNutritionProfile  == "true");
 
             array<string> ingredientsArray = new array<string>;
             GetGame().ConfigGetTextArray(string.Format("%1 %2 ingredients", recipesPath, recipeName), ingredientsArray);
@@ -111,7 +164,84 @@ class CookZ_Cookbook
             }
 
             allRecipes.Insert(recipe);
+            //Print(string.Format("Added Recipe: %1", recipe.name))
+
+            if (!recipe.doNotCalculateDynamicNutritionProfile)
+            {
+                CalculateNutritionValues(recipe);
+            }
         }
+    }
+
+    void CalculateNutritionValues(CookZ_Recipe recipe)
+    {
+        int totalEnergy = 0;
+        int totalWater = 0;
+        int totalQuantityMax = 0;
+        FoodStageType foodStageType = FoodStageType.BAKED;
+        if (recipe.needsWater)
+        {
+            foodStageType = FoodStageType.BOILED;
+        }
+        foreach (CookZ_Ingredient ingredient : recipe.ingredients)
+        {
+            string ingredientName = ingredient.name;
+            if (anyIngredientMapToDeputy.Contains(ingredientName))
+            {
+                ingredientName = anyIngredientMapToDeputy.Get(ingredientName);
+            }
+
+            float itemEnergy;
+            if (ingredientMapToEnergy.Contains(ingredientName))
+            {
+                itemEnergy = ingredientMapToEnergy.Get(ingredientName);
+            }
+            else
+            {
+                itemEnergy = Edible_Base.GetFoodEnergy(null, ingredientName, foodStageType);
+            }
+
+            float itemWater;
+            if (ingredientMapToWater.Contains(ingredientName))
+            {
+                itemWater = ingredientMapToWater.Get(ingredientName);
+            }
+            else
+            {
+                itemWater = Edible_Base.GetFoodWater(null, ingredientName, foodStageType);
+            }
+
+            int itemQuantityMax;
+            if (ingredientMapToQuantityMax.Contains(ingredientName))
+            {
+                itemQuantityMax = ingredientMapToQuantityMax.Get(ingredientName);
+            }
+            else
+            {
+                itemQuantityMax = GetGame().ConfigGetInt(string.Format("CfgVehicles %1 varQuantityMax", ingredientName));
+            }
+
+            int itemQuantityTotalMax = itemQuantityMax * ingredient.quantity;
+            totalQuantityMax += itemQuantityTotalMax;
+            totalEnergy += itemEnergy * itemQuantityTotalMax;
+            totalWater += itemWater * itemQuantityTotalMax;
+        }
+
+        if (itemQuantityTotalMax > 0)
+        {
+            float relativeEnergy = totalEnergy / totalQuantityMax;
+            float relativeWater = totalWater / totalQuantityMax;
+            /*Print(string.Format("Nutrition Values for %1", recipe.name));
+            Print(string.Format("QuantityMax: %1", totalQuantityMax));
+            Print(string.Format("Energy:      %1", relativeEnergy));
+            Print(string.Format("Water:       %1", relativeWater));*/
+            openedDishToNutritionProfile.Insert(string.Format("%1_Opened", recipe.name), new NutritionalProfile(relativeEnergy, relativeWater, 1, 3, 0, 0, 0));
+        }
+    }
+
+    NutritionalProfile GetNutritionalProfile(string dishName)
+    {
+        return openedDishToNutritionProfile.Get(dishName);
     }
 
     // returns a dish string or "" if no valid recipe detected
