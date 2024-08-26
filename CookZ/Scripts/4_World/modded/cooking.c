@@ -19,18 +19,18 @@ modded class Cooking
 			return 0;
 		}
 
+		CookZ_Recipe dish = CookZ_GetCookbook().GetDishForIngredients(cooking_equipment);
+		if (!dish)
+		{
+			return super.CookWithEquipment(cooking_equipment, cooking_time_coef);
+		}
+
 		CargoBase cargo = cooking_equipment.GetInventory().GetCargo();
 		if (!cargo)
 		{
 			return 0;
 		}
 		bool is_empty = cargo.GetItemCount() == 0;
-
-		CookZ_Recipe dish = CookZ_GetCookbook().GetDishForIngredients(cooking_equipment);
-		if (!dish)
-		{
-			return super.CookWithEquipment(cooking_equipment, cooking_time_coef);
-		}
 
 		//manage items in cooking equipment
 		Param2<bool, bool> stateFlags = new Param2<bool, bool>(false, false); // 1st - done; 2nd - burned
