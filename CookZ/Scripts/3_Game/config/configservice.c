@@ -14,16 +14,29 @@ class CookZ_ConfigService
         if (!FileExist(configPath))
         {
             CreateDefaultConfig(config);
-            if (!FileExist(COOKZ_CONFIG_ROOT))
-            {
-                MakeDirectory(COOKZ_CONFIG_ROOT);
-            }
+            MakeDirectory(COOKZ_CONFIG_ROOT);
 
-            JsonFileLoader<CookZ_Config>.JsonSaveFile(configPath, config);
+            string saveErrorMessage;
+            if (!JsonFileLoader<CookZ_Config>.SaveFile(configPath, config, saveErrorMessage))
+            {
+                Print(string.Format("[CookZ] Error generating configuration: %1", saveErrorMessage));
+            }
+            else
+            {
+                Print("[CookZ] Successfully generated configuration.");
+            }
             return;
         }
 
-        JsonFileLoader<CookZ_Config>.JsonLoadFile(configPath, config);
+        string loadErrorMessage;
+        if (!JsonFileLoader<CookZ_Config>.LoadFile(configPath, config, loadErrorMessage))
+        {
+            Print(string.Format("[CookZ] Error loading configuration: %1", loadErrorMessage));
+        }
+        else
+        {
+            Print("[CookZ] Successfully loaded configuration.");
+        }
     }
 
     protected static void CreateDefaultConfig(out CookZ_Config config)

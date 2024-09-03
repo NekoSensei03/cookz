@@ -11,6 +11,6 @@ modded class MissionServer
     {
         super.InvokeOnConnect(player, identity);
         auto configParams = new Param1<CookZ_Config>(GetDayZGame().GetCookZ_Config());
-        GetGame().RPCSingleParam(player, COOKZ_CHECK_CONFIG, configParams, true, identity);
+        GetGame().RPCSingleParam(player, COOKZ_CONFIG_RPC_TYPE, configParams, true, identity);
     }
 };

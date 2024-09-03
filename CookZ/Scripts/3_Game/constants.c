@@ -1,5 +1,5 @@
-// config identifier
-static int COOKZ_CHECK_CONFIG = 1638955238;
+// config rpc type
+static int COOKZ_CONFIG_RPC_TYPE = 1638955238;
 
 // scriped menu id for cookbook
 // see const int MENU_BOOK = 23;  use menu book id plus prefix

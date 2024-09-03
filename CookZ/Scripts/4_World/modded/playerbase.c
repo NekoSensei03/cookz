@@ -24,7 +24,7 @@ modded class PlayerBase
 
         switch (rpc_type)
         {
-            case COOKZ_CHECK_CONFIG:
+            case COOKZ_CONFIG_RPC_TYPE:
             {
                 Param1<CookZ_Config> configParams;
                 if (!ctx.Read(configParams))
