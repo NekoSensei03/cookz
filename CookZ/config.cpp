@@ -480,6 +480,19 @@ class CfgVehicles
                 "Rag,-1"    // -1 any number of rag stacks > 0
             };
         };
+        // NOTE: put dishes that contain cooked dishes at the end so that nurition values are calculated
+        class CookZ_BangersAndMashBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsWater = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "AnySausage,2",
+                "Potato,2"
+            };
+        };
     }
 
     // define sausages ----------------------------------------
@@ -570,7 +583,7 @@ class CfgVehicles
 
     class CookZ_Goat_Sausage: CookZ_Sausage_Base
     {
-        displayName="Pig Sausage";
+        displayName="Goat Sausage";
         descriptionShort="A juicy goat sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
         {
@@ -1087,6 +1100,28 @@ class CfgVehicles
         };
         varQuantityInit=1100
         varQuantityMax=1100
+    };
+
+    class CookZ_BangersAndMashBox: CookZ_Box_Base
+    {
+        displayName="Bangers And Mash";
+        descriptionShort="A nutritious and long-lasting box of bangers and mash. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_bangers_and_mash_co.paa"
+        };
+    };
+    class CookZ_BangersAndMashBox_Opened: CookZ_BoxOpened_Base
+    {
+        displayName="Bangers And Mash";
+        descriptionShort="A nutritious box of bangers and mash. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_bangers_and_mash_co.paa",
+            "CookZ\data\box_food_bangers_and_mash_co.paa"
+        };
+        varQuantityInit=1400
+        varQuantityMax=1400
     };
 
     class CookZ_GoulashCan: SpaghettiCan

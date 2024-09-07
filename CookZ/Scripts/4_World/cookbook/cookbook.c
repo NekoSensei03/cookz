@@ -50,12 +50,25 @@ class CookZ_Cookbook
     const string COOKING_INGREDIENT_MACROLEPIOTA_MUSHROOM     = "MacrolepiotaMushroom";
     const string COOKING_INGREDIENT_PLEUROTUS_MUSHROOM        = "PleurotusMushroom";
 
+    const string COOKING_INGREDIENT_BEEF_SAUSAGE              = "CookZ_Beef_Sausage";
+    const string COOKING_INGREDIENT_CHICKEN_SAUSAGE           = "CookZ_Chicken_Sausage";
+    const string COOKING_INGREDIENT_PIG_SAUSAGE               = "CookZ_Pig_Sausage";
+    const string COOKING_INGREDIENT_GOAT_SAUSAGE              = "CookZ_Goat_Sausage";
+    const string COOKING_INGREDIENT_BEAR_SAUSAGE              = "CookZ_Bear_Sausage";
+    const string COOKING_INGREDIENT_SHEEP_SAUSAGE             = "CookZ_Sheep_Sausage";
+    const string COOKING_INGREDIENT_BOAR_SAUSAGE              = "CookZ_Boar_Sausage";
+    const string COOKING_INGREDIENT_DEER_SAUSAGE              = "CookZ_Deer_Sausage";
+    const string COOKING_INGREDIENT_HARE_SAUSAGE              = "CookZ_Hare_Sausage";
+    const string COOKING_INGREDIENT_WOLF_SAUSAGE              = "CookZ_Wolf_Sausage";
+    const string COOKING_INGREDIENT_HUMAN_SAUSAGE             = "CookZ_Human_Sausage";
+
     static const string COOKING_INGREDIENT_ANY_MEAT           = "AnyMeat";
     static const string COOKING_INGREDIENT_ANY_FRUIT          = "AnyFruit";
     static const string COOKING_INGREDIENT_ANY_VEG            = "AnyVeg";
     static const string COOKING_INGREDIENT_ANY_FISH           = "AnyFish";
     static const string COOKING_INGREDIENT_ANY_FISH_FILLET    = "AnyFishFillet";
     static const string COOKING_INGREDIENT_ANY_MUSHROOM       = "AnyMushroom";
+    static const string COOKING_INGREDIENT_ANY_SAUSAGE        = "AnySausage";
 
     // static map for calculating nutrition values - use the deputy for nutrition values
     static ref map<string, string> anyIngredientMapToDeputy = InitDeputyMap();
@@ -68,6 +81,7 @@ class CookZ_Cookbook
         tempMap.Insert(COOKING_INGREDIENT_ANY_FISH,         "CarpFilletMeat");
         tempMap.Insert(COOKING_INGREDIENT_ANY_FISH_FILLET,  "CarpFilletMeat");
         tempMap.Insert(COOKING_INGREDIENT_ANY_MUSHROOM,     "BoletusMushroom");
+        tempMap.Insert(COOKING_INGREDIENT_ANY_SAUSAGE,      "CookZ_Beef_Sausage");
         return tempMap;
     }
     // static maps for calculating energy/water/quantityMax value - for ingredients that do not have those (or reasonable values)
@@ -198,8 +212,17 @@ class CookZ_Cookbook
                 ingredientName = anyIngredientMapToDeputy.Get(ingredientName);
             }
 
+            // relevant if the ingredient is a cookZ dish
+            // requires that the nutrition values for the ingredient have already been calculated
+            // -> make sure that this is considered in the recipe order
+            NutritionalProfile ingredientProfile = openedDishToNutritionProfile.Get(ingredientName);
+            
             float itemEnergy;
-            if (ingredientMapToEnergy.Contains(ingredientName))
+            if (ingredientProfile)
+            {
+                itemEnergy = ingredientProfile.GetEnergy();
+            }
+            else if (ingredientMapToEnergy.Contains(ingredientName))
             {
                 itemEnergy = ingredientMapToEnergy.Get(ingredientName);
             }
@@ -209,7 +232,11 @@ class CookZ_Cookbook
             }
 
             float itemWater;
-            if (ingredientMapToWater.Contains(ingredientName))
+            if (ingredientProfile)
+            {
+                itemWater = ingredientProfile.GetWaterContent();
+            }
+            else if (ingredientMapToWater.Contains(ingredientName))
             {
                 itemWater = ingredientMapToWater.Get(ingredientName);
             }
@@ -260,7 +287,7 @@ class CookZ_Cookbook
         return openedDishToNutritionProfile.Get(dishName);
     }
 
-    // returns a dish string or "" if no valid recipe detected
+    // returns a dish string or null if no valid recipe detected
     CookZ_Recipe GetDishForIngredients(ItemBase cooking_equipment)
     {
         // count ingredients in cooking equipment
@@ -307,12 +334,14 @@ class CookZ_Cookbook
         int numFish = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_CARP_FILLET_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_MACKEREL_FILLET_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_SARDINES) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BITTERLINGS);
         int numFishFillet = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_CARP_FILLET_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_MACKEREL_FILLET_MEAT);
         int numMushroom = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_AGARICUS_MUSHROOM) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_AURICULARIA_MUSHROOM) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BOLETUS_MUSHROOM) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_LACTARIUS_MUSHROOM) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_MACROLEPIOTA_MUSHROOM) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PLEUROTUS_MUSHROOM);
+        int numSausage = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BEEF_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_CHICKEN_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PIG_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_GOAT_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BEAR_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_SHEEP_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BOAR_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_DEER_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_HARE_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_WOLF_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_HUMAN_SAUSAGE);
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_MEAT, numMeat);
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_FRUIT, numFruit);
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_VEG, numVeg);
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_FISH, numFish);
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_FISH_FILLET, numFishFillet);
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_MUSHROOM, numMushroom);
+        ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_SAUSAGE, numSausage);
 
         // check recipes
         foreach (CookZ_Recipe recipe : allRecipes)
