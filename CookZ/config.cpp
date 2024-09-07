@@ -329,6 +329,18 @@ class CfgVehicles
                 "Tomato,2"
             };
         }
+        class CookZ_MushroomStroganoffCan
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsWater = true;
+            needsEmptyCan = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "PowderedMilk,1",
+                "AnyMushroom,5"
+            };
+        }
         class CookZ_AppleMarmaladeCan
         {
             allowPot = true;
@@ -1290,6 +1302,27 @@ class CfgVehicles
         };
         varQuantityInit=800
         varQuantityMax=800
+    };
+
+    class CookZ_MushroomStroganoffCan: SpaghettiCan
+    {
+        displayName="Mushroom Stroganoff";
+        descriptionShort="A nutritious and long-lasting can of mushroom stroganoff that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_mushroom_stroganoff_co.paa"
+        };
+    };
+    class CookZ_MushroomStroganoffCan_Opened: SpaghettiCan_Opened
+    {
+        displayName="Mushroom Stroganoff";
+        descriptionShort="A nutritious can of mushroom stroganoff. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\canned_mushroom_stroganoff_co.paa"
+        };
+        varQuantityInit=950
+        varQuantityMax=950
     };
 
     class CookZ_BeefStewCan: SpaghettiCan

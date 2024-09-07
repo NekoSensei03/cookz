@@ -10,6 +10,7 @@ class CookZ_BeefStewCan : CookZ_ClosedDish {}
 class CookZ_AppleMarmaladeCan : CookZ_ClosedDish {}
 class CookZ_PearMarmaladeCan : CookZ_ClosedDish {}
 class CookZ_PlumMarmaladeCan : CookZ_ClosedDish {}
+class CookZ_MushroomStroganoffCan : CookZ_ClosedDish {}
 
 class CookZ_FishSoupCan_Opened: CookZ_OpenedDish {}
 class CookZ_GoulashCan_Opened: CookZ_OpenedDish {}
@@ -23,3 +24,4 @@ class CookZ_BeefStewCan_Opened: CookZ_OpenedDish {}
 class CookZ_AppleMarmaladeCan_Opened : CookZ_OpenedDish {}
 class CookZ_PearMarmaladeCan_Opened : CookZ_OpenedDish {}
 class CookZ_PlumMarmaladeCan_Opened : CookZ_OpenedDish {}
+class CookZ_MushroomStroganoffCan_Opened : CookZ_OpenedDish {}
