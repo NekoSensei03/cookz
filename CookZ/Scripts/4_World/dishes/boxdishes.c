@@ -9,6 +9,7 @@ class CookZ_GaghBox : CookZ_Box_Base {}
 class CookZ_HaggisBox : CookZ_Box_Base {}
 class CookZ_PommdoenerBox : CookZ_Box_Base {}
 class CookZ_BangersAndMashBox : CookZ_Box_Base {}
+class CookZ_CurrywurstBox : CookZ_Box_Base {}
 
 class CookZ_Box_Base: CookZ_ClosedDish
 {
@@ -30,3 +31,4 @@ class CookZ_GaghBox_Opened : CookZ_OpenedDish {}
 class CookZ_HaggisBox_Opened : CookZ_OpenedDish {}
 class CookZ_PommdoenerBox_Opened : CookZ_OpenedDish {}
 class CookZ_BangersAndMashBox_Opened : CookZ_OpenedDish {}
+class CookZ_CurrywurstBox_Opened : CookZ_OpenedDish {}

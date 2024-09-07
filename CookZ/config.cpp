@@ -505,6 +505,18 @@ class CfgVehicles
                 "Potato,2"
             };
         };
+        class CookZ_CurrywurstBox
+        {
+            allowpan = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "AnySausage,1",
+                "Lard,1",
+                "Potato,1",
+                "Tomato,1"
+            };
+        };
     }
 
     // define sausages ----------------------------------------
@@ -1134,6 +1146,28 @@ class CfgVehicles
         };
         varQuantityInit=900
         varQuantityMax=900
+    };
+
+    class CookZ_CurrywurstBox: CookZ_Box_Base
+    {
+        displayName="Currywurst";
+        descriptionShort="A nutritious and long-lasting box of currywurst. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_currywurst_co.paa"
+        };
+    };
+    class CookZ_CurrywurstBox_Opened: CookZ_BoxOpened_Base
+    {
+        displayName="Currywurst";
+        descriptionShort="A nutritious box of currywurst. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\box_currywurst_co.paa",
+            "CookZ\data\box_food_currywurst_co.paa"
+        };
+        varQuantityInit=1000
+        varQuantityMax=1000
     };
 
     class CookZ_GoulashCan: SpaghettiCan
