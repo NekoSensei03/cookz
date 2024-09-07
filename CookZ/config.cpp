@@ -64,6 +64,14 @@ class CfgSlots
 
 class CfgVehicles
 {
+    // imports
+    class Edible_Base;
+    class SpaghettiCan;
+    class SpaghettiCan_Opened;
+    class Marmalade;
+    class Inventory_Base;
+    class Bottle_Base;
+
     // define recipes ----------------------------------------
 
     class CookZ_Recipes
@@ -79,6 +87,8 @@ class CfgVehicles
             needsEmptyBox = true;       // is an empty box needed
             doNotReplaceIngredients = false; // do not replace ingredients by dish (e.g. disenfecting rags)
             doNotCalculateDynamicNutritionProfile = false; // do not calculate nutrition values dynamically (e.g. if a vanilla food item is created or non at all)
+            canBeOpened = true;         // does dish need to be opened before eating
+            numDishes = 1;              // number of dishes that will be created
             ingredients[] = {
 				"Potato,4",				// <NAME>,<QUANITY>, name must be the food item name OR AnyMeat etc
                 "Lard,1"
@@ -88,6 +98,7 @@ class CfgVehicles
         {
             allowPan = true;
             needsEmptyBox = true;
+            canBeOpened = true;
             ingredients[] = {
                 "Potato,1",
                 "Tomato,1",
@@ -100,6 +111,7 @@ class CfgVehicles
         {
             allowPan = true;
             needsEmptyBox = true;
+            canBeOpened = true;
             ingredients[] = {
                 "Potato,2",
                 "AnyFishFillet,1",
@@ -112,6 +124,7 @@ class CfgVehicles
             allowCauldron = true;
             needsWater = true;
             needsEmptyBox = true;
+            canBeOpened = true;
             ingredients[] = {
                 "Rice,1",
                 "PowderedMilk,1",
@@ -124,6 +137,7 @@ class CfgVehicles
             allowCauldron = true;
             needsWater = true;
             needsEmptyBox = true;
+            canBeOpened = true;
             ingredients[] = {
                 "Rice,1",
                 "AnyMushroom,2"
@@ -134,6 +148,7 @@ class CfgVehicles
             allowPot = true;
             allowCauldron = true;
             needsEmptyBox = true;
+            canBeOpened = true;
             ingredients[] = {
                 "GreenBellPepper,3",
                 "AnyMeat,2"
@@ -145,6 +160,7 @@ class CfgVehicles
             allowCauldron = true;
             needsWater = true;
             needsEmptyBox = true;
+            canBeOpened = true;
             ingredients[] = {
                 "Rice,1",
                 "GreenBellPepper,2",
@@ -157,6 +173,7 @@ class CfgVehicles
             allowCauldron = true;
             needsWater = true;
             needsEmptyBox = true;
+            canBeOpened = true;
             ingredients[] = {
                 "Worm,8"
             };
@@ -167,6 +184,7 @@ class CfgVehicles
             allowCauldron = true;
             needsWater = true;
             needsEmptyBox = true;
+            canBeOpened = true;
             ingredients[] = {
                 "Guts,1",
                 "Potato,2"
@@ -176,6 +194,7 @@ class CfgVehicles
         {
             allowPan = true;
             needsEmptyBox = true;
+            canBeOpened = true;
             ingredients[] = {
                 "CowSteakMeat,1",
                 "Lard,1",
@@ -188,6 +207,7 @@ class CfgVehicles
             allowCauldron = true;
             needsWater = true;
             needsEmptyCan = true;
+            canBeOpened = true;
             ingredients[] = {
                 "Potato,2",
                 "GreenBellPepper,1",
@@ -200,6 +220,7 @@ class CfgVehicles
             allowCauldron = true;
             needsWater = true;
             needsEmptyCan = true;
+            canBeOpened = true;
             ingredients[] = {
                 "SlicedPumpkin,2"
             };
@@ -210,6 +231,7 @@ class CfgVehicles
             allowCauldron = true;
             needsWater = true;
             needsEmptyCan = true;
+            canBeOpened = true;
             ingredients[] = {
                 "AnyFish,2",
                 "Potato,1",
@@ -222,6 +244,7 @@ class CfgVehicles
             allowCauldron = true;
             needsWater = true;
             needsEmptyCan = true;
+            canBeOpened = true;
             ingredients[] = {
                 "AnyFish,2",
                 "Potato,1",
@@ -235,6 +258,7 @@ class CfgVehicles
             allowCauldron = true;
             needsWater = true;
             needsEmptyCan = true;
+            canBeOpened = true;
             ingredients[] = {
                 "GreenBellPepper,2",
                 "Tomato,2",
@@ -248,6 +272,7 @@ class CfgVehicles
             allowPan = true;
             needsEmptyCan = true;
             doNotCalculateDynamicNutritionProfile = true;
+            canBeOpened = true;
             ingredients[] = {
                 "PigSteakMeat,2",
                 "Lard,1"
@@ -259,6 +284,7 @@ class CfgVehicles
             allowCauldron = true;
             allowPan = true;
             needsEmptyCan = true;
+            canBeOpened = true;
             ingredients[] = {
                 "AnyMeat,3",
                 "Lard,1"
@@ -270,6 +296,7 @@ class CfgVehicles
             allowCauldron = true;
             needsWater = true;
             needsEmptyCan = true;
+            canBeOpened = true;
             ingredients[] = {
                 "Zucchini,3",
                 "GreenBellPepper,1",
@@ -282,6 +309,7 @@ class CfgVehicles
             allowCauldron = true;
             needsWater = true;
             needsEmptyCan = true;
+            canBeOpened = true;
             ingredients[] = {
                 "Tomato,6",
                 "PowderedMilk,1"
@@ -293,6 +321,7 @@ class CfgVehicles
             allowCauldron = true;
             needsWater = true;
             needsEmptyCan = true;
+            canBeOpened = true;
             ingredients[] = {
                 "CowSteakMeat,1",
                 "GreenBellPepper,1",
@@ -305,6 +334,7 @@ class CfgVehicles
             allowPot = true;
             allowCauldron = true;
             needsEmptyCan = true;
+            canBeOpened = true;
             ingredients[] = {
                 "Apple,6"
             };
@@ -314,6 +344,7 @@ class CfgVehicles
             allowPot = true;
             allowCauldron = true;
             needsEmptyCan = true;
+            canBeOpened = true;
             ingredients[] = {
                 "Plum,6"
             };
@@ -323,8 +354,119 @@ class CfgVehicles
             allowPot = true;
             allowCauldron = true;
             needsEmptyCan = true;
+            canBeOpened = true;
             ingredients[] = {
                 "Pear,4"
+            };
+        };
+        class CookZ_Beef_Sausage
+        {
+            allowPot = true;
+            allowCauldron = true;
+            numDishes = 2;
+            ingredients[] = {
+                "Guts,1",
+                "CowSteakMeat,1"
+            };
+        };
+        class CookZ_Chicken_Sausage
+        {
+            allowPot = true;
+            allowCauldron = true;
+            numDishes = 2;
+            ingredients[] = {
+                "Guts,1",
+                "ChickenBreastMeat,3"
+            };
+        };
+        class CookZ_Pig_Sausage
+        {
+            allowPot = true;
+            allowCauldron = true;
+            numDishes = 2;
+            ingredients[] = {
+                "Guts,1",
+                "PigSteakMeat,2"
+            };
+        };
+        class CookZ_Goat_Sausage
+        {
+            allowPot = true;
+            allowCauldron = true;
+            numDishes = 2;
+            ingredients[] = {
+                "Guts,1",
+                "GoatSteakMeat,2"
+            };
+        };
+        class CookZ_Bear_Sausage
+        {
+            allowPot = true;
+            allowCauldron = true;
+            numDishes = 2;
+            ingredients[] = {
+                "Guts,1",
+                "BearSteakMeat,1"
+            };
+        };
+        class CookZ_Sheep_Sausage
+        {
+            allowPot = true;
+            allowCauldron = true;
+            numDishes = 2;
+            ingredients[] = {
+                "Guts,1",
+                "SheepSteakMeat,2"
+            };
+        };
+        class CookZ_Boar_Sausage
+        {
+            allowPot = true;
+            allowCauldron = true;
+            numDishes = 2;
+            ingredients[] = {
+                "Guts,1",
+                "BoarSteakMeat,2"
+            };
+        };
+        class CookZ_Deer_Sausage
+        {
+            allowPot = true;
+            allowCauldron = true;
+            numDishes = 2;
+            ingredients[] = {
+                "Guts,1",
+                "DeerSteakMeat,2"
+            };
+        };
+        class CookZ_Hare_Sausage
+        {
+            allowPot = true;
+            allowCauldron = true;
+            numDishes = 2;
+            ingredients[] = {
+                "Guts,1",
+                "RabbitLegMeat,2"
+            };
+        };
+        class CookZ_Wolf_Sausage
+        {
+            allowPot = true;
+            allowCauldron = true;
+            numDishes = 2;
+            ingredients[] = {
+                "Guts,1",
+                "WolfSteakMeat,2"
+            };
+        };
+        class CookZ_Human_Sausage
+        {
+            allowPot = true;
+            allowCauldron = true;
+            numDishes = 2;
+            ingredients[] = {
+                "Guts,1",
+                "HumanSteakMeat,2"
             };
         };
         class CookZ_DisinfectRags
@@ -340,12 +482,190 @@ class CfgVehicles
         };
     }
 
+    // define sausages ----------------------------------------
+
+    class CookZ_Sausage_Base: Edible_Base
+    {
+        scope=2;
+		debug_ItemCategory=6;
+		rotationFlags=32;
+		itemSize[]={2,2};
+		weight=265;
+		varQuantityMin=0;
+		isMeleeWeapon=1;
+		model="CookZ\data\sausage.p3d";
+        hiddenSelections[]=
+		{
+			"s_area"
+		};
+		soundImpactType="organic";
+        class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class openTunaCan
+				{
+					soundSet="ammoboxUnpack_SoundSet";
+					id=204;
+				};
+				class Eating_TakeFood
+				{
+					soundSet="Eating_TakeFood_Soundset";
+					id=889;
+				};
+				class Eating_BoxOpen
+				{
+					soundSet="Eating_BoxOpen_Soundset";
+					id=893;
+				};
+				class Eating_BoxShake
+				{
+					soundSet="Eating_BoxShake_Soundset";
+					id=894;
+				};
+				class Eating_BoxEnd
+				{
+					soundSet="Eating_BoxEnd_Soundset";
+					id=895;
+				};
+			};
+		};
+    }
+
+    class CookZ_Beef_Sausage: CookZ_Sausage_Base
+    {
+        displayName="Beef Sausage";
+        descriptionShort="A juicy beef sausage, perfect for survivors in need of a quick bite.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\sausage_cow_co.paa"
+        };
+		varQuantityInit=500;
+		varQuantityMax=500;
+    }
+
+    class CookZ_Chicken_Sausage: CookZ_Sausage_Base
+    {
+        displayName="Chicken Sausage";
+        descriptionShort="A juicy chicken sausage, perfect for survivors in need of a quick bite.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\sausage_chicken_co.paa"
+        };
+		varQuantityInit=438;
+		varQuantityMax=438;
+    }
+
+    class CookZ_Pig_Sausage: CookZ_Sausage_Base
+    {
+        displayName="Pig Sausage";
+        descriptionShort="A juicy pig sausage, perfect for survivors in need of a quick bite.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\sausage_pig_co.paa"
+        };
+		varQuantityInit=500;
+		varQuantityMax=500;
+    }
+
+    class CookZ_Goat_Sausage: CookZ_Sausage_Base
+    {
+        displayName="Pig Sausage";
+        descriptionShort="A juicy goat sausage, perfect for survivors in need of a quick bite.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\sausage_goat_co.paa"
+        };
+		varQuantityInit=400;
+		varQuantityMax=400;
+    }
+
+    class CookZ_Bear_Sausage: CookZ_Sausage_Base
+    {
+        displayName="Bear Sausage";
+        descriptionShort="A juicy bear sausage, perfect for survivors in need of a quick bite.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\sausage_bear_co.paa"
+        };
+		varQuantityInit=500;
+		varQuantityMax=500;
+    }
+
+    class CookZ_Sheep_Sausage: CookZ_Sausage_Base
+    {
+        displayName="Sheep Sausage";
+        descriptionShort="A juicy sheep sausage, perfect for survivors in need of a quick bite.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\sausage_sheep_co.paa"
+        };
+		varQuantityInit=400;
+		varQuantityMax=400;
+    }
+
+    class CookZ_Boar_Sausage: CookZ_Sausage_Base
+    {
+        displayName="Boar Sausage";
+        descriptionShort="A juicy boar sausage, perfect for survivors in need of a quick bite.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\sausage_boar_co.paa"
+        };
+		varQuantityInit=500;
+		varQuantityMax=500;
+    }
+
+    class CookZ_Deer_Sausage: CookZ_Sausage_Base
+    {
+        displayName="Deer Sausage";
+        descriptionShort="A juicy deer sausage, perfect for survivors in need of a quick bite.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\sausage_deer_co.paa"
+        };
+		varQuantityInit=500;
+		varQuantityMax=500;
+    }
+
+    class CookZ_Hare_Sausage: CookZ_Sausage_Base
+    {
+        displayName="Hare Sausage";
+        descriptionShort="A juicy hare sausage, perfect for survivors in need of a quick bite.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\sausage_rabbit_co.paa"
+        };
+		varQuantityInit=500;
+		varQuantityMax=500;
+    }
+
+    class CookZ_Wolf_Sausage: CookZ_Sausage_Base
+    {
+        displayName="Wolf Sausage";
+        descriptionShort="A juicy wolf sausage, perfect for survivors in need of a quick bite.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\sausage_sheep_co.paa"
+        };
+		varQuantityInit=400;
+		varQuantityMax=400;
+    }
+
+    class CookZ_Human_Sausage: CookZ_Sausage_Base
+    {
+        displayName="Human Sausage";
+        descriptionShort="A sausage made from human meat ... just don't ...";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\sausage_human_co.paa"
+        };
+		varQuantityInit=400;
+		varQuantityMax=400;
+    }
+
     // define dishes - closed and opened ----------------------------------------
 
-    class Edible_Base;
-    class SpaghettiCan;
-    class SpaghettiCan_Opened;
-    class Marmalade;
     class CookZ_Box_Base: Edible_Base
     {
         scope=2;
@@ -453,7 +773,7 @@ class CfgVehicles
         scope=2;
 		debug_ItemCategory=6;
 		itemSize[]={2,2};
-		weight=15;
+		weight=265;
 		varQuantityMin=0;
 		isMeleeWeapon=1;
 		model="CookZ\data\food_box_opened.p3d";
@@ -1023,7 +1343,6 @@ class CfgVehicles
 
     // define crafting materials ----------------------------------------
 
-    class Inventory_Base;
     class CookZ_EmptyCan: Inventory_Base
     {
         scope=2;
@@ -1076,7 +1395,6 @@ class CfgVehicles
 
     // define equipment slots ----------------------------------------
 
-    class Bottle_Base;
     class Pot: Bottle_Base
     {
         attachments[]=

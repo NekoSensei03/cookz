@@ -135,6 +135,7 @@ class CookZ_Cookbook
             string needsEmptyBox = "";
             string doNotReplaceIngredients = "";
             string doNotCalculateDynamicNutritionProfile = "";
+            string canBeOpened = "";
             GetGame().ConfigGetText(string.Format("%1 %2 allowPot", recipesPath, recipeName), allowPot);
             GetGame().ConfigGetText(string.Format("%1 %2 allowCauldron", recipesPath, recipeName), allowCauldron);
             GetGame().ConfigGetText(string.Format("%1 %2 allowPan", recipesPath, recipeName), allowPan);
@@ -143,8 +144,14 @@ class CookZ_Cookbook
             GetGame().ConfigGetText(string.Format("%1 %2 needsEmptyBox", recipesPath, recipeName), needsEmptyBox);
             GetGame().ConfigGetText(string.Format("%1 %2 doNotReplaceIngredients", recipesPath, recipeName), doNotReplaceIngredients);
             GetGame().ConfigGetText(string.Format("%1 %2 doNotCalculateDynamicNutritionProfile", recipesPath, recipeName), doNotCalculateDynamicNutritionProfile);
+            GetGame().ConfigGetText(string.Format("%1 %2 canBeOpened", recipesPath, recipeName), canBeOpened);
+            int numDishes = GetGame().ConfigGetInt(string.Format("%1 %2 numDishes", recipesPath, recipeName));
+            if (!numDishes)
+            {
+                numDishes = 1;
+            }
 
-            CookZ_Recipe recipe = new CookZ_Recipe(recipeName, allowPot == "true", allowCauldron == "true", allowPan == "true", needsWater == "true", needsEmptyCan == "true", needsEmptyBox == "true", doNotReplaceIngredients == "true", doNotCalculateDynamicNutritionProfile  == "true");
+            CookZ_Recipe recipe = new CookZ_Recipe(recipeName, allowPot == "true", allowCauldron == "true", allowPan == "true", needsWater == "true", needsEmptyCan == "true", needsEmptyBox == "true", doNotReplaceIngredients == "true", doNotCalculateDynamicNutritionProfile  == "true", canBeOpened == "true", numDishes);
 
             array<string> ingredientsArray = new array<string>;
             GetGame().ConfigGetTextArray(string.Format("%1 %2 ingredients", recipesPath, recipeName), ingredientsArray);
@@ -235,7 +242,16 @@ class CookZ_Cookbook
             Print(string.Format("QuantityMax: %1", totalQuantityMax));
             Print(string.Format("Energy:      %1", relativeEnergy));
             Print(string.Format("Water:       %1", relativeWater));*/
-            openedDishToNutritionProfile.Insert(string.Format("%1_Opened", recipe.name), new NutritionalProfile(relativeEnergy, relativeWater, 1, 3, 0, 0, 0));
+            string itemNameWhenConsumable;
+            if (recipe.canBeOpened)
+            {
+                itemNameWhenConsumable = string.Format("%1_Opened", recipe.name);
+            }
+            else
+            {
+               itemNameWhenConsumable = recipe.name;
+            }
+            openedDishToNutritionProfile.Insert(itemNameWhenConsumable, new NutritionalProfile(relativeEnergy, relativeWater, 1, 3, 0, 0, 0));
         }
     }
 

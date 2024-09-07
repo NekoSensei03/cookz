@@ -1,9 +1,24 @@
-* images created with
+* multiple images created with
 ** https://magicstudio.com
 ** local setup of https://replicate.com/vetkastar/fooocus
 ** DALL.E via chat gtp
 * box model based on https://sketchfab.com/3d-models/chinese-take-out-boxes-254dac595ad3482a97455176366dde19
     by gulvtaepper
     under https://creativecommons.org/licenses/by/4.0/
+* sausage model based on https://www.cgtrader.com/free-3d-models/food/miscellaneous/raw-pork-sausage
+    by https://www.cgtrader.com/designers/realityscanning
+    under Editorial No Ai License
 * other models and textures based on vanilla assets
 * json configuration inspired by same feature in mod RaG_Hunting_Cabin
+* sausage brandings
+** bull     <a href="https://www.flaticon.com/free-icons/bull" title="bull icons">Bull icons created by Triangle Squad - Flaticon</a>
+** pig      <a href="https://www.flaticon.com/free-icons/pig" title="pig icons">Pig icons created by photo3idea_studio - Flaticon</a>
+** goat     <a href="https://www.flaticon.com/free-icons/goat" title="goat icons">Goat icons created by UIUX Mall - Flaticon</a>
+** bear     <a href="https://www.flaticon.com/free-icons/bear" title="bear icons">Bear icons created by Freepik - Flaticon</a>
+** sheap    <a href="https://www.flaticon.com/free-icons/sheep" title="sheep icons">Sheep icons created by Icongeek26 - Flaticon</a>
+** boar     <a href="https://www.flaticon.com/free-icons/boar" title="boar icons">Boar icons created by Freepik - Flaticon</a>
+** deer     <a href="https://www.flaticon.com/free-icons/deer" title="deer icons">Deer icons created by Delwar018 - Flaticon</a>
+** rabbit   <a href="https://www.flaticon.com/free-icons/rabbit" title="rabbit icons">Rabbit icons created by Icongeek26 - Flaticon</a>
+** human    <a href="https://www.flaticon.com/free-icons/forbidden" title="forbidden icons">Forbidden icons created by Fathema Khanom - Flaticon</a>
+** chicken  https://www.freepik.com/icon/hen_9516115 by Hen icon | Freepik
+** wolf     https://www.freepik.com/icon/wolf_8531941 by Wolf icon | FreepikGeneric Glyph

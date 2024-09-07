@@ -78,10 +78,22 @@ modded class Cooking
 			// remove ALL liquid for now so that spawned items will not get wet
 			cooking_equipment.AddQuantity(-cooking_equipment.GetQuantity());
 			// add dish to cooking equipment
-			CookZ_ClosedDish createdItem = CookZ_ClosedDish.Cast(cooking_equipment.GetInventory().CreateInInventory(dish.name));
-			if (createdItem)
+			int quantityPerDish = sumQuantity / dish.numDishes;
+			for (int k = 0; k < dish.numDishes; k++)
 			{
-				createdItem.CookZ_SetQuantity(sumQuantity);
+				EntityAI createdDish = cooking_equipment.GetInventory().CreateInInventory(dish.name);
+				CookZ_ClosedDish createdClosedDish = CookZ_ClosedDish.Cast(createdDish);
+				if (createdClosedDish)
+				{
+					createdClosedDish.CookZ_SetQuantity(quantityPerDish);
+					continue;
+				}
+				ItemBase createdEdibleDish = ItemBase.Cast(createdDish);
+				if (createdEdibleDish)
+				{
+					createdEdibleDish.SetQuantity(quantityPerDish);
+					continue;
+				}
 			}
 			// update empty can quantity
 			if (dish.needsEmptyCan)
@@ -149,7 +161,7 @@ modded class Cooking
 			item_to_cook.MakeSoundsOnClient(true, pCookingMethod.param1);
 
 			//! update food
-			UpdateCookingState(item_to_cook, pCookingMethod.param1, cookingEquip, pCookingMethod.param2);
+			CooKZ_UpdateCookingState(item_to_cook, pCookingMethod.param1, cookingEquip, pCookingMethod.param2);
 			
 			//check for done state for boiling and drying
 			if (item_to_cook.IsFoodBoiled() || item_to_cook.IsFoodDried())
@@ -183,7 +195,8 @@ modded class Cooking
 		}
 		else // vanilla processing of non edible items
 		{
-			pItem.DecreaseHealth("", "", PARAM_BURN_DAMAGE_COEF * 100);
+			// this is vanilla - do not do it here so that items will not ruin before cooking finished
+			//pItem.DecreaseHealth("", "", PARAM_BURN_DAMAGE_COEF * 100);
 			AddTemperatureToItem(pItem, null, 0);
 		}
 	}
@@ -270,5 +283,71 @@ modded class Cooking
 		}
 
 		return false;
+	}
+
+	// edits
+	//	do not decrese quantity baking when not using lard
+	//	do not decrease lard quantity
+	protected int CooKZ_UpdateCookingState(Edible_Base item_to_cook, CookingMethodType cooking_method, ItemBase cooking_equipment, float cooking_time_coef)
+	{
+		//food properties
+		float food_temperature = item_to_cook.GetTemperature();
+		
+		//{min_temperature, time_to_cook, max_temperature (optional)}
+		//get next stage name - if next stage is not defined, next stage name will be empty "" and no cooking properties (food_min_temp, food_time_to_cook, food_max_temp) will be set
+		FoodStageType new_stage_type = item_to_cook.GetNextFoodStageType(cooking_method);
+
+		float food_min_temp 	= 0;
+		float food_time_to_cook = 0;
+		float food_max_temp		= -1;
+		
+		//Set next stage cooking properties if next stage possible
+		if (item_to_cook.CanChangeToNewStage(cooking_method)) // new_stage_type != NONE
+		{
+			array<float> next_stage_cooking_properties = new array<float>();
+			next_stage_cooking_properties = FoodStage.GetAllCookingPropertiesForStage(new_stage_type, null, item_to_cook.GetType());
+			
+			food_min_temp = next_stage_cooking_properties.Get(eCookingPropertyIndices.MIN_TEMP);
+			food_time_to_cook = next_stage_cooking_properties.Get(eCookingPropertyIndices.COOK_TIME);
+			// The last element is optional and might not exist
+			if (next_stage_cooking_properties.Count() > 2)
+			{
+				food_max_temp = next_stage_cooking_properties.Get(eCookingPropertyIndices.MAX_TEMP);
+			}
+		}
+		
+		//add temperature
+		AddTemperatureToItem(item_to_cook, cooking_equipment, food_min_temp);
+		
+		//add cooking time if the food can be cooked by this method
+		if (food_min_temp > 0 && food_temperature >= food_min_temp)
+		{
+			float new_cooking_time = item_to_cook.GetCookingTime() + COOKING_FOOD_TIME_INC_VALUE * cooking_time_coef;
+			item_to_cook.SetCookingTime(new_cooking_time);
+			
+			//progress to next stage
+			if (item_to_cook.GetCookingTime() >= food_time_to_cook)
+			{
+				//if max temp is defined check next food stage
+				if (food_max_temp >= 0)
+				{
+					if (food_temperature > food_max_temp && item_to_cook.GetFoodStageType() != FoodStageType.BURNED)
+					{
+						new_stage_type = FoodStageType.BURNED;
+					}
+				}
+				
+				//! Change food stage
+				item_to_cook.ChangeFoodStage(new_stage_type);
+				//! Remove all modifiers
+				item_to_cook.RemoveAllAgentsExcept(eAgents.BRAIN);
+				//reset cooking time
+				item_to_cook.SetCookingTime(0);
+
+				return 1;
+			}
+		}
+		
+		return 0;
 	}
 }
