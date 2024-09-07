@@ -501,7 +501,7 @@ class CfgVehicles
             needsEmptyBox = true;
             canBeOpened = true;
             ingredients[] = {
-                "AnySausage,2",
+                "AnySausage,1",
                 "Potato,2"
             };
         };
@@ -1132,8 +1132,8 @@ class CfgVehicles
             "CookZ\data\box_bangers_and_mash_co.paa",
             "CookZ\data\box_food_bangers_and_mash_co.paa"
         };
-        varQuantityInit=1400
-        varQuantityMax=1400
+        varQuantityInit=900
+        varQuantityMax=900
     };
 
     class CookZ_GoulashCan: SpaghettiCan

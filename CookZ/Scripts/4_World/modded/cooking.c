@@ -85,6 +85,7 @@ modded class Cooking
 				CookZ_ClosedDish createdClosedDish = CookZ_ClosedDish.Cast(createdDish);
 				if (createdClosedDish)
 				{
+					// will be transfered to opened dish
 					createdClosedDish.CookZ_SetQuantity(quantityPerDish);
 					continue;
 				}
