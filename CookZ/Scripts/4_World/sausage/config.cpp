@@ -26,6 +26,24 @@ class CfgVehicles
 			"s_area"
 		};
 		soundImpactType="organic";
+        class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1,             {"CookZ\data\sausage.rvmat"}},
+						{0.69999999,    {"CookZ\data\sausage.rvmat"}},
+						{0.5,           {"CookZ\data\sausage_damage.rvmat"}},
+						{0.30000001,    {"CookZ\data\sausage_damage.rvmat"}},
+						{0,             {"CookZ\data\sausage_destruct.rvmat"}}
+					};
+				};
+			};
+		};
         class AnimEvents
 		{
 			class SoundWeapon
