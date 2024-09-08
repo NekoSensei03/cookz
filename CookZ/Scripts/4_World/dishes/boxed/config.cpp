@@ -34,49 +34,14 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=70;
+					hitpoints=100;
 					healthLevels[]=
 					{
-						
-						{
-							1,
-							
-							{
-								"DZ\gear\food\data\tuna.rvmat"
-							}
-						},
-						
-						{
-							0.69999999,
-							
-							{
-								"DZ\gear\food\data\tuna.rvmat"
-							}
-						},
-						
-						{
-							0.5,
-							
-							{
-								"DZ\gear\food\data\tuna_damage.rvmat"
-							}
-						},
-						
-						{
-							0.30000001,
-							
-							{
-								"DZ\gear\food\data\tuna_damage.rvmat"
-							}
-						},
-						
-						{
-							0,
-							
-							{
-								"DZ\gear\food\data\tuna_destruct.rvmat"
-							}
-						}
+						{1,             {"CookZ\data\box.rvmat"}},
+						{0.69999999,    {"CookZ\data\box.rvmat"}},
+						{0.5,           {"CookZ\data\box_damage.rvmat"}},
+						{0.30000001,    {"CookZ\data\box_damage.rvmat"}},
+						{0,             {"CookZ\data\box_destruct.rvmat"}}
 					};
 				};
 			};
@@ -135,49 +100,14 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=70;
+					hitpoints=100;
 					healthLevels[]=
 					{
-						
-						{
-							1,
-							
-							{
-								"DZ\gear\food\data\tuna.rvmat"
-							}
-						},
-						
-						{
-							0.69999999,
-							
-							{
-								"DZ\gear\food\data\tuna.rvmat"
-							}
-						},
-						
-						{
-							0.5,
-							
-							{
-								"DZ\gear\food\data\tuna_damage.rvmat"
-							}
-						},
-						
-						{
-							0.30000001,
-							
-							{
-								"DZ\gear\food\data\tuna_damage.rvmat"
-							}
-						},
-						
-						{
-							0,
-							
-							{
-								"DZ\gear\food\data\tuna_destruct.rvmat"
-							}
-						}
+						{1,             {"CookZ\data\box.rvmat"}},
+						{0.69999999,    {"CookZ\data\box.rvmat"}},
+						{0.5,           {"CookZ\data\box_damage.rvmat"}},
+						{0.30000001,    {"CookZ\data\box_damage.rvmat"}},
+						{0,             {"CookZ\data\box_destruct.rvmat"}}
 					};
 				};
 			};
