@@ -8,7 +8,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture="CookZ\data\box_nohq.paa";
+	texture="CookZ\data\dishes\boxed\box_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{

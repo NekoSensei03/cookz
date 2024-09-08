@@ -103,14 +103,14 @@ class CfgVehicles
         displayName="Empty Box";
         descriptionShort="An empty box. Can be used to put cooked food inside.";
         itemSize[]={1,2};
-        model="CookZ\data\food_box.p3d";
+        model="CookZ\data\dishes\boxed\food_box.p3d";
         hiddenSelections[]=
 		{
 			"box"
 		};
         hiddenSelectionsTextures[]=
         {
-            "CookZ\data\box_co.paa"
+            "CookZ\data\dishes\boxed\box_co.paa"
         };
         weight=36.279999;
         soundImpactType="metal";
@@ -184,11 +184,11 @@ class CfgVehicles
 		hiddenSelections[] = {"zbytek"};
 		title = "Cooking for Survivors";
 		author = "By a Survivor";
-		file = "CookZ\data\cookbook.html";
+		file = "CookZ\data\cookbook\cookbook.html";
 		displayName = "Survivor Cookbook";
 		descriptionShort = "A cookbook for survivors.";
 		scope = 2;
-		hiddenSelectionsTextures[] = {"CookZ\data\cookbook.paa"};
+		hiddenSelectionsTextures[] = {"CookZ\data\cookbook\cookbook.paa"};
 	};
 
     // make some items able to get hot ----------------------------------------

@@ -68,7 +68,7 @@ FrameWidgetClass ContainerWidget {
                                     vexactpos 1
                                     hexactsize 0
                                     vexactsize 0
-                                    imageTexture "CookZ/data//cookbookPageBg.edds"
+                                    imageTexture "CookZ//data//cookbook//cookbookPageBg.edds"
                                     mode blend
                                     "src alpha" 1
                                     "no wrap" 1

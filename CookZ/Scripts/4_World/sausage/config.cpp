@@ -20,7 +20,7 @@ class CfgVehicles
 		weight=265;
 		varQuantityMin=0;
 		isMeleeWeapon=1;
-		model="CookZ\data\sausage.p3d";
+		model="CookZ\data\dishes\sausage\sausage.p3d";
         hiddenSelections[]=
 		{
 			"s_area"
@@ -35,11 +35,11 @@ class CfgVehicles
 					hitpoints=100;
 					healthLevels[]=
 					{
-						{1,             {"CookZ\data\sausage.rvmat"}},
-						{0.69999999,    {"CookZ\data\sausage.rvmat"}},
-						{0.5,           {"CookZ\data\sausage_damage.rvmat"}},
-						{0.30000001,    {"CookZ\data\sausage_damage.rvmat"}},
-						{0,             {"CookZ\data\sausage_destruct.rvmat"}}
+						{1,             {"CookZ\data\dishes\sausage\sausage.rvmat"}},
+						{0.69999999,    {"CookZ\data\dishes\sausage\sausage.rvmat"}},
+						{0.5,           {"CookZ\data\dishes\sausage\sausage_damage.rvmat"}},
+						{0.30000001,    {"CookZ\data\dishes\sausage\sausage_damage.rvmat"}},
+						{0,             {"CookZ\data\dishes\sausage\sausage_destruct.rvmat"}}
 					};
 				};
 			};
@@ -85,7 +85,7 @@ class CfgVehicles
         descriptionShort="A juicy beef sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
         {
-            "CookZ\data\sausage_cow_co.paa"
+            "CookZ\data\dishes\sausage\sausage_cow_co.paa"
         };
 		varQuantityInit=500;
 		varQuantityMax=500;
@@ -97,7 +97,7 @@ class CfgVehicles
         descriptionShort="A juicy chicken sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
         {
-            "CookZ\data\sausage_chicken_co.paa"
+            "CookZ\data\dishes\sausage\sausage_chicken_co.paa"
         };
 		varQuantityInit=438;
 		varQuantityMax=438;
@@ -109,7 +109,7 @@ class CfgVehicles
         descriptionShort="A juicy pig sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
         {
-            "CookZ\data\sausage_pig_co.paa"
+            "CookZ\data\dishes\sausage\sausage_pig_co.paa"
         };
 		varQuantityInit=500;
 		varQuantityMax=500;
@@ -121,7 +121,7 @@ class CfgVehicles
         descriptionShort="A juicy goat sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
         {
-            "CookZ\data\sausage_goat_co.paa"
+            "CookZ\data\dishes\sausage\sausage_goat_co.paa"
         };
 		varQuantityInit=400;
 		varQuantityMax=400;
@@ -133,7 +133,7 @@ class CfgVehicles
         descriptionShort="A juicy bear sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
         {
-            "CookZ\data\sausage_bear_co.paa"
+            "CookZ\data\dishes\sausage\sausage_bear_co.paa"
         };
 		varQuantityInit=500;
 		varQuantityMax=500;
@@ -145,7 +145,7 @@ class CfgVehicles
         descriptionShort="A juicy sheep sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
         {
-            "CookZ\data\sausage_sheep_co.paa"
+            "CookZ\data\dishes\sausage\sausage_sheep_co.paa"
         };
 		varQuantityInit=400;
 		varQuantityMax=400;
@@ -157,7 +157,7 @@ class CfgVehicles
         descriptionShort="A juicy boar sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
         {
-            "CookZ\data\sausage_boar_co.paa"
+            "CookZ\data\dishes\sausage\sausage_boar_co.paa"
         };
 		varQuantityInit=500;
 		varQuantityMax=500;
@@ -169,7 +169,7 @@ class CfgVehicles
         descriptionShort="A juicy deer sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
         {
-            "CookZ\data\sausage_deer_co.paa"
+            "CookZ\data\dishes\sausage\sausage_deer_co.paa"
         };
 		varQuantityInit=500;
 		varQuantityMax=500;
@@ -181,7 +181,7 @@ class CfgVehicles
         descriptionShort="A juicy hare sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
         {
-            "CookZ\data\sausage_rabbit_co.paa"
+            "CookZ\data\dishes\sausage\sausage_rabbit_co.paa"
         };
 		varQuantityInit=500;
 		varQuantityMax=500;
@@ -193,7 +193,7 @@ class CfgVehicles
         descriptionShort="A juicy wolf sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
         {
-            "CookZ\data\sausage_sheep_co.paa"
+            "CookZ\data\dishes\sausage\sausage_sheep_co.paa"
         };
 		varQuantityInit=400;
 		varQuantityMax=400;
@@ -205,7 +205,7 @@ class CfgVehicles
         descriptionShort="A sausage made from human meat ... just don't ...";
         hiddenSelectionsTextures[]=
         {
-            "CookZ\data\sausage_human_co.paa"
+            "CookZ\data\dishes\sausage\sausage_human_co.paa"
         };
 		varQuantityInit=400;
 		varQuantityMax=400;
