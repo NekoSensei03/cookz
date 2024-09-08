@@ -193,7 +193,7 @@ class CfgVehicles
         descriptionShort="A juicy wolf sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
         {
-            "CookZ\data\dishes\sausage\sausage_sheep_co.paa"
+            "CookZ\data\dishes\sausage\sausage_wolf_co.paa"
         };
 		varQuantityInit=400;
 		varQuantityMax=400;
