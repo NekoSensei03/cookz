@@ -1,3 +1,12 @@
+class CookZ_Box_Base: CookZ_ClosedDish
+{
+    override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionOpen);
+	}
+}
+
 class CookZ_FriedPotatoesBox : CookZ_Box_Base {}
 class CookZ_StirFryBox : CookZ_Box_Base {}
 class CookZ_FishAndChipsBox : CookZ_Box_Base {}
@@ -10,15 +19,6 @@ class CookZ_HaggisBox : CookZ_Box_Base {}
 class CookZ_PommdoenerBox : CookZ_Box_Base {}
 class CookZ_BangersAndMashBox : CookZ_Box_Base {}
 class CookZ_CurrywurstBox : CookZ_Box_Base {}
-
-class CookZ_Box_Base: CookZ_ClosedDish
-{
-    override void SetActions()
-	{
-		super.SetActions();
-		AddAction(ActionOpen);
-	}
-}
 
 class CookZ_FriedPotatoesBox_Opened : CookZ_OpenedDish {}
 class CookZ_StirFryBox_Opened : CookZ_OpenedDish {}
