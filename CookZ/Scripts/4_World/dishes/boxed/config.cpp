@@ -13,7 +13,6 @@ class CfgVehicles
 
     class CookZ_Box_Base: Edible_Base
     {
-        scope=2;
 		debug_ItemCategory=6;
 		rotationFlags=32;
 		itemSize[]={2,2};
@@ -81,7 +80,6 @@ class CfgVehicles
 
     class CookZ_BoxOpened_Base: Edible_Base
     {
-        scope=2;
 		debug_ItemCategory=6;
 		itemSize[]={2,2};
 		weight=265;
@@ -149,6 +147,7 @@ class CfgVehicles
 
     class CookZ_FriedPotatoesBox: CookZ_Box_Base
     {
+        scope=2;
         displayName="Fried Potatoes";
         descriptionShort="A nutritious and long-lasting box of fried potatoes. Will last two to five years depending on storage conditions.";
         hiddenSelectionsTextures[]=
@@ -158,6 +157,7 @@ class CfgVehicles
     };
     class CookZ_FriedPotatoesBox_Opened: CookZ_BoxOpened_Base
     {
+        scope=2;
         displayName="Fried Potatoes";
         descriptionShort="A nutritious box of fried potatoes. Eat up before it spoils.";
         hiddenSelectionsTextures[]=
@@ -167,10 +167,19 @@ class CfgVehicles
         };
         varQuantityInit=1000;
         varQuantityMax=1000;
+        class Nutrition
+        {
+            energy=260;
+            water=30;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     };
 
     class CookZ_StirFryBox: CookZ_Box_Base
     {
+        scope=2;
         displayName="Stir Fry";
         descriptionShort="A nutritious and long-lasting box of stir fry. Will last two to five years depending on storage conditions.";
         hiddenSelectionsTextures[]=
@@ -180,6 +189,7 @@ class CfgVehicles
     };
     class CookZ_StirFryBox_Opened: CookZ_BoxOpened_Base
     {
+        scope=2;
         displayName="Stir Fry";
         descriptionShort="A nutritious box of stir fry. Eat up before it spoils.";
         hiddenSelectionsTextures[]=
@@ -189,10 +199,19 @@ class CfgVehicles
         };
         varQuantityInit=850
         varQuantityMax=850
+        class Nutrition
+        {
+            energy=250;
+            water=52.9412;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     };
 
     class CookZ_FishAndChipsBox: CookZ_Box_Base
     {
+        scope=2;
         displayName="Fish And Chips";
         descriptionShort="A nutritious and long-lasting box of fish and chips. Will last two to five years depending on storage conditions.";
         hiddenSelectionsTextures[]=
@@ -202,6 +221,7 @@ class CfgVehicles
     };
     class CookZ_FishAndChipsBox_Opened: CookZ_BoxOpened_Base
     {
+        scope=2;
         displayName="Fish And Chips";
         descriptionShort="A nutritious box of fish and chips. Eat up before it spoils.";
         hiddenSelectionsTextures[]=
@@ -211,10 +231,19 @@ class CfgVehicles
         };
         varQuantityInit=1100
         varQuantityMax=1100
+        class Nutrition
+        {
+            energy=227.273;
+            water=45.4545;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     };
     
     class CookZ_RicePuddingBox: CookZ_Box_Base
     {
+        scope=2;
         displayName="Rice Pudding";
         descriptionShort="A nutritious and long-lasting box of rice pudding. Will last two to five years depending on storage conditions.";
         hiddenSelectionsTextures[]=
@@ -224,6 +253,7 @@ class CfgVehicles
     };
     class CookZ_RicePuddingBox_Opened: CookZ_BoxOpened_Base
     {
+        scope=2;
         displayName="Rice Pudding";
         descriptionShort="A nutritious box of rice pudding. Eat up before it spoils.";
         hiddenSelectionsTextures[]=
@@ -233,10 +263,19 @@ class CfgVehicles
         };
         varQuantityInit=950
         varQuantityMax=950
+        class Nutrition
+        {
+            energy=210.526;
+            water=63.1579;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     };
 
     class CookZ_MushroomRisottoBox: CookZ_Box_Base
     {
+        scope=2;
         displayName="Mushroom Risotto";
         descriptionShort="A nutritious and long-lasting box of mushroom risotto. Will last two to five years depending on storage conditions.";
         hiddenSelectionsTextures[]=
@@ -246,6 +285,7 @@ class CfgVehicles
     };
     class CookZ_MushroomRisottoBox_Opened: CookZ_BoxOpened_Base
     {
+        scope=2;
         displayName="Mushroom Risotto";
         descriptionShort="A nutritious box of mushroom risotto. Eat up before it spoils.";
         hiddenSelectionsTextures[]=
@@ -255,10 +295,19 @@ class CfgVehicles
         };
         varQuantityInit=800
         varQuantityMax=800
+        class Nutrition
+        {
+            energy=156.25;
+            water=256.25;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     };
 
     class CookZ_PilafBox: CookZ_Box_Base
     {
+        scope=2;
         displayName="Pilaf";
         descriptionShort="A nutritious and long-lasting box of pilaf. Will last two to five years depending on storage conditions.";
         hiddenSelectionsTextures[]=
@@ -268,6 +317,7 @@ class CfgVehicles
     };
     class CookZ_PilafBox_Opened: CookZ_BoxOpened_Base
     {
+        scope=2;
         displayName="Pilaf";
         descriptionShort="A nutritious box of pilaf. Eat up before it spoils.";
         hiddenSelectionsTextures[]=
@@ -277,10 +327,19 @@ class CfgVehicles
         };
         varQuantityInit=1000
         varQuantityMax=1000
+        class Nutrition
+        {
+            energy=135;
+            water=82.5;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     };
 
     class CookZ_GaghBox: CookZ_Box_Base
     {
+        scope=2;
         displayName="Gagh";
         descriptionShort="A nutritious and long-lasting box of gagh. Will last two to five years depending on storage conditions. Earth-Style: the worms are cooked.";
         hiddenSelectionsTextures[]=
@@ -290,6 +349,7 @@ class CfgVehicles
     };
     class CookZ_GaghBox_Opened: CookZ_BoxOpened_Base
     {
+        scope=2;
         displayName="Gagh";
         descriptionShort="A nutritious box of gagh. Eat up before it spoils. Earth-Style: the worms are cooked.";
         hiddenSelectionsTextures[]=
@@ -299,10 +359,19 @@ class CfgVehicles
         };
         varQuantityInit=800
         varQuantityMax=800
+        class Nutrition
+        {
+            energy=150;
+            water=80;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     };
 
     class CookZ_HaggisBox: CookZ_Box_Base
     {
+        scope=2;
         displayName="Haggis with Mashed Potatoes";
         descriptionShort="A nutritious and long-lasting box of haggis with mashed potatoes. Will last two to five years depending on storage conditions.";
         hiddenSelectionsTextures[]=
@@ -312,6 +381,7 @@ class CfgVehicles
     };
     class CookZ_HaggisBox_Opened: CookZ_BoxOpened_Base
     {
+        scope=2;
         displayName="Haggis with Mashed Potatoes";
         descriptionShort="A nutritious box of haggis with mashed potatoes. Eat up before it spoils.";
         hiddenSelectionsTextures[]=
@@ -321,11 +391,20 @@ class CfgVehicles
         };
         varQuantityInit=900
         varQuantityMax=900
+        class Nutrition
+        {
+            energy=227.778;
+            water=83.7778;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     };
 
     class CookZ_StuffedPeppersBox: CookZ_Box_Base
     {
-        displayName="Suffed Peppers";
+        scope=2;
+        displayName="Stuffed Peppers";
         descriptionShort="A nutritious and long-lasting box of stuffed peppers. Will last two to five years depending on storage conditions.";
         hiddenSelectionsTextures[]=
         {
@@ -334,7 +413,8 @@ class CfgVehicles
     };
     class CookZ_StuffedPeppersBox_Opened: CookZ_BoxOpened_Base
     {
-        displayName="Suffed Peppers";
+        scope=2;
+        displayName="Stuffed Peppers";
         descriptionShort="A nutritious box of stuffed peppers. Eat up before it spoils.";
         hiddenSelectionsTextures[]=
         {
@@ -343,10 +423,19 @@ class CfgVehicles
         };
         varQuantityInit=950
         varQuantityMax=950
+        class Nutrition
+        {
+            energy=276.316;
+            water=50;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     };
 
     class CookZ_PommdoenerBox: CookZ_Box_Base
     {
+        scope=2;
         displayName="Pommdoener";
         descriptionShort="A nutritious and long-lasting box of pommdoener. Will last two to five years depending on storage conditions.";
         hiddenSelectionsTextures[]=
@@ -356,6 +445,7 @@ class CfgVehicles
     };
     class CookZ_PommdoenerBox_Opened: CookZ_BoxOpened_Base
     {
+        scope=2;
         displayName="Pommdoener";
         descriptionShort="A nutritious box of pommdoener. Eat up before it spoils.";
         hiddenSelectionsTextures[]=
@@ -365,10 +455,19 @@ class CfgVehicles
         };
         varQuantityInit=1100
         varQuantityMax=1100
+        class Nutrition
+        {
+            energy=281.818;
+            water=40.9091;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     };
 
     class CookZ_BangersAndMashBox: CookZ_Box_Base
     {
+        scope=2;
         displayName="Bangers And Mash";
         descriptionShort="A nutritious and long-lasting box of bangers and mash. Will last two to five years depending on storage conditions.";
         hiddenSelectionsTextures[]=
@@ -378,6 +477,7 @@ class CfgVehicles
     };
     class CookZ_BangersAndMashBox_Opened: CookZ_BoxOpened_Base
     {
+        scope=2;
         displayName="Bangers And Mash";
         descriptionShort="A nutritious box of bangers and mash. Eat up before it spoils.";
         hiddenSelectionsTextures[]=
@@ -387,10 +487,19 @@ class CfgVehicles
         };
         varQuantityInit=900
         varQuantityMax=900
+        class Nutrition
+        {
+            energy=241.667;
+            water=56;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     };
 
     class CookZ_CurrywurstBox: CookZ_Box_Base
     {
+        scope=2;
         displayName="Currywurst";
         descriptionShort="A nutritious and long-lasting box of currywurst. Will last two to five years depending on storage conditions.";
         hiddenSelectionsTextures[]=
@@ -400,6 +509,7 @@ class CfgVehicles
     };
     class CookZ_CurrywurstBox_Opened: CookZ_BoxOpened_Base
     {
+        scope=2;
         displayName="Currywurst";
         descriptionShort="A nutritious box of currywurst. Eat up before it spoils.";
         hiddenSelectionsTextures[]=
@@ -409,5 +519,13 @@ class CfgVehicles
         };
         varQuantityInit=1000
         varQuantityMax=1000
+        class Nutrition
+        {
+            energy=262.5;
+            water=72.5;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     };
 }

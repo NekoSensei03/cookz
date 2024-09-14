@@ -9,11 +9,10 @@ class CookZ_Recipe
     bool needsEmptyCan;
     bool needsEmptyBox;
     bool doNotReplaceIngredients;
-    bool doNotCalculateDynamicNutritionProfile;
     bool canBeOpened;
     int numDishes;
 
-    void CookZ_Recipe(string pName, bool pAllowPot, bool pAllowCauldron, bool pAllowPan, bool pNeedsWater, bool pNeedsEmptyCan, bool pNeedsEmptyBox, bool pDoNotReplaceIngredients, bool pDoNotCalculateDynamicNutritionProfile, bool pCanBeOpened, int pNumDishes)
+    void CookZ_Recipe(string pName, bool pAllowPot, bool pAllowCauldron, bool pAllowPan, bool pNeedsWater, bool pNeedsEmptyCan, bool pNeedsEmptyBox, bool pDoNotReplaceIngredients, bool pCanBeOpened, int pNumDishes)
     {
         ingredients = new array<ref CookZ_Ingredient>();
         name = pName;
@@ -24,7 +23,6 @@ class CookZ_Recipe
         needsEmptyCan = pNeedsEmptyCan;
         needsEmptyBox = pNeedsEmptyBox;
         doNotReplaceIngredients = pDoNotReplaceIngredients;
-        doNotCalculateDynamicNutritionProfile = pDoNotCalculateDynamicNutritionProfile;
         canBeOpened = pCanBeOpened;
         numDishes = pNumDishes;
     }

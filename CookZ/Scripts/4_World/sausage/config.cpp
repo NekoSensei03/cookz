@@ -13,7 +13,6 @@ class CfgVehicles
 
     class CookZ_Sausage_Base: Edible_Base
     {
-        scope=2;
 		debug_ItemCategory=6;
 		rotationFlags=32;
 		itemSize[]={2,2};
@@ -81,6 +80,7 @@ class CfgVehicles
 
     class CookZ_Beef_Sausage: CookZ_Sausage_Base
     {
+        scope=2;
         displayName="Beef Sausage";
         descriptionShort="A juicy beef sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
@@ -89,10 +89,19 @@ class CfgVehicles
         };
 		varQuantityInit=500;
 		varQuantityMax=500;
+        class Nutrition
+        {
+            energy=275;
+            water=100;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     }
 
     class CookZ_Chicken_Sausage: CookZ_Sausage_Base
     {
+        scope=2;
         displayName="Chicken Sausage";
         descriptionShort="A juicy chicken sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
@@ -101,10 +110,19 @@ class CfgVehicles
         };
 		varQuantityInit=438;
 		varQuantityMax=438;
+        class Nutrition
+        {
+            energy=228.571;
+            water=107.143;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     }
 
     class CookZ_Pig_Sausage: CookZ_Sausage_Base
     {
+        scope=2;
         displayName="Pig Sausage";
         descriptionShort="A juicy pig sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
@@ -113,10 +131,19 @@ class CfgVehicles
         };
 		varQuantityInit=500;
 		varQuantityMax=500;
+        class Nutrition
+        {
+            energy=275;
+            water=100;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     }
 
     class CookZ_Goat_Sausage: CookZ_Sausage_Base
     {
+        scope=2;
         displayName="Goat Sausage";
         descriptionShort="A juicy goat sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
@@ -125,10 +152,19 @@ class CfgVehicles
         };
 		varQuantityInit=400;
 		varQuantityMax=400;
+        class Nutrition
+        {
+            energy=250;
+            water=112.5;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     }
 
     class CookZ_Bear_Sausage: CookZ_Sausage_Base
     {
+        scope=2;
         displayName="Bear Sausage";
         descriptionShort="A juicy bear sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
@@ -137,10 +173,19 @@ class CfgVehicles
         };
 		varQuantityInit=500;
 		varQuantityMax=500;
+        class Nutrition
+        {
+            energy=325;
+            water=100;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     }
 
     class CookZ_Sheep_Sausage: CookZ_Sausage_Base
     {
+        scope=2;
         displayName="Sheep Sausage";
         descriptionShort="A juicy sheep sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
@@ -149,10 +194,19 @@ class CfgVehicles
         };
 		varQuantityInit=400;
 		varQuantityMax=400;
+        class Nutrition
+        {
+            energy=250;
+            water=112.5;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     }
 
     class CookZ_Boar_Sausage: CookZ_Sausage_Base
     {
+        scope=2;
         displayName="Boar Sausage";
         descriptionShort="A juicy boar sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
@@ -161,10 +215,19 @@ class CfgVehicles
         };
 		varQuantityInit=500;
 		varQuantityMax=500;
+        class Nutrition
+        {
+            energy=287.5;
+            water=100;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     }
 
     class CookZ_Deer_Sausage: CookZ_Sausage_Base
     {
+        scope=2;
         displayName="Deer Sausage";
         descriptionShort="A juicy deer sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
@@ -173,10 +236,19 @@ class CfgVehicles
         };
 		varQuantityInit=500;
 		varQuantityMax=500;
+        class Nutrition
+        {
+            energy=300;
+            water=100;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     }
 
     class CookZ_Hare_Sausage: CookZ_Sausage_Base
     {
+        scope=2;
         displayName="Hare Sausage";
         descriptionShort="A juicy hare sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
@@ -185,10 +257,19 @@ class CfgVehicles
         };
 		varQuantityInit=500;
 		varQuantityMax=500;
+        class Nutrition
+        {
+            energy=200;
+            water=90;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     }
 
     class CookZ_Wolf_Sausage: CookZ_Sausage_Base
     {
+        scope=2;
         displayName="Wolf Sausage";
         descriptionShort="A juicy wolf sausage, perfect for survivors in need of a quick bite.";
         hiddenSelectionsTextures[]=
@@ -197,10 +278,19 @@ class CfgVehicles
         };
 		varQuantityInit=400;
 		varQuantityMax=400;
+        class Nutrition
+        {
+            energy=231.25;
+            water=112.5;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     }
 
     class CookZ_Human_Sausage: CookZ_Sausage_Base
     {
+        scope=2;
         displayName="Human Sausage";
         descriptionShort="A sausage made from human meat ... just don't ...";
         hiddenSelectionsTextures[]=
@@ -209,5 +299,13 @@ class CfgVehicles
         };
 		varQuantityInit=400;
 		varQuantityMax=400;
+        class Nutrition
+        {
+            energy=231.25;
+            water=112.5;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
     }
 }

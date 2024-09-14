@@ -7,7 +7,8 @@ class CfgVehicles
 {
     class CookZ_Recipes
     {
-		// add a recipe here
+		// add a recipes here
+
         class CookZ_FriedPotatoesBox 	// name needs to be name of dish to be created
         {
             allowPot = false;			// can pot be used for recipe?
@@ -17,7 +18,6 @@ class CfgVehicles
             needsEmptyCan = false;      // is an empty can needed
             needsEmptyBox = true;       // is an empty box needed
             doNotReplaceIngredients = false; // do not replace ingredients by dish (e.g. disenfecting rags)
-            doNotCalculateDynamicNutritionProfile = false; // do not calculate nutrition values dynamically (e.g. if a vanilla food item is created or non at all)
             canBeOpened = true;         // does dish need to be opened before eating
             numDishes = 1;              // number of dishes that will be created
             ingredients[] = {
@@ -202,7 +202,6 @@ class CfgVehicles
             allowCauldron = true;
             allowPan = true;
             needsEmptyCan = true;
-            doNotCalculateDynamicNutritionProfile = true;
             canBeOpened = true;
             ingredients[] = {
                 "PigSteakMeat,2",
@@ -418,12 +417,10 @@ class CfgVehicles
             allowCauldron = true;
             needsWater = true;
             doNotReplaceIngredients = true;
-            doNotCalculateDynamicNutritionProfile = true;
             ingredients[] = {
                 "Rag,-1"    // -1 any number of rag stacks > 0
             };
         };
-        // NOTE: put dishes that contain cooked dishes at the end so that nurition values are calculated
         class CookZ_BangersAndMashBox
         {
             allowPot = true;
