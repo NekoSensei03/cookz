@@ -14,7 +14,6 @@ class CfgVehicles
     class CookZ_Box_Base: Edible_Base
     {
 		debug_ItemCategory=6;
-		rotationFlags=32;
 		itemSize[]={2,2};
 		weight=265;
 		varQuantityInit=0;
