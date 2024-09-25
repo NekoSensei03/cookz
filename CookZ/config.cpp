@@ -21,20 +21,20 @@ class CfgMods
         class defs
         {
             class gameScriptModule
-			{
-				value = "";
-				files[] = {"CookZ/Scripts/3_Game"};
-			};
+            {
+                value = "";
+                files[] = {"CookZ/Scripts/3_Game"};
+            };
             class worldScriptModule
             {
                 value = "";
                 files[] = {"CookZ/Scripts/4_World"};
             };
             class missionScriptModule
-			{
-				value = "";
-				files[] = {"CookZ/Scripts/5_Mission"};
-			};
+            {
+                value = "";
+                files[] = {"CookZ/Scripts/5_Mission"};
+            };
             class imageSets
             {
                 files[] = {
@@ -80,9 +80,9 @@ class CfgVehicles
         itemSize[]={1,2};
         model="\dz\gear\food\food_can.p3d";
         hiddenSelections[]=
-		{
-			"camoGround"
-		};
+        {
+            "camoGround"
+        };
         hiddenSelectionsTextures[]=
         {
             "dz\gear\food\data\UnknownFoodCan_co.paa"
@@ -90,10 +90,10 @@ class CfgVehicles
         weight=36.279999;
         soundImpactType="metal";
         canBeSplit=1;
-		varQuantityInit=1;
-		varQuantityMin=0;
-		varQuantityMax=10;
-		varQuantityDestroyOnMin=1;
+        varQuantityInit=1;
+        varQuantityMin=0;
+        varQuantityMax=10;
+        varQuantityDestroyOnMin=1;
         inventorySlot[] = {"CookZ_EmptyCans"};
     };
 
@@ -105,9 +105,9 @@ class CfgVehicles
         itemSize[]={1,2};
         model="CookZ\data\dishes\boxed\food_box.p3d";
         hiddenSelections[]=
-		{
-			"box"
-		};
+        {
+            "box"
+        };
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_co.paa"
@@ -115,10 +115,10 @@ class CfgVehicles
         weight=36.279999;
         soundImpactType="metal";
         canBeSplit=1;
-		varQuantityInit=1;
-		varQuantityMin=0;
-		varQuantityMax=10;
-		varQuantityDestroyOnMin=1;
+        varQuantityInit=1;
+        varQuantityMin=0;
+        varQuantityMax=10;
+        varQuantityDestroyOnMin=1;
         inventorySlot[] = {"CookZ_EmptyBoxes"};
     };
 
@@ -127,14 +127,14 @@ class CfgVehicles
     class Pot: Bottle_Base
     {
         attachments[]=
-		{
-			"CookZ_EmptyCans",
-			"CookZ_EmptyBoxes"
-		};
+        {
+            "CookZ_EmptyCans",
+            "CookZ_EmptyBoxes"
+        };
         class InventoryEquipment
         {
             playerSlots[]=
-			{
+            {
                 "Slot_CookZ_EmptyCans",
                 "Slot_CookZ_EmptyBoxes"
             };
@@ -143,14 +143,14 @@ class CfgVehicles
     class Cauldron: Bottle_Base
     {
         attachments[]=
-		{
-			"CookZ_EmptyCans",
-			"CookZ_EmptyBoxes"
-		};
+        {
+            "CookZ_EmptyCans",
+            "CookZ_EmptyBoxes"
+        };
         class InventoryEquipment
         {
             playerSlots[]=
-			{
+            {
                 "Slot_CookZ_EmptyCans",
                 "Slot_CookZ_EmptyBoxes"
             };
@@ -159,14 +159,14 @@ class CfgVehicles
     class FryingPan: Inventory_Base
     {
         attachments[]=
-		{
-			"CookZ_EmptyCans",
-			"CookZ_EmptyBoxes"
-		};
+        {
+            "CookZ_EmptyCans",
+            "CookZ_EmptyBoxes"
+        };
         class InventoryEquipment
         {
             playerSlots[]=
-			{
+            {
                 "Slot_CookZ_EmptyCans",
                 "Slot_CookZ_EmptyBoxes"
             };
@@ -175,56 +175,56 @@ class CfgVehicles
 
     // define readable cookbook ----------------------------------------
 
-	class CookZ_Cookbook_Item: Inventory_Base
-	{
+    class CookZ_Cookbook_Item: Inventory_Base
+    {
         model = "dZ\gear\books\Book_kniga.p3d";
-		rotationFlags = 1;
-		weight = 150;
-		itemSize[] = {2,2};
-		hiddenSelections[] = {"zbytek"};
-		title = "Cooking for Survivors";
-		author = "By a Survivor";
-		file = "CookZ\data\cookbook\cookbook.html";
-		displayName = "Survivor Cookbook";
-		descriptionShort = "A cookbook for survivors.";
-		scope = 2;
-		hiddenSelectionsTextures[] = {"CookZ\data\cookbook\cookbook.paa"};
-	};
+        rotationFlags = 1;
+        weight = 150;
+        itemSize[] = {2,2};
+        hiddenSelections[] = {"zbytek"};
+        title = "Cooking for Survivors";
+        author = "By a Survivor";
+        file = "CookZ\data\cookbook\cookbook.html";
+        displayName = "Survivor Cookbook";
+        descriptionShort = "A cookbook for survivors.";
+        scope = 2;
+        hiddenSelectionsTextures[] = {"CookZ\data\cookbook\cookbook.paa"};
+    };
 
     // make some items able to get hot ----------------------------------------
 
     class Rag: Inventory_Base
     {
         varTemperatureInit=0;
-		varTemperatureMin=0;
-		varTemperatureMax=100;
+        varTemperatureMin=0;
+        varTemperatureMax=100;
     }
 
     class DisinfectantAlcohol: Edible_Base
     {
         varTemperatureInit=0;
-		varTemperatureMin=0;
-		varTemperatureMax=100;
+        varTemperatureMin=0;
+        varTemperatureMax=100;
     }
 
     class Rice: Edible_Base
     {
         varTemperatureInit=0;
-		varTemperatureMin=0;
-		varTemperatureMax=100;
+        varTemperatureMin=0;
+        varTemperatureMax=100;
     }
 
     class Worm: Edible_Base
     {
         varTemperatureInit=0;
-		varTemperatureMin=0;
-		varTemperatureMax=100;
+        varTemperatureMin=0;
+        varTemperatureMax=100;
     }
     
     class PowderedMilk: Edible_Base
     {
         varTemperatureInit=0;
-		varTemperatureMin=0;
-		varTemperatureMax=100;
+        varTemperatureMin=0;
+        varTemperatureMax=100;
     }
 };
