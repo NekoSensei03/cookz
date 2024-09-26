@@ -3,6 +3,7 @@ class CookZ_Config
 	bool CanCraftCookBook;
     bool CanCraftEmptyCans;
     bool CanCraftEmptyBoxes;
+    int MinIngredientQuantityPercent;
 };
 
 class CookZ_ConfigService
@@ -46,6 +47,7 @@ class CookZ_ConfigService
 		config.CanCraftCookBook = true;
 		config.CanCraftEmptyCans = true;
 		config.CanCraftEmptyBoxes = true;
+        config.MinIngredientQuantityPercent = 50;
     }
 };
 

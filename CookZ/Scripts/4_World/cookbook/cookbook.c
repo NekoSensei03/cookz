@@ -273,6 +273,18 @@ class CookZ_Cookbook
         ItemBase emptyCans = ItemBase.Cast(cooking_equipment.FindAttachmentBySlotName("CookZ_EmptyCans"));
         ItemBase emptyBoxes = ItemBase.Cast(cooking_equipment.FindAttachmentBySlotName("CookZ_EmptyBoxes"));
 
+        int minIngredientQuantityPercent = 50;
+        CookZ_Config config = GetDayZGame().GetCookZ_Config();
+		if (config)
+		{
+            int configMinIngredientQuantityPercent = config.MinIngredientQuantityPercent;
+            if (0 < configMinIngredientQuantityPercent && configMinIngredientQuantityPercent <= 100)
+            {
+			    minIngredientQuantityPercent = config.MinIngredientQuantityPercent;
+            }
+		}
+        float minIngredientQuantityDecimal = minIngredientQuantityPercent / 100.0;
+
         for (int i = 0; i < cargo.GetItemCount(); i++)
         {
             EntityAI entityInCookingEquipment = cargo.GetItem(i);
@@ -280,9 +292,9 @@ class CookZ_Cookbook
             ItemBase itemInCookingEquipment = ItemBase.Cast(entityInCookingEquipment);
             if (itemInCookingEquipment && itemInCookingEquipment.GetQuantityMax() > 0)
             {
-                if (itemInCookingEquipment.GetQuantity() / itemInCookingEquipment.GetQuantityMax() < 0.6)
+                if (itemInCookingEquipment.GetQuantity() / itemInCookingEquipment.GetQuantityMax() < minIngredientQuantityDecimal)
                 {
-                    // not at least 60 quantity
+                    // not enough percent of max quantity
                     return null;
                 }
             }

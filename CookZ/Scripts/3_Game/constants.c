@@ -6,6 +6,6 @@ static int COOKZ_CONFIG_RPC_TYPE = 1638955238;
 static int COOKZ_COOKBOOK_MENU = 5342723;
 
 // name of cookz config file
-static string COOKZ_CONFIG_FILE_NAME = "CookZ.json";
+static string COOKZ_CONFIG_FILE_NAME = "CookZ_V001.json";
 // root folder for config files
 static string COOKZ_CONFIG_ROOT = "$mission:\\CookZ\\";
