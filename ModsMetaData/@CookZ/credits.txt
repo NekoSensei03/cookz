@@ -2,6 +2,7 @@
 ** https://magicstudio.com
 ** local setup of https://replicate.com/vetkastar/fooocus
 ** DALL.E via chat gtp
+** https://designer.microsoft.com/image-creator
 * box model based on https://sketchfab.com/3d-models/chinese-take-out-boxes-254dac595ad3482a97455176366dde19
     by gulvtaepper
     under https://creativecommons.org/licenses/by/4.0/

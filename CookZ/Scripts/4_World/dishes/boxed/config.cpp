@@ -527,4 +527,36 @@ class CfgVehicles
             toxicity=0;
         };
     };
+
+    class CookZ_StuffedMushroomsBox: CookZ_Box_Base
+    {
+        scope=2;
+        displayName="Stuffed Mushrooms";
+        descriptionShort="A nutritious and long-lasting box of stuffed mushrooms. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_stuffed_mushrooms_co.paa"
+        };
+    };
+    class CookZ_StuffedMushroomsBox_Opened: CookZ_BoxOpened_Base
+    {
+        scope=2;
+        displayName="Stuffed Mushrooms";
+        descriptionShort="A nutritious box of stuffed mushrooms. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_stuffed_mushrooms_co.paa",
+            "CookZ\data\dishes\boxed\box_food_stuffed_mushrooms_co.paa"
+        };
+        varQuantityInit=800
+        varQuantityMax=800
+        class Nutrition
+        {
+            energy=318.75;
+            water=393.75;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
 }

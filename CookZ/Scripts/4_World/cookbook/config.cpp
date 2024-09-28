@@ -456,5 +456,15 @@ class CfgVehicles
                 "PowderedMilk,2"
             };
         };
+        class CookZ_StuffedMushroomsBox
+        {
+            allowPan = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "AnyMushroom,4",
+                "CookZ_Cheese,1"
+            };
+        };
     }
 }
