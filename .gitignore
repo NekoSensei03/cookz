@@ -3,6 +3,7 @@
 
 !.gitignore
 !CookZ/
+!CookZPlants/
 !ModsMetaData/
 ModsMetaData/**/*.bikey
 ModsMetaData/**/*.pbo
