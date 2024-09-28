@@ -445,5 +445,16 @@ class CfgVehicles
                 "Tomato,1"
             };
         };
+        class CookZ_Cheese
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsWater = true;
+            numDishes = 4;
+            ingredients[] = {
+                "Lard,2",
+                "PowderedMilk,2"
+            };
+        };
     }
 }
