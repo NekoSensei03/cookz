@@ -21,13 +21,13 @@ class CookZ_CraftEmptyCan extends RecipeBase
 
         //conditions
         m_MinDamageIngredient[0] = -1;//-1 = disable check
-        m_MaxDamageIngredient[0] = -1;//-1 = disable check
+        m_MaxDamageIngredient[0] = 3;//-1 = disable check
 
         m_MinQuantityIngredient[0] = 1;//-1 = disable check
         m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 
         m_MinDamageIngredient[1] = -1;//-1 = disable check
-        m_MaxDamageIngredient[1] = -1;//-1 = disable check
+        m_MaxDamageIngredient[1] = 3;//-1 = disable check
 
         m_MinQuantityIngredient[1] = -1;//-1 = disable check
         m_MaxQuantityIngredient[1] = -1;//-1 = disable check
@@ -94,13 +94,13 @@ class CookZ_CraftEmptyBoxFromPaper extends RecipeBase
 
         //conditions
         m_MinDamageIngredient[0] = -1;//-1 = disable check
-        m_MaxDamageIngredient[0] = -1;//-1 = disable check
+        m_MaxDamageIngredient[0] = 3;//-1 = disable check
 
         m_MinQuantityIngredient[0] = 1;//-1 = disable check
         m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 
         m_MinDamageIngredient[1] = -1;//-1 = disable check
-        m_MaxDamageIngredient[1] = -1;//-1 = disable check
+        m_MaxDamageIngredient[1] = 3;//-1 = disable check
 
         m_MinQuantityIngredient[1] = -1;//-1 = disable check
         m_MaxQuantityIngredient[1] = -1;//-1 = disable check
@@ -167,13 +167,13 @@ class CookZ_CraftEmptyBoxFromBark extends RecipeBase
 
         //conditions
         m_MinDamageIngredient[0] = -1;//-1 = disable check
-        m_MaxDamageIngredient[0] = -1;//-1 = disable check
+        m_MaxDamageIngredient[0] = 3;//-1 = disable check
 
         m_MinQuantityIngredient[0] = 1;//-1 = disable check
         m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 
         m_MinDamageIngredient[1] = -1;//-1 = disable check
-        m_MaxDamageIngredient[1] = -1;//-1 = disable check
+        m_MaxDamageIngredient[1] = 3;//-1 = disable check
 
         m_MinQuantityIngredient[1] = 1;//-1 = disable check
         m_MaxQuantityIngredient[1] = -1;//-1 = disable check
@@ -257,13 +257,13 @@ class CookZ_CraftCookbook extends RecipeBase
 
         //conditions
         m_MinDamageIngredient[0] = -1;//-1 = disable check
-        m_MaxDamageIngredient[0] = -1;//-1 = disable check
+        m_MaxDamageIngredient[0] = 3;//-1 = disable check
 
         m_MinQuantityIngredient[0] = 1;//-1 = disable check
         m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 
         m_MinDamageIngredient[1] = -1;//-1 = disable check
-        m_MaxDamageIngredient[1] = -1;//-1 = disable check
+        m_MaxDamageIngredient[1] = 3;//-1 = disable check
 
         m_MinQuantityIngredient[1] = 1;//-1 = disable check
         m_MaxQuantityIngredient[1] = -1;//-1 = disable check
