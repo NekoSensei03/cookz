@@ -184,7 +184,13 @@ class CfgVehicles
         hiddenSelections[] = {"zbytek"};
         title = "Cooking for Survivors";
         author = "By a Survivor";
-        file = "CookZ\data\cookbook\cookbook.html";
+        chapters[] = {
+            "CookZ\data\cookbook\01_introdcution.html",
+            "CookZ\data\cookbook\02_boxed.html",
+            "CookZ\data\cookbook\03_canned.html",
+            "CookZ\data\cookbook\04_sausage.html",
+            "CookZ\data\cookbook\05_misc.html"
+        };
         displayName = "Survivor Cookbook";
         descriptionShort = "A cookbook for survivors.";
         scope = 2;
