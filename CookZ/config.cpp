@@ -191,6 +191,13 @@ class CfgVehicles
             "CookZ\data\cookbook\04_sausage.html",
             "CookZ\data\cookbook\05_misc.html"
         };
+        chapterIcons[] = {
+            "CookZ/data/cookbook/icon_read.edds",
+            "CookZ/data/cookbook/icon_box.edds",
+            "CookZ/data/cookbook/icon_can.edds",
+            "CookZ/data/cookbook/icon_sausage.edds",
+            "CookZ/data/cookbook/icon_cheese.edds"
+        };
         displayName = "Survivor Cookbook";
         descriptionShort = "A cookbook for survivors.";
         scope = 2;

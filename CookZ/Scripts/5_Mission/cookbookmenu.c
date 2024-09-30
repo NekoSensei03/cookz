@@ -4,6 +4,7 @@ class CookbookMenu extends UIScriptedMenu
 	protected ref array<string> m_content;
 	protected ref array<int> m_page_to_content;
 	protected ref array<float> m_page_to_position;
+	protected ref array<int> m_chapter_to_page;
 
 	protected int m_current_page;
 	
@@ -45,10 +46,18 @@ class CookbookMenu extends UIScriptedMenu
 		array<string> chapters = new array<string>;
 		book.ConfigGetTextArray("chapters", chapters);
 
+		array<string> chapterIcons = new array<string>;
+		book.ConfigGetTextArray("chapterIcons", chapterIcons);
+
 		m_content = new array<string>;
 		m_page_to_content = new array<int>;
 		m_page_to_position = new array<float>;
+		m_chapter_to_page = new array<int>;
 
+		// build
+		// * m_content: an array of chapter contents
+		// * m_page_to_content: an array that has the length of pages pointing to the respective content index
+		// * m_page_to_position: an array that has the length of pages pointing to the position in the respective content
 		int pageCounter = 0;
 		for (int i = 0;i < chapters.Count(); i++)
 		{
@@ -59,11 +68,24 @@ class CookbookMenu extends UIScriptedMenu
 			m_content_left.SetText(m_content[i]);
 			float contentHeight = m_content_left.GetContentHeight();
 			
+			m_chapter_to_page.Insert(pageCounter);
+
+			string ancorIndex = i.ToStringLen(2);
+			// make bookmark visible
+			ButtonWidget bookmark;
+			Class.CastTo(bookmark, layoutRoot.FindAnyWidget("Ancor" + ancorIndex));
+			bookmark.Show(true);
+			// set bookmark icon
+			ImageWidget icon;
+			Class.CastTo(icon, layoutRoot.FindAnyWidget("AncorIcon" + ancorIndex));
+			icon.LoadImageFile(0, chapterIcons[i]);
+			icon.SetImage(0);
+
 			int numPagesForChapter = Math.Ceil(contentHeight / m_page_height);
 			for (int j = 0;j < numPagesForChapter;j++)
 			{
 				m_page_to_content.Insert(i);
-				m_page_to_position.Insert(j * m_page_height)
+				m_page_to_position.Insert(j * m_page_height);
 				pageCounter++;
 			}
 		}
@@ -104,15 +126,23 @@ class CookbookMenu extends UIScriptedMenu
 
 		switch (w.GetUserID())
 		{
-			case IDC_BOOK_VIEWER_PREV:
+			case 102:
 				PrevPage();
 				return true;
-			case IDC_BOOK_VIEWER_NEXT:
+			case 103:
 				NextPage();
 				return true;
 			case IDC_CANCEL:
 				Close();
 				return true;
+		}
+		if (1123 <= w.GetUserID() && w.GetUserID() < 1133)
+		{
+			int chapterIndex = w.GetUserID() - 1123;
+			int oddDec = m_chapter_to_page[chapterIndex] % 2;
+			m_current_page = m_chapter_to_page[chapterIndex] - oddDec;
+			UpdatePage();
+			return true;
 		}
 
 		return false;

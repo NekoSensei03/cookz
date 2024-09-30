@@ -24,10 +24,12 @@ FrameWidgetClass ContainerWidget {
    style rover_sim_black
    {
     PanelWidgetClass Background {
+     visible 1
      clipchildren 0
      color 0.4471 0.4471 0.4471 0.7843
      position 0 0
      size 1 1
+     halign center_ref
      hexactpos 1
      vexactpos 1
      hexactsize 0
@@ -38,8 +40,8 @@ FrameWidgetClass ContainerWidget {
     PanelWidgetClass BackPanelWidget {
      visible 1
      color 0.4706 0.4706 0.4706 0.4706
-     position 0 -0.1
-     size 0.7 0.75
+     position 0 -0.04
+     size 0.7 0.77
      halign center_ref
      valign center_ref
      hexactpos 0
@@ -49,8 +51,8 @@ FrameWidgetClass ContainerWidget {
      style rover_sim_black
      {
       PanelWidgetClass PanelWidget0 {
-       color 1 0.9882 0.7725 0.7843
-       position 0 0.022
+       color 0 0 0 0
+       position 0 0.032
        size 0.95 0.911
        halign center_ref
        hexactpos 0
@@ -59,7 +61,8 @@ FrameWidgetClass ContainerWidget {
        vexactsize 0
        style rover_sim_colorable
        {
-        ImageWidgetClass Background {
+        ImageWidgetClass BackgroundBook {
+         disabled 0
          clipchildren 0
          ignorepointer 1
          position 0 0
@@ -68,17 +71,22 @@ FrameWidgetClass ContainerWidget {
          vexactpos 1
          hexactsize 0
          vexactsize 0
-         imageTexture "CookZ//data//cookbook//cookbookPageBg.edds"
+         scaled 1
+         imageTexture "{B2E203C0A9DF9A6C}CookZ/data/cookbook/cookbookPageBg.edds"
          mode blend
          "src alpha" 1
          "clamp mode" clamp
          "stretch mode" stretch_w_h
+         "flip u" 0
+         "flip v" 0
+         filter 1
+         nocache 0
          {
           HtmlWidgetClass HtmlWidgetLeft {
            clipchildren 0
            color 0.1 0.1 0.1 1
-           position 0.016 0.082
-           size 0.45 0.83
+           position 0.06 0.082
+           size 0.4 0.81
            hexactpos 0
            vexactpos 0
            hexactsize 0
@@ -91,8 +99,8 @@ FrameWidgetClass ContainerWidget {
           HtmlWidgetClass HtmlWidgetRight {
            clipchildren 0
            color 0.1 0.1 0.1 1
-           position 0.532 0.082
-           size 0.45 0.83
+           position 0.522 0.082
+           size 0.4 0.81
            hexactpos 0
            vexactpos 0
            hexactsize 0
@@ -102,11 +110,671 @@ FrameWidgetClass ContainerWidget {
            "exact text size" 24
            wrap 1
           }
+          ButtonWidgetClass Ancor00 {
+           visible 0
+           disabled 0
+           clipchildren 1
+           inheritalpha 0
+           ignorepointer 0
+           ignoregloballv 0
+           keepsafezone 0
+           position 0 0.1
+           size 0.095 0.04
+           halign right_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           scaled 1
+           fixaspect fixwidth
+           userID 1123
+           draggable 0
+           style Default
+           text_offset 1 1
+           "text color" 0.3373 0.3373 0.3373 1
+           "disabled text color" 0.3373 0.3373 0.3373 1
+           {
+            ImageWidgetClass AncorImage00 {
+             clipchildren 0
+             inheritalpha 0
+             ignorepointer 1
+             position 0 0
+             size 1 1
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             scaled 1
+             imageTexture "{C0A857F754CED9BB}CookZ/data/cookbook/bookmark.edds"
+             mode blend
+             "src alpha" 1
+             "clamp mode" clamp
+             "stretch mode" stretch_w_h
+             filter 1
+             nocache 0
+             {
+              ImageWidgetClass AncorIcon00 {
+               clipchildren 0
+               inheritalpha 0
+               ignorepointer 1
+               size 0.42 1
+               halign center_ref
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               scaled 1
+               mode blend
+               "src alpha" 1
+               "clamp mode" clamp
+               "stretch mode" stretch_w_h
+               filter 1
+               nocache 0
+              }
+             }
+            }
+           }
+          }
+          ButtonWidgetClass Ancor01 {
+           visible 0
+           disabled 0
+           clipchildren 1
+           inheritalpha 0
+           ignorepointer 0
+           ignoregloballv 0
+           keepsafezone 0
+           position 0 0.15
+           size 0.095 0.04
+           halign right_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           scaled 1
+           fixaspect fixwidth
+           userID 1124
+           draggable 0
+           style Default
+           text_offset 1 1
+           "text color" 0.3373 0.3373 0.3373 1
+           "disabled text color" 0.3373 0.3373 0.3373 1
+           {
+            ImageWidgetClass AncorImage01 {
+             clipchildren 0
+             inheritalpha 0
+             ignorepointer 1
+             position 0 0
+             size 1 1
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             scaled 1
+             imageTexture "{C0A857F754CED9BB}CookZ/data/cookbook/bookmark.edds"
+             mode blend
+             "src alpha" 1
+             "clamp mode" clamp
+             "stretch mode" stretch_w_h
+             filter 1
+             nocache 0
+             {
+              ImageWidgetClass AncorIcon01 {
+               clipchildren 0
+               inheritalpha 0
+               ignorepointer 1
+               size 0.42 1
+               halign center_ref
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               scaled 1
+               mode blend
+               "src alpha" 1
+               "clamp mode" clamp
+               "stretch mode" stretch_w_h
+               filter 1
+               nocache 0
+              }
+             }
+            }
+           }
+          }
+          ButtonWidgetClass Ancor02 {
+           visible 0
+           disabled 0
+           clipchildren 1
+           inheritalpha 0
+           ignorepointer 0
+           ignoregloballv 0
+           keepsafezone 0
+           position 0 0.2
+           size 0.095 0.04
+           halign right_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           scaled 1
+           fixaspect fixwidth
+           userID 1125
+           draggable 0
+           style Default
+           text_offset 1 1
+           "text color" 0.3373 0.3373 0.3373 1
+           "disabled text color" 0.3373 0.3373 0.3373 1
+           {
+            ImageWidgetClass AncorImage02 {
+             clipchildren 0
+             inheritalpha 0
+             ignorepointer 1
+             position 0 0
+             size 1 1
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             scaled 1
+             imageTexture "{C0A857F754CED9BB}CookZ/data/cookbook/bookmark.edds"
+             mode blend
+             "src alpha" 1
+             "clamp mode" clamp
+             "stretch mode" stretch_w_h
+             filter 1
+             nocache 0
+             {
+              ImageWidgetClass AncorIcon02 {
+               clipchildren 0
+               inheritalpha 0
+               ignorepointer 1
+               size 0.42 1
+               halign center_ref
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               scaled 1
+               mode blend
+               "src alpha" 1
+               "clamp mode" clamp
+               "stretch mode" stretch_w_h
+               filter 1
+               nocache 0
+              }
+             }
+            }
+           }
+          }
+          ButtonWidgetClass Ancor03 {
+           visible 0
+           disabled 0
+           clipchildren 1
+           inheritalpha 0
+           ignorepointer 0
+           ignoregloballv 0
+           keepsafezone 0
+           position 0 0.25
+           size 0.095 0.04
+           halign right_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           scaled 1
+           fixaspect fixwidth
+           userID 1126
+           draggable 0
+           style Default
+           text_offset 1 1
+           "text color" 0.3373 0.3373 0.3373 1
+           "disabled text color" 0.3373 0.3373 0.3373 1
+           {
+            ImageWidgetClass AncorImage03 {
+             clipchildren 0
+             inheritalpha 0
+             ignorepointer 1
+             position 0 0
+             size 1 1
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             scaled 1
+             imageTexture "{C0A857F754CED9BB}CookZ/data/cookbook/bookmark.edds"
+             mode blend
+             "src alpha" 1
+             "clamp mode" clamp
+             "stretch mode" stretch_w_h
+             filter 1
+             nocache 0
+             {
+              ImageWidgetClass AncorIcon03 {
+               clipchildren 0
+               inheritalpha 0
+               ignorepointer 1
+               size 0.42 1
+               halign center_ref
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               scaled 1
+               mode blend
+               "src alpha" 1
+               "clamp mode" clamp
+               "stretch mode" stretch_w_h
+               filter 1
+               nocache 0
+              }
+             }
+            }
+           }
+          }
+          ButtonWidgetClass Ancor04 {
+           visible 0
+           disabled 0
+           clipchildren 1
+           inheritalpha 0
+           ignorepointer 0
+           ignoregloballv 0
+           keepsafezone 0
+           position 0 0.3
+           size 0.095 0.04
+           halign right_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           scaled 1
+           fixaspect fixwidth
+           userID 1127
+           draggable 0
+           style Default
+           text_offset 1 1
+           "text color" 0.3373 0.3373 0.3373 1
+           "disabled text color" 0.3373 0.3373 0.3373 1
+           {
+            ImageWidgetClass AncorImage04 {
+             clipchildren 0
+             inheritalpha 0
+             ignorepointer 1
+             position 0 0
+             size 1 1
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             scaled 1
+             imageTexture "{C0A857F754CED9BB}CookZ/data/cookbook/bookmark.edds"
+             mode blend
+             "src alpha" 1
+             "clamp mode" clamp
+             "stretch mode" stretch_w_h
+             filter 1
+             nocache 0
+             {
+              ImageWidgetClass AncorIcon04 {
+               clipchildren 0
+               inheritalpha 0
+               ignorepointer 1
+               size 0.42 1
+               halign center_ref
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               scaled 1
+               mode blend
+               "src alpha" 1
+               "clamp mode" clamp
+               "stretch mode" stretch_w_h
+               filter 1
+               nocache 0
+              }
+             }
+            }
+           }
+          }
+          ButtonWidgetClass Ancor05 {
+           visible 0
+           disabled 0
+           clipchildren 1
+           inheritalpha 0
+           ignorepointer 0
+           ignoregloballv 0
+           keepsafezone 0
+           position 0 0.35
+           size 0.095 0.04
+           halign right_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           scaled 1
+           fixaspect fixwidth
+           userID 1128
+           draggable 0
+           style Default
+           text_offset 1 1
+           "text color" 0.3373 0.3373 0.3373 1
+           "disabled text color" 0.3373 0.3373 0.3373 1
+           {
+            ImageWidgetClass AncorImage05 {
+             clipchildren 0
+             inheritalpha 0
+             ignorepointer 1
+             position 0 0
+             size 1 1
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             scaled 1
+             imageTexture "{C0A857F754CED9BB}CookZ/data/cookbook/bookmark.edds"
+             mode blend
+             "src alpha" 1
+             "clamp mode" clamp
+             "stretch mode" stretch_w_h
+             filter 1
+             nocache 0
+             {
+              ImageWidgetClass AncorIcon05 {
+               clipchildren 0
+               inheritalpha 0
+               ignorepointer 1
+               size 0.42 1
+               halign center_ref
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               scaled 1
+               mode blend
+               "src alpha" 1
+               "clamp mode" clamp
+               "stretch mode" stretch_w_h
+               filter 1
+               nocache 0
+              }
+             }
+            }
+           }
+          }
+          ButtonWidgetClass Ancor06 {
+           visible 0
+           disabled 0
+           clipchildren 1
+           inheritalpha 0
+           ignorepointer 0
+           ignoregloballv 0
+           keepsafezone 0
+           position 0 0.4
+           size 0.095 0.04
+           halign right_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           scaled 1
+           fixaspect fixwidth
+           userID 1129
+           draggable 0
+           style Default
+           text_offset 1 1
+           "text color" 0.3373 0.3373 0.3373 1
+           "disabled text color" 0.3373 0.3373 0.3373 1
+           {
+            ImageWidgetClass AncorImage06 {
+             clipchildren 0
+             inheritalpha 0
+             ignorepointer 1
+             position 0 0
+             size 1 1
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             scaled 1
+             imageTexture "{C0A857F754CED9BB}CookZ/data/cookbook/bookmark.edds"
+             mode blend
+             "src alpha" 1
+             "clamp mode" clamp
+             "stretch mode" stretch_w_h
+             filter 1
+             nocache 0
+             {
+              ImageWidgetClass AncorIcon06 {
+               clipchildren 0
+               inheritalpha 0
+               ignorepointer 1
+               size 0.42 1
+               halign center_ref
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               scaled 1
+               mode blend
+               "src alpha" 1
+               "clamp mode" clamp
+               "stretch mode" stretch_w_h
+               filter 1
+               nocache 0
+              }
+             }
+            }
+           }
+          }
+          ButtonWidgetClass Ancor07 {
+           visible 0
+           disabled 0
+           clipchildren 1
+           inheritalpha 0
+           ignorepointer 0
+           ignoregloballv 0
+           keepsafezone 0
+           position 0 0.45
+           size 0.095 0.04
+           halign right_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           scaled 1
+           fixaspect fixwidth
+           userID 1130
+           draggable 0
+           style Default
+           text_offset 1 1
+           "text color" 0.3373 0.3373 0.3373 1
+           "disabled text color" 0.3373 0.3373 0.3373 1
+           {
+            ImageWidgetClass AncorImage07 {
+             clipchildren 0
+             inheritalpha 0
+             ignorepointer 1
+             position 0 0
+             size 1 1
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             scaled 1
+             imageTexture "{C0A857F754CED9BB}CookZ/data/cookbook/bookmark.edds"
+             mode blend
+             "src alpha" 1
+             "clamp mode" clamp
+             "stretch mode" stretch_w_h
+             filter 1
+             nocache 0
+             {
+              ImageWidgetClass AncorIcon07 {
+               clipchildren 0
+               inheritalpha 0
+               ignorepointer 1
+               size 0.42 1
+               halign center_ref
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               scaled 1
+               mode blend
+               "src alpha" 1
+               "clamp mode" clamp
+               "stretch mode" stretch_w_h
+               filter 1
+               nocache 0
+              }
+             }
+            }
+           }
+          }
+          ButtonWidgetClass Ancor08 {
+           visible 0
+           disabled 0
+           clipchildren 1
+           inheritalpha 0
+           ignorepointer 0
+           ignoregloballv 0
+           keepsafezone 0
+           position 0 0.5
+           size 0.095 0.04
+           halign right_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           scaled 1
+           fixaspect fixwidth
+           userID 1131
+           draggable 0
+           style Default
+           text_offset 1 1
+           "text color" 0.3373 0.3373 0.3373 1
+           "disabled text color" 0.3373 0.3373 0.3373 1
+           {
+            ImageWidgetClass AncorImage08 {
+             clipchildren 0
+             inheritalpha 0
+             ignorepointer 1
+             position 0 0
+             size 1 1
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             scaled 1
+             imageTexture "{C0A857F754CED9BB}CookZ/data/cookbook/bookmark.edds"
+             mode blend
+             "src alpha" 1
+             "clamp mode" clamp
+             "stretch mode" stretch_w_h
+             filter 1
+             nocache 0
+             {
+              ImageWidgetClass AncorIcon08 {
+               clipchildren 0
+               inheritalpha 0
+               ignorepointer 1
+               size 0.42 1
+               halign center_ref
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               scaled 1
+               mode blend
+               "src alpha" 1
+               "clamp mode" clamp
+               "stretch mode" stretch_w_h
+               filter 1
+               nocache 0
+              }
+             }
+            }
+           }
+          }
+          ButtonWidgetClass Ancor09 {
+           visible 0
+           disabled 0
+           clipchildren 1
+           inheritalpha 0
+           ignorepointer 0
+           ignoregloballv 0
+           keepsafezone 0
+           position 0 0.55
+           size 0.095 0.04
+           halign right_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           scaled 1
+           fixaspect fixwidth
+           userID 1132
+           draggable 0
+           style Default
+           text_offset 1 1
+           "text color" 0.3373 0.3373 0.3373 1
+           "disabled text color" 0.3373 0.3373 0.3373 1
+           {
+            ImageWidgetClass AncorImage09 {
+             clipchildren 0
+             inheritalpha 0
+             ignorepointer 1
+             position 0 0
+             size 1 1
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             scaled 1
+             imageTexture "{C0A857F754CED9BB}CookZ/data/cookbook/bookmark.edds"
+             mode blend
+             "src alpha" 1
+             "clamp mode" clamp
+             "stretch mode" stretch_w_h
+             filter 1
+             nocache 0
+             {
+              ImageWidgetClass AncorIcon09 {
+               clipchildren 0
+               inheritalpha 0
+               ignorepointer 1
+               size 0.42 1
+               halign center_ref
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               scaled 1
+               mode blend
+               "src alpha" 1
+               "clamp mode" clamp
+               "stretch mode" stretch_w_h
+               filter 1
+               nocache 0
+              }
+             }
+            }
+           }
+          }
          }
         }
         TextWidgetClass PageLeft {
          color 0.2235 0.2235 0.2235 1
-         position 0.02 0.022
+         position 0.06 0.032
          size 0.159 0.035
          halign left_ref
          valign bottom_ref
@@ -121,7 +789,7 @@ FrameWidgetClass ContainerWidget {
         }
         TextWidgetClass PageRight {
          color 0.2235 0.2235 0.2235 1
-         position 0.02 0.022
+         position 0.078 0.032
          size 0.159 0.035
          halign right_ref
          valign bottom_ref
@@ -138,8 +806,8 @@ FrameWidgetClass ContainerWidget {
         TextWidgetClass Title {
          clipchildren 0
          color 0.2235 0.2235 0.2235 1
-         position 0.014 0.012
-         size 0.478 0.035
+         position 0.06 0.022
+         size 0.3 0.035
          hexactpos 0
          vexactpos 0
          hexactsize 0
@@ -151,8 +819,9 @@ FrameWidgetClass ContainerWidget {
         }
         TextWidgetClass Author {
          color 0.2235 0.2235 0.2235 1
-         position 0.507 0.012
-         size 0.478 0.035
+         position 0.078 0.022
+         size 0.3 0.035
+         halign right_ref
          hexactpos 0
          vexactpos 0
          hexactsize 0
@@ -205,7 +874,7 @@ FrameWidgetClass ContainerWidget {
     }
     ButtonWidgetClass PrevButton {
      visible 1
-     position -0.276 0.23
+     position -0.276 0.16
      size 0.075 0.04
      halign center_ref
      valign bottom_ref
@@ -219,7 +888,7 @@ FrameWidgetClass ContainerWidget {
     }
     ButtonWidgetClass NextButton {
      visible 1
-     position 0.276 0.23
+     position 0.236 0.16
      size 0.075 0.04
      halign center_ref
      valign bottom_ref
