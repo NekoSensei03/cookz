@@ -206,6 +206,13 @@ class CfgVehicles
         varTemperatureMax=100;
     }
 
+    class BandageDressing: Inventory_Base
+    {
+        varTemperatureInit=0;
+        varTemperatureMin=0;
+        varTemperatureMax=100;
+    }
+
     class DisinfectantAlcohol: Edible_Base
     {
         varTemperatureInit=0;

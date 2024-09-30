@@ -1,7 +1,7 @@
 modded class Cooking
 {
 	// non edible items or edible items that have no food stage that should still be processed (based on gained temperature)
-	static ref array<typename> NON_EDIBLE_ITEMS = { Rag, DisinfectantAlcohol, Rice, PowderedMilk };
+	static ref array<typename> NON_EDIBLE_ITEMS = { Rag, BandageDressing, DisinfectantAlcohol, Rice, PowderedMilk };
 
 	//COOKING PROCESS
 	//--- Cooking with equipment (pot)
@@ -273,8 +273,8 @@ modded class Cooking
 		
 		if (item_temperature >= item_finished_temperature)
 		{
-			// disinfect rags
-			if (pItem.Type() == Rag)
+			// disinfect rags, bandages
+			if (pItem.Type() == Rag || pItem.Type() == BandageDressing)
 			{
 				pItem.RemoveAllAgentsExcept(eAgents.BRAIN);
 				pItem.SetCleanness(1);

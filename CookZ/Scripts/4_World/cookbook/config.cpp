@@ -418,7 +418,7 @@ class CfgVehicles
             needsWater = true;
             doNotReplaceIngredients = true;
             ingredients[] = {
-                "Rag,-1"    // -1 any number of rag stacks > 0
+                "AnyDisinfect,-1"    // -1 any number of rag, bandage, ... > 0
             };
         };
         class CookZ_BangersAndMashBox

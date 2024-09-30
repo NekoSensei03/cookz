@@ -62,6 +62,9 @@ class CookZ_Cookbook
     const string COOKING_INGREDIENT_WOLF_SAUSAGE              = "CookZ_Wolf_Sausage";
     const string COOKING_INGREDIENT_HUMAN_SAUSAGE             = "CookZ_Human_Sausage";
 
+    const string COOKING_INGREDIENT_RAG                       = "Rag";
+    const string COOKING_INGREDIENT_BANDAGE_DRESSING          = "BandageDressing";
+
     static const string COOKING_INGREDIENT_ANY_MEAT           = "AnyMeat";
     static const string COOKING_INGREDIENT_ANY_FRUIT          = "AnyFruit";
     static const string COOKING_INGREDIENT_ANY_VEG            = "AnyVeg";
@@ -69,6 +72,7 @@ class CookZ_Cookbook
     static const string COOKING_INGREDIENT_ANY_FISH_FILLET    = "AnyFishFillet";
     static const string COOKING_INGREDIENT_ANY_MUSHROOM       = "AnyMushroom";
     static const string COOKING_INGREDIENT_ANY_SAUSAGE        = "AnySausage";
+    static const string COOKING_INGREDIENT_ANY_DISINFECT      = "AnyDisinfect";
 
     ref array<ref CookZ_Recipe> allRecipes;
 
@@ -155,8 +159,9 @@ class CookZ_Cookbook
     static map<string, int> InitQuantityMaxMap()
     {
         map<string, int> tempMap = new map<string, int>;
-        tempMap.Insert("Worm",  100);
-        tempMap.Insert("Rag",   0);
+        tempMap.Insert("Worm",              100);
+        tempMap.Insert("Rag",               0);
+        tempMap.Insert("BandageDressing",   0);
         return tempMap;
     }
     // static maps for calculating energy/water/quantityMax value - for ingredients that do not have those (or reasonable values)
@@ -318,6 +323,7 @@ class CookZ_Cookbook
         int numFishFillet = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_CARP_FILLET_MEAT) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_MACKEREL_FILLET_MEAT);
         int numMushroom = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_AGARICUS_MUSHROOM) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_AURICULARIA_MUSHROOM) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BOLETUS_MUSHROOM) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_LACTARIUS_MUSHROOM) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_MACROLEPIOTA_MUSHROOM) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PLEUROTUS_MUSHROOM);
         int numSausage = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BEEF_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_CHICKEN_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PIG_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_GOAT_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BEAR_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_SHEEP_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BOAR_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_DEER_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_HARE_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_WOLF_SAUSAGE) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_HUMAN_SAUSAGE);
+        int numDisinfect = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_RAG) + ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BANDAGE_DRESSING);
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_MEAT, numMeat);
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_FRUIT, numFruit);
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_VEG, numVeg);
@@ -325,6 +331,7 @@ class CookZ_Cookbook
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_FISH_FILLET, numFishFillet);
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_MUSHROOM, numMushroom);
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_SAUSAGE, numSausage);
+        ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_DISINFECT, numDisinfect);
 
         // check recipes
         foreach (CookZ_Recipe recipe : allRecipes)
