@@ -65,13 +65,15 @@ modded class Cooking
 					int itemQuantity = usedItem.GetQuantity();
 					if (itemQuantity == 0)
 					{
-						// todo change here if this should be different for items that have no quantity
-						sumQuantity += 100;
+						// fallback use static quantity
+						itemQuantity = usedItem.ConfigGetInt("cookz_staticQuantity");
+						if (itemQuantity == 0)
+						{
+							// last fallback if no quantity found
+							itemQuantity = 100;
+						}
 					}
-					else
-					{
-						sumQuantity += itemQuantity;
-					}
+					sumQuantity += itemQuantity;
 					cooking_equipment.GetInventory().LocalDestroyEntity(usedItem);
 				}
 			}

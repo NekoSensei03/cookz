@@ -155,15 +155,6 @@ class CookZ_Cookbook
         tempMap.Insert(COOKING_INGREDIENT_ANY_SAUSAGE,      "CookZ_Beef_Sausage");
         return tempMap;
     }
-    static ref map<string, int> ingredientMapToQuantityMax = InitQuantityMaxMap();
-    static map<string, int> InitQuantityMaxMap()
-    {
-        map<string, int> tempMap = new map<string, int>;
-        tempMap.Insert("Worm",              100);
-        tempMap.Insert("Rag",               0);
-        tempMap.Insert("BandageDressing",   0);
-        return tempMap;
-    }
     // static maps for calculating energy/water/quantityMax value - for ingredients that do not have those (or reasonable values)
     static ref map<string, int> ingredientMapToEnergy = InitEnergyMap();
     static map<string, int> InitEnergyMap()
@@ -236,14 +227,11 @@ class CookZ_Cookbook
                 }
             }
 
-            int itemQuantityMax;
-            if (ingredientMapToQuantityMax.Contains(ingredientName))
+            int itemQuantityMax = GetGame().ConfigGetInt(string.Format("CfgVehicles %1 varQuantityMax", ingredientName));
+            if (itemQuantityMax == 0)
             {
-                itemQuantityMax = ingredientMapToQuantityMax.Get(ingredientName);
-            }
-            else
-            {
-                itemQuantityMax = GetGame().ConfigGetInt(string.Format("CfgVehicles %1 varQuantityMax", ingredientName));
+                // fallback to static quantity
+                itemQuantityMax = GetGame().ConfigGetInt(string.Format("CfgVehicles %1 cookz_staticQuantity", ingredientName));
             }
 
             int itemQuantityTotalMax = itemQuantityMax * ingredient.quantity;

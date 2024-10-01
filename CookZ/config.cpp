@@ -239,6 +239,8 @@ class CfgVehicles
         varTemperatureInit=0;
         varTemperatureMin=0;
         varTemperatureMax=100;
+        // give a static quantity for calculating quantity of dishes
+        cookz_staticQuantity=100;
     }
     
     class PowderedMilk: Edible_Base
