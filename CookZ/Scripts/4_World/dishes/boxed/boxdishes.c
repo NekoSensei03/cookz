@@ -20,6 +20,8 @@ class CookZ_PommdoenerBox : CookZ_Box_Base {}
 class CookZ_BangersAndMashBox : CookZ_Box_Base {}
 class CookZ_CurrywurstBox : CookZ_Box_Base {}
 class CookZ_StuffedMushroomsBox : CookZ_Box_Base {}
+class CookZ_RabbitRoastBox : CookZ_Box_Base {}
+class CookZ_NuggiesAndFriesBox : CookZ_Box_Base {}
 
 class CookZ_FriedPotatoesBox_Opened : CookZ_OpenedDish {}
 class CookZ_StirFryBox_Opened : CookZ_OpenedDish {}
@@ -34,3 +36,5 @@ class CookZ_PommdoenerBox_Opened : CookZ_OpenedDish {}
 class CookZ_BangersAndMashBox_Opened : CookZ_OpenedDish {}
 class CookZ_CurrywurstBox_Opened : CookZ_OpenedDish {}
 class CookZ_StuffedMushroomsBox_Opened : CookZ_OpenedDish {}
+class CookZ_RabbitRoastBox_Opened : CookZ_OpenedDish {}
+class CookZ_NuggiesAndFriesBox_Opened : CookZ_OpenedDish {}

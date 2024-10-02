@@ -559,4 +559,68 @@ class CfgVehicles
             toxicity=0;
         };
     };
+
+    class CookZ_RabbitRoastBox: CookZ_Box_Base
+    {
+        scope=2;
+        displayName="Rabbit Roast";
+        descriptionShort="A nutritious and long-lasting box of stuffed rabbit roast. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_rabbit_roast_co.paa"
+        };
+    };
+    class CookZ_RabbitRoastBox_Opened: CookZ_BoxOpened_Base
+    {
+        scope=2;
+        displayName="Rabbit Roast";
+        descriptionShort="A nutritious box of rabbit roast. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_rabbit_roast_co.paa",
+            "CookZ\data\dishes\boxed\box_food_rabbit_roast_co.paa"
+        };
+        varQuantityInit=1100
+        varQuantityMax=1100
+        class Nutrition
+        {
+            energy=177.273;
+            water=47.7273;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_NuggiesAndFriesBox: CookZ_Box_Base
+    {
+        scope=2;
+        displayName="Nuggies And Fries";
+        descriptionShort="A nutritious and long-lasting box of nuggies and fries. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_nuggies_and_fries_co.paa"
+        };
+    };
+    class CookZ_NuggiesAndFriesBox_Opened: CookZ_BoxOpened_Base
+    {
+        scope=2;
+        displayName="Nuggies And Fries";
+        descriptionShort="A nutritious box of nuggies and fries. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_nuggies_and_fries_co.paa",
+            "CookZ\data\dishes\boxed\box_food_nuggies_and_fries_co.paa"
+        };
+        varQuantityInit=850
+        varQuantityMax=850
+        class Nutrition
+        {
+            energy=247.059;
+            water=38.2353;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
 }

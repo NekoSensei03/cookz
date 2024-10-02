@@ -466,5 +466,28 @@ class CfgVehicles
                 "CookZ_Cheese,1"
             };
         };
+        class CookZ_RabbitRoastBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "RabbitLegMeat,2",
+                "GreenBellPepper,2",
+                "Tomato,3"
+            };
+        };
+        class CookZ_NuggiesAndFriesBox
+        {
+            allowPan = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "ChickenBreastMeat,2",
+                "Potato,2",
+                "Lard,1"
+            };
+        };
     }
 }
