@@ -3,18 +3,19 @@
 
 modded class Icon
 {
-    void SetValidRecipeColor(int color)
+    void SetValidRecipeColor(bool mark)
     {
-        if (color)
+        int color;
+        if (mark)
         {
-            m_ColorWidget.SetColor(ARGB(150, 20, 150, 20));
-            m_ColorWidget.SetAlpha(0.1);
+            color = ColorManager.GREEN_COLOR;
         }
         else
         {
-            m_ColorWidget.SetColor(ColorManager.BASE_COLOR);
-            m_ColorWidget.SetAlpha(0.05);
+            color = ColorManager.BASE_COLOR;
         }
+        m_SelectedPanel.Show(mark);
+        ColorManager.GetInstance().SetColor(m_SelectedPanel, color);
     }
 }
 
