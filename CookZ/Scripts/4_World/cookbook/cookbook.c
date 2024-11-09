@@ -402,7 +402,8 @@ class CookZ_Cookbook
 			    minIngredientQuantityPercent = config.MinIngredientQuantityPercent;
             }
 		}
-        float minIngredientQuantityDecimal = minIngredientQuantityPercent / 100.0;
+        // -0.5 to circumvent bad UX because dayz displays 54.6% as 55% which then fails if the threshold is set to 55% 
+        float minIngredientQuantityDecimal = (minIngredientQuantityPercent - 0.5) / 100.0;
 
         for (int i = 0; i < cargo.GetItemCount(); i++)
         {
@@ -421,10 +422,14 @@ class CookZ_Cookbook
             }
             else
             {
-                if (itemInCookingEquipment.GetQuantityMax() > 0 && itemInCookingEquipment.GetQuantity() / itemInCookingEquipment.GetQuantityMax() < minIngredientQuantityDecimal)
+                if (itemInCookingEquipment.GetQuantityMax() > 0)
                 {
-                    // not enough percent of max quantity
-                    return null;
+                    float ingredientQuantityDecimal = itemInCookingEquipment.GetQuantity() / itemInCookingEquipment.GetQuantityMax();
+                    if (ingredientQuantityDecimal < minIngredientQuantityDecimal)
+                    {
+                        // not enough percent of max quantity
+                        return null;
+                    }
                 }
             }
 
