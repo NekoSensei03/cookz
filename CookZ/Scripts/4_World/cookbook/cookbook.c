@@ -9,6 +9,12 @@ CookZ_Cookbook CookZ_GetCookbook()
     return cookz_cookbook;
 }
 
+class CookZ_IngredientInEquipment
+{
+    int quantity;
+    int numItems;
+}
+
 class CookZ_Cookbook
 {
     typename COOKING_EQUIPMENT_POT                            = Pot;
@@ -266,8 +272,8 @@ class CookZ_Cookbook
         }
 
         // get ingredients, attatchments, water from cooking equipment
-        map<string, int> ingredientTypeInEquipment = GetIngredientsInEquipment(cargo);
-        if (!ingredientTypeInEquipment)
+        map<string, ref CookZ_IngredientInEquipment> ingredientsInEquipment = GetIngredientsInEquipment(cargo);
+        if (!ingredientsInEquipment)
         {
             return null;
         }
@@ -279,7 +285,7 @@ class CookZ_Cookbook
         // check recipes
         foreach (CookZ_Recipe recipe : allRecipes)
         {
-            if (IngredientsFitRecipe(recipe, ingredientTypeInEquipment, emptyCans, emptyBoxes, cooking_equipment.Type(), water, numItemsInEquipment))
+            if (IngredientsFitRecipe(recipe, ingredientsInEquipment, emptyCans, emptyBoxes, cooking_equipment.Type(), water, numItemsInEquipment))
             {
                 return recipe;
             }
@@ -288,7 +294,7 @@ class CookZ_Cookbook
         return null;
     }
 
-    private bool IngredientsFitRecipe(CookZ_Recipe recipe, map<string, int> ingredientTypeInEquipment, ItemBase emptyCans, ItemBase emptyBoxes, typename equipmentType, int water, int numItemsInEquipment)
+    private bool IngredientsFitRecipe(CookZ_Recipe recipe, map<string, ref CookZ_IngredientInEquipment> ingredientItemsInEquipment, ItemBase emptyCans, ItemBase emptyBoxes, typename equipmentType, int water, int numItemsInEquipment)
     {
         // check cooking equipment
         if (equipmentType == COOKING_EQUIPMENT_FRYINGPAN && !recipe.allowPan)
@@ -329,7 +335,13 @@ class CookZ_Cookbook
         foreach (CookZ_Ingredient ingredient : recipe.ingredients)
         {
             int quantityInRecipe = ingredient.quantity;
-            int quantityInEquipment = ingredientTypeInEquipment.Get(ingredient.name);
+            CookZ_IngredientInEquipment ingredientInEquipment = ingredientItemsInEquipment.Get(ingredient.name);
+            if (!ingredientInEquipment)
+            {
+                return false;
+            }
+            int quantityInEquipment = ingredientInEquipment.quantity;
+            int itemsInEquipment = ingredientInEquipment.numItems;
 
             if (quantityInRecipe == -1)
             {
@@ -339,7 +351,7 @@ class CookZ_Cookbook
                 }
                 else
                 {
-                    numExpectedIngredientsInEquipment += quantityInEquipment;
+                    numExpectedIngredientsInEquipment += itemsInEquipment;
                 }
             }
             else
@@ -350,7 +362,7 @@ class CookZ_Cookbook
                 }
                 else
                 {
-                    numExpectedIngredientsInEquipment += quantityInEquipment;
+                    numExpectedIngredientsInEquipment += itemsInEquipment;
                 }
             }
         }
@@ -362,9 +374,9 @@ class CookZ_Cookbook
         return false
     }
 
-    private map<string, int> GetIngredientsInEquipment(CargoBase cargo)
+    private map<string, ref CookZ_IngredientInEquipment> GetIngredientsInEquipment(CargoBase cargo)
     {
-        map<string, int> ingredientTypeInEquipment = new map<string, int>();
+        map<string, ref CookZ_IngredientInEquipment> ingredientsInEquipment = new map<string, ref CookZ_IngredientInEquipment>();
 
         int minIngredientQuantityPercent = 50;
         CookZ_Config config = GetDayZGame().GetCookZ_Config();
@@ -387,9 +399,15 @@ class CookZ_Cookbook
                 return null;
             }
             
-            if (itemInCookingEquipment.GetQuantityMax() > 0)
+            // non splitable items have quantity 1, splitable item their current quantity
+            int quantity = 1;
+            if (itemInCookingEquipment.IsSplitable())
             {
-                if (itemInCookingEquipment.GetQuantity() / itemInCookingEquipment.GetQuantityMax() < minIngredientQuantityDecimal)
+                quantity = itemInCookingEquipment.GetQuantity();
+            }
+            else
+            {
+                if (itemInCookingEquipment.GetQuantityMax() > 0 && itemInCookingEquipment.GetQuantity() / itemInCookingEquipment.GetQuantityMax() < minIngredientQuantityDecimal)
                 {
                     // not enough percent of max quantity
                     return null;
@@ -404,71 +422,90 @@ class CookZ_Cookbook
             }
 
             string currentIngredientTypeName = itemInCookingEquipment.Type().ToString();
-            ingredientTypeInEquipment.Set(currentIngredientTypeName, ingredientTypeInEquipment.Get(currentIngredientTypeName) + 1);
+            ingredientsInEquipment.Set(currentIngredientTypeName, AddOrCreate(ingredientsInEquipment.Get(currentIngredientTypeName), quantity, 1));
         }
 
         // accumulate food groups
-        int numMeat = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PIG_STEAK_MEAT);
-            numMeat += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_WOLF_STEAK_MEAT);
-            numMeat += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_GOAT_STEAK_MEAT);
-            numMeat += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BEAR_STEAK_MEAT);
-            numMeat += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_SHEEP_STEAK_MEAT);
-            numMeat += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BOAR_STEAK_MEAT);
-            numMeat += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_COW_STEAK_MEAT);
-            numMeat += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_HUMAN_STEAK_MEAT);
-            numMeat += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_DEER_STEAK_MEAT);
-            numMeat += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_RABBIT_LEG_MEAT);
-            numMeat += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_CHICKEN_BREAST_MEAT);
-        ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_MEAT, numMeat);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_PIG_STEAK_MEAT);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_WOLF_STEAK_MEAT);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_GOAT_STEAK_MEAT);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_BEAR_STEAK_MEAT);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_SHEEP_STEAK_MEAT);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_BOAR_STEAK_MEAT);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_COW_STEAK_MEAT);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_HUMAN_STEAK_MEAT);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_DEER_STEAK_MEAT);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_RABBIT_LEG_MEAT);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_CHICKEN_BREAST_MEAT);
 
-        int numFruit = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PLUM);
-            numFruit += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PEAR);
-            numFruit += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_APPLE);
-        ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_FRUIT, numFruit);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FRUIT, COOKING_INGREDIENT_PLUM);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FRUIT, COOKING_INGREDIENT_PEAR);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FRUIT, COOKING_INGREDIENT_APPLE);
 
-        int numVeg = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_POTATO);
-            numVeg += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_GREEN_BELL_PEPPER);
-            numVeg += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_ZUCCHINI);
-            numVeg += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_TOMATO);
-            numVeg += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PUMPKIN);
-            numVeg += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_SLICED_PUMPKIN);
-        ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_VEG, numVeg);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_VEG, COOKING_INGREDIENT_POTATO);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_VEG, COOKING_INGREDIENT_GREEN_BELL_PEPPER);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_VEG, COOKING_INGREDIENT_ZUCCHINI);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_VEG, COOKING_INGREDIENT_TOMATO);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_VEG, COOKING_INGREDIENT_PUMPKIN);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_VEG, COOKING_INGREDIENT_SLICED_PUMPKIN);
 
-        int numFish = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_CARP_FILLET_MEAT);
-            numFish += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_MACKEREL_FILLET_MEAT);
-            numFish += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_SARDINES);
-            numFish += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BITTERLINGS);
-        ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_FISH, numFish);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH, COOKING_INGREDIENT_CARP_FILLET_MEAT);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH, COOKING_INGREDIENT_MACKEREL_FILLET_MEAT);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH, COOKING_INGREDIENT_SARDINES);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH, COOKING_INGREDIENT_BITTERLINGS);
 
-        int numFishFillet = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_CARP_FILLET_MEAT);
-            numFishFillet += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_MACKEREL_FILLET_MEAT);
-        ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_FISH_FILLET, numFishFillet);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH_FILLET, COOKING_INGREDIENT_CARP_FILLET_MEAT);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH_FILLET, COOKING_INGREDIENT_MACKEREL_FILLET_MEAT);
 
-        int numMushroom = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_AGARICUS_MUSHROOM);
-            numMushroom += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_AURICULARIA_MUSHROOM);
-            numMushroom += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BOLETUS_MUSHROOM);
-            numMushroom += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_LACTARIUS_MUSHROOM);
-            numMushroom += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_MACROLEPIOTA_MUSHROOM);
-            numMushroom += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PLEUROTUS_MUSHROOM);
-        ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_MUSHROOM, numMushroom);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_AGARICUS_MUSHROOM);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_AURICULARIA_MUSHROOM);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_BOLETUS_MUSHROOM);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_LACTARIUS_MUSHROOM);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_MACROLEPIOTA_MUSHROOM);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_PLEUROTUS_MUSHROOM);
 
-        int numSausage = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BEEF_SAUSAGE);
-            numSausage += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_CHICKEN_SAUSAGE);
-            numSausage += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_PIG_SAUSAGE);
-            numSausage += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_GOAT_SAUSAGE);
-            numSausage += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BEAR_SAUSAGE);
-            numSausage += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_SHEEP_SAUSAGE);
-            numSausage += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BOAR_SAUSAGE);
-            numSausage += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_DEER_SAUSAGE);
-            numSausage += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_HARE_SAUSAGE);
-            numSausage += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_WOLF_SAUSAGE);
-            numSausage += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_HUMAN_SAUSAGE);
-        ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_SAUSAGE, numSausage);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_BEEF_SAUSAGE);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_CHICKEN_SAUSAGE);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_PIG_SAUSAGE);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_GOAT_SAUSAGE);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_BEAR_SAUSAGE);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_SHEEP_SAUSAGE);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_BOAR_SAUSAGE);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_DEER_SAUSAGE);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_HARE_SAUSAGE);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_WOLF_SAUSAGE);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_HUMAN_SAUSAGE);
 
-        int numDisinfect = ingredientTypeInEquipment.Get(COOKING_INGREDIENT_RAG);
-            numDisinfect += ingredientTypeInEquipment.Get(COOKING_INGREDIENT_BANDAGE_DRESSING);
-        ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_DISINFECT, numDisinfect);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_DISINFECT, COOKING_INGREDIENT_RAG);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_DISINFECT, COOKING_INGREDIENT_BANDAGE_DRESSING);
 
-        return ingredientTypeInEquipment;
+        return ingredientsInEquipment;
+    }
+
+    private void Accumulate(map<string, ref CookZ_IngredientInEquipment> ingredientMap, string group, string specific)
+    {
+        CookZ_IngredientInEquipment groupIngredient = ingredientMap.Get(group);
+        if (!groupIngredient)
+        {
+            groupIngredient = new CookZ_IngredientInEquipment();
+        }
+        CookZ_IngredientInEquipment specificIngredient = ingredientMap.Get(specific);
+        if (specificIngredient)
+        {
+            groupIngredient.quantity = groupIngredient.quantity + specificIngredient.quantity;
+            groupIngredient.numItems = groupIngredient.numItems + specificIngredient.numItems;
+        }
+        ingredientMap.Set(group, groupIngredient);
+    }
+
+    private CookZ_IngredientInEquipment AddOrCreate(ref CookZ_IngredientInEquipment ingredientInEquipment, int quantity, int numItems)
+    {
+        if (!ingredientInEquipment)
+        {
+            ingredientInEquipment = new CookZ_IngredientInEquipment();
+        }
+        ingredientInEquipment.quantity = ingredientInEquipment.quantity + quantity;
+        ingredientInEquipment.numItems = ingredientInEquipment.numItems + numItems;
+        return ingredientInEquipment;
     }
 }

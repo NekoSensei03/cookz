@@ -98,17 +98,17 @@ class CfgVehicles
                 "Tomato,2"
             };
         };
-        // class CookZ_GaghBox
-        // {
-        //     allowPot = true;
-        //     allowCauldron = true;
-        //     needsWater = true;
-        //     needsEmptyBox = true;
-        //     canBeOpened = true;
-        //     ingredients[] = {
-        //         "Worm,8"
-        //     };
-        // };
+        class CookZ_GaghBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsWater = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "Worm,8"
+            };
+        };
         class CookZ_HaggisBox
         {
             allowPot = true;
