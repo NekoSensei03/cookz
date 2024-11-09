@@ -308,4 +308,46 @@ class CfgVehicles
             toxicity=0;
         };
     }
+
+    class CookZ_Fox_Sausage: CookZ_Sausage_Base
+    {
+        scope=2;
+        displayName="Fox Sausage";
+        descriptionShort="A juicy fox sausage, perfect for survivors in need of a quick bite.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\sausage\sausage_fox_co.paa"
+        };
+		varQuantityInit=445;
+		varQuantityMax=445;
+        class Nutrition
+        {
+            energy=228.09;
+            water=94.7865;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    }
+
+    class CookZ_Reindeer_Sausage: CookZ_Sausage_Base
+    {
+        scope=2;
+        displayName="Reindeer Sausage";
+        descriptionShort="A juicy reindeer sausage, perfect for survivors in need of a quick bite.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\sausage\sausage_reindeer_co.paa"
+        };
+		varQuantityInit=500;
+		varQuantityMax=500;
+        class Nutrition
+        {
+            energy=238.462;
+            water=120.923;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    }
 }

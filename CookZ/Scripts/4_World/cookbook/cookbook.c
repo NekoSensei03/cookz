@@ -74,6 +74,8 @@ class CookZ_Cookbook
     const string COOKING_INGREDIENT_HARE_SAUSAGE              = "CookZ_Hare_Sausage";
     const string COOKING_INGREDIENT_WOLF_SAUSAGE              = "CookZ_Wolf_Sausage";
     const string COOKING_INGREDIENT_HUMAN_SAUSAGE             = "CookZ_Human_Sausage";
+    const string COOKING_INGREDIENT_FOX_SAUSAGE               = "CookZ_Fox_Sausage";
+    const string COOKING_INGREDIENT_REINDEER_SAUSAGE          = "CookZ_Reindeer_Sausage";
 
     const string COOKING_INGREDIENT_RAG                       = "Rag";
     const string COOKING_INGREDIENT_BANDAGE_DRESSING          = "BandageDressing";
@@ -496,6 +498,8 @@ class CookZ_Cookbook
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_HARE_SAUSAGE);
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_WOLF_SAUSAGE);
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_HUMAN_SAUSAGE);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_FOX_SAUSAGE);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_REINDEER_SAUSAGE);
 
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_DISINFECT, COOKING_INGREDIENT_RAG);
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_DISINFECT, COOKING_INGREDIENT_BANDAGE_DRESSING);

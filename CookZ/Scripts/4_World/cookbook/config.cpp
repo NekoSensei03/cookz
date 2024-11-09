@@ -411,6 +411,26 @@ class CfgVehicles
                 "HumanSteakMeat,2"
             };
         };
+        class CookZ_Fox_Sausage
+        {
+            allowPot = true;
+            allowCauldron = true;
+            numDishes = 2;
+            ingredients[] = {
+                "Guts,1",
+                "FoxSteakMeat,3"
+            };
+        };
+        class CookZ_Reindeer_Sausage
+        {
+            allowPot = true;
+            allowCauldron = true;
+            numDishes = 2;
+            ingredients[] = {
+                "Guts,1",
+                "ReindeerSteakMeat,2"
+            };
+        };
         class CookZ_DisinfectRags
         {
             allowPot = true;

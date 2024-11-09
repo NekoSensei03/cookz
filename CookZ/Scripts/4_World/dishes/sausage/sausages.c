@@ -30,3 +30,5 @@ class CookZ_Deer_Sausage: CookZ_Sausage_Base {}
 class CookZ_Hare_Sausage: CookZ_Sausage_Base {}
 class CookZ_Wolf_Sausage: CookZ_Sausage_Base {}
 class CookZ_Human_Sausage: CookZ_Sausage_Base {}
+class CookZ_Fox_Sausage: CookZ_Sausage_Base {}
+class CookZ_Reindeer_Sausage: CookZ_Sausage_Base {}
