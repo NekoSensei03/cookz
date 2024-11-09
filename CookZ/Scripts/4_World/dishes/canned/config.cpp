@@ -38,7 +38,7 @@ class CfgVehicles
         class Nutrition
         {
             energy=215.625;
-            water=70.8125;
+            water=89.9375;
             fullnessIndex=3;
             nutritionalIndex=1;
             toxicity=0;
@@ -69,7 +69,7 @@ class CfgVehicles
         class Nutrition
         {
             energy=125;
-            water=100;
+            water=112;
             fullnessIndex=3;
             nutritionalIndex=1;
             toxicity=0;
@@ -99,8 +99,8 @@ class CfgVehicles
         varQuantityMax=1300
         class Nutrition
         {
-            energy=155.769;
-            water=123.231;
+            energy=140.385;
+            water=89.2308;
             fullnessIndex=3;
             nutritionalIndex=1;
             toxicity=0;
@@ -130,8 +130,8 @@ class CfgVehicles
         varQuantityMax=1500
         class Nutrition
         {
-            energy=161.667;
-            water=106.8;
+            energy=148.333;
+            water=77.3333;
             fullnessIndex=3;
             nutritionalIndex=1;
             toxicity=0;
@@ -162,7 +162,7 @@ class CfgVehicles
         class Nutrition
         {
             energy=192.857;
-            water=110.714;
+            water=125.571;
             fullnessIndex=3;
             nutritionalIndex=1;
             toxicity=0;
@@ -193,7 +193,7 @@ class CfgVehicles
         class Nutrition
         {
             energy=300;
-            water=50;
+            water=25.2632;
             fullnessIndex=3;
             nutritionalIndex=1;
             toxicity=0;
@@ -224,7 +224,7 @@ class CfgVehicles
         class Nutrition
         {
             energy=191.176;
-            water=139.706;
+            water=94.0588;
             fullnessIndex=3;
             nutritionalIndex=1;
             toxicity=0;
@@ -255,7 +255,7 @@ class CfgVehicles
         class Nutrition
         {
             energy=218.75;
-            water=87.5;
+            water=122.5;
             fullnessIndex=3;
             nutritionalIndex=1;
             toxicity=0;
@@ -286,7 +286,7 @@ class CfgVehicles
         class Nutrition
         {
             energy=302.632;
-            water=484.211;
+            water=178.947;
             fullnessIndex=3;
             nutritionalIndex=1;
             toxicity=0;
@@ -317,7 +317,7 @@ class CfgVehicles
         class Nutrition
         {
             energy=209.524;
-            water=84.7143;
+            water=93.2857;
             fullnessIndex=3;
             nutritionalIndex=1;
             toxicity=0;
@@ -348,7 +348,7 @@ class CfgVehicles
         class Nutrition
         {
             energy=250;
-            water=75;
+            water=24;
             fullnessIndex=3;
             nutritionalIndex=1;
             toxicity=0;
@@ -379,7 +379,7 @@ class CfgVehicles
         class Nutrition
         {
             energy=300;
-            water=125;
+            water=32;
             fullnessIndex=3;
             nutritionalIndex=1;
             toxicity=0;
@@ -410,7 +410,7 @@ class CfgVehicles
         class Nutrition
         {
             energy=300;
-            water=50;
+            water=16;
             fullnessIndex=3;
             nutritionalIndex=1;
             toxicity=0;

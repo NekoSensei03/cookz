@@ -197,6 +197,11 @@ class CookZ_Cookbook
             foodStageType = FoodStageType.BOILED;
         }
         Print(string.Format("Nutrition Values for %1", recipe.name));
+        if (recipe.needsWater)
+        {
+            // 500ml - 100ml (lost by cooking) times water content
+            totalWater += (500 - 100) * 100;
+        }
         foreach (CookZ_Ingredient ingredient : recipe.ingredients)
         {
             // map ingredient name to deputy - e.g. AnyMeat to specific meat
