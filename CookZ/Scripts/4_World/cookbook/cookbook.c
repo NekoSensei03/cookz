@@ -43,11 +43,15 @@ class CookZ_Cookbook
     const string COOKING_INGREDIENT_DEER_STEAK_MEAT           = "DeerSteakMeat";
     const string COOKING_INGREDIENT_RABBIT_LEG_MEAT           = "RabbitLegMeat";
     const string COOKING_INGREDIENT_CHICKEN_BREAST_MEAT       = "ChickenBreastMeat";
+    const string COOKING_INGREDIENT_REINDEER_STEAK_MEAT       = "ReindeerSteakMeat";
+    const string COOKING_INGREDIENT_FOX_STEAK_MEAT            = "FoxSteakMeat";
 
-    const string COOKING_INGREDIENT_CARP_FILLET_MEAT          = "CarpFilletMeat";
-    const string COOKING_INGREDIENT_MACKEREL_FILLET_MEAT      = "MackerelFilletMeat";
-    const string COOKING_INGREDIENT_SARDINES                  = "Sardines";
-    const string COOKING_INGREDIENT_BITTERLINGS               = "Bitterlings";
+    const string COOKING_INGREDIENT_CARP_FILLET_MEAT            = "CarpFilletMeat";
+    const string COOKING_INGREDIENT_MACKEREL_FILLET_MEAT        = "MackerelFilletMeat";
+    const string COOKING_INGREDIENT_SARDINES                    = "Sardines";
+    const string COOKING_INGREDIENT_BITTERLINGS                 = "Bitterlings";
+    const string COOKING_INGREDIENT_WALLEYE_POLLOCK_FILLET_MEAT = "WalleyePollockFilletMeat";
+    const string COOKING_INGREDIENT_STEELHEAD_TROUT_FILLET_MEAT = "SteelheadTroutFilletMeat";
 
     const string COOKING_INGREDIENT_AGARICUS_MUSHROOM         = "AgaricusMushroom";
     const string COOKING_INGREDIENT_AURICULARIA_MUSHROOM      = "AuriculariaMushroom";
@@ -55,6 +59,9 @@ class CookZ_Cookbook
     const string COOKING_INGREDIENT_LACTARIUS_MUSHROOM        = "LactariusMushroom";
     const string COOKING_INGREDIENT_MACROLEPIOTA_MUSHROOM     = "MacrolepiotaMushroom";
     const string COOKING_INGREDIENT_PLEUROTUS_MUSHROOM        = "PleurotusMushroom";
+    const string COOKING_INGREDIENT_AMANITA_MUSHROOM          = "AmanitaMushroom";
+    const string COOKING_INGREDIENT_PSILOCYBE_MUSHROOM        = "PsilocybeMushroom";
+    const string COOKING_INGREDIENT_CRATERELLUS_MUSHROOM      = "CraterellusMushroom";
 
     const string COOKING_INGREDIENT_BEEF_SAUSAGE              = "CookZ_Beef_Sausage";
     const string COOKING_INGREDIENT_CHICKEN_SAUSAGE           = "CookZ_Chicken_Sausage";
@@ -442,6 +449,8 @@ class CookZ_Cookbook
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_DEER_STEAK_MEAT);
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_RABBIT_LEG_MEAT);
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_CHICKEN_BREAST_MEAT);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_REINDEER_STEAK_MEAT);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_FOX_STEAK_MEAT);
 
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FRUIT, COOKING_INGREDIENT_PLUM);
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FRUIT, COOKING_INGREDIENT_PEAR);
@@ -458,9 +467,13 @@ class CookZ_Cookbook
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH, COOKING_INGREDIENT_MACKEREL_FILLET_MEAT);
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH, COOKING_INGREDIENT_SARDINES);
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH, COOKING_INGREDIENT_BITTERLINGS);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH, COOKING_INGREDIENT_WALLEYE_POLLOCK_FILLET_MEAT);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH, COOKING_INGREDIENT_STEELHEAD_TROUT_FILLET_MEAT);
 
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH_FILLET, COOKING_INGREDIENT_CARP_FILLET_MEAT);
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH_FILLET, COOKING_INGREDIENT_MACKEREL_FILLET_MEAT);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH_FILLET, COOKING_INGREDIENT_WALLEYE_POLLOCK_FILLET_MEAT);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH_FILLET, COOKING_INGREDIENT_STEELHEAD_TROUT_FILLET_MEAT);
 
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_AGARICUS_MUSHROOM);
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_AURICULARIA_MUSHROOM);
@@ -468,6 +481,9 @@ class CookZ_Cookbook
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_LACTARIUS_MUSHROOM);
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_MACROLEPIOTA_MUSHROOM);
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_PLEUROTUS_MUSHROOM);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_AMANITA_MUSHROOM);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_PSILOCYBE_MUSHROOM);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_CRATERELLUS_MUSHROOM);
 
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_BEEF_SAUSAGE);
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_CHICKEN_SAUSAGE);
