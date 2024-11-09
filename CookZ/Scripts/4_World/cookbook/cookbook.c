@@ -193,6 +193,7 @@ class CookZ_Cookbook
         Print(string.Format("Nutrition Values for %1", recipe.name));
         foreach (CookZ_Ingredient ingredient : recipe.ingredients)
         {
+            // map ingredient name to deputy - e.g. AnyMeat to specific meat
             string ingredientName = ingredient.name;
             if (anyIngredientMapToDeputy.Contains(ingredientName))
             {
@@ -251,20 +252,119 @@ class CookZ_Cookbook
         }
     }
 
-    // returns a dish string or null if no valid recipe detected
+    // returns a recipe or null if no valid recipe detected
     CookZ_Recipe GetDishForIngredients(ItemBase cooking_equipment)
     {
-        // count ingredients in cooking equipment
+        if (!cooking_equipment)
+        {
+            return null;
+        }
         CargoBase cargo = cooking_equipment.GetInventory().GetCargo();
         if (!cargo)
         {
             return null;
         }
 
-        ref map<string, int> ingredientTypeInEquipment = new map<string, int>();
-        
+        // get ingredients, attatchments, water from cooking equipment
+        map<string, int> ingredientTypeInEquipment = GetIngredientsInEquipment(cargo);
+        if (!ingredientTypeInEquipment)
+        {
+            return null;
+        }
         ItemBase emptyCans = ItemBase.Cast(cooking_equipment.FindAttachmentBySlotName("CookZ_EmptyCans"));
         ItemBase emptyBoxes = ItemBase.Cast(cooking_equipment.FindAttachmentBySlotName("CookZ_EmptyBoxes"));
+        int water = cooking_equipment.GetQuantity();
+        int numItemsInEquipment = cargo.GetItemCount();
+
+        // check recipes
+        foreach (CookZ_Recipe recipe : allRecipes)
+        {
+            if (IngredientsFitRecipe(recipe, ingredientTypeInEquipment, emptyCans, emptyBoxes, cooking_equipment.Type(), water, numItemsInEquipment))
+            {
+                return recipe;
+            }
+        }
+
+        return null;
+    }
+
+    private bool IngredientsFitRecipe(CookZ_Recipe recipe, map<string, int> ingredientTypeInEquipment, ItemBase emptyCans, ItemBase emptyBoxes, typename equipmentType, int water, int numItemsInEquipment)
+    {
+        // check cooking equipment
+        if (equipmentType == COOKING_EQUIPMENT_FRYINGPAN && !recipe.allowPan)
+        {
+            return false;
+        }
+        if (equipmentType == COOKING_EQUIPMENT_POT && !recipe.allowPot)
+        {
+            return false;
+        }
+        if (equipmentType == COOKING_EQUIPMENT_CAULDRON && !recipe.allowCauldron)
+        {
+            return false;
+        }
+
+        // check empty cans and boxes
+        if (recipe.needsEmptyCan && !emptyCans)
+        {
+            return false;
+        }
+        if (recipe.needsEmptyBox && !emptyBoxes)
+        {
+            return false;
+        }
+
+        // check water
+        if (recipe.needsWater && water < 500)
+        {
+            return false;
+        }
+        if (!recipe.needsWater && water > 0)
+        {
+            return false;
+        }
+
+        // check ingredients
+        int numExpectedIngredientsInEquipment = 0;
+        foreach (CookZ_Ingredient ingredient : recipe.ingredients)
+        {
+            int quantityInRecipe = ingredient.quantity;
+            int quantityInEquipment = ingredientTypeInEquipment.Get(ingredient.name);
+
+            if (quantityInRecipe == -1)
+            {
+                if (quantityInEquipment < 1)
+                {
+                    return false;
+                }
+                else
+                {
+                    numExpectedIngredientsInEquipment += quantityInEquipment;
+                }
+            }
+            else
+            {
+                if (quantityInRecipe != quantityInEquipment)
+                {
+                    return false;
+                }
+                else
+                {
+                    numExpectedIngredientsInEquipment += quantityInEquipment;
+                }
+            }
+        }
+        // are needed ingredints in equipment and nothing else
+        if(numExpectedIngredientsInEquipment == numItemsInEquipment)
+        {
+            return true;
+        }
+        return false
+    }
+
+    private map<string, int> GetIngredientsInEquipment(CargoBase cargo)
+    {
+        map<string, int> ingredientTypeInEquipment = new map<string, int>();
 
         int minIngredientQuantityPercent = 50;
         CookZ_Config config = GetDayZGame().GetCookZ_Config();
@@ -281,9 +381,13 @@ class CookZ_Cookbook
         for (int i = 0; i < cargo.GetItemCount(); i++)
         {
             EntityAI entityInCookingEquipment = cargo.GetItem(i);
-
-            ItemBase itemInCookingEquipment = ItemBase.Cast(entityInCookingEquipment);
-            if (itemInCookingEquipment && itemInCookingEquipment.GetQuantityMax() > 0)
+            ItemBase itemInCookingEquipment;
+            if (!entityInCookingEquipment || !Class.CastTo(itemInCookingEquipment, entityInCookingEquipment))
+            {
+                return null;
+            }
+            
+            if (itemInCookingEquipment.GetQuantityMax() > 0)
             {
                 if (itemInCookingEquipment.GetQuantity() / itemInCookingEquipment.GetQuantityMax() < minIngredientQuantityDecimal)
                 {
@@ -299,7 +403,7 @@ class CookZ_Cookbook
                 return null;
             }
 
-            string currentIngredientTypeName = entityInCookingEquipment.Type().ToString();
+            string currentIngredientTypeName = itemInCookingEquipment.Type().ToString();
             ingredientTypeInEquipment.Set(currentIngredientTypeName, ingredientTypeInEquipment.Get(currentIngredientTypeName) + 1);
         }
 
@@ -321,79 +425,6 @@ class CookZ_Cookbook
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_SAUSAGE, numSausage);
         ingredientTypeInEquipment.Set(COOKING_INGREDIENT_ANY_DISINFECT, numDisinfect);
 
-        // check recipes
-        foreach (CookZ_Recipe recipe : allRecipes)
-        {
-            // check cooking equipment
-            if (cooking_equipment.Type() == COOKING_EQUIPMENT_FRYINGPAN && !recipe.allowPan)
-            {
-                continue;
-            }
-            if (cooking_equipment.Type() == COOKING_EQUIPMENT_POT && !recipe.allowPot)
-            {
-                continue;
-            }
-            if (cooking_equipment.Type() == COOKING_EQUIPMENT_CAULDRON && !recipe.allowCauldron)
-            {
-                continue;
-            }
-            // check empty cans and boxes
-            if (recipe.needsEmptyCan && !emptyCans)
-            {
-                continue;
-            }
-            if (recipe.needsEmptyBox && !emptyBoxes)
-            {
-                continue;
-            }
-            // check water
-            if (recipe.needsWater && cooking_equipment.GetQuantity() < 500)
-            {
-                continue;
-            }
-            if (!recipe.needsWater && cooking_equipment.GetQuantity() > 0)
-            {
-                continue;
-            }
-            // check ingredients
-            int numExpectedIngredientsInEquipment = 0;
-            bool areIngredientsInEquipment = true;
-            foreach (CookZ_Ingredient ingredient : recipe.ingredients)
-            {
-                int quantityInRecipe = ingredient.quantity;
-                int quantityInEquipment = ingredientTypeInEquipment.Get(ingredient.name);
-                if (quantityInRecipe == -1)
-                {
-                    if (quantityInEquipment < 1)
-                    {
-                        areIngredientsInEquipment = false;
-                        break;
-                    }
-                    else
-                    {
-                        numExpectedIngredientsInEquipment += quantityInEquipment;
-                    }
-                }
-                else
-                {
-                    if (quantityInRecipe != quantityInEquipment)
-                    {
-                        areIngredientsInEquipment = false;
-                        break;
-                    }
-                    else
-                    {
-                        numExpectedIngredientsInEquipment += quantityInEquipment;
-                    }
-                }
-            }
-            // are needed ingredints in equipment and nothing else
-            if(areIngredientsInEquipment && numExpectedIngredientsInEquipment == cargo.GetItemCount())
-            {
-                return recipe;
-            }
-        }
-
-        return null;
+        return ingredientTypeInEquipment;
     }
 }
