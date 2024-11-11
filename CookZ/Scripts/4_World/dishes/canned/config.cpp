@@ -324,6 +324,37 @@ class CfgVehicles
         };
     };
 
+    class CookZ_BoneBrothCan: SpaghettiCan
+    {
+        scope=2;
+        displayName="Bone Broth";
+        descriptionShort="A nutritious and long-lasting can of bone broth that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\canned\canned_bone_broth_co.paa"
+        };
+    };
+    class CookZ_BoneBrothCan_Opened: SpaghettiCan_Opened
+    {
+        scope=2;
+        displayName="Bone Broth";
+        descriptionShort="A nutritious can of bone broth. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\canned\canned_bone_broth_co.paa"
+        };
+        varQuantityInit=800
+        varQuantityMax=800
+        class Nutrition
+        {
+            energy=150;
+            water=70;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
     class CookZ_AppleMarmaladeCan: SpaghettiCan
     {
         scope=2;

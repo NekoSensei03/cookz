@@ -21,64 +21,67 @@ class CookZ_Cookbook
     typename COOKING_EQUIPMENT_FRYINGPAN                      = FryingPan;
     typename COOKING_EQUIPMENT_CAULDRON                       = Cauldron;
 
-    const string COOKING_INGREDIENT_POTATO                    = "Potato";
-    const string COOKING_INGREDIENT_GREEN_BELL_PEPPER         = "GreenBellPepper";
-    const string COOKING_INGREDIENT_ZUCCHINI                  = "Zucchini";
-    const string COOKING_INGREDIENT_TOMATO                    = "Tomato";
-    const string COOKING_INGREDIENT_PUMPKIN                   = "Pumpkin";
-    const string COOKING_INGREDIENT_SLICED_PUMPKIN            = "SlicedPumpkin";
+    static const string COOKING_INGREDIENT_POTATO                    = "Potato";
+    static const string COOKING_INGREDIENT_GREEN_BELL_PEPPER         = "GreenBellPepper";
+    static const string COOKING_INGREDIENT_ZUCCHINI                  = "Zucchini";
+    static const string COOKING_INGREDIENT_TOMATO                    = "Tomato";
+    static const string COOKING_INGREDIENT_PUMPKIN                   = "Pumpkin";
+    static const string COOKING_INGREDIENT_SLICED_PUMPKIN            = "SlicedPumpkin";
 
-    const string COOKING_INGREDIENT_PLUM                      = "Plum";
-    const string COOKING_INGREDIENT_PEAR                      = "Pear";
-    const string COOKING_INGREDIENT_APPLE                     = "Apple";
+    static const string COOKING_INGREDIENT_PLUM                      = "Plum";
+    static const string COOKING_INGREDIENT_PEAR                      = "Pear";
+    static const string COOKING_INGREDIENT_APPLE                     = "Apple";
 
-    const string COOKING_INGREDIENT_PIG_STEAK_MEAT            = "PigSteakMeat";
-    const string COOKING_INGREDIENT_WOLF_STEAK_MEAT           = "WolfSteakMeat";
-    const string COOKING_INGREDIENT_GOAT_STEAK_MEAT           = "GoatSteakMeat";
-    const string COOKING_INGREDIENT_BEAR_STEAK_MEAT           = "BearSteakMeat";
-    const string COOKING_INGREDIENT_SHEEP_STEAK_MEAT          = "SheepSteakMeat";
-    const string COOKING_INGREDIENT_BOAR_STEAK_MEAT           = "BoarSteakMeat";
-    const string COOKING_INGREDIENT_COW_STEAK_MEAT            = "CowSteakMeat";
-    const string COOKING_INGREDIENT_HUMAN_STEAK_MEAT          = "HumanSteakMeat";
-    const string COOKING_INGREDIENT_DEER_STEAK_MEAT           = "DeerSteakMeat";
-    const string COOKING_INGREDIENT_RABBIT_LEG_MEAT           = "RabbitLegMeat";
-    const string COOKING_INGREDIENT_CHICKEN_BREAST_MEAT       = "ChickenBreastMeat";
-    const string COOKING_INGREDIENT_REINDEER_STEAK_MEAT       = "ReindeerSteakMeat";
-    const string COOKING_INGREDIENT_FOX_STEAK_MEAT            = "FoxSteakMeat";
+    static const string COOKING_INGREDIENT_PIG_STEAK_MEAT            = "PigSteakMeat";
+    static const string COOKING_INGREDIENT_WOLF_STEAK_MEAT           = "WolfSteakMeat";
+    static const string COOKING_INGREDIENT_GOAT_STEAK_MEAT           = "GoatSteakMeat";
+    static const string COOKING_INGREDIENT_BEAR_STEAK_MEAT           = "BearSteakMeat";
+    static const string COOKING_INGREDIENT_SHEEP_STEAK_MEAT          = "SheepSteakMeat";
+    static const string COOKING_INGREDIENT_BOAR_STEAK_MEAT           = "BoarSteakMeat";
+    static const string COOKING_INGREDIENT_COW_STEAK_MEAT            = "CowSteakMeat";
+    static const string COOKING_INGREDIENT_HUMAN_STEAK_MEAT          = "HumanSteakMeat";
+    static const string COOKING_INGREDIENT_DEER_STEAK_MEAT           = "DeerSteakMeat";
+    static const string COOKING_INGREDIENT_RABBIT_LEG_MEAT           = "RabbitLegMeat";
+    static const string COOKING_INGREDIENT_CHICKEN_BREAST_MEAT       = "ChickenBreastMeat";
+    static const string COOKING_INGREDIENT_REINDEER_STEAK_MEAT       = "ReindeerSteakMeat";
+    static const string COOKING_INGREDIENT_FOX_STEAK_MEAT            = "FoxSteakMeat";
 
-    const string COOKING_INGREDIENT_CARP_FILLET_MEAT            = "CarpFilletMeat";
-    const string COOKING_INGREDIENT_MACKEREL_FILLET_MEAT        = "MackerelFilletMeat";
-    const string COOKING_INGREDIENT_SARDINES                    = "Sardines";
-    const string COOKING_INGREDIENT_BITTERLINGS                 = "Bitterlings";
-    const string COOKING_INGREDIENT_WALLEYE_POLLOCK_FILLET_MEAT = "WalleyePollockFilletMeat";
-    const string COOKING_INGREDIENT_STEELHEAD_TROUT_FILLET_MEAT = "SteelheadTroutFilletMeat";
+    static const string COOKING_INGREDIENT_CARP_FILLET_MEAT            = "CarpFilletMeat";
+    static const string COOKING_INGREDIENT_MACKEREL_FILLET_MEAT        = "MackerelFilletMeat";
+    static const string COOKING_INGREDIENT_SARDINES                    = "Sardines";
+    static const string COOKING_INGREDIENT_BITTERLINGS                 = "Bitterlings";
+    static const string COOKING_INGREDIENT_WALLEYE_POLLOCK_FILLET_MEAT = "WalleyePollockFilletMeat";
+    static const string COOKING_INGREDIENT_STEELHEAD_TROUT_FILLET_MEAT = "SteelheadTroutFilletMeat";
 
-    const string COOKING_INGREDIENT_AGARICUS_MUSHROOM         = "AgaricusMushroom";
-    const string COOKING_INGREDIENT_AURICULARIA_MUSHROOM      = "AuriculariaMushroom";
-    const string COOKING_INGREDIENT_BOLETUS_MUSHROOM          = "BoletusMushroom";
-    const string COOKING_INGREDIENT_LACTARIUS_MUSHROOM        = "LactariusMushroom";
-    const string COOKING_INGREDIENT_MACROLEPIOTA_MUSHROOM     = "MacrolepiotaMushroom";
-    const string COOKING_INGREDIENT_PLEUROTUS_MUSHROOM        = "PleurotusMushroom";
-    const string COOKING_INGREDIENT_AMANITA_MUSHROOM          = "AmanitaMushroom";
-    const string COOKING_INGREDIENT_PSILOCYBE_MUSHROOM        = "PsilocybeMushroom";
-    const string COOKING_INGREDIENT_CRATERELLUS_MUSHROOM      = "CraterellusMushroom";
+    static const string COOKING_INGREDIENT_AGARICUS_MUSHROOM         = "AgaricusMushroom";
+    static const string COOKING_INGREDIENT_AURICULARIA_MUSHROOM      = "AuriculariaMushroom";
+    static const string COOKING_INGREDIENT_BOLETUS_MUSHROOM          = "BoletusMushroom";
+    static const string COOKING_INGREDIENT_LACTARIUS_MUSHROOM        = "LactariusMushroom";
+    static const string COOKING_INGREDIENT_MACROLEPIOTA_MUSHROOM     = "MacrolepiotaMushroom";
+    static const string COOKING_INGREDIENT_PLEUROTUS_MUSHROOM        = "PleurotusMushroom";
+    static const string COOKING_INGREDIENT_AMANITA_MUSHROOM          = "AmanitaMushroom";
+    static const string COOKING_INGREDIENT_PSILOCYBE_MUSHROOM        = "PsilocybeMushroom";
+    static const string COOKING_INGREDIENT_CRATERELLUS_MUSHROOM      = "CraterellusMushroom";
 
-    const string COOKING_INGREDIENT_BEEF_SAUSAGE              = "CookZ_Beef_Sausage";
-    const string COOKING_INGREDIENT_CHICKEN_SAUSAGE           = "CookZ_Chicken_Sausage";
-    const string COOKING_INGREDIENT_PIG_SAUSAGE               = "CookZ_Pig_Sausage";
-    const string COOKING_INGREDIENT_GOAT_SAUSAGE              = "CookZ_Goat_Sausage";
-    const string COOKING_INGREDIENT_BEAR_SAUSAGE              = "CookZ_Bear_Sausage";
-    const string COOKING_INGREDIENT_SHEEP_SAUSAGE             = "CookZ_Sheep_Sausage";
-    const string COOKING_INGREDIENT_BOAR_SAUSAGE              = "CookZ_Boar_Sausage";
-    const string COOKING_INGREDIENT_DEER_SAUSAGE              = "CookZ_Deer_Sausage";
-    const string COOKING_INGREDIENT_HARE_SAUSAGE              = "CookZ_Hare_Sausage";
-    const string COOKING_INGREDIENT_WOLF_SAUSAGE              = "CookZ_Wolf_Sausage";
-    const string COOKING_INGREDIENT_HUMAN_SAUSAGE             = "CookZ_Human_Sausage";
-    const string COOKING_INGREDIENT_FOX_SAUSAGE               = "CookZ_Fox_Sausage";
-    const string COOKING_INGREDIENT_REINDEER_SAUSAGE          = "CookZ_Reindeer_Sausage";
+    static const string COOKING_INGREDIENT_BEEF_SAUSAGE              = "CookZ_Beef_Sausage";
+    static const string COOKING_INGREDIENT_CHICKEN_SAUSAGE           = "CookZ_Chicken_Sausage";
+    static const string COOKING_INGREDIENT_PIG_SAUSAGE               = "CookZ_Pig_Sausage";
+    static const string COOKING_INGREDIENT_GOAT_SAUSAGE              = "CookZ_Goat_Sausage";
+    static const string COOKING_INGREDIENT_BEAR_SAUSAGE              = "CookZ_Bear_Sausage";
+    static const string COOKING_INGREDIENT_SHEEP_SAUSAGE             = "CookZ_Sheep_Sausage";
+    static const string COOKING_INGREDIENT_BOAR_SAUSAGE              = "CookZ_Boar_Sausage";
+    static const string COOKING_INGREDIENT_DEER_SAUSAGE              = "CookZ_Deer_Sausage";
+    static const string COOKING_INGREDIENT_HARE_SAUSAGE              = "CookZ_Hare_Sausage";
+    static const string COOKING_INGREDIENT_WOLF_SAUSAGE              = "CookZ_Wolf_Sausage";
+    static const string COOKING_INGREDIENT_HUMAN_SAUSAGE             = "CookZ_Human_Sausage";
+    static const string COOKING_INGREDIENT_FOX_SAUSAGE               = "CookZ_Fox_Sausage";
+    static const string COOKING_INGREDIENT_REINDEER_SAUSAGE          = "CookZ_Reindeer_Sausage";
+    
+    static const string COOKING_INGREDIENT_CRACKERS                  = "Crackers";
+    static const string COOKING_INGREDIENT_SALTY_STICKS              = "SaltySticks";
 
-    const string COOKING_INGREDIENT_RAG                       = "Rag";
-    const string COOKING_INGREDIENT_BANDAGE_DRESSING          = "BandageDressing";
+    static const string COOKING_INGREDIENT_RAG                       = "Rag";
+    static const string COOKING_INGREDIENT_BANDAGE_DRESSING          = "BandageDressing";
 
     static const string COOKING_INGREDIENT_ANY_MEAT           = "AnyMeat";
     static const string COOKING_INGREDIENT_ANY_FRUIT          = "AnyFruit";
@@ -88,6 +91,7 @@ class CookZ_Cookbook
     static const string COOKING_INGREDIENT_ANY_MUSHROOM       = "AnyMushroom";
     static const string COOKING_INGREDIENT_ANY_SAUSAGE        = "AnySausage";
     static const string COOKING_INGREDIENT_ANY_DISINFECT      = "AnyDisinfect";
+    static const string COOKING_INGREDIENT_ANY_BREADCRUMB     = "AnyBreadcrumb";
 
     ref array<ref CookZ_Recipe> allRecipes;
 
@@ -161,13 +165,14 @@ class CookZ_Cookbook
     static map<string, string> InitDeputyMap()
     {
         map<string, string> tempMap = new map<string, string>;
-        tempMap.Insert(COOKING_INGREDIENT_ANY_MEAT,         "PigSteakMeat");
-        tempMap.Insert(COOKING_INGREDIENT_ANY_FRUIT,        "Apple");
-        tempMap.Insert(COOKING_INGREDIENT_ANY_VEG,          "GreenBellPepper");
-        tempMap.Insert(COOKING_INGREDIENT_ANY_FISH,         "CarpFilletMeat");
-        tempMap.Insert(COOKING_INGREDIENT_ANY_FISH_FILLET,  "CarpFilletMeat");
-        tempMap.Insert(COOKING_INGREDIENT_ANY_MUSHROOM,     "BoletusMushroom");
-        tempMap.Insert(COOKING_INGREDIENT_ANY_SAUSAGE,      "CookZ_Beef_Sausage");
+        tempMap.Insert(COOKING_INGREDIENT_ANY_MEAT,         COOKING_INGREDIENT_PIG_STEAK_MEAT);
+        tempMap.Insert(COOKING_INGREDIENT_ANY_FRUIT,        COOKING_INGREDIENT_APPLE);
+        tempMap.Insert(COOKING_INGREDIENT_ANY_VEG,          COOKING_INGREDIENT_GREEN_BELL_PEPPER);
+        tempMap.Insert(COOKING_INGREDIENT_ANY_FISH,         COOKING_INGREDIENT_CARP_FILLET_MEAT);
+        tempMap.Insert(COOKING_INGREDIENT_ANY_FISH_FILLET,  COOKING_INGREDIENT_CARP_FILLET_MEAT);
+        tempMap.Insert(COOKING_INGREDIENT_ANY_MUSHROOM,     COOKING_INGREDIENT_BOLETUS_MUSHROOM);
+        tempMap.Insert(COOKING_INGREDIENT_ANY_SAUSAGE,      COOKING_INGREDIENT_BEEF_SAUSAGE);
+        tempMap.Insert(COOKING_INGREDIENT_ANY_BREADCRUMB,   COOKING_INGREDIENT_CRACKERS);
         return tempMap;
     }
     // static maps for calculating energy/water/quantityMax value - for ingredients that do not have those (or reasonable values)
@@ -180,6 +185,8 @@ class CookZ_Cookbook
         tempMap.Insert("Worm",                  150);
         tempMap.Insert("Guts",                  250);
         tempMap.Insert("DisinfectantAlcohol",   200);
+        tempMap.Insert("PotatoSeed",            275);
+        tempMap.Insert("Bone",                  150);
         tempMap.Insert("Rag",                   0);
         return tempMap;
     }
@@ -192,6 +199,8 @@ class CookZ_Cookbook
         tempMap.Insert("Worm",                  80);
         tempMap.Insert("Guts",                  150);
         tempMap.Insert("DisinfectantAlcohol",   0);
+        tempMap.Insert("PotatoSeed",            20);
+        tempMap.Insert("Bone",                  20);
         tempMap.Insert("Rag",                   0);
         return tempMap;
     }
@@ -248,14 +257,20 @@ class CookZ_Cookbook
                 }
             }
 
-            int itemQuantityMax = GetGame().ConfigGetInt(string.Format("CfgVehicles %1 varQuantityMax", ingredientName));
+            // use static quantity as default
+            int itemQuantityMax = GetGame().ConfigGetInt(string.Format("CfgVehicles %1 cookz_staticQuantity", ingredientName));
             if (itemQuantityMax == 0)
             {
-                // fallback to static quantity
-                itemQuantityMax = GetGame().ConfigGetInt(string.Format("CfgVehicles %1 cookz_staticQuantity", ingredientName));
+                itemQuantityMax = GetGame().ConfigGetInt(string.Format("CfgVehicles %1 varQuantityMax", ingredientName));
             }
 
             int itemQuantityTotalMax = itemQuantityMax * ingredient.quantity;
+            // special cases
+            if (recipe.name == "CookZ_BoneBrothCan" && ingredientName == "Bone")
+            {
+                itemQuantityTotalMax = 20 * 40;
+            }
+
             Print(string.Format("   ingredient: %1, Q:%2, MQ:%3, E:%4, W:%5", ingredientName, ingredient.quantity, itemQuantityTotalMax, itemEnergy, itemWater));
             totalQuantityMax += itemQuantityTotalMax;
             totalEnergy += itemEnergy * itemQuantityTotalMax;
@@ -385,7 +400,7 @@ class CookZ_Cookbook
         {
             return true;
         }
-        return false
+        return false;
     }
 
     private map<string, ref CookZ_IngredientInEquipment> GetIngredientsInEquipment(CargoBase cargo)
@@ -434,13 +449,13 @@ class CookZ_Cookbook
             }
 
             Edible_Base edibleItem = Edible_Base.Cast(itemInCookingEquipment);
-            if (edibleItem && edibleItem.CanBeCooked() && !edibleItem.IsFoodRaw())
+            if (edibleItem && edibleItem.CanBeCooked() && edibleItem.GetFoodStage() && !(edibleItem.GetFoodStage().IsFoodInStage(FoodStageType.RAW) || edibleItem.GetFoodStage().IsFoodInStage(FoodStageType.NONE)))
             {
-                // not raw
+                // not raw (or undefined food stage)
                 return null;
             }
 
-            string currentIngredientTypeName = itemInCookingEquipment.Type().ToString();
+            string currentIngredientTypeName = itemInCookingEquipment.GetType();
             ingredientsInEquipment.Set(currentIngredientTypeName, AddOrCreate(ingredientsInEquipment.Get(currentIngredientTypeName), quantity, 1));
         }
 
@@ -508,6 +523,9 @@ class CookZ_Cookbook
 
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_DISINFECT, COOKING_INGREDIENT_RAG);
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_DISINFECT, COOKING_INGREDIENT_BANDAGE_DRESSING);
+
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_BREADCRUMB, COOKING_INGREDIENT_CRACKERS);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_BREADCRUMB, COOKING_INGREDIENT_SALTY_STICKS);
 
         return ingredientsInEquipment;
     }

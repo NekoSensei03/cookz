@@ -22,6 +22,14 @@ class CookZ_CurrywurstBox : CookZ_Box_Base {}
 class CookZ_StuffedMushroomsBox : CookZ_Box_Base {}
 class CookZ_RabbitRoastBox : CookZ_Box_Base {}
 class CookZ_NuggiesAndFriesBox : CookZ_Box_Base {}
+class CookZ_SchnitzelBox : CookZ_Box_Base {}
+class CookZ_BiffALaNelsonBox : CookZ_Box_Base {}
+class CookZ_PorkAndAppleBox : CookZ_Box_Base {}
+class CookZ_ChickenCordonBleuBox : CookZ_Box_Base {}
+class CookZ_RatatouilleBox : CookZ_Box_Base {}
+class CookZ_BakedPotatoVegBox : CookZ_Box_Base {}
+class CookZ_BakedPotatoMeatBox : CookZ_Box_Base {}
+class CookZ_BakedPotatoFishBox : CookZ_Box_Base {}
 
 class CookZ_FriedPotatoesBox_Opened : CookZ_OpenedDish {}
 class CookZ_StirFryBox_Opened : CookZ_OpenedDish {}
@@ -38,3 +46,11 @@ class CookZ_CurrywurstBox_Opened : CookZ_OpenedDish {}
 class CookZ_StuffedMushroomsBox_Opened : CookZ_OpenedDish {}
 class CookZ_RabbitRoastBox_Opened : CookZ_OpenedDish {}
 class CookZ_NuggiesAndFriesBox_Opened : CookZ_OpenedDish {}
+class CookZ_SchnitzelBox_Opened : CookZ_OpenedDish {}
+class CookZ_BiffALaNelsonBox_Opened : CookZ_OpenedDish {}
+class CookZ_PorkAndAppleBox_Opened : CookZ_OpenedDish {}
+class CookZ_ChickenCordonBleuBox_Opened : CookZ_OpenedDish {}
+class CookZ_RatatouilleBox_Opened : CookZ_OpenedDish {}
+class CookZ_BakedPotatoVegBox_Opened : CookZ_OpenedDish {}
+class CookZ_BakedPotatoMeatBox_Opened : CookZ_OpenedDish {}
+class CookZ_BakedPotatoFishBox_Opened : CookZ_OpenedDish {}

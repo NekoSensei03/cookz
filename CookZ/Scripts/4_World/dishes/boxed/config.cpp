@@ -361,7 +361,7 @@ class CfgVehicles
         class Nutrition
         {
             energy=150;
-            water=80;
+            water=130;
             fullnessIndex=3;
             nutritionalIndex=1;
             toxicity=0;
@@ -618,6 +618,262 @@ class CfgVehicles
         {
             energy=247.059;
             water=17.8824;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_SchnitzelBox: CookZ_Box_Base
+    {
+        scope=2;
+        displayName="Schnitzel";
+        descriptionShort="A nutritious and long-lasting box of schnitzel. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_schnitzel_co.paa"
+        };
+    };
+    class CookZ_SchnitzelBox_Opened: CookZ_BoxOpened_Base
+    {
+        scope=2;
+        displayName="Schnitzel";
+        descriptionShort="A nutritious box of schnitzel. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_schnitzel_co.paa",
+            "CookZ\data\dishes\boxed\box_food_schnitzel_co.paa"
+        };
+        varQuantityInit=750
+        varQuantityMax=750
+        class Nutrition
+        {
+            energy=290;
+            water=24;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_BiffALaNelsonBox: CookZ_Box_Base
+    {
+        scope=2;
+        displayName="Biff A La Nelson";
+        descriptionShort="A nutritious and long-lasting box of biff a la nelson. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_biff_a_la_nelson_co.paa"
+        };
+    };
+    class CookZ_BiffALaNelsonBox_Opened: CookZ_BoxOpened_Base
+    {
+        scope=2;
+        displayName="Biff A La Nelson";
+        descriptionShort="A nutritious box of biff a la nelson. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_biff_a_la_nelson_co.paa",
+            "CookZ\data\dishes\boxed\box_food_biff_a_la_nelson_co.paa"
+        };
+        varQuantityInit=1230
+        varQuantityMax=1230
+        class Nutrition
+        {
+            energy=216.667;
+            water=36.5041;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_PorkAndAppleBox: CookZ_Box_Base
+    {
+        scope=2;
+        displayName="Pork And Apple";
+        descriptionShort="A nutritious and long-lasting box of pork and apple. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_pork_and_apple_co.paa"
+        };
+    };
+    class CookZ_PorkAndAppleBox_Opened: CookZ_BoxOpened_Base
+    {
+        scope=2;
+        displayName="Pork And Apple";
+        descriptionShort="A nutritious box of pork and apple. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_pork_and_apple_co.paa",
+            "CookZ\data\dishes\boxed\box_food_pork_and_apple_co.paa"
+        };
+        varQuantityInit=975
+        varQuantityMax=975
+        class Nutrition
+        {
+            energy=273.077;
+            water=18.6667;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_ChickenCordonBleuBox: CookZ_Box_Base
+    {
+        scope=2;
+        displayName="Chicken Cordon Bleu";
+        descriptionShort="A nutritious and long-lasting box of chicken cordon bleu. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_chicken_cordon_bleu_co.paa"
+        };
+    };
+    class CookZ_ChickenCordonBleuBox_Opened: CookZ_BoxOpened_Base
+    {
+        scope=2;
+        displayName="Chicken Cordon Bleu";
+        descriptionShort="A nutritious box of chicken cordon bleu. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_chicken_cordon_bleu_co.paa",
+            "CookZ\data\dishes\boxed\box_food_chicken_cordon_bleu_co.paa"
+        };
+        varQuantityInit=700
+        varQuantityMax=700
+        class Nutrition
+        {
+            energy=260.714;
+            water=43.7143;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_RatatouilleBox: CookZ_Box_Base
+    {
+        scope=2;
+        displayName="Ratatouille";
+        descriptionShort="A nutritious and long-lasting box of ratatouille. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_ratatouille_co.paa"
+        };
+    };
+    class CookZ_RatatouilleBox_Opened: CookZ_BoxOpened_Base
+    {
+        scope=2;
+        displayName="Ratatouille";
+        descriptionShort="A nutritious box of ratatouille. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_ratatouille_co.paa",
+            "CookZ\data\dishes\boxed\box_food_ratatouille_co.paa"
+        };
+        varQuantityInit=1000
+        varQuantityMax=1000
+        class Nutrition
+        {
+            energy=240;
+            water=15.2;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_BakedPotatoVegBox: CookZ_Box_Base
+    {
+        scope=2;
+        displayName="Baked Potato With Vegetables";
+        descriptionShort="A nutritious and long-lasting box of baked potato with vegetables. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_baked_potato_with_vegetables_co.paa"
+        };
+    };
+    class CookZ_BakedPotatoVegBox_Opened: CookZ_BoxOpened_Base
+    {
+        scope=2;
+        displayName="Baked Potato With Vegetables";
+        descriptionShort="A nutritious box of baked potato with vegetables. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_baked_potato_with_vegetables_co.paa",
+            "CookZ\data\dishes\boxed\box_food_baked_potato_with_vegetables_co.paa"
+        };
+        varQuantityInit=1150
+        varQuantityMax=1150
+        class Nutrition
+        {
+            energy=273.913;
+            water=36.5217;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_BakedPotatoMeatBox: CookZ_Box_Base
+    {
+        scope=2;
+        displayName="Baked Potato With Meat";
+        descriptionShort="A nutritious and long-lasting box of baked potato with meat. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_baked_potato_with_meat_co.paa"
+        };
+    };
+    class CookZ_BakedPotatoMeatBox_Opened: CookZ_BoxOpened_Base
+    {
+        scope=2;
+        displayName="Baked Potato With Meat";
+        descriptionShort="A nutritious box of baked potato with meat. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_baked_potato_with_meat_co.paa",
+            "CookZ\data\dishes\boxed\box_food_baked_potato_with_meat_co.paa"
+        };
+        varQuantityInit=1200
+        varQuantityMax=1200
+        class Nutrition
+        {
+            energy=302.083;
+            water=37.5;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_BakedPotatoFishBox: CookZ_Box_Base
+    {
+        scope=2;
+        displayName="Baked Potato With Seafood";
+        descriptionShort="A nutritious and long-lasting box of baked potato with seafood. Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_baked_potato_with_seafood_co.paa"
+        };
+    };
+    class CookZ_BakedPotatoFishBox_Opened: CookZ_BoxOpened_Base
+    {
+        scope=2;
+        displayName="Baked Potato With Seafood";
+        descriptionShort="A nutritious box of baked potato with seafood. Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_baked_potato_with_seafood_co.paa",
+            "CookZ\data\dishes\boxed\box_food_baked_potato_with_seafood_co.paa"
+        };
+        varQuantityInit=1300
+        varQuantityMax=1300
+        class Nutrition
+        {
+            energy=221.154;
+            water=34.6154;
             fullnessIndex=3;
             nutritionalIndex=1;
             toxicity=0;

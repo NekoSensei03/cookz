@@ -1,7 +1,7 @@
 modded class Cooking
 {
     // non edible items or edible items that have no food stage that should still be processed (based on gained temperature)
-    static ref array<typename> NON_EDIBLE_ITEMS = { Rag, BandageDressing, DisinfectantAlcohol, Rice, PowderedMilk };
+    static ref array<typename> NON_EDIBLE_ITEMS = { Rag, BandageDressing, DisinfectantAlcohol, Rice, PowderedMilk, SodaCan_ColorBase, Snack_ColorBase, Bone };
 
     //COOKING PROCESS
     //--- Cooking with equipment (pot)
@@ -74,15 +74,16 @@ modded class Cooking
                     }
                     else
                     {
+                        int staticQuantity = usedItem.ConfigGetInt("cookz_staticQuantity");
+                        if (staticQuantity > 0)
+                        {
+                            // use static quantity if defined
+                            itemQuantity = staticQuantity;
+                        }
                         if (itemQuantity == 0)
                         {
-                            // fallback use static quantity
-                            itemQuantity = usedItem.ConfigGetInt("cookz_staticQuantity");
-                            if (itemQuantity == 0)
-                            {
-                                // last fallback if no quantity found
-                                itemQuantity = 100;
-                            }
+                            // fallback if no quantity found
+                            itemQuantity = 100;
                     	}
                         sumQuantity += itemQuantity;
                     }

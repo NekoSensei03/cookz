@@ -68,7 +68,10 @@ class CfgVehicles
 
     class Edible_Base;
     class Inventory_Base;
+    class Snack_ColorBase;
+    class SodaCan_ColorBase;
     class Bottle_Base;
+    class SeedBase;
 
     // define crafting materials ----------------------------------------
 
@@ -242,8 +245,41 @@ class CfgVehicles
         // give a static quantity for calculating quantity of dishes
         cookz_staticQuantity=100;
     }
+
+    class PotatoSeed: SeedBase
+    {
+        cookz_staticQuantity=250;
+    }
     
     class PowderedMilk: Edible_Base
+    {
+        varTemperatureInit=0;
+        varTemperatureMin=0;
+        varTemperatureMax=100;
+    }
+
+    class Bone: Inventory_Base
+    {
+        varTemperatureInit=0;
+        varTemperatureMin=0;
+        varTemperatureMax=100;
+    }
+
+    class Crackers: Snack_ColorBase
+    {
+        varTemperatureInit=0;
+        varTemperatureMin=0;
+        varTemperatureMax=100;
+    }
+
+    class SaltySticks: Snack_ColorBase
+    {
+        varTemperatureInit=0;
+        varTemperatureMin=0;
+        varTemperatureMax=100;
+    }
+
+    class SodaCan_Kvass: SodaCan_ColorBase
     {
         varTemperatureInit=0;
         varTemperatureMin=0;

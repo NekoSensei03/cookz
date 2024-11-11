@@ -509,5 +509,117 @@ class CfgVehicles
                 "Lard,1"
             };
         };
+        class CookZ_SchnitzelBox
+        {
+            allowPan = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "AnyBreadcrumb,1",
+                "AnyMeat,2",
+                "Lard,1"
+            };
+        };
+        class CookZ_BiffALaNelsonBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "SodaCan_Kvass,1",
+                "AnyMeat,2",
+                "Potato,2"
+            };
+        };
+        class CookZ_PorkAndAppleBox
+        {
+            allowPan = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "PigSteakMeat,1",
+                "Potato,2",
+                "Apple,1",
+                "Lard,1"
+            };
+        };
+        class CookZ_ChickenCordonBleuBox
+        {
+            allowPan = true;
+            allowPot = true;
+            allowCauldron = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "AnyBreadcrumb,1",
+                "ChickenBreastMeat,2",
+                "CookZ_Cheese,1",
+                "Potato,1"
+            };
+        };
+        class CookZ_RatatouilleBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "Zucchini,1",
+                "Potato,2",
+                "GreenBellPepper,2",
+                "Tomato,1"
+            };
+        };
+        class CookZ_BoneBrothCan
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsWater = true;
+            needsEmptyCan = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "Bone,-1"
+            };
+        };
+        class CookZ_BakedPotatoVegBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "PotatoSeed,2",
+                "CookZ_Cheese,1",
+                "Zucchini,1",
+                "GreenBellPepper,1",
+                "Tomato,1"
+            };
+        };
+        class CookZ_BakedPotatoMeatBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "PotatoSeed,2",
+                "CookZ_Cheese,1",
+                "AnyMeat,2"
+            };
+        };
+        class CookZ_BakedPotatoFishBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "PotatoSeed,2",
+                "CookZ_Cheese,1",
+                "AnyFishFillet,1",
+                "RedCaviar,2"
+            };
+        };
     }
 }
