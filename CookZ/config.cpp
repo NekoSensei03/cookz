@@ -263,6 +263,7 @@ class CfgVehicles
         varTemperatureInit=0;
         varTemperatureMin=0;
         varTemperatureMax=100;
+        cookz_staticQuantity=40;
     }
 
     class Crackers: Snack_ColorBase
