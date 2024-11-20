@@ -621,5 +621,18 @@ class CfgVehicles
                 "RedCaviar,2"
             };
         };
+        class CookZ_PaprikasKrumpliBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            allowPan = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "AnySausage,1",
+                "Potato,2",
+                "GreenBellPepper,2"
+            };
+        };
     }
 }

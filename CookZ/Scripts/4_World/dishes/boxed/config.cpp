@@ -879,4 +879,36 @@ class CfgVehicles
             toxicity=0;
         };
     };
+
+    class CookZ_PaprikasKrumpliBox: CookZ_Box_Base
+    {
+        scope=2;
+        displayName="Paprikas Krumpli";
+        descriptionShort="A nutritious and long-lasting box of paprikas krumpli (Hungarian parika potatoes). Will last two to five years depending on storage conditions.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_paprikas_krumpli_co.paa"
+        };
+    };
+    class CookZ_PaprikasKrumpliBox_Opened: CookZ_BoxOpened_Base
+    {
+        scope=2;
+        displayName="Paprikas Krumpli";
+        descriptionShort="A nutritious and long-lasting box of paprikas krumpli (Hungarian parika potatoes). Eat up before it spoils.";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_paprikas_krumpli_co.paa",
+            "CookZ\data\dishes\boxed\box_food_paprikas_krumpli_co.paa"
+        };
+        varQuantityInit=1200
+        varQuantityMax=1200
+        class Nutrition
+        {
+            energy=260.417;
+            water=43.9167;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
 }

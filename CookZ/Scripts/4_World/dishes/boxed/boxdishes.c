@@ -30,6 +30,7 @@ class CookZ_RatatouilleBox : CookZ_Box_Base {}
 class CookZ_BakedPotatoVegBox : CookZ_Box_Base {}
 class CookZ_BakedPotatoMeatBox : CookZ_Box_Base {}
 class CookZ_BakedPotatoFishBox : CookZ_Box_Base {}
+class CookZ_PaprikasKrumpliBox : CookZ_Box_Base {}
 
 class CookZ_FriedPotatoesBox_Opened : CookZ_OpenedDish {}
 class CookZ_StirFryBox_Opened : CookZ_OpenedDish {}
@@ -54,3 +55,4 @@ class CookZ_RatatouilleBox_Opened : CookZ_OpenedDish {}
 class CookZ_BakedPotatoVegBox_Opened : CookZ_OpenedDish {}
 class CookZ_BakedPotatoMeatBox_Opened : CookZ_OpenedDish {}
 class CookZ_BakedPotatoFishBox_Opened : CookZ_OpenedDish {}
+class CookZ_PaprikasKrumpliBox_Opened : CookZ_OpenedDish {}
