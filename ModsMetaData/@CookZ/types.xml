@@ -732,7 +732,7 @@
             crafted="1" deloot="0" />
         <category name="food" />
     </type>
-    <type name="CookZ_Rabbit_Sausage">
+    <type name="CookZ_Hare_Sausage">
         <nominal>0</nominal>
         <lifetime>9000</lifetime>
         <restock>0</restock>
