@@ -98,6 +98,7 @@ modded class Cooking
             {
                 EntityAI createdDish = cooking_equipment.GetInventory().CreateInInventory(dish.name);
                 createdDish.SetTemperatureDirect(80);
+                createdDish.SetFrozen(false);
                 CookZ_ClosedDish createdClosedDish = CookZ_ClosedDish.Cast(createdDish);
                 if (createdClosedDish)
                 {
