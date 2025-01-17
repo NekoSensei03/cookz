@@ -214,28 +214,28 @@ class CfgVehicles
         varTemperatureInit=0;
         varTemperatureMin=0;
         varTemperatureMax=100;
-    }
+    };
 
     class BandageDressing: Inventory_Base
     {
         varTemperatureInit=0;
         varTemperatureMin=0;
         varTemperatureMax=100;
-    }
+    };
 
     class DisinfectantAlcohol: Edible_Base
     {
         varTemperatureInit=0;
         varTemperatureMin=0;
         varTemperatureMax=100;
-    }
+    };
 
     class Rice: Edible_Base
     {
         varTemperatureInit=0;
         varTemperatureMin=0;
         varTemperatureMax=100;
-    }
+    };
 
     class Worm: Edible_Base
     {
@@ -244,19 +244,19 @@ class CfgVehicles
         varTemperatureMax=100;
         // give a static quantity for calculating quantity of dishes
         cookz_staticQuantity=100;
-    }
+    };
 
     class PotatoSeed: SeedBase
     {
         cookz_staticQuantity=250;
-    }
+    };
     
     class PowderedMilk: Edible_Base
     {
         varTemperatureInit=0;
         varTemperatureMin=0;
         varTemperatureMax=100;
-    }
+    };
 
     class Bone: Inventory_Base
     {
@@ -264,26 +264,26 @@ class CfgVehicles
         varTemperatureMin=0;
         varTemperatureMax=100;
         cookz_staticQuantity=40;
-    }
+    };
 
     class Crackers: Snack_ColorBase
     {
         varTemperatureInit=0;
         varTemperatureMin=0;
         varTemperatureMax=100;
-    }
+    };
 
     class SaltySticks: Snack_ColorBase
     {
         varTemperatureInit=0;
         varTemperatureMin=0;
         varTemperatureMax=100;
-    }
+    };
 
     class SodaCan_Kvass: SodaCan_ColorBase
     {
         varTemperatureInit=0;
         varTemperatureMin=0;
         varTemperatureMax=100;
-    }
+    };
 };

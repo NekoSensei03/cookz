@@ -1,6 +1,12 @@
 class CfgPatches
 {
-    class CookZ {};
+    class CookZ
+    {
+        requiredAddons[] =
+        {
+            "DZ_Data"
+        };
+    };
 };
 
 class CfgVehicles
@@ -207,7 +213,7 @@ class CfgVehicles
                 "PigSteakMeat,2",
                 "Lard,1"
             };
-        }
+        };
         class CookZ_MysteryMeatCan
         {
             allowPot = true;
@@ -219,7 +225,7 @@ class CfgVehicles
                 "AnyMeat,3",
                 "Lard,1"
             };
-        }
+        };
         class CookZ_ZucchiniCaviarCan
         {
             allowPot = true;
@@ -232,7 +238,7 @@ class CfgVehicles
                 "GreenBellPepper,1",
                 "Tomato,1"
             };
-        }
+        };
         class CookZ_CreamyTomatoSoupCan
         {
             allowPot = true;
@@ -244,7 +250,7 @@ class CfgVehicles
                 "Tomato,6",
                 "PowderedMilk,1"
             };
-        }
+        };
         class CookZ_BeefStewCan
         {
             allowPot = true;
@@ -258,7 +264,7 @@ class CfgVehicles
                 "Potato,1",
                 "Tomato,2"
             };
-        }
+        };
         class CookZ_MushroomStroganoffCan
         {
             allowPot = true;
@@ -270,7 +276,7 @@ class CfgVehicles
                 "PowderedMilk,1",
                 "AnyMushroom,5"
             };
-        }
+        };
         class CookZ_AppleMarmaladeCan
         {
             allowPot = true;
@@ -634,5 +640,5 @@ class CfgVehicles
                 "GreenBellPepper,2"
             };
         };
-    }
-}
+    };
+};

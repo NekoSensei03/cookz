@@ -1,6 +1,12 @@
 class CfgPatches
 {
-    class CookZ {};
+    class CookZ
+    {
+        requiredAddons[] =
+        {
+            "DZ_Data"
+        };
+    };
 };
 
 class CfgVehicles
@@ -75,7 +81,7 @@ class CfgVehicles
 				};
 			};
 		};
-    }
+    };
 
     class CookZ_BoxOpened_Base: Edible_Base
     {
@@ -140,7 +146,7 @@ class CfgVehicles
 				};
 			};
 		};
-    }
+    };
 
     // items
 
@@ -196,8 +202,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_stir_fry_co.paa",
             "CookZ\data\dishes\boxed\box_food_stir_fry_co.paa"
         };
-        varQuantityInit=850
-        varQuantityMax=850
+        varQuantityInit=850;
+        varQuantityMax=850;
         class Nutrition
         {
             energy=250;
@@ -228,8 +234,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_fish_and_chips_co.paa",
             "CookZ\data\dishes\boxed\box_food_fish_and_chips_co.paa"
         };
-        varQuantityInit=1100
-        varQuantityMax=1100
+        varQuantityInit=1100;
+        varQuantityMax=1100;
         class Nutrition
         {
             energy=227.273;
@@ -260,8 +266,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_rice_pudding_co.paa",
             "CookZ\data\dishes\boxed\box_food_rice_pudding_co.paa"
         };
-        varQuantityInit=950
-        varQuantityMax=950
+        varQuantityInit=950;
+        varQuantityMax=950;
         class Nutrition
         {
             energy=210.526;
@@ -292,8 +298,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_mushroom_risotto_co.paa",
             "CookZ\data\dishes\boxed\box_food_mushroom_risotto_co.paa"
         };
-        varQuantityInit=800
-        varQuantityMax=800
+        varQuantityInit=800;
+        varQuantityMax=800;
         class Nutrition
         {
             energy=156.25;
@@ -324,8 +330,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_pilaf_co.paa",
             "CookZ\data\dishes\boxed\box_food_pilaf_co.paa"
         };
-        varQuantityInit=1000
-        varQuantityMax=1000
+        varQuantityInit=1000;
+        varQuantityMax=1000;
         class Nutrition
         {
             energy=135;
@@ -356,8 +362,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_gagh_co.paa",
             "CookZ\data\dishes\boxed\box_food_gagh_co.paa"
         };
-        varQuantityInit=800
-        varQuantityMax=800
+        varQuantityInit=800;
+        varQuantityMax=800;
         class Nutrition
         {
             energy=150;
@@ -388,8 +394,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_haggis_co.paa",
             "CookZ\data\dishes\boxed\box_food_haggis_co.paa"
         };
-        varQuantityInit=900
-        varQuantityMax=900
+        varQuantityInit=900;
+        varQuantityMax=900;
         class Nutrition
         {
             energy=227.778;
@@ -420,8 +426,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_stuffed_peppers_co.paa",
             "CookZ\data\dishes\boxed\box_food_stuffed_peppers_co.paa"
         };
-        varQuantityInit=950
-        varQuantityMax=950
+        varQuantityInit=950;
+        varQuantityMax=950;
         class Nutrition
         {
             energy=276.316;
@@ -452,8 +458,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_pommdoener_co.paa",
             "CookZ\data\dishes\boxed\box_food_pommdoener_co.paa"
         };
-        varQuantityInit=1100
-        varQuantityMax=1100
+        varQuantityInit=1100;
+        varQuantityMax=1100;
         class Nutrition
         {
             energy=281.818;
@@ -484,8 +490,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_bangers_and_mash_co.paa",
             "CookZ\data\dishes\boxed\box_food_bangers_and_mash_co.paa"
         };
-        varQuantityInit=900
-        varQuantityMax=900
+        varQuantityInit=900;
+        varQuantityMax=900;
         class Nutrition
         {
             energy=241.667;
@@ -516,8 +522,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_currywurst_co.paa",
             "CookZ\data\dishes\boxed\box_food_currywurst_co.paa"
         };
-        varQuantityInit=1000
-        varQuantityMax=1000
+        varQuantityInit=1000;
+        varQuantityMax=1000;
         class Nutrition
         {
             energy=262.5;
@@ -548,8 +554,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_stuffed_mushrooms_co.paa",
             "CookZ\data\dishes\boxed\box_food_stuffed_mushrooms_co.paa"
         };
-        varQuantityInit=800
-        varQuantityMax=800
+        varQuantityInit=800;
+        varQuantityMax=800;
         class Nutrition
         {
             energy=318.75;
@@ -580,8 +586,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_rabbit_roast_co.paa",
             "CookZ\data\dishes\boxed\box_food_rabbit_roast_co.paa"
         };
-        varQuantityInit=1100
-        varQuantityMax=1100
+        varQuantityInit=1100;
+        varQuantityMax=1100;
         class Nutrition
         {
             energy=177.273;
@@ -612,8 +618,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_nuggies_and_fries_co.paa",
             "CookZ\data\dishes\boxed\box_food_nuggies_and_fries_co.paa"
         };
-        varQuantityInit=850
-        varQuantityMax=850
+        varQuantityInit=850;
+        varQuantityMax=850;
         class Nutrition
         {
             energy=247.059;
@@ -644,8 +650,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_schnitzel_co.paa",
             "CookZ\data\dishes\boxed\box_food_schnitzel_co.paa"
         };
-        varQuantityInit=750
-        varQuantityMax=750
+        varQuantityInit=750;
+        varQuantityMax=750;
         class Nutrition
         {
             energy=290;
@@ -676,8 +682,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_biff_a_la_nelson_co.paa",
             "CookZ\data\dishes\boxed\box_food_biff_a_la_nelson_co.paa"
         };
-        varQuantityInit=1230
-        varQuantityMax=1230
+        varQuantityInit=1230;
+        varQuantityMax=1230;
         class Nutrition
         {
             energy=216.667;
@@ -708,8 +714,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_pork_and_apple_co.paa",
             "CookZ\data\dishes\boxed\box_food_pork_and_apple_co.paa"
         };
-        varQuantityInit=975
-        varQuantityMax=975
+        varQuantityInit=975;
+        varQuantityMax=975;
         class Nutrition
         {
             energy=273.077;
@@ -740,8 +746,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_chicken_cordon_bleu_co.paa",
             "CookZ\data\dishes\boxed\box_food_chicken_cordon_bleu_co.paa"
         };
-        varQuantityInit=700
-        varQuantityMax=700
+        varQuantityInit=700;
+        varQuantityMax=700;
         class Nutrition
         {
             energy=260.714;
@@ -772,8 +778,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_ratatouille_co.paa",
             "CookZ\data\dishes\boxed\box_food_ratatouille_co.paa"
         };
-        varQuantityInit=1000
-        varQuantityMax=1000
+        varQuantityInit=1000;
+        varQuantityMax=1000;
         class Nutrition
         {
             energy=240;
@@ -804,8 +810,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_baked_potato_with_vegetables_co.paa",
             "CookZ\data\dishes\boxed\box_food_baked_potato_with_vegetables_co.paa"
         };
-        varQuantityInit=1150
-        varQuantityMax=1150
+        varQuantityInit=1150;
+        varQuantityMax=1150;
         class Nutrition
         {
             energy=273.913;
@@ -836,8 +842,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_baked_potato_with_meat_co.paa",
             "CookZ\data\dishes\boxed\box_food_baked_potato_with_meat_co.paa"
         };
-        varQuantityInit=1200
-        varQuantityMax=1200
+        varQuantityInit=1200;
+        varQuantityMax=1200;
         class Nutrition
         {
             energy=302.083;
@@ -868,8 +874,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_baked_potato_with_seafood_co.paa",
             "CookZ\data\dishes\boxed\box_food_baked_potato_with_seafood_co.paa"
         };
-        varQuantityInit=1300
-        varQuantityMax=1300
+        varQuantityInit=1300;
+        varQuantityMax=1300;
         class Nutrition
         {
             energy=221.154;
@@ -900,8 +906,8 @@ class CfgVehicles
             "CookZ\data\dishes\boxed\box_paprikas_krumpli_co.paa",
             "CookZ\data\dishes\boxed\box_food_paprikas_krumpli_co.paa"
         };
-        varQuantityInit=1200
-        varQuantityMax=1200
+        varQuantityInit=1200;
+        varQuantityMax=1200;
         class Nutrition
         {
             energy=260.417;
@@ -911,4 +917,4 @@ class CfgVehicles
             toxicity=0;
         };
     };
-}
+};

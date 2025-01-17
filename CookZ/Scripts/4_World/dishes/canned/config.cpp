@@ -1,6 +1,12 @@
 class CfgPatches
 {
-    class CookZ {};
+    class CookZ
+    {
+        requiredAddons[] =
+        {
+            "DZ_Data"
+        };
+    };
 };
 
 class CfgVehicles
@@ -64,8 +70,8 @@ class CfgVehicles
         {
             "CookZ\data\dishes\canned\canned_pumpkin_soup_co.paa"
         };
-        varQuantityInit=500
-        varQuantityMax=500
+        varQuantityInit=500;
+        varQuantityMax=500;
         class Nutrition
         {
             energy=125;
@@ -95,8 +101,8 @@ class CfgVehicles
         {
             "CookZ\data\dishes\canned\canned_fish_soup_co.paa"
         };
-        varQuantityInit=1300
-        varQuantityMax=1300
+        varQuantityInit=1300;
+        varQuantityMax=1300;
         class Nutrition
         {
             energy=140.385;
@@ -126,8 +132,8 @@ class CfgVehicles
         {
             "CookZ\data\dishes\canned\canned_ukha_co.paa"
         };
-        varQuantityInit=1500
-        varQuantityMax=1500
+        varQuantityInit=1500;
+        varQuantityMax=1500;
         class Nutrition
         {
             energy=148.333;
@@ -157,8 +163,8 @@ class CfgVehicles
         {
             "CookZ\data\dishes\canned\canned_lecso_co.paa"
         };
-        varQuantityInit=700
-        varQuantityMax=700
+        varQuantityInit=700;
+        varQuantityMax=700;
         class Nutrition
         {
             energy=192.857;
@@ -188,8 +194,8 @@ class CfgVehicles
         {
             "CookZ\data\dishes\canned\canned_mystery_meat_co.paa"
         };
-        varQuantityInit=950
-        varQuantityMax=950
+        varQuantityInit=950;
+        varQuantityMax=950;
         class Nutrition
         {
             energy=300;
@@ -219,8 +225,8 @@ class CfgVehicles
         {
             "CookZ\data\dishes\canned\canned_zucchini_caviar_co.paa"
         };
-        varQuantityInit=850
-        varQuantityMax=850
+        varQuantityInit=850;
+        varQuantityMax=850;
         class Nutrition
         {
             energy=191.176;
@@ -250,8 +256,8 @@ class CfgVehicles
         {
             "CookZ\data\dishes\canned\canned_creamy_tomato_soup_co.paa"
         };
-        varQuantityInit=800
-        varQuantityMax=800
+        varQuantityInit=800;
+        varQuantityMax=800;
         class Nutrition
         {
             energy=218.75;
@@ -281,8 +287,8 @@ class CfgVehicles
         {
             "CookZ\data\dishes\canned\canned_mushroom_stroganoff_co.paa"
         };
-        varQuantityInit=950
-        varQuantityMax=950
+        varQuantityInit=950;
+        varQuantityMax=950;
         class Nutrition
         {
             energy=302.632;
@@ -312,8 +318,8 @@ class CfgVehicles
         {
             "CookZ\data\dishes\canned\canned_beef_stew_co.paa"
         };
-        varQuantityInit=1050
-        varQuantityMax=1050
+        varQuantityInit=1050;
+        varQuantityMax=1050;
         class Nutrition
         {
             energy=209.524;
@@ -343,8 +349,8 @@ class CfgVehicles
         {
             "CookZ\data\dishes\canned\canned_bone_broth_co.paa"
         };
-        varQuantityInit=800
-        varQuantityMax=800
+        varQuantityInit=800;
+        varQuantityMax=800;
         class Nutrition
         {
             energy=150;
@@ -374,8 +380,8 @@ class CfgVehicles
         {
             "CookZ\data\dishes\canned\canned_apple_marmalade_co.paa"
         };
-        varQuantityInit=750
-        varQuantityMax=750
+        varQuantityInit=750;
+        varQuantityMax=750;
         class Nutrition
         {
             energy=250;
@@ -405,8 +411,8 @@ class CfgVehicles
         {
             "CookZ\data\dishes\canned\canned_plum_marmalade_co.paa"
         };
-        varQuantityInit=450
-        varQuantityMax=450
+        varQuantityInit=450;
+        varQuantityMax=450;
         class Nutrition
         {
             energy=300;
@@ -436,8 +442,8 @@ class CfgVehicles
         {
             "CookZ\data\dishes\canned\canned_pear_marmalade_co.paa"
         };
-        varQuantityInit=600
-        varQuantityMax=600
+        varQuantityInit=600;
+        varQuantityMax=600;
         class Nutrition
         {
             energy=300;
@@ -447,4 +453,4 @@ class CfgVehicles
             toxicity=0;
         };
     };
-}
+};

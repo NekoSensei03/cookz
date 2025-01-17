@@ -1,6 +1,12 @@
 class CfgPatches
 {
-    class CookZ {};
+    class CookZ
+	{
+		requiredAddons[] =
+        {
+            "DZ_Data"
+        };
+	};
 };
 
 class CfgVehicles
@@ -74,7 +80,7 @@ class CfgVehicles
 				};
 			};
 		};
-    }
+    };
 
     // items
 
@@ -97,5 +103,5 @@ class CfgVehicles
             nutritionalIndex=1;
             toxicity=0;
         };
-    }
-}
+    };
+};

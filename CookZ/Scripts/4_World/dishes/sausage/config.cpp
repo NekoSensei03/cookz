@@ -1,6 +1,12 @@
 class CfgPatches
 {
-    class CookZ {};
+    class CookZ
+    {
+        requiredAddons[] =
+        {
+            "DZ_Data"
+        };
+    };
 };
 
 class CfgVehicles
@@ -74,7 +80,7 @@ class CfgVehicles
 				};
 			};
 		};
-    }
+    };
 
     // items
 
@@ -97,7 +103,7 @@ class CfgVehicles
             nutritionalIndex=1;
             toxicity=0;
         };
-    }
+    };
 
     class CookZ_Chicken_Sausage: CookZ_Sausage_Base
     {
@@ -118,7 +124,7 @@ class CfgVehicles
             nutritionalIndex=1;
             toxicity=0;
         };
-    }
+    };
 
     class CookZ_Pig_Sausage: CookZ_Sausage_Base
     {
@@ -139,7 +145,7 @@ class CfgVehicles
             nutritionalIndex=1;
             toxicity=0;
         };
-    }
+    };
 
     class CookZ_Goat_Sausage: CookZ_Sausage_Base
     {
@@ -160,7 +166,7 @@ class CfgVehicles
             nutritionalIndex=1;
             toxicity=0;
         };
-    }
+    };
 
     class CookZ_Bear_Sausage: CookZ_Sausage_Base
     {
@@ -181,7 +187,7 @@ class CfgVehicles
             nutritionalIndex=1;
             toxicity=0;
         };
-    }
+    };
 
     class CookZ_Sheep_Sausage: CookZ_Sausage_Base
     {
@@ -202,7 +208,7 @@ class CfgVehicles
             nutritionalIndex=1;
             toxicity=0;
         };
-    }
+    };
 
     class CookZ_Boar_Sausage: CookZ_Sausage_Base
     {
@@ -223,7 +229,7 @@ class CfgVehicles
             nutritionalIndex=1;
             toxicity=0;
         };
-    }
+    };
 
     class CookZ_Deer_Sausage: CookZ_Sausage_Base
     {
@@ -244,7 +250,7 @@ class CfgVehicles
             nutritionalIndex=1;
             toxicity=0;
         };
-    }
+    };
 
     class CookZ_Hare_Sausage: CookZ_Sausage_Base
     {
@@ -265,7 +271,7 @@ class CfgVehicles
             nutritionalIndex=1;
             toxicity=0;
         };
-    }
+    };
 
     class CookZ_Wolf_Sausage: CookZ_Sausage_Base
     {
@@ -286,7 +292,7 @@ class CfgVehicles
             nutritionalIndex=1;
             toxicity=0;
         };
-    }
+    };
 
     class CookZ_Human_Sausage: CookZ_Sausage_Base
     {
@@ -307,7 +313,7 @@ class CfgVehicles
             nutritionalIndex=1;
             toxicity=0;
         };
-    }
+    };
 
     class CookZ_Fox_Sausage: CookZ_Sausage_Base
     {
@@ -328,7 +334,7 @@ class CfgVehicles
             nutritionalIndex=1;
             toxicity=0;
         };
-    }
+    };
 
     class CookZ_Reindeer_Sausage: CookZ_Sausage_Base
     {
@@ -349,5 +355,5 @@ class CfgVehicles
             nutritionalIndex=1;
             toxicity=0;
         };
-    }
-}
+    };
+};
