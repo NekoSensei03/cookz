@@ -87,8 +87,8 @@ class CfgVehicles
     class CookZ_Beef_Sausage: CookZ_Sausage_Base
     {
         scope=2;
-        displayName="Beef Sausage";
-        descriptionShort="A juicy beef sausage, perfect for survivors in need of a quick bite.";
+        displayName="$STR_CookZ_Beef_Sausage_DN";
+        descriptionShort="$STR_CookZ_Beef_Sausage_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\sausage\sausage_cow_co.paa"
@@ -108,8 +108,8 @@ class CfgVehicles
     class CookZ_Chicken_Sausage: CookZ_Sausage_Base
     {
         scope=2;
-        displayName="Chicken Sausage";
-        descriptionShort="A juicy chicken sausage, perfect for survivors in need of a quick bite.";
+        displayName="$STR_CookZ_Chicken_Sausage_DN";
+        descriptionShort="$STR_CookZ_Chicken_Sausage_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\sausage\sausage_chicken_co.paa"
@@ -129,8 +129,8 @@ class CfgVehicles
     class CookZ_Pig_Sausage: CookZ_Sausage_Base
     {
         scope=2;
-        displayName="Pig Sausage";
-        descriptionShort="A juicy pig sausage, perfect for survivors in need of a quick bite.";
+        displayName="$STR_CookZ_Pig_Sausage_DN";
+        descriptionShort="$STR_CookZ_Pig_Sausage_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\sausage\sausage_pig_co.paa"
@@ -150,8 +150,8 @@ class CfgVehicles
     class CookZ_Goat_Sausage: CookZ_Sausage_Base
     {
         scope=2;
-        displayName="Goat Sausage";
-        descriptionShort="A juicy goat sausage, perfect for survivors in need of a quick bite.";
+        displayName="$STR_CookZ_Goat_Sausage_DN";
+        descriptionShort="$STR_CookZ_Goat_Sausage_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\sausage\sausage_goat_co.paa"
@@ -171,8 +171,8 @@ class CfgVehicles
     class CookZ_Bear_Sausage: CookZ_Sausage_Base
     {
         scope=2;
-        displayName="Bear Sausage";
-        descriptionShort="A juicy bear sausage, perfect for survivors in need of a quick bite.";
+        displayName="$STR_CookZ_Bear_Sausage_DN";
+        descriptionShort="$STR_CookZ_Bear_Sausage_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\sausage\sausage_bear_co.paa"
@@ -192,8 +192,8 @@ class CfgVehicles
     class CookZ_Sheep_Sausage: CookZ_Sausage_Base
     {
         scope=2;
-        displayName="Sheep Sausage";
-        descriptionShort="A juicy sheep sausage, perfect for survivors in need of a quick bite.";
+        displayName="$STR_CookZ_Sheep_Sausage_DN";
+        descriptionShort="$STR_CookZ_Sheep_Sausage_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\sausage\sausage_sheep_co.paa"
@@ -213,8 +213,8 @@ class CfgVehicles
     class CookZ_Boar_Sausage: CookZ_Sausage_Base
     {
         scope=2;
-        displayName="Boar Sausage";
-        descriptionShort="A juicy boar sausage, perfect for survivors in need of a quick bite.";
+        displayName="$STR_CookZ_Boar_Sausage_DN";
+        descriptionShort="$STR_CookZ_Boar_Sausage_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\sausage\sausage_boar_co.paa"
@@ -234,8 +234,8 @@ class CfgVehicles
     class CookZ_Deer_Sausage: CookZ_Sausage_Base
     {
         scope=2;
-        displayName="Deer Sausage";
-        descriptionShort="A juicy deer sausage, perfect for survivors in need of a quick bite.";
+        displayName="$STR_CookZ_Deer_Sausage_DN";
+        descriptionShort="$STR_CookZ_Deer_Sausage_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\sausage\sausage_deer_co.paa"
@@ -255,8 +255,8 @@ class CfgVehicles
     class CookZ_Hare_Sausage: CookZ_Sausage_Base
     {
         scope=2;
-        displayName="Hare Sausage";
-        descriptionShort="A juicy hare sausage, perfect for survivors in need of a quick bite.";
+        displayName="$STR_CookZ_Hare_Sausage_DN";
+        descriptionShort="$STR_CookZ_Hare_Sausage_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\sausage\sausage_rabbit_co.paa"
@@ -276,8 +276,8 @@ class CfgVehicles
     class CookZ_Wolf_Sausage: CookZ_Sausage_Base
     {
         scope=2;
-        displayName="Wolf Sausage";
-        descriptionShort="A juicy wolf sausage, perfect for survivors in need of a quick bite.";
+        displayName="$STR_CookZ_Wolf_Sausage_DN";
+        descriptionShort="$STR_CookZ_Wolf_Sausage_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\sausage\sausage_wolf_co.paa"
@@ -297,8 +297,8 @@ class CfgVehicles
     class CookZ_Human_Sausage: CookZ_Sausage_Base
     {
         scope=2;
-        displayName="Human Sausage";
-        descriptionShort="A sausage made from human meat ... just don't ...";
+        displayName="$STR_CookZ_Human_Sausage_DN";
+        descriptionShort="$STR_CookZ_Human_Sausage_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\sausage\sausage_human_co.paa"
@@ -318,8 +318,8 @@ class CfgVehicles
     class CookZ_Fox_Sausage: CookZ_Sausage_Base
     {
         scope=2;
-        displayName="Fox Sausage";
-        descriptionShort="A juicy fox sausage, perfect for survivors in need of a quick bite.";
+        displayName="$STR_CookZ_Fox_Sausage_DN";
+        descriptionShort="$STR_CookZ_Fox_Sausage_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\sausage\sausage_fox_co.paa"
@@ -339,8 +339,8 @@ class CfgVehicles
     class CookZ_Reindeer_Sausage: CookZ_Sausage_Base
     {
         scope=2;
-        displayName="Reindeer Sausage";
-        descriptionShort="A juicy reindeer sausage, perfect for survivors in need of a quick bite.";
+        displayName="$STR_CookZ_Reindeer_Sausage_DN";
+        descriptionShort="$STR_CookZ_Reindeer_Sausage_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\sausage\sausage_reindeer_co.paa"

@@ -23,8 +23,8 @@ class CfgVehicles
     class CookZ_GoulashCan: SpaghettiCan
     {
         scope=2;
-        displayName="Goulash";
-        descriptionShort="A nutritious and long-lasting can of goulash that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_GoulashCan_DN";
+        descriptionShort="$STR_CookZ_GoulashCan_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_goulash_co.paa"
@@ -33,8 +33,8 @@ class CfgVehicles
     class CookZ_GoulashCan_Opened: SpaghettiCan_Opened
     {
         scope=2;
-        displayName="Goulash";
-        descriptionShort="A nutritious can of goulash. Eat up before it spoils.";
+        displayName="$STR_CookZ_GoulashCan_DN";
+        descriptionShort="$STR_CookZ_GoulashCan_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_goulash_co.paa"
@@ -54,8 +54,8 @@ class CfgVehicles
     class CookZ_PumpkinSoupCan: SpaghettiCan
     {
         scope=2;
-        displayName="Pumpkin Soup";
-        descriptionShort="A nutritious and long-lasting can of pumpkin soup that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_PumpkinSoupCan_DN";
+        descriptionShort="$STR_CookZ_PumpkinSoupCan_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_pumpkin_soup_co.paa"
@@ -64,8 +64,8 @@ class CfgVehicles
     class CookZ_PumpkinSoupCan_Opened: SpaghettiCan_Opened
     {
         scope=2;
-        displayName="Pumpkin Soup";
-        descriptionShort="A nutritious can of pumpkin soup. Eat up before it spoils.";
+        displayName="$STR_CookZ_PumpkinSoupCan_DN";
+        descriptionShort="$STR_CookZ_PumpkinSoupCan_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_pumpkin_soup_co.paa"
@@ -85,8 +85,8 @@ class CfgVehicles
     class CookZ_FishSoupCan: SpaghettiCan
     {
         scope=2;
-        displayName="Fish Soup";
-        descriptionShort="A nutritious and long-lasting can of fish soup that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_FishSoupCan_DN";
+        descriptionShort="$STR_CookZ_FishSoupCan_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_fish_soup_co.paa"
@@ -95,8 +95,8 @@ class CfgVehicles
     class CookZ_FishSoupCan_Opened: SpaghettiCan_Opened
     {
         scope=2;
-        displayName="Fish Soup";
-        descriptionShort="A nutritious can of fish soup. Eat up before it spoils.";
+        displayName="$STR_CookZ_FishSoupCan_DN";
+        descriptionShort="$STR_CookZ_FishSoupCan_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_fish_soup_co.paa"
@@ -116,8 +116,8 @@ class CfgVehicles
 	class CookZ_UkhaCan: SpaghettiCan
     {
         scope=2;
-        displayName="Ukha";
-        descriptionShort="A nutritious and long-lasting can of Ukha that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_UkhaCan_DN";
+        descriptionShort="$STR_CookZ_UkhaCan_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_ukha_co.paa"
@@ -126,8 +126,8 @@ class CfgVehicles
     class CookZ_UkhaCan_Opened: SpaghettiCan_Opened
     {
         scope=2;
-        displayName="Ukha";
-        descriptionShort="A nutritious can of Ukha. Eat up before it spoils.";
+        displayName="$STR_CookZ_UkhaCan_DN";
+        descriptionShort="$STR_CookZ_UkhaCan_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_ukha_co.paa"
@@ -147,8 +147,8 @@ class CfgVehicles
     class CookZ_LecsoCan: SpaghettiCan
     {
         scope=2;
-        displayName="Lecso";
-        descriptionShort="A nutritious and long-lasting can of Lecso that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_LecsoCan_DN";
+        descriptionShort="$STR_CookZ_LecsoCan_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_lecso_co.paa"
@@ -157,8 +157,8 @@ class CfgVehicles
     class CookZ_LecsoCan_Opened: SpaghettiCan_Opened
     {
         scope=2;
-        displayName="Lecso";
-        descriptionShort="A nutritious can of Lecso. Eat up before it spoils.";
+        displayName="$STR_CookZ_LecsoCan_DN";
+        descriptionShort="$STR_CookZ_LecsoCan_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_lecso_co.paa"
@@ -178,8 +178,8 @@ class CfgVehicles
     class CookZ_MysteryMeatCan: SpaghettiCan
     {
         scope=2;
-        displayName="Mystery Meat";
-        descriptionShort="A nutritious and long-lasting can of mixed meats that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_MysteryMeatCan_DN";
+        descriptionShort="$STR_CookZ_MysteryMeatCan_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_mystery_meat_co.paa"
@@ -188,8 +188,8 @@ class CfgVehicles
     class CookZ_MysteryMeatCan_Opened: SpaghettiCan_Opened
     {
         scope=2;
-        displayName="Mystery Meat";
-        descriptionShort="A nutritious can of mixed meats. Eat up before it spoils.";
+        displayName="$STR_CookZ_MysteryMeatCan_DN";
+        descriptionShort="$STR_CookZ_MysteryMeatCan_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_mystery_meat_co.paa"
@@ -209,8 +209,8 @@ class CfgVehicles
     class CookZ_ZucchiniCaviarCan: SpaghettiCan
     {
         scope=2;
-        displayName="Zucchini Caviar";
-        descriptionShort="A nutritious and long-lasting can of zucchini caviar that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_ZucchiniCaviarCan_DN";
+        descriptionShort="$STR_CookZ_ZucchiniCaviarCan_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_zucchini_caviar_co.paa"
@@ -219,8 +219,8 @@ class CfgVehicles
     class CookZ_ZucchiniCaviarCan_Opened: SpaghettiCan_Opened
     {
         scope=2;
-        displayName="Zucchini Caviar";
-        descriptionShort="A nutritious can of zucchini caviar. Eat up before it spoils.";
+        displayName="$STR_CookZ_ZucchiniCaviarCan_DN";
+        descriptionShort="$STR_CookZ_ZucchiniCaviarCan_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_zucchini_caviar_co.paa"
@@ -240,8 +240,8 @@ class CfgVehicles
     class CookZ_CreamyTomatoSoupCan: SpaghettiCan
     {
         scope=2;
-        displayName="Creamy Tomato Soup";
-        descriptionShort="A nutritious and long-lasting can of creamy tomato soup that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_CreamyTomatoSoupCan_DN";
+        descriptionShort="$STR_CookZ_CreamyTomatoSoupCan_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_creamy_tomato_soup_co.paa"
@@ -250,8 +250,8 @@ class CfgVehicles
     class CookZ_CreamyTomatoSoupCan_Opened: SpaghettiCan_Opened
     {
         scope=2;
-        displayName="Creamy Tomato Soup";
-        descriptionShort="A nutritious can of creamy tomato soup. Eat up before it spoils.";
+        displayName="$STR_CookZ_CreamyTomatoSoupCan_DN";
+        descriptionShort="$STR_CookZ_CreamyTomatoSoupCan_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_creamy_tomato_soup_co.paa"
@@ -271,8 +271,8 @@ class CfgVehicles
     class CookZ_MushroomStroganoffCan: SpaghettiCan
     {
         scope=2;
-        displayName="Mushroom Stroganoff";
-        descriptionShort="A nutritious and long-lasting can of mushroom stroganoff that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_MushroomStroganoffCan_DN";
+        descriptionShort="$STR_CookZ_MushroomStroganoffCan_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_mushroom_stroganoff_co.paa"
@@ -281,8 +281,8 @@ class CfgVehicles
     class CookZ_MushroomStroganoffCan_Opened: SpaghettiCan_Opened
     {
         scope=2;
-        displayName="Mushroom Stroganoff";
-        descriptionShort="A nutritious can of mushroom stroganoff. Eat up before it spoils.";
+        displayName="$STR_CookZ_MushroomStroganoffCan_DN";
+        descriptionShort="$STR_CookZ_MushroomStroganoffCan_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_mushroom_stroganoff_co.paa"
@@ -302,8 +302,8 @@ class CfgVehicles
     class CookZ_BeefStewCan: SpaghettiCan
     {
         scope=2;
-        displayName="Beef Stew";
-        descriptionShort="A nutritious and long-lasting can of beef stew that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_BeefStewCan_DN";
+        descriptionShort="$STR_CookZ_BeefStewCan_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_beef_stew_co.paa"
@@ -312,8 +312,8 @@ class CfgVehicles
     class CookZ_BeefStewCan_Opened: SpaghettiCan_Opened
     {
         scope=2;
-        displayName="Beef Stew";
-        descriptionShort="A nutritious can of beef stew. Eat up before it spoils.";
+        displayName="$STR_CookZ_BeefStewCan_DN";
+        descriptionShort="$STR_CookZ_BeefStewCan_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_beef_stew_co.paa"
@@ -333,8 +333,8 @@ class CfgVehicles
     class CookZ_BoneBrothCan: SpaghettiCan
     {
         scope=2;
-        displayName="Bone Broth";
-        descriptionShort="A nutritious and long-lasting can of bone broth that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_BoneBrothCan_DN";
+        descriptionShort="$STR_CookZ_BoneBrothCan_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_bone_broth_co.paa"
@@ -343,8 +343,8 @@ class CfgVehicles
     class CookZ_BoneBrothCan_Opened: SpaghettiCan_Opened
     {
         scope=2;
-        displayName="Bone Broth";
-        descriptionShort="A nutritious can of bone broth. Eat up before it spoils.";
+        displayName="$STR_CookZ_BoneBrothCan_DN";
+        descriptionShort="$STR_CookZ_BoneBrothCan_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_bone_broth_co.paa"
@@ -364,8 +364,8 @@ class CfgVehicles
     class CookZ_AppleMarmaladeCan: SpaghettiCan
     {
         scope=2;
-        displayName="Apple Marmalade";
-        descriptionShort="A nutritious and long-lasting can of apple marmalade that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_AppleMarmaladeCan_DN";
+        descriptionShort="$STR_CookZ_AppleMarmaladeCan_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_apple_marmalade_co.paa"
@@ -374,8 +374,8 @@ class CfgVehicles
     class CookZ_AppleMarmaladeCan_Opened: SpaghettiCan_Opened
     {
         scope=2;
-        displayName="Apple Marmalade";
-        descriptionShort="A nutritious can of apple marmalade. Eat up before it spoils.";
+        displayName="$STR_CookZ_AppleMarmaladeCan_DN";
+        descriptionShort="$STR_CookZ_AppleMarmaladeCan_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_apple_marmalade_co.paa"
@@ -395,8 +395,8 @@ class CfgVehicles
     class CookZ_PlumMarmaladeCan: SpaghettiCan
     {
         scope=2;
-        displayName="Plum Marmalade";
-        descriptionShort="A nutritious and long-lasting can of plum marmalade that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_PlumMarmaladeCan_DN";
+        descriptionShort="$STR_CookZ_PlumMarmaladeCan_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_plum_marmalade_co.paa"
@@ -405,8 +405,8 @@ class CfgVehicles
     class CookZ_PlumMarmaladeCan_Opened: SpaghettiCan_Opened
     {
         scope=2;
-        displayName="Plum Marmalade";
-        descriptionShort="A nutritious can of plum marmalade. Eat up before it spoils.";
+        displayName="$STR_CookZ_PlumMarmaladeCan_DN";
+        descriptionShort="$STR_CookZ_PlumMarmaladeCan_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_plum_marmalade_co.paa"
@@ -426,8 +426,8 @@ class CfgVehicles
     class CookZ_PearMarmaladeCan: SpaghettiCan
     {
         scope=2;
-        displayName="Pear Marmalade";
-        descriptionShort="A nutritious and long-lasting can of pear marmalade that can be opened with a can opener. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_PearMarmaladeCan_DN";
+        descriptionShort="$STR_CookZ_PearMarmaladeCan_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_pear_marmalade_co.paa"
@@ -436,8 +436,8 @@ class CfgVehicles
     class CookZ_PearMarmaladeCan_Opened: SpaghettiCan_Opened
     {
         scope=2;
-        displayName="Pear Marmalade";
-        descriptionShort="A nutritious can of pear marmalade. Eat up before it spoils.";
+        displayName="$STR_CookZ_PearMarmaladeCan_DN";
+        descriptionShort="$STR_CookZ_PearMarmaladeCan_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\canned\canned_pear_marmalade_co.paa"

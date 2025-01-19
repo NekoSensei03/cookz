@@ -13,21 +13,21 @@ class CfgVehicles
 {
     class CookZ_Recipes
     {
-		// add a recipes here
+    // add a recipes here
 
-        class CookZ_FriedPotatoesBox 	// name needs to be name of dish to be created
+        class CookZ_FriedPotatoesBox            // name needs to be name of dish to be created
         {
-            allowPot = false;			// can pot be used for recipe?
-            allowCauldron = false;		// can cauldron be used for recipe?
-            allowPan = true;			// can pan be used for recipe?
-            needsWater = false;			// is water needed? only makes sense if pot or cauldron is allowed
-            needsEmptyCan = false;      // is an empty can needed
-            needsEmptyBox = true;       // is an empty box needed
-            doNotReplaceIngredients = false; // do not replace ingredients by dish (e.g. disenfecting rags)
-            canBeOpened = true;         // does dish need to be opened before eating
-            numDishes = 1;              // number of dishes that will be created
+            allowPot = false;                   // can pot be used for recipe?
+            allowCauldron = false;              // can cauldron be used for recipe?
+            allowPan = true;                    // can pan be used for recipe?
+            needsWater = false;                 // is water needed? only makes sense if pot or cauldron is allowed
+            needsEmptyCan = false;              // is an empty can needed
+            needsEmptyBox = true;               // is an empty box needed
+            doNotReplaceIngredients = false;    // do not replace ingredients by dish (e.g. disenfecting rags)
+            canBeOpened = true;                 // does dish need to be opened before eating
+            numDishes = 1;                      // number of dishes that will be created
             ingredients[] = {
-				"Potato,4",				// <NAME>,<QUANITY>, name must be the food item name OR AnyMeat etc
+            "Potato,4",                         // <NAME>,<QUANITY>, name must be the food item name OR AnyMeat etc
                 "Lard,1"
             };
         };
@@ -175,7 +175,7 @@ class CfgVehicles
                 "Tomato,1"
             };
         };
-		class CookZ_UkhaCan
+        class CookZ_UkhaCan
         {
             allowPot = true;
             allowCauldron = true;
@@ -186,7 +186,7 @@ class CfgVehicles
                 "AnyFish,2",
                 "Potato,1",
                 "Tomato,1",
-				"DisinfectantAlcohol,1"
+                "DisinfectantAlcohol,1"
             };
         };
         class CookZ_LecsoCan
@@ -461,7 +461,7 @@ class CfgVehicles
         };
         class CookZ_CurrywurstBox
         {
-            allowpan = true;
+            allowPan = true;
             needsEmptyBox = true;
             canBeOpened = true;
             ingredients[] = {

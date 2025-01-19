@@ -153,8 +153,8 @@ class CfgVehicles
     class CookZ_FriedPotatoesBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Fried Potatoes";
-        descriptionShort="A nutritious and long-lasting box of fried potatoes. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_FriedPotatoesBox_DN";
+        descriptionShort="$STR_CookZ_FriedPotatoesBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_fried_potatoes_co.paa"
@@ -163,8 +163,8 @@ class CfgVehicles
     class CookZ_FriedPotatoesBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Fried Potatoes";
-        descriptionShort="A nutritious box of fried potatoes. Eat up before it spoils.";
+        displayName="$STR_CookZ_FriedPotatoesBox_DN";
+        descriptionShort="$STR_CookZ_FriedPotatoesBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_fried_potatoes_co.paa",
@@ -185,8 +185,8 @@ class CfgVehicles
     class CookZ_StirFryBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Stir Fry";
-        descriptionShort="A nutritious and long-lasting box of stir fry. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_StirFryBox_DN";
+        descriptionShort="$STR_CookZ_StirFryBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_stir_fry_co.paa"
@@ -195,8 +195,8 @@ class CfgVehicles
     class CookZ_StirFryBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Stir Fry";
-        descriptionShort="A nutritious box of stir fry. Eat up before it spoils.";
+        displayName="$STR_CookZ_StirFryBox_DN";
+        descriptionShort="$STR_CookZ_StirFryBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_stir_fry_co.paa",
@@ -217,8 +217,8 @@ class CfgVehicles
     class CookZ_FishAndChipsBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Fish And Chips";
-        descriptionShort="A nutritious and long-lasting box of fish and chips. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_FishAndChipsBox_DN";
+        descriptionShort="$STR_CookZ_FishAndChipsBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_fish_and_chips_co.paa"
@@ -227,8 +227,8 @@ class CfgVehicles
     class CookZ_FishAndChipsBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Fish And Chips";
-        descriptionShort="A nutritious box of fish and chips. Eat up before it spoils.";
+        displayName="$STR_CookZ_FishAndChipsBox_DN";
+        descriptionShort="$STR_CookZ_FishAndChipsBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_fish_and_chips_co.paa",
@@ -249,8 +249,8 @@ class CfgVehicles
     class CookZ_RicePuddingBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Rice Pudding";
-        descriptionShort="A nutritious and long-lasting box of rice pudding. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_RicePuddingBox_DN";
+        descriptionShort="$STR_CookZ_RicePuddingBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_rice_pudding_co.paa"
@@ -259,8 +259,8 @@ class CfgVehicles
     class CookZ_RicePuddingBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Rice Pudding";
-        descriptionShort="A nutritious box of rice pudding. Eat up before it spoils.";
+        displayName="$STR_CookZ_RicePuddingBox_DN";
+        descriptionShort="$STR_CookZ_RicePuddingBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_rice_pudding_co.paa",
@@ -281,8 +281,8 @@ class CfgVehicles
     class CookZ_MushroomRisottoBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Mushroom Risotto";
-        descriptionShort="A nutritious and long-lasting box of mushroom risotto. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_MushroomRisottoBox_DN";
+        descriptionShort="$STR_CookZ_MushroomRisottoBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_mushroom_risotto_co.paa"
@@ -291,8 +291,8 @@ class CfgVehicles
     class CookZ_MushroomRisottoBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Mushroom Risotto";
-        descriptionShort="A nutritious box of mushroom risotto. Eat up before it spoils.";
+        displayName="$STR_CookZ_MushroomRisottoBox_DN";
+        descriptionShort="$STR_CookZ_MushroomRisottoBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_mushroom_risotto_co.paa",
@@ -313,8 +313,8 @@ class CfgVehicles
     class CookZ_PilafBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Pilaf";
-        descriptionShort="A nutritious and long-lasting box of pilaf. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_PilafBox_DN";
+        descriptionShort="$STR_CookZ_PilafBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_pilaf_co.paa"
@@ -323,8 +323,8 @@ class CfgVehicles
     class CookZ_PilafBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Pilaf";
-        descriptionShort="A nutritious box of pilaf. Eat up before it spoils.";
+        displayName="$STR_CookZ_PilafBox_DN";
+        descriptionShort="$STR_CookZ_PilafBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_pilaf_co.paa",
@@ -345,8 +345,8 @@ class CfgVehicles
     class CookZ_GaghBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Gagh";
-        descriptionShort="A nutritious and long-lasting box of gagh. Will last two to five years depending on storage conditions. Earth-Style: the worms are cooked.";
+        displayName="$STR_CookZ_GaghBox_DN";
+        descriptionShort="$STR_CookZ_GaghBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_gagh_co.paa"
@@ -355,8 +355,8 @@ class CfgVehicles
     class CookZ_GaghBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Gagh";
-        descriptionShort="A nutritious box of gagh. Eat up before it spoils. Earth-Style: the worms are cooked.";
+        displayName="$STR_CookZ_GaghBox_DN";
+        descriptionShort="$STR_CookZ_GaghBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_gagh_co.paa",
@@ -377,8 +377,8 @@ class CfgVehicles
     class CookZ_HaggisBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Haggis with Mashed Potatoes";
-        descriptionShort="A nutritious and long-lasting box of haggis with mashed potatoes. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_HaggisBox_DN";
+        descriptionShort="$STR_CookZ_HaggisBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_haggis_co.paa"
@@ -387,8 +387,8 @@ class CfgVehicles
     class CookZ_HaggisBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Haggis with Mashed Potatoes";
-        descriptionShort="A nutritious box of haggis with mashed potatoes. Eat up before it spoils.";
+        displayName="$STR_CookZ_HaggisBox_DN";
+        descriptionShort="$STR_CookZ_HaggisBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_haggis_co.paa",
@@ -409,8 +409,8 @@ class CfgVehicles
     class CookZ_StuffedPeppersBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Stuffed Peppers";
-        descriptionShort="A nutritious and long-lasting box of stuffed peppers. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_StuffedPeppersBox_DN";
+        descriptionShort="$STR_CookZ_StuffedPeppersBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_stuffed_peppers_co.paa"
@@ -419,8 +419,8 @@ class CfgVehicles
     class CookZ_StuffedPeppersBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Stuffed Peppers";
-        descriptionShort="A nutritious box of stuffed peppers. Eat up before it spoils.";
+        displayName="$STR_CookZ_StuffedPeppersBox_DN";
+        descriptionShort="$STR_CookZ_StuffedPeppersBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_stuffed_peppers_co.paa",
@@ -441,8 +441,8 @@ class CfgVehicles
     class CookZ_PommdoenerBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Pommdoener";
-        descriptionShort="A nutritious and long-lasting box of pommdoener. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_PommdoenerBox_DN";
+        descriptionShort="$STR_CookZ_PommdoenerBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_pommdoener_co.paa"
@@ -451,8 +451,8 @@ class CfgVehicles
     class CookZ_PommdoenerBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Pommdoener";
-        descriptionShort="A nutritious box of pommdoener. Eat up before it spoils.";
+        displayName="$STR_CookZ_PommdoenerBox_DN";
+        descriptionShort="$STR_CookZ_PommdoenerBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_pommdoener_co.paa",
@@ -473,8 +473,8 @@ class CfgVehicles
     class CookZ_BangersAndMashBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Bangers And Mash";
-        descriptionShort="A nutritious and long-lasting box of bangers and mash. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_BangersAndMashBox_DN";
+        descriptionShort="$STR_CookZ_BangersAndMashBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_bangers_and_mash_co.paa"
@@ -483,8 +483,8 @@ class CfgVehicles
     class CookZ_BangersAndMashBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Bangers And Mash";
-        descriptionShort="A nutritious box of bangers and mash. Eat up before it spoils.";
+        displayName="$STR_CookZ_BangersAndMashBox_DN";
+        descriptionShort="$STR_CookZ_BangersAndMashBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_bangers_and_mash_co.paa",
@@ -505,8 +505,8 @@ class CfgVehicles
     class CookZ_CurrywurstBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Currywurst";
-        descriptionShort="A nutritious and long-lasting box of currywurst. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_CurrywurstBox_DN";
+        descriptionShort="$STR_CookZ_CurrywurstBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_currywurst_co.paa"
@@ -515,8 +515,8 @@ class CfgVehicles
     class CookZ_CurrywurstBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Currywurst";
-        descriptionShort="A nutritious box of currywurst. Eat up before it spoils.";
+        displayName="$STR_CookZ_CurrywurstBox_DN";
+        descriptionShort="$STR_CookZ_CurrywurstBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_currywurst_co.paa",
@@ -537,8 +537,8 @@ class CfgVehicles
     class CookZ_StuffedMushroomsBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Stuffed Mushrooms";
-        descriptionShort="A nutritious and long-lasting box of stuffed mushrooms. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_StuffedMushroomsBox_DN";
+        descriptionShort="$STR_CookZ_StuffedMushroomsBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_stuffed_mushrooms_co.paa"
@@ -547,8 +547,8 @@ class CfgVehicles
     class CookZ_StuffedMushroomsBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Stuffed Mushrooms";
-        descriptionShort="A nutritious box of stuffed mushrooms. Eat up before it spoils.";
+        displayName="$STR_CookZ_StuffedMushroomsBox_DN";
+        descriptionShort="$STR_CookZ_StuffedMushroomsBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_stuffed_mushrooms_co.paa",
@@ -569,8 +569,8 @@ class CfgVehicles
     class CookZ_RabbitRoastBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Rabbit Roast";
-        descriptionShort="A nutritious and long-lasting box of stuffed rabbit roast. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_RabbitRoastBox_DN";
+        descriptionShort="$STR_CookZ_RabbitRoastBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_rabbit_roast_co.paa"
@@ -579,8 +579,8 @@ class CfgVehicles
     class CookZ_RabbitRoastBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Rabbit Roast";
-        descriptionShort="A nutritious box of rabbit roast. Eat up before it spoils.";
+        displayName="$STR_CookZ_RabbitRoastBox_DN";
+        descriptionShort="$STR_CookZ_RabbitRoastBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_rabbit_roast_co.paa",
@@ -601,8 +601,8 @@ class CfgVehicles
     class CookZ_NuggiesAndFriesBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Nuggies And Fries";
-        descriptionShort="A nutritious and long-lasting box of nuggies and fries. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_NuggiesAndFriesBox_DN";
+        descriptionShort="$STR_CookZ_NuggiesAndFriesBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_nuggies_and_fries_co.paa"
@@ -611,8 +611,8 @@ class CfgVehicles
     class CookZ_NuggiesAndFriesBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Nuggies And Fries";
-        descriptionShort="A nutritious box of nuggies and fries. Eat up before it spoils.";
+        displayName="$STR_CookZ_NuggiesAndFriesBox_DN";
+        descriptionShort="$STR_CookZ_NuggiesAndFriesBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_nuggies_and_fries_co.paa",
@@ -633,8 +633,8 @@ class CfgVehicles
     class CookZ_SchnitzelBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Schnitzel";
-        descriptionShort="A nutritious and long-lasting box of schnitzel. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_SchnitzelBox_DN";
+        descriptionShort="$STR_CookZ_SchnitzelBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_schnitzel_co.paa"
@@ -643,8 +643,8 @@ class CfgVehicles
     class CookZ_SchnitzelBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Schnitzel";
-        descriptionShort="A nutritious box of schnitzel. Eat up before it spoils.";
+        displayName="$STR_CookZ_SchnitzelBox_DN";
+        descriptionShort="$STR_CookZ_SchnitzelBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_schnitzel_co.paa",
@@ -665,8 +665,8 @@ class CfgVehicles
     class CookZ_BiffALaNelsonBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Biff A La Nelson";
-        descriptionShort="A nutritious and long-lasting box of biff a la nelson. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_BiffALaNelsonBox_DN";
+        descriptionShort="$STR_CookZ_BiffALaNelsonBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_biff_a_la_nelson_co.paa"
@@ -675,8 +675,8 @@ class CfgVehicles
     class CookZ_BiffALaNelsonBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Biff A La Nelson";
-        descriptionShort="A nutritious box of biff a la nelson. Eat up before it spoils.";
+        displayName="$STR_CookZ_BiffALaNelsonBox_DN";
+        descriptionShort="$STR_CookZ_BiffALaNelsonBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_biff_a_la_nelson_co.paa",
@@ -697,8 +697,8 @@ class CfgVehicles
     class CookZ_PorkAndAppleBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Pork And Apple";
-        descriptionShort="A nutritious and long-lasting box of pork and apple. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_PorkAndAppleBox_DN";
+        descriptionShort="$STR_CookZ_PorkAndAppleBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_pork_and_apple_co.paa"
@@ -707,8 +707,8 @@ class CfgVehicles
     class CookZ_PorkAndAppleBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Pork And Apple";
-        descriptionShort="A nutritious box of pork and apple. Eat up before it spoils.";
+        displayName="$STR_CookZ_PorkAndAppleBox_DN";
+        descriptionShort="$STR_CookZ_PorkAndAppleBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_pork_and_apple_co.paa",
@@ -729,8 +729,8 @@ class CfgVehicles
     class CookZ_ChickenCordonBleuBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Chicken Cordon Bleu";
-        descriptionShort="A nutritious and long-lasting box of chicken cordon bleu. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_ChickenCordonBleuBox_DN";
+        descriptionShort="$STR_CookZ_ChickenCordonBleuBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_chicken_cordon_bleu_co.paa"
@@ -739,8 +739,8 @@ class CfgVehicles
     class CookZ_ChickenCordonBleuBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Chicken Cordon Bleu";
-        descriptionShort="A nutritious box of chicken cordon bleu. Eat up before it spoils.";
+        displayName="$STR_CookZ_ChickenCordonBleuBox_DN";
+        descriptionShort="$STR_CookZ_ChickenCordonBleuBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_chicken_cordon_bleu_co.paa",
@@ -761,8 +761,8 @@ class CfgVehicles
     class CookZ_RatatouilleBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Ratatouille";
-        descriptionShort="A nutritious and long-lasting box of ratatouille. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_RatatouilleBox_DN";
+        descriptionShort="$STR_CookZ_RatatouilleBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_ratatouille_co.paa"
@@ -771,8 +771,8 @@ class CfgVehicles
     class CookZ_RatatouilleBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Ratatouille";
-        descriptionShort="A nutritious box of ratatouille. Eat up before it spoils.";
+        displayName="$STR_CookZ_RatatouilleBox_DN";
+        descriptionShort="$STR_CookZ_RatatouilleBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_ratatouille_co.paa",
@@ -793,8 +793,8 @@ class CfgVehicles
     class CookZ_BakedPotatoVegBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Baked Potato With Vegetables";
-        descriptionShort="A nutritious and long-lasting box of baked potato with vegetables. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_BakedPotatoVegBox_DN";
+        descriptionShort="$STR_CookZ_BakedPotatoVegBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_baked_potato_with_vegetables_co.paa"
@@ -803,8 +803,8 @@ class CfgVehicles
     class CookZ_BakedPotatoVegBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Baked Potato With Vegetables";
-        descriptionShort="A nutritious box of baked potato with vegetables. Eat up before it spoils.";
+        displayName="$STR_CookZ_BakedPotatoVegBox_DN";
+        descriptionShort="$STR_CookZ_BakedPotatoVegBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_baked_potato_with_vegetables_co.paa",
@@ -825,8 +825,8 @@ class CfgVehicles
     class CookZ_BakedPotatoMeatBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Baked Potato With Meat";
-        descriptionShort="A nutritious and long-lasting box of baked potato with meat. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_BakedPotatoMeatBox_DN";
+        descriptionShort="$STR_CookZ_BakedPotatoMeatBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_baked_potato_with_meat_co.paa"
@@ -835,8 +835,8 @@ class CfgVehicles
     class CookZ_BakedPotatoMeatBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Baked Potato With Meat";
-        descriptionShort="A nutritious box of baked potato with meat. Eat up before it spoils.";
+        displayName="$STR_CookZ_BakedPotatoMeatBox_DN";
+        descriptionShort="$STR_CookZ_BakedPotatoMeatBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_baked_potato_with_meat_co.paa",
@@ -857,8 +857,8 @@ class CfgVehicles
     class CookZ_BakedPotatoFishBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Baked Potato With Seafood";
-        descriptionShort="A nutritious and long-lasting box of baked potato with seafood. Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_BakedPotatoFishBox_DN";
+        descriptionShort="$STR_CookZ_BakedPotatoFishBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_baked_potato_with_seafood_co.paa"
@@ -867,8 +867,8 @@ class CfgVehicles
     class CookZ_BakedPotatoFishBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Baked Potato With Seafood";
-        descriptionShort="A nutritious box of baked potato with seafood. Eat up before it spoils.";
+        displayName="$STR_CookZ_BakedPotatoFishBox_DN";
+        descriptionShort="$STR_CookZ_BakedPotatoFishBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_baked_potato_with_seafood_co.paa",
@@ -889,8 +889,8 @@ class CfgVehicles
     class CookZ_PaprikasKrumpliBox: CookZ_Box_Base
     {
         scope=2;
-        displayName="Paprikas Krumpli";
-        descriptionShort="A nutritious and long-lasting box of paprikas krumpli (Hungarian parika potatoes). Will last two to five years depending on storage conditions.";
+        displayName="$STR_CookZ_PaprikasKrumpliBox_DN";
+        descriptionShort="$STR_CookZ_PaprikasKrumpliBox_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_paprikas_krumpli_co.paa"
@@ -899,8 +899,8 @@ class CfgVehicles
     class CookZ_PaprikasKrumpliBox_Opened: CookZ_BoxOpened_Base
     {
         scope=2;
-        displayName="Paprikas Krumpli";
-        descriptionShort="A nutritious and long-lasting box of paprikas krumpli (Hungarian parika potatoes). Eat up before it spoils.";
+        displayName="$STR_CookZ_PaprikasKrumpliBox_DN";
+        descriptionShort="$STR_CookZ_PaprikasKrumpliBox_Opened_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\boxed\box_paprikas_krumpli_co.paa",

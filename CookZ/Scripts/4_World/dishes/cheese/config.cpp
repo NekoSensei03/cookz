@@ -87,8 +87,8 @@ class CfgVehicles
     class CookZ_Cheese: CookZ_Cheese_Base
     {
         scope=2;
-        displayName="Cheese";
-        descriptionShort="A piece of makeshift cheese. It almost tastes like the real thing.";
+        displayName="$STR_CookZ_Cheese_DN";
+        descriptionShort="$STR_CookZ_Cheese_DS";
         hiddenSelectionsTextures[]=
         {
             "CookZ\data\dishes\cheese\cookz_cheese_co.paa"

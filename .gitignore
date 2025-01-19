@@ -8,3 +8,7 @@
 ModsMetaData/**/*.bikey
 ModsMetaData/**/*.pbo
 ModsMetaData/**/*.bisign
+
+!ModData
+ModData/*
+!ModData/translations/

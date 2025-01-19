@@ -51,13 +51,13 @@ class CfgSlots
     class Slot_CookZ_EmptyCans
     {
         name = "CookZ_EmptyCans";
-        displayName = "Empty Cans";
+        displayName = "$STR_CookZ_Slot_EmptyCans";
         ghostIcon = "set:empty_can_icon image:empty_can_icon";
     };
     class Slot_CookZ_EmptyBoxes
     {
         name = "CookZ_EmptyBoxes";
-        displayName = "Empty Boxes";
+        displayName = "$STR_CookZ_Slot_EmptyBoxes";
         ghostIcon = "set:empty_box_icon image:empty_box_icon";
     };
 };
@@ -78,8 +78,8 @@ class CfgVehicles
     class CookZ_EmptyCan: Inventory_Base
     {
         scope=2;
-        displayName="Empty Can";
-        descriptionShort="An empty can. Can be used to put cooked food inside.";
+        displayName="$STR_CookZ_EmptyCan_DN";
+        descriptionShort="$STR_CookZ_EmptyCan_DS";
         itemSize[]={1,2};
         model="\dz\gear\food\food_can.p3d";
         hiddenSelections[]=
@@ -103,8 +103,8 @@ class CfgVehicles
     class CookZ_EmptyBox: Inventory_Base
     {
         scope=2;
-        displayName="Empty Box";
-        descriptionShort="An empty box. Can be used to put cooked food inside.";
+        displayName="$STR_CookZ_EmptyBox_DN";
+        descriptionShort="$STR_CookZ_EmptyBox_DS";
         itemSize[]={1,2};
         model="CookZ\data\dishes\boxed\food_box.p3d";
         hiddenSelections[]=
@@ -185,8 +185,8 @@ class CfgVehicles
         weight = 150;
         itemSize[] = {2,2};
         hiddenSelections[] = {"zbytek"};
-        title = "Cooking for Survivors";
-        author = "By a Survivor";
+        title = "$STR_CookZ_Cookbook_Title";
+        author = "$STR_CookZ_Cookbook_Author";
         chapters[] = {
             "CookZ\data\cookbook\01_introdcution.html",
             "CookZ\data\cookbook\02_boxed.html",
@@ -201,8 +201,8 @@ class CfgVehicles
             "CookZ/data/cookbook/icon_sausage.edds",
             "CookZ/data/cookbook/icon_cheese.edds"
         };
-        displayName = "Survivor Cookbook";
-        descriptionShort = "A cookbook for survivors.";
+        displayName = "$STR_CookZ_Cookbook_DN";
+        descriptionShort = "$STR_CookZ_Cookbook_DS";
         scope = 2;
         hiddenSelectionsTextures[] = {"CookZ\data\cookbook\cookbook.paa"};
     };

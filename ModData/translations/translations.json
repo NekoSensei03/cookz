@@ -1,0 +1,713 @@
+{
+    "CookZ_EmptyCan_DN": {
+        "en": "Empty Can",
+        "de": "Leere Dose"
+    },
+    "CookZ_EmptyCan_DS": {
+        "en": "An empty can. Can be used to put cooked food inside.",
+        "de": "Eine leere Dose. Kann verwendet werden, um gekochtes Essen hineinzufüllen."
+    },
+    "CookZ_EmptyBox_DN": {
+        "en": "Empty Box",
+        "de": "Leere Schachtel"
+    },
+    "CookZ_EmptyBox_DS": {
+        "en": "An empty box. Can be used to put cooked food inside.",
+        "de": "Eine leere Schachtel. Kann verwendet werden, um gekochtes Essen hineinzufüllen."
+    },
+    "CookZ_Slot_EmptyCans": {
+        "en": "Empty Cans",
+        "de": "Leere Dosen"
+    },
+    "CookZ_Slot_EmptyBoxes": {
+        "en": "Empty Boxes",
+        "de": "Leere Schachteln"
+    },
+
+
+
+
+    "CookZ_Cookbook_DN": {
+        "en": "Survivor Cookbook",
+        "de": "Survivor-Kochbuch"
+    },
+    "CookZ_Cookbook_DS": {
+        "en": "This cookbook contains recipes that help you eat well in any situation. Ideal for cooking under extreme conditions.",
+        "de": "Dieses Kochbuch enthält Rezepte, die dir helfen, in jeder Situation gut zu essen. Ideal für das Kochen unter extremen Bedingungen."
+    },
+    "CookZ_Cookbook_Title": {
+        "en": "Cooking for Survivors",
+        "de": "Kochen für Überlebende"
+    },
+    "CookZ_Cookbook_Author": {
+        "en": "By a Survivor",
+        "de": "Von einem Überlebenden"
+    },
+
+
+    
+    "&CookZ_EatUp": {
+        "en": "Eat up before it spoils.",
+        "de": "Nach dem Öffnen rasch verzehren."
+    },
+
+
+
+
+    "CookZ_FriedPotatoesBox_DN": {
+        "en": "Fried Potatoes",
+        "de": "Bratkartoffeln"
+    },
+    "CookZ_FriedPotatoesBox_DS": {
+        "en": "Crispy fried potato slices, golden-brown on the outside and soft on the inside, perfect as a side dish or snack.",
+        "de": "Knusprig gebratene Kartoffelscheiben, außen goldbraun und innen weich, ideal als Beilage oder Snack."
+    },
+    "CookZ_FriedPotatoesBox_Opened_DS": {
+        "en": "@CookZ_FriedPotatoesBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_StirFryBox_DN": {
+        "en": "Stir Fry",
+        "de": "Gebratenes Gemüse"
+    },
+    "CookZ_StirFryBox_DS": {
+        "en": "Vegetables tossed in a hot pan, creating a vibrant, lightly charred dish with a perfect balance of texture and taste.",
+        "de": "Gemüse, das in einer heißen Pfanne geschwenkt wird, ergibt ein lebendiges, leicht angebratenes Gericht mit perfektem Gleichgewicht von Textur und Geschmack."
+    },
+    "CookZ_StirFryBox_Opened_DS": {
+        "en": "@CookZ_StirFryBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_FishAndChipsBox_DN": {
+        "en": "Fish And Chips",
+        "de": "Fish & Chips"
+    },
+    "CookZ_FishAndChipsBox_DS": {
+        "en": "Crispy battered fish served with thick fries, offering a simple but delicious combination of flavors and textures.",
+        "de": "Knusprig panierter Fisch, dazu dicke Pommes – eine einfache, aber leckere Kombination aus Geschmack und Textur."
+    },
+    "CookZ_FishAndChipsBox_Opened_DS": {
+        "en": "@CookZ_FishAndChipsBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_RicePuddingBox_DN": {
+        "en": "Rice Pudding",
+        "de": "Milchreis"
+    },
+    "CookZ_RicePuddingBox_DS": {
+        "en": "A simple mix of rice and milk, cooked to a soft, creamy consistency. Served warm with fruit for a bit of sweetness.",
+        "de": "Eine einfache Mischung aus Reis und Milch, zu einer weichen, cremigen Konsistenz gekocht. Warm serviert mit Früchten für etwas Süße."
+    },
+    "CookZ_RicePuddingBox_Opened_DS": {
+        "en": "@CookZ_RicePuddingBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_MushroomRisottoBox_DN": {
+        "en": "Mushroom Risotto",
+        "de": "Pilzrisotto"
+    },
+    "CookZ_MushroomRisottoBox_DS": {
+        "en": "Rice cooked with mushrooms, simple and filling. It’s creamy and packs a solid, earthy flavor.",
+        "de": "Reis, gekocht mit Pilzen, einfach und sättigend. Es ist cremig und hat einen soliden, erdigen Geschmack."
+    },
+    "CookZ_MushroomRisottoBox_Opened_DS": {
+        "en": "@CookZ_MushroomRisottoBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_PilafBox_DN": {
+        "en": "Pilaf",
+        "de": "Pilaw"
+    },
+    "CookZ_PilafBox_DS": {
+        "en": "Rice mixed with bell peppers and tomatoes, offering a satisfying, savory dish that’s both fresh and hearty.",
+        "de": "Reis, gemischt mit Paprika und Tomaten, bietet ein zufriedenstellendes, herzhaftes Gericht, das frisch und sättigend ist."
+    },
+    "CookZ_PilafBox_Opened_DS": {
+        "en": "@CookZ_PilafBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_GaghBox_DN": {
+        "en": "Gagh",
+        "de": "Gagh"
+    },
+    "CookZ_GaghBox_DS": {
+        "en": "Earth-style Gagh made with cooked worms, offering a hearty, savory dish that’s strange but solid.",
+        "de": "Gagh im Erdstil, aus gekochten Würmern, ein herzhaftes, würziges Gericht – seltsam, aber gut."
+    },
+    "CookZ_GaghBox_Opened_DS": {
+        "en": "@CookZ_GaghBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_HaggisBox_DN": {
+        "en": "Haggis with Mashed Potatoes",
+        "de": "Haggis mit Kartoffelpüree"
+    },
+    "CookZ_HaggisBox_DS": {
+        "en": "Cooked spiced meat, paired with mashed potatoes. A straightforward meal that’ll fill you up without any fuss.",
+        "de": "Gekochtes, gewürztes Fleisch, dazu Kartoffelpüree. Ein einfaches Gericht, das satt macht und keine großen Umstände braucht."
+    },
+    "CookZ_HaggisBox_Opened_DS": {
+        "en": "@CookZ_HaggisBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_StuffedPeppersBox_DN": {
+        "en": "Stuffed Peppers",
+        "de": "Gefüllte Paprika"
+    },
+    "CookZ_StuffedPeppersBox_DS": {
+        "en": "Bell peppers filled with meat and cooked to bring out rich flavors. It’s a hearty dish that’s both filling and straightforward.",
+        "de": "Paprika, gefüllt mit Fleisch, gekocht bis die Aromen gut durchgezogen sind. Ein herzhaftes Gericht, das satt macht und unkompliziert ist."
+    },
+    "CookZ_StuffedPeppersBox_Opened_DS": {
+        "en": "@CookZ_StuffedPeppersBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_PommdoenerBox_DN": {
+        "en": "Pommdoener",
+        "de": "Pommdöner"
+    },
+    "CookZ_PommdoenerBox_DS": {
+        "en": "Fries topped with döner meat, all packed into a box. A simple, no-nonsense meal that’s both tasty and filling.",
+        "de": "Pommes mit Dönerfleisch, alles in einer Box. Ein einfaches, solides Gericht, das lecker und sättigend ist."
+    },
+    "CookZ_PommdoenerBox_Opened_DS": {
+        "en": "@CookZ_PommdoenerBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_BangersAndMashBox_DN": {
+        "en": "Bangers And Mash",
+        "de": "Bratwürste mit Kartoffelpüree"
+    },
+    "CookZ_BangersAndMashBox_DS": {
+        "en": "Sausages served with creamy mashed potatoes. A classic and simple comfort food that fills you up.",
+        "de": "Bratwürste, serviert mit cremigem Kartoffelpüree. Ein klassisches und einfaches Gericht, das satt macht."
+    },
+    "CookZ_BangersAndMashBox_Opened_DS": {
+        "en": "@CookZ_BangersAndMashBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_CurrywurstBox_DN": {
+        "en": "Currywurst",
+        "de": "Currywurst"
+    },
+    "CookZ_CurrywurstBox_DS": {
+        "en": "A grilled sausage topped with a tangy curry sauce. It’s a popular, quick snack that’s packed with flavor.",
+        "de": "Eine Bratwurst, bedeckt mit einer würzigen Currysauce. Ein beliebter, schneller Snack voller Geschmack."
+    },
+    "CookZ_CurrywurstBox_Opened_DS": {
+        "en": "@CookZ_CurrywurstBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_StuffedMushroomsBox_DN": {
+        "en": "Stuffed Mushrooms",
+        "de": "Gefüllte Pilze"
+    },
+    "CookZ_StuffedMushroomsBox_DS": {
+        "en": "Tender mushrooms filled with melted cheese. A small, flavorful dish that’s perfect as a snack or appetizer.",
+        "de": "Zarte Pilze, gefüllt mit geschmolzenem Käse. Ein kleines, geschmackvolles Gericht, das perfekt als Snack oder Vorspeise dient."
+    },
+    "CookZ_StuffedMushroomsBox_Opened_DS": {
+        "en": "@CookZ_StuffedMushroomsBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_RabbitRoastBox_DN": {
+        "en": "Rabbit Roast",
+        "de": "Kaninchenbraten"
+    },
+    "CookZ_RabbitRoastBox_DS": {
+        "en": "Roasted rabbit legs cooked with bell peppers and tomatoes. A rich, hearty meal with simple ingredients.",
+        "de": "Kaninchenkeulen, gebraten mit Paprika und Tomaten. Ein kräftiges Gericht aus einfachen Zutaten."
+    },
+    "CookZ_RabbitRoastBox_Opened_DS": {
+        "en": "@CookZ_RabbitRoastBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_NuggiesAndFriesBox_DN": {
+        "en": "Nuggies And Fries",
+        "de": "Hähnchennuggets und Pommes"
+    },
+    "CookZ_NuggiesAndFriesBox_DS": {
+        "en": "Crispy chicken nuggets served with fries. A quick, filling meal that’s hard to resist.",
+        "de": "Knusprige Hähnchennuggets, serviert mit Pommes. Ein schnelles, sättigendes Essen, das immer geht."
+    },
+    "CookZ_NuggiesAndFriesBox_Opened_DS": {
+        "en": "@CookZ_NuggiesAndFriesBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_SchnitzelBox_DN": {
+        "en": "Schnitzel",
+        "de": "Schnitzel"
+    },
+    "CookZ_SchnitzelBox_DS": {
+        "en": "Thinly sliced meat, breaded and fried to a golden crisp. A no-fuss meal that satisfies every time.",
+        "de": "Dünn geschnittenes Fleisch, paniert und goldbraun gebraten. Ein unkompliziertes Gericht, das immer satt macht."
+    },
+    "CookZ_SchnitzelBox_Opened_DS": {
+        "en": "@CookZ_SchnitzelBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_BiffALaNelsonBox_DN": {
+        "en": "Biff à la Nelson",
+        "de": "Biff à la Nelson"
+    },
+    "CookZ_BiffALaNelsonBox_DS": {
+        "en": "Tender meat served with potatoes and a rich beer sauce. Simple ingredients, but packed with flavor.",
+        "de": "Zartes Fleisch, serviert mit Kartoffeln und einer würzigen Biersoße. Einfache Zutaten, aber voller Geschmack."
+    },
+    "CookZ_BiffALaNelsonBox_Opened_DS": {
+        "en": "@CookZ_BiffALaNelsonBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_PorkAndAppleBox_DN": {
+        "en": "Pork And Apple",
+        "de": "Schweinehaxe mit Apfelsoße"
+    },
+    "CookZ_PorkAndAppleBox_DS": {
+        "en": "Roasted pork served with a tangy apple sauce and hearty potatoes. A rich and rustic meal with a touch of sweetness.",
+        "de": "Knusprige Schweinehaxe serviert mit einer fruchtigen Apfelsoße und kräftigen Kartoffeln. Ein reichhaltiges, rustikales Gericht mit einer süßen Note."
+    },
+    "CookZ_PorkAndAppleBox_Opened_DS": {
+        "en": "@CookZ_PorkAndAppleBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_ChickenCordonBleuBox_DN": {
+        "en": "Chicken Cordon Bleu",
+        "de": "Hähnchen Cordon Bleu"
+    },
+    "CookZ_ChickenCordonBleuBox_DS": {
+        "en": "Breaded chicken breast stuffed with melted cheese. A simple yet satisfying dish with a crispy exterior and creamy filling.",
+        "de": "Paniertes Hähnchenbrustfilet, gefüllt mit geschmolzenem Käse. Ein einfaches, aber sättigendes Gericht mit knuspriger Hülle und cremiger Füllung."
+    },
+    "CookZ_ChickenCordonBleuBox_Opened_DS": {
+        "en": "@CookZ_ChickenCordonBleuBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_RatatouilleBox_DN": {
+        "en": "Ratatouille",
+        "de": "Ratatouille"
+    },
+    "CookZ_RatatouilleBox_DS": {
+        "en": "A savory vegetable medley featuring zucchini, potatoes, peppers, and tomatoes, all slow-cooked to bring out their natural flavors. A light and wholesome dish.",
+        "de": "Eine herzhafte Gemüse-Mischung aus Zucchini, Kartoffeln, Paprika und Tomaten, langsam gegart, um die natürlichen Aromen zu entfalten. Ein leichtes und gesundes Gericht."
+    },
+    "CookZ_RatatouilleBox_Opened_DS": {
+        "en": "@CookZ_RatatouilleBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_BakedPotatoVegBox_DN": {
+        "en": "Baked Potato With Vegetables",
+        "de": "Ofenkartoffel mit Gemüse"
+    },
+    "CookZ_BakedPotatoVegBox_DS": {
+        "en": "A baked potato topped with a mix of zucchini, bell peppers, tomatoes, and melted cheese. A filling, veggie-packed meal.",
+        "de": "Eine gebackene Kartoffel, belegt mit einer Mischung aus Zucchini, Paprika, Tomaten und geschmolzenem Käse. Ein sättigendes, gemüsereiches Gericht."
+    },
+    "CookZ_BakedPotatoVegBox_Opened_DS": {
+        "en": "@CookZ_BakedPotatoVegBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_BakedPotatoMeatBox_DN": {
+        "en": "Baked Potato With Meat",
+        "de": "Ofenkartoffel mit Fleisch"
+    },
+    "CookZ_BakedPotatoMeatBox_DS": {
+        "en": "A warm baked potato filled with tender meat and cheese, creating a comforting and satisfying dish.",
+        "de": "Eine warme Ofenkartoffel, gefüllt mit zartem Fleisch und Käse. Ein einfaches, aber zufriedenstellendes Gericht."
+    },
+    "CookZ_BakedPotatoMeatBox_Opened_DS": {
+        "en": "@CookZ_BakedPotatoMeatBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_BakedPotatoFishBox_DN": {
+        "en": "Baked Potato With Seafood",
+        "de": "Ofenkartoffel mit Meeresfrüchten"
+    },
+    "CookZ_BakedPotatoFishBox_DS": {
+        "en": "A warm baked potato filled with melted cheese, fish, and caviar. A sophisticated combination of flavors that make for a unique and satisfying dish.",
+        "de": "Eine warme Ofenkartoffel, gefüllt mit geschmolzenem Käse, Fisch und Kaviar. Eine raffinierte Kombination aus Aromen, die dieses Gericht besonders macht."
+    },
+    "CookZ_BakedPotatoFishBox_Opened_DS": {
+        "en": "@CookZ_BakedPotatoFishBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_PaprikasKrumpliBox_DN": {
+        "en": "Paprikas Krumpli",
+        "de": "Paprikas Krumpli"
+    },
+    "CookZ_PaprikasKrumpliBox_DS": {
+        "en": "A traditional Hungarian dish of sausage, potatoes, and bell peppers, simmered to perfection for a simple, filling meal.",
+        "de": "Ein traditionelles ungarisches Gericht mit Wurst, Kartoffeln und Paprika, zusammen geschmort zu einem einfachen, kräftigen Essen."
+    },
+    "CookZ_PaprikasKrumpliBox_Opened_DS": {
+        "en": "@CookZ_PaprikasKrumpliBox_DS @&CookZ_EatUp"
+    },
+    
+    
+    
+
+
+    "CookZ_GoulashCan_DN": {
+        "en": "Goulash",
+        "de": "Gulasch"
+    },
+    "CookZ_GoulashCan_DS": {
+        "en": "A hearty dish with meat, potatoes, and bell peppers, slow-cooked to bring out the deep, comforting flavors.",
+        "de": "Ein herzhaftes Gericht mit Fleisch, Kartoffeln und Paprika, langsam gekocht, um den vollen Geschmack zu entfalten und lange haltbar zu sein."
+    },
+    "CookZ_GoulashCan_Opened_DS": {
+        "en": "@CookZ_GoulashCan_DS @&CookZ_EatUp"
+    },
+    "CookZ_PumpkinSoupCan_DN": {
+        "en": "Pumpkin Soup",
+        "de": "Kürbissuppe"
+    },
+    "CookZ_PumpkinSoupCan_DS": {
+        "en": "A smooth and creamy soup made from pumpkin, offering a comforting, slightly sweet flavor perfect for cooler days.",
+        "de": "Eine cremige Suppe aus Kürbis, die einen angenehmen, leicht süßen Geschmack bietet – ideal für die kalte Jahreszeit."
+    },
+    "CookZ_PumpkinSoupCan_Opened_DS": {
+        "en": "@CookZ_PumpkinSoupCan_DS @&CookZ_EatUp"
+    },
+    "CookZ_FishSoupCan_DN": {
+        "en": "Fish Soup",
+        "de": "Fischsuppe"
+    },
+    "CookZ_FishSoupCan_DS": {
+        "en": "A light and flavorful soup made with fish, potatoes, and tomatoes. A simple yet satisfying dish, perfect for a quick meal.",
+        "de": "Eine leichte und geschmackvolle Suppe aus Fisch, Kartoffeln und Tomaten. Ein einfaches, aber sättigendes Gericht, ideal für eine schnelle Mahlzeit."
+    },
+    "CookZ_FishSoupCan_Opened_DS": {
+        "en": "@CookZ_FishSoupCan_DS @&CookZ_EatUp"
+    },
+    "CookZ_UkhaCan_DN": {
+        "en": "Ukha",
+        "de": "Ukha"
+    },
+    "CookZ_UkhaCan_DS": {
+        "en": "A traditional fish soup made with fish, potatoes, and tomatoes, enhanced with a splash of alcohol for added depth and warmth.",
+        "de": "Eine traditionelle Fischsuppe aus Fisch, Kartoffeln und Tomaten, verfeinert mit einem Schuss Alkohol für mehr Tiefe und Wärme."
+    },
+    "CookZ_UkhaCan_Opened_DS": {
+        "en": "@CookZ_UkhaCan_DS @&CookZ_EatUp"
+    },
+    "CookZ_LecsoCan_DN": {
+        "en": "Lecso",
+        "de": "Letscho"
+    },
+    "CookZ_LecsoCan_DS": {
+        "en": "A simple, flavorful dish made with bell peppers and tomatoes, cooked together to create a fresh, comforting stew.",
+        "de": "Ein einfaches, schmackhaftes Gericht aus Paprika und Tomaten, zusammen gekocht zu einem frischen, herzhaften Eintopf."
+    },
+    "CookZ_LecsoCan_Opened_DS": {
+        "en": "@CookZ_LecsoCan_DS @&CookZ_EatUp"
+    },
+    "CookZ_MysteryMeatCan_DN": {
+        "en": "Mystery Meat",
+        "de": "Fleischgemisch Deluxe"
+    },
+    "CookZ_MysteryMeatCan_DS": {
+        "en": "A processed meat blend with a distinct, savory flavor and hearty texture. It’s simple, filling, and perfect for a quick meal.",
+        "de": "Eine Mischung aus verarbeitetem Fleisch mit einem markanten, herzhaften Geschmack und einer kräftigen Textur. Einfach, sättigend und perfekt für eine schnelle Mahlzeit."
+    },
+    "CookZ_MysteryMeatCan_Opened_DS": {
+        "en": "@CookZ_MysteryMeatCan_DS @&CookZ_EatUp"
+    },
+    "CookZ_ZucchiniCaviarCan_DN": {
+        "en": "Zucchini Caviar",
+        "de": "Zucchini-Kaviar"
+    },
+    "CookZ_ZucchiniCaviarCan_DS": {
+        "en": "A veggie-based caviar made from zucchini, offering a fresh and earthy twist on the classic delicacy. Perfect as a garnish or spread.",
+        "de": "Ein Kaviar aus Zucchini, der einen frischen, geschmackvollen Twist auf das klassische Gericht bringt. Ideal als Beilage oder Aufstrich."
+    },
+    "CookZ_ZucchiniCaviarCan_Opened_DS": {
+        "en": "@CookZ_ZucchiniCaviarCan_DS @&CookZ_EatUp"
+    },
+    "CookZ_CreamyTomatoSoupCan_DN": {
+        "en": "Creamy Tomato Soup",
+        "de": "Tomatencremesuppe"
+    },
+    "CookZ_CreamyTomatoSoupCan_DS": {
+        "en": "A smooth and velvety tomato soup, rich in flavor and perfectly creamy. Ideal for warming up on a chilly day.",
+        "de": "Eine cremige Tomatensuppe, die reich an Geschmack ist und perfekt zart daherkommt. Ideal, um sich an einem kühlen Tag zu wärmen."
+    },
+    "CookZ_CreamyTomatoSoupCan_Opened_DS": {
+        "en": "@CookZ_CreamyTomatoSoupCan_DS @&CookZ_EatUp"
+    },
+    "CookZ_MushroomStroganoffCan_DN": {
+        "en": "Mushroom Stroganoff",
+        "de": "Pilz-Stroganoff"
+    },
+    "CookZ_MushroomStroganoffCan_DS": {
+        "en": "A delicious variation of Stroganoff, featuring mushrooms in a rich, creamy sauce. A satisfying and comforting dish for any occasion.",
+        "de": "Eine köstliche Variation des Stroganoff, bei der Pilze in einer cremigen Sauce serviert werden. Ein sättigendes Gericht für jeden Anlass."
+    },
+    "CookZ_MushroomStroganoffCan_Opened_DS": {
+        "en": "@CookZ_MushroomStroganoffCan_DS @&CookZ_EatUp"
+    },
+    "CookZ_BeefStewCan_DN": {
+        "en": "Beef Stew",
+        "de": "Rindfleischeintopf"
+    },
+    "CookZ_BeefStewCan_DS": {
+        "en": "A savory beef stew with chunks of meat, peppers, tomatoes, and potatoes, creating a comforting and satisfying dish.",
+        "de": "Ein würziger Rindfleischeintopf mit Fleischstücken, Paprika, Tomaten und Kartoffeln, der ein wohltuendes und sättigendes Gericht ergibt."
+    },
+    "CookZ_BeefStewCan_Opened_DS": {
+        "en": "@CookZ_BeefStewCan_DS @&CookZ_EatUp"
+    },
+    "CookZ_BoneBrothCan_DN": {
+        "en": "Bone Broth",
+        "de": "Knochenbrühe"
+    },
+    "CookZ_BoneBrothCan_DS": {
+        "en": "A rich, savory broth created by simmering bones in water, resulting in a deep, flavorful liquid.",
+        "de": "Eine reichhaltige, herzhafte Brühe, die durch das Köcheln von Knochen in Wasser entsteht und einen tiefen, aromatischen Geschmack bietet."
+    },
+    "CookZ_BoneBrothCan_Opened_DS": {
+        "en": "@CookZ_BoneBrothCan_DS @&CookZ_EatUp"
+    },
+    "CookZ_AppleMarmaladeCan_DN": {
+        "en": "Apple Marmalade",
+        "de": "Apfelmarmelade"
+    },
+    "CookZ_AppleMarmaladeCan_DS": {
+        "en": "A sweet spread made from cooked apples, offering a mild, fruity flavor.",
+        "de": "Ein süßer Aufstrich aus gekochten Äpfeln, der einen milden, fruchtigen Geschmack bietet."
+    },
+    "CookZ_AppleMarmaladeCan_Opened_DS": {
+        "en": "@CookZ_AppleMarmaladeCan_DS @&CookZ_EatUp"
+    },
+    "CookZ_PlumMarmaladeCan_DN": {
+        "en": "Plum Marmalade",
+        "de": "Pflaumenmarmelade"
+    },
+    "CookZ_PlumMarmaladeCan_DS": {
+        "en": "A sweet, hearty spread made from plums, providing a strong fruity flavor and a good source of energy. It keeps well and lasts long.",
+        "de": "Ein süßer, nahrhafter Aufstrich aus Pflaumen, der einen kräftigen Fruchtgeschmack bietet und lange haltbar ist."
+    },
+    "CookZ_PlumMarmaladeCan_Opened_DS": {
+        "en": "@CookZ_PlumMarmaladeCan_DS @&CookZ_EatUp"
+    },
+    "CookZ_PearMarmaladeCan_DN": {
+        "en": "Pear Marmalade",
+        "de": "Birnenmarmelade"
+    },
+    "CookZ_PearMarmaladeCan_DS": {
+        "en": "A sweet spread made from pears, offering a smooth flavor with a subtle fruitiness, and it stores well for long periods.",
+        "de": "Ein süßer Aufstrich aus Birnen, der einen milden, fruchtigen Geschmack bietet und gut lagerbar ist."
+    },
+    "CookZ_PearMarmaladeCan_Opened_DS": {
+        "en": "@CookZ_PearMarmaladeCan_DS @&CookZ_EatUp"
+    },
+
+
+
+
+    "CookZ_Beef_Sausage_DN": {
+        "en": "Beef Sausage",
+        "de": "Rindswurst"
+    },
+    "CookZ_Beef_Sausage_DS": {
+        "en": "A rich, filling sausage made from beef, designed to provide sustained energy and last through the toughest conditions.",
+        "de": "Eine kräftige, sättigende Wurst aus Rindfleisch, die für langanhaltende Energie sorgt und auch in schwierigen Zeiten nicht an Nährwert verliert."
+    },
+    "CookZ_Chicken_Sausage_DN": {
+        "en": "Chicken Sausage",
+        "de": "Hühnerwurst"
+    },
+    "CookZ_Chicken_Sausage_DS": {
+        "en": "A lean and nutrient-dense sausage made from chicken, offering a reliable source of energy that's easy to store and transport.",
+        "de": "Eine magere und nährstoffreiche Wurst aus Hähnchen, die eine zuverlässige Energiequelle bietet und sich gut lagern und transportieren lässt."
+    },
+    "CookZ_Pig_Sausage_DN": {
+        "en": "Pig Sausage",
+        "de": "Schweinswurst"
+    },
+    "CookZ_Pig_Sausage_DS": {
+        "en": "A rich, satisfying sausage made from pork, providing the necessary fuel to keep you going in the hardest of times.",
+        "de": "Eine reichhaltige, sättigende Wurst aus Schwein, die die nötige Energie liefert, um dich auch in schwierigen Zeiten durchzuhalten."
+    },
+    "CookZ_Goat_Sausage_DN": {
+        "en": "Goat Sausage",
+        "de": "Ziegenwurst"
+    },
+    "CookZ_Goat_Sausage_DS": {
+        "en": "A unique and flavorful sausage made from goat meat, compact and packed with protein, perfect for long-term storage.",
+        "de": "Eine einzigartige und aromatische Wurst aus Ziegenfleisch, kompakt und voller Eiweiß, ideal für die Vorratshaltung."
+    },
+    "CookZ_Bear_Sausage_DN": {
+        "en": "Bear Sausage",
+        "de": "Bärenwurst"
+    },
+    "CookZ_Bear_Sausage_DS": {
+        "en": "A bold sausage made from bear meat, packed with rich flavors and energy, sure to keep you fueled for the toughest challenges.",
+        "de": "Eine kräftige Wurst aus Bärenfleisch, vollgepackt mit reichhaltigem Geschmack und Energie, die dich durch die härtesten Herausforderungen bringt."
+    },
+    "CookZ_Sheep_Sausage_DN": {
+        "en": "Sheep Sausage",
+        "de": "Schafwurst"
+    },
+    "CookZ_Sheep_Sausage_DS": {
+        "en": "A tender yet hearty sausage made from sheep, offering a filling and long-lasting energy boost when supplies run low.",
+        "de": "Eine würzige Wurst aus Schaf, reich an Geschmack und Eiweiß, die langanhaltende Nahrung für längere Zeit ohne frische Vorräte bietet."
+    },
+    "CookZ_Boar_Sausage_DN": {
+        "en": "Boar Sausage",
+        "de": "Wildschweinwurst"
+    },
+    "CookZ_Boar_Sausage_DS": {
+        "en": "A robust sausage made from wild boar, packed with rich, gamey flavor and long-lasting energy for the harshest conditions.",
+        "de": "Eine kräftige Wurst aus Wildschwein, vollgepackt mit intensivem, wildem Geschmack und langanhaltender Energie für die härtesten Bedingungen."
+    },
+    "CookZ_Deer_Sausage_DN": {
+        "en": "Deer Sausage",
+        "de": "Rehwurst"
+    },
+    "CookZ_Deer_Sausage_DS": {
+        "en": "A lean, flavorful sausage made from deer, packed with protein and energy to keep you moving in tough times.",
+        "de": "Eine magere, aromatische Wurst aus Hirschfleisch, vollgepackt mit Eiweiß und Energie, um dich in schwierigen Zeiten am Laufen zu halten."
+    },
+    "CookZ_Hare_Sausage_DN": {
+        "en": "Hare Sausage",
+        "de": "Wildkaninchenwurst"
+    },
+    "CookZ_Hare_Sausage_DS": {
+        "en": "A hearty sausage made from hare, rich in protein and perfect for withstanding long stretches without fresh food.",
+        "de": "Eine magere, aromatische Wurst aus Hasenfleisch, die eine kompakte und langanhaltende Energiequelle für das Überleben bietet."
+    },
+    "CookZ_Wolf_Sausage_DN": {
+        "en": "Wolf Sausage",
+        "de": "Wolfswurst"
+    },
+    "CookZ_Wolf_Sausage_DS": {
+        "en": "A hearty, wild sausage from wolf, designed to provide lasting nutrition and keep you strong when food is scarce.",
+        "de": "Eine herzhafte, wilde Wurst aus Wolfsfleisch, die langanhaltende Nährstoffe bietet und dich stark hält, wenn die Vorräte knapp sind."
+    },
+    "CookZ_Human_Sausage_DN": {
+        "en": "Human Sausage",
+        "de": "Menschenwurst"
+    },
+    "CookZ_Human_Sausage_DS": {
+        "en": "Made in the most extreme circumstances, this is a human sausage — something never meant to exist, only made when survival is at its bleakest.",
+        "de": "In extremsten Situationen hergestellt, eine Menschenwurst — etwas, das niemals hätte existieren dürfen, nur geschaffen, wenn das Überleben am dunkelsten ist."
+    },
+    "CookZ_Fox_Sausage_DN": {
+        "en": "Fox Sausage",
+        "de": "Fuchswurst"
+    },
+    "CookZ_Fox_Sausage_DS": {
+        "en": "A flavorful sausage made from fox, providing the sustenance needed to keep going when supplies are limited.",
+        "de": "Eine aromatische Wurst aus Fuchs, die die nötige Nahrung liefert, um auch in knappen Zeiten weiterzumachen."
+    },
+    "CookZ_Reindeer_Sausage_DN": {
+        "en": "Reindeer Sausage",
+        "de": "Rentierwurst"
+    },
+    "CookZ_Reindeer_Sausage_DS": {
+        "en": "A flavorful, robust sausage from reindeer, providing long-lasting nourishment for survival situations.",
+        "de": "Eine würzige, kräftige Wurst aus Rentier, die langanhaltende Nahrung für Überlebenssituationen bietet."
+    },
+
+
+
+
+    "CookZ_Cheese_DN": {
+        "en": "Cheese",
+        "de": "Käse"
+    },
+    "CookZ_Cheese_DS": {
+        "en": "A piece of makeshift cheese. It almost tastes like the real thing.",
+        "de": "Ein Stück improvisierter Käse. Es schmeckt fast wie das Original."
+    },
+    "CookZ_DisinfectRags_DN": {
+        "en": "Disinfect",
+        "de": "Desinfizieren"
+    },
+    
+
+
+    "CookZ_Intro": {
+        "en": "General Cooking Instructions",
+        "de": "Kochanweisungen"
+    },
+    "CookZ_PackagingMaterials": {
+        "en": "Packaging Materials",
+        "de": "Verpackungen"
+    },
+    "CookZ_CannedDishes": {
+        "en": "Canned Dishes",
+        "de": "Konserven"
+    },
+    "CookZ_BoxedDishes": {
+        "en": "Boxed Dishes",
+        "de": "Gerichte aus der Box"
+    },
+    "CookZ_Sausages": {
+        "en": "Sausages",
+        "de": "Wurst Spezialitäten"
+    },
+    "CookZ_Miscellaneous": {
+        "en": "Miscellaneous",
+        "de": "Sonstiges"
+    },
+
+
+
+
+
+    "CookZ_Instructions": {
+        "en": "You can cook using a pot, cauldron or pan. This book describes how you can combine ingredients to create nutritious dishes. If you do not follow the instructions correctly then the ingredients are cooked individually. Some dishes need packaging material like empty cans or boxes attached to the cooking equipment. Some dishes need water or a specific cooking equipment.",
+        "de": "Gerichte können in einem Kochtopf, Kessel oder Bratpfanne zubereitet werden. Dieses Buch beschreibt, wie Du Zutaten kombinieren kannst, um nahrhafte Gerichte zuzubereiten. Wenn du die Anweisungen nicht richtig befolgst, werden die Zutaten einzeln gekocht. Einige Gerichte benötigen Verpackungsmaterial wie leere Dosen oder Schachteln, die am Kochgeschirr befestigt werden. Manche Gerichte brauchen Wasser oder ein bestimmtes Kochgerät."
+    },
+    "CookZ_EmptyCanInstructions": {
+        "en": "You can craft ten <b>empty cans</b> from a <b>metal sheet</b> using a <b>hacksaw</b>.",
+        "de": "Du kannst zehn <b>Leere Dosen</b> aus einem <b>Metallblech</b> mit einer <b>Metallsäge</b> herstellen."
+    },
+    "CookZ_EmptyBoxInstructions": {
+        "en": "An <b>empty box</b> can be crafted from two pieces of <b>paper</b> or by using any <b>axe</b> or <b>knife</b> on <b>bark</b>.",
+        "de": "Eine <b>Leere Schachtel</b> kann aus zwei Stück <b>Papier</b> hergestellt werden oder aus <b>Baumrinde</b>, die mit einer <b>Axt</b> oder einem <b>Messer</b> bearbeitet wird."
+    },
+
+
+
+
+
+    "CookZ_Ingredient_AnyMeat": {
+        "en": "Any Meat",
+        "de": "Beliebiges Fleisch"
+    },
+    "CookZ_Ingredient_AnyFish": {
+        "en": "Any Fish",
+        "de": "Beliebiger Fisch"
+    },
+    "CookZ_Ingredient_AnyFishFillet": {
+        "en": "Any Fish Fillet",
+        "de": "Beliebiges Fischfilet"
+    },
+    "CookZ_Ingredient_AnyMushroom": {
+        "en": "Any Mushroom",
+        "de": "Beliebiger Pilz"
+    },
+    "CookZ_Ingredient_AnyFruit": {
+        "en": "Any Fruit",
+        "de": "Beliebiges Obst"
+    },
+    "CookZ_Ingredient_AnySausage": {
+        "en": "Any Sausage",
+        "de": "Beliebige Wurst"
+    },
+    "CookZ_Ingredient_AnyBreadcrumb": {
+        "en": "Crackers or Salty Sticks",
+        "de": "Cracker oder Salzstangen"
+    },
+    "CookZ_Ingredient_AnyDisinfect": {
+        "en": "Rags or Bandages",
+        "de": "Stofffetzen oder Verband"
+    },
+
+
+
+
+    "CookZ_UseA": {
+        "en": "Use a",
+        "de": "Benutze"
+    },
+    "CookZ_WithWater": {
+        "en": "with at least 500 ml of water",
+        "de": "mit mindestens 500 ml Wasser"
+    },
+    "CookZ_UseEmptyCan": {
+        "en": "Fill into an empty can.",
+        "de": "In eine leere Dose füllen."
+    },
+    "CookZ_UseEmptyBox": {
+        "en": "Fill into an empty box.",
+        "de": "In eine leere Schachtel füllen."
+    },
+    "CookZ_AtLeastOne": {
+        "en": "at least one",
+        "de": "mindestens ein"
+    },
+    "CookZ_Or": {
+        "en": "or",
+        "de": "oder"
+    }
+}
