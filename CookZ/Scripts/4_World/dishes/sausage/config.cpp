@@ -1,6 +1,6 @@
 class CfgPatches
 {
-    class CookZ
+    class CookZ_Sausage
     {
         requiredAddons[] =
         {
