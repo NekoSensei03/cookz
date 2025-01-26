@@ -33,8 +33,14 @@ for key, translations in data.items():
     
     # Iterate through the languages and check if translation is empty, if so, use 'en'
     for lang in ["en", "cs", "de", "ru", "pl", "it", "es", "fr", "zh", "ja", "pt", "zh-cn"]:
-        # Use the English translation if the current language translation is empty
-        row[lang] = translations.get(lang, translations.get("en", "")) or translations.get("en", "")
+        if (key.endswith("Opened_DS")):
+            # Use the English translation if the current language translation is empty
+            row[lang] = translations.get(lang, translations.get("en", "")) or translations.get("en", "")
+        else:
+            # Check if the translation exists, otherwise raise an error
+            if lang not in translations or not translations[lang]:
+                raise ValueError(f"Missing translation for key {key} language: {lang}")
+            row[lang] = translations[lang]
     
     # Append the row to the list
     rows.append(row)

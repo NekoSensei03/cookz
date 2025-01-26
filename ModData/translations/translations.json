@@ -1,27 +1,87 @@
 {
     "CookZ_EmptyCan_DN": {
         "en": "Empty Can",
-        "de": "Leere Dose"
+        "de": "Leere Dose",
+        "cs": "Prázdná plechovka",
+        "ru": "Пустая банка",
+        "pl": "Pusta puszka",
+        "it": "Lattina vuota",
+        "es": "Lata vacía",
+        "fr": "Boîte vide",
+        "zh": "空罐",
+        "ja": "空き缶",
+        "pt": "Lata vazia",
+        "zh-cn": "空罐"
     },
     "CookZ_EmptyCan_DS": {
         "en": "An empty can. Can be used to put cooked food inside.",
-        "de": "Eine leere Dose. Kann verwendet werden, um gekochtes Essen hineinzufüllen."
+        "de": "Eine leere Dose. Kann verwendet werden, um gekochtes Essen hineinzufüllen.",
+        "cs": "Prázdná plechovka. Lze použít na vařené jídlo.",
+        "ru": "Пустая банка. Можно использовать для хранения приготовленной еды.",
+        "pl": "Pusta puszka. Można użyć do przechowywania gotowanego jedzenia.",
+        "it": "Una lattina vuota. Può essere utilizzata per mettere il cibo cotto dentro.",
+        "es": "Una lata vacía. Se puede usar para guardar comida cocinada.",
+        "fr": "Une boîte vide. Peut être utilisée pour mettre de la nourriture cuite à l'intérieur.",
+        "zh": "一个空罐。可以用来放熟食。",
+        "ja": "空き缶。調理済みの食品を入れるのに使用できます。",
+        "pt": "Uma lata vazia. Pode ser usada para colocar comida cozida dentro.",
+        "zh-cn": "一个空罐。可以用来放熟食。"
     },
     "CookZ_EmptyBox_DN": {
         "en": "Empty Box",
-        "de": "Leere Schachtel"
+        "de": "Leere Schachtel",
+        "cs": "Prázdná krabice",
+        "ru": "Пустая коробка",
+        "pl": "Puste pudełko",
+        "it": "Scatola vuota",
+        "es": "Caja vacía",
+        "fr": "Boîte vide",
+        "zh": "空盒",
+        "ja": "空き箱",
+        "pt": "Caixa vazia",
+        "zh-cn": "空盒"
     },
     "CookZ_EmptyBox_DS": {
         "en": "An empty box. Can be used to put cooked food inside.",
-        "de": "Eine leere Schachtel. Kann verwendet werden, um gekochtes Essen hineinzufüllen."
+        "de": "Eine leere Schachtel. Kann verwendet werden, um gekochtes Essen hineinzufüllen.",
+        "cs": "Prázdná krabice. Lze použít na vařené jídlo.",
+        "ru": "Пустая коробка. Можно использовать для хранения приготовленной еды.",
+        "pl": "Puste pudełko. Można użyć do przechowywania gotowanego jedzenia.",
+        "it": "Una scatola vuota. Può essere utilizzata per mettere il cibo cotto dentro.",
+        "es": "Una caja vacía. Se puede usar para guardar comida cocinada.",
+        "fr": "Une boîte vide. Peut être utilisée pour mettre de la nourriture cuite à l'intérieur.",
+        "zh": "一个空盒。可以用来放熟食。",
+        "ja": "空き箱。調理済みの食品を入れるのに使用できます。",
+        "pt": "Uma caixa vazia. Pode ser usada para colocar comida cozida dentro.",
+        "zh-cn": "一个空盒。可以用来放熟食。"
     },
     "CookZ_Slot_EmptyCans": {
         "en": "Empty Cans",
-        "de": "Leere Dosen"
+        "de": "Leere Dosen",
+        "cs": "Prázdné plechovky",
+        "ru": "Пустые банки",
+        "pl": "Puste puszki",
+        "it": "Lattine vuote",
+        "es": "Latas vacías",
+        "fr": "Boîtes vides",
+        "zh": "空罐",
+        "ja": "空き缶",
+        "pt": "Latas vazias",
+        "zh-cn": "空罐"
     },
     "CookZ_Slot_EmptyBoxes": {
         "en": "Empty Boxes",
-        "de": "Leere Schachteln"
+        "de": "Leere Schachteln",
+        "cs": "Prázdné krabice",
+        "ru": "Пустые коробки",
+        "pl": "Puste pudełka",
+        "it": "Scatole vuote",
+        "es": "Cajas vacías",
+        "fr": "Boîtes vides",
+        "zh": "空盒",
+        "ja": "空き箱",
+        "pt": "Caixas vazias",
+        "zh-cn": "空盒"
     },
 
 
@@ -29,26 +89,76 @@
 
     "CookZ_Cookbook_DN": {
         "en": "Survivor Cookbook",
-        "de": "Survivor-Kochbuch"
+        "de": "Survivor-Kochbuch",
+        "cs": "Přeživší kuchařka",
+        "ru": "Кулинарная книга выжившего",
+        "pl": "Książka kucharska ocalałego",
+        "it": "Ricettario del sopravvissuto",
+        "es": "Libro de cocina para sobrevivientes",
+        "fr": "Livre de cuisine du survivant",
+        "zh": "生存者食谱",
+        "ja": "サバイバークックブック",
+        "pt": "Livro de receitas do sobrevivente",
+        "zh-cn": "生存者食谱"
     },
     "CookZ_Cookbook_DS": {
         "en": "This cookbook contains recipes that help you eat well in any situation. Ideal for cooking under extreme conditions.",
-        "de": "Dieses Kochbuch enthält Rezepte, die dir helfen, in jeder Situation gut zu essen. Ideal für das Kochen unter extremen Bedingungen."
+        "de": "Dieses Kochbuch enthält Rezepte, die dir helfen, in jeder Situation gut zu essen. Ideal für das Kochen unter extremen Bedingungen.",
+        "cs": "Tato kuchařka obsahuje recepty, které vám pomohou dobře jíst v každé situaci. Ideální pro vaření v extrémních podmínkách.",
+        "ru": "Эта кулинарная книга содержит рецепты, которые помогут вам хорошо питаться в любых условиях. Идеально подходит для приготовления пищи в экстремальных условиях.",
+        "pl": "Ta książka kucharska zawiera przepisy, które pomogą ci dobrze jeść w każdej sytuacji. Idealna do gotowania w ekstremalnych warunkach.",
+        "it": "Questo ricettario contiene ricette che ti aiutano a mangiare bene in qualsiasi situazione. Ideale per cucinare in condizioni estreme.",
+        "es": "Este libro de cocina contiene recetas que te ayudarán a comer bien en cualquier situación. Ideal para cocinar en condiciones extremas.",
+        "fr": "Ce livre de cuisine contient des recettes qui vous aident à bien manger dans toutes les situations. Idéal pour cuisiner dans des conditions extrêmes.",
+        "zh": "这本食谱包含在任何情况下帮助您吃得好的食谱。适合在极端条件下烹饪。",
+        "ja": "この料理本には、あらゆる状況で美味しく食べるためのレシピが含まれています。過酷な環境での料理に最適。",
+        "pt": "Este livro de receitas contém receitas que ajudam você a comer bem em qualquer situação. Ideal para cozinhar em condições extremas.",
+        "zh-cn": "这本食谱包含在任何情况下帮助您吃得好的食谱。适合在极端条件下烹饪。"
     },
     "CookZ_Cookbook_Title": {
         "en": "Cooking for Survivors",
-        "de": "Kochen für Überlebende"
+        "de": "Kochen für Überlebende",
+        "cs": "Vaření pro přeživší",
+        "ru": "Готовка для выживших",
+        "pl": "Gotowanie dla ocalałych",
+        "it": "Cucinare per sopravvissuti",
+        "es": "Cocinar para sobrevivientes",
+        "fr": "Cuisine pour les survivants",
+        "zh": "为生存者而烹饪",
+        "ja": "サバイバーのための料理",
+        "pt": "Cozinhando para sobreviventes",
+        "zh-cn": "为生存者而烹饪"
     },
     "CookZ_Cookbook_Author": {
         "en": "By a Survivor",
-        "de": "Von einem Überlebenden"
+        "de": "Von einem Überlebenden",
+        "cs": "Od přeživšího",
+        "ru": "Автор: Выживший",
+        "pl": "Przez ocalałego",
+        "it": "Da un sopravvissuto",
+        "es": "Por un sobreviviente",
+        "fr": "Par un survivant",
+        "zh": "生存者撰写",
+        "ja": "生存者によって",
+        "pt": "Por um sobrevivente",
+        "zh-cn": "生存者撰写"
     },
 
 
-    
+
     "&CookZ_EatUp": {
         "en": "Eat up before it spoils.",
-        "de": "Nach dem Öffnen rasch verzehren."
+        "de": "Nach dem Öffnen rasch verzehren.",
+        "cs": "Snězte to, než se zkazí.",
+        "ru": "Съешьте, пока не испортилось.",
+        "pl": "Zjedz, zanim się zepsuje.",
+        "it": "Mangia prima che vada a male.",
+        "es": "Cómelo antes de que se estropee.",
+        "fr": "Mangez avant que ça ne périme.",
+        "zh": "在变质之前吃掉。",
+        "ja": "腐る前に食べてください。",
+        "pt": "Coma antes que estrague.",
+        "zh-cn": "在变质之前吃掉。"
     },
 
 
@@ -56,264 +166,744 @@
 
     "CookZ_FriedPotatoesBox_DN": {
         "en": "Fried Potatoes",
-        "de": "Bratkartoffeln"
+        "de": "Bratkartoffeln",
+        "cs": "Smažené brambory",
+        "ru": "Жареный картофель",
+        "pl": "Smażone ziemniaki",
+        "it": "Patate fritte",
+        "es": "Papas fritas",
+        "fr": "Pommes frites",
+        "zh": "炸土豆",
+        "ja": "フライドポテト",
+        "pt": "Batatas fritas",
+        "zh-cn": "炸土豆"
     },
     "CookZ_FriedPotatoesBox_DS": {
         "en": "Crispy fried potato slices, golden-brown on the outside and soft on the inside, perfect as a side dish or snack.",
-        "de": "Knusprig gebratene Kartoffelscheiben, außen goldbraun und innen weich, ideal als Beilage oder Snack."
+        "de": "Knusprig gebratene Kartoffelscheiben, außen goldbraun und innen weich, ideal als Beilage oder Snack.",
+        "cs": "Křupavé smažené plátky brambor, zlatohnědé na povrchu a měkké uvnitř, ideální jako příloha nebo svačina.",
+        "ru": "Хрустящие жареные картофельные ломтики, золотисто-коричневые снаружи и мягкие внутри, идеально подходящие как гарнир или закуска.",
+        "pl": "Kruche smażone plasterki ziemniaków, złociste na zewnątrz i miękkie w środku, idealne jako dodatek lub przekąska.",
+        "it": "Fette di patate fritte croccanti, dorate all'esterno e morbide all'interno, perfette come contorno o spuntino.",
+        "es": "Rebanadas de patatas fritas crujientes, doradas por fuera y suaves por dentro, perfectas como acompañamiento o aperitivo.",
+        "fr": "Tranches de pommes de terre frites croustillantes, dorées à l'extérieur et tendres à l'intérieur, parfaites comme accompagnement ou en-cas.",
+        "zh": "外脆内软的炸土豆片，外表金黄，内里柔软，完美作为配菜或小吃。",
+        "ja": "外はカリカリ、中は柔らかいフライドポテトのスライス。サイドディッシュやスナックに最適です。",
+        "pt": "Fatias de batata frita crocantes, douradas por fora e macias por dentro, perfeitas como acompanhamento ou lanche.",
+        "zh-cn": "外脆内软的炸土豆片，外表金黄，内里柔软，完美作为配菜或小吃。"
     },
     "CookZ_FriedPotatoesBox_Opened_DS": {
         "en": "@CookZ_FriedPotatoesBox_DS @&CookZ_EatUp"
     },
     "CookZ_StirFryBox_DN": {
         "en": "Stir Fry",
-        "de": "Gebratenes Gemüse"
+        "de": "Gebratenes Gemüse",
+        "cs": "Smažená zelenina",
+        "ru": "Жаркое из овощей",
+        "pl": "Smażona warzywa",
+        "it": "Saltato di verdure",
+        "es": "Salteado de verduras",
+        "fr": "Légumes sautés",
+        "zh": "炒菜",
+        "ja": "野菜炒め",
+        "pt": "Legumes salteados",
+        "zh-cn": "炒菜"
     },
     "CookZ_StirFryBox_DS": {
         "en": "Vegetables tossed in a hot pan, creating a vibrant, lightly charred dish with a perfect balance of texture and taste.",
-        "de": "Gemüse, das in einer heißen Pfanne geschwenkt wird, ergibt ein lebendiges, leicht angebratenes Gericht mit perfektem Gleichgewicht von Textur und Geschmack."
+        "de": "Gemüse, das in einer heißen Pfanne geschwenkt wird, ergibt ein lebendiges, leicht angebratenes Gericht mit perfektem Gleichgewicht von Textur und Geschmack.",
+        "cs": "Zelenina, která je orestována na horké pánvi, vytváří živé, lehce opálené jídlo s dokonalým vyvážením textury a chuti.",
+        "ru": "Овощи, жареные на горячей сковороде, создают яркое, слегка поджаренное блюдо с идеальным балансом текстуры и вкуса.",
+        "pl": "Warzywa smażone na gorącej patelni, tworząc żywą, lekko przypaloną potrawę o idealnej równowadze tekstury i smaku.",
+        "it": "Verdure saltate in una padella calda, creando un piatto vibrante e leggermente bruciato con un perfetto equilibrio di consistenza e sapore.",
+        "es": "Verduras salteadas en una sartén caliente, creando un plato vibrante y ligeramente carbonizado con un equilibrio perfecto de textura y sabor.",
+        "fr": "Des légumes sautés dans une poêle chaude, créant un plat vibrant et légèrement carbonisé avec un équilibre parfait entre texture et goût.",
+        "zh": "在热锅中翻炒的蔬菜，创造出色彩鲜艳、略带焦痕的菜肴，质感与味道的平衡完美。",
+        "ja": "熱いフライパンで炒めた野菜。鮮やかで軽く焦げ目がついた料理で、食感と味のバランスが完璧です。",
+        "pt": "Legumes salteados em uma panela quente, criando um prato vibrante e levemente queimado, com um equilíbrio perfeito de textura e sabor.",
+        "zh-cn": "在热锅中翻炒的蔬菜，创造出色彩鲜艳、略带焦痕的菜肴，质感与味道的平衡完美。"
     },
     "CookZ_StirFryBox_Opened_DS": {
         "en": "@CookZ_StirFryBox_DS @&CookZ_EatUp"
     },
     "CookZ_FishAndChipsBox_DN": {
         "en": "Fish And Chips",
-        "de": "Fish & Chips"
+        "de": "Fish & Chips",
+        "cs": "Ryba a hranolky",
+        "ru": "Рыба с картошкой фри",
+        "pl": "Ryba i frytki",
+        "it": "Pesce e patatine",
+        "es": "Pescado y papas fritas",
+        "fr": "Poisson et frites",
+        "zh": "炸鱼和薯条",
+        "ja": "フィッシュアンドチップス",
+        "pt": "Peixe e batatas fritas",
+        "zh-cn": "炸鱼和薯条"
     },
     "CookZ_FishAndChipsBox_DS": {
         "en": "Crispy battered fish served with thick fries, offering a simple but delicious combination of flavors and textures.",
-        "de": "Knusprig panierter Fisch, dazu dicke Pommes – eine einfache, aber leckere Kombination aus Geschmack und Textur."
+        "de": "Knusprig panierter Fisch, dazu dicke Pommes – eine einfache, aber leckere Kombination aus Geschmack und Textur.",
+        "cs": "Křupavá ryba v těstíčku podávaná s tlustými hranolky, nabízí jednoduchou, ale lahodnou kombinaci chutí a textur.",
+        "ru": "Хрустящая рыба в панировке, подаваемая с толстыми картошками фри, простое, но вкусное сочетание вкусов и текстур.",
+        "pl": "Chrupiąca ryba w cieście podawana z grubymi frytkami, oferująca prostą, ale pyszną kombinację smaków i tekstur.",
+        "it": "Pesce impanato croccante servito con patatine spesse, offrendo una combinazione semplice ma deliziosa di sapori e consistenze.",
+        "es": "Pescado empanizado crujiente servido con papas gruesas, ofreciendo una combinación simple pero deliciosa de sabores y texturas.",
+        "fr": "Poisson pané croustillant servi avec des frites épaisses, offrant une combinaison simple mais délicieuse de saveurs et de textures.",
+        "zh": "外脆内软的炸鱼，搭配厚切薯条，提供简单但美味的味觉和口感的结合。",
+        "ja": "カリカリの衣をまとった魚を、厚切りのフライドポテトと一緒に提供。シンプルでありながら美味しい味と食感の組み合わせ。",
+        "pt": "Peixe empanado crocante servido com batatas fritas grossas, oferecendo uma combinação simples, mas deliciosa de sabores e texturas.",
+        "zh-cn": "外脆内软的炸鱼，搭配厚切薯条，提供简单但美味的味觉和口感的结合。"
     },
     "CookZ_FishAndChipsBox_Opened_DS": {
         "en": "@CookZ_FishAndChipsBox_DS @&CookZ_EatUp"
     },
     "CookZ_RicePuddingBox_DN": {
         "en": "Rice Pudding",
-        "de": "Milchreis"
+        "de": "Milchreis",
+        "cs": "Rýžová kaše",
+        "ru": "Рисовый пудинг",
+        "pl": "Budyn ryżowy",
+        "it": "Riso al latte",
+        "es": "Arroz con leche",
+        "fr": "Riz au lait",
+        "zh": "米饭布丁",
+        "ja": "ライスプディング",
+        "pt": "Arroz Doce",
+        "zh-cn": "米饭布丁"
     },
     "CookZ_RicePuddingBox_DS": {
         "en": "A simple mix of rice and milk, cooked to a soft, creamy consistency. Served warm with fruit for a bit of sweetness.",
-        "de": "Eine einfache Mischung aus Reis und Milch, zu einer weichen, cremigen Konsistenz gekocht. Warm serviert mit Früchten für etwas Süße."
+        "de": "Eine einfache Mischung aus Reis und Milch, zu einer weichen, cremigen Konsistenz gekocht. Warm serviert mit Früchten für etwas Süße.",
+        "cs": "Jednoduchá směs rýže a mléka, vařená do měkké, krémové konzistence. Podává se teplé s ovocem pro trochu sladkosti.",
+        "ru": "Простая смесь риса и молока, приготовленная до мягкой, кремовой консистенции. Подается теплым с фруктами для легкой сладости.",
+        "pl": "Prosta mieszanka ryżu i mleka, gotowana do miękkiej, kremowej konsystencji. Podawana na ciepło z owocami dla odrobiny słodyczy.",
+        "it": "Una semplice miscela di riso e latte, cotta fino a ottenere una consistenza morbida e cremosa. Servito caldo con frutta per un tocco di dolcezza.",
+        "es": "Una mezcla simple de arroz y leche, cocida hasta obtener una consistencia suave y cremosa. Servido caliente con fruta para un toque de dulzura.",
+        "fr": "Un mélange simple de riz et de lait, cuit à une consistance douce et crémeuse. Servi chaud avec des fruits pour un peu de douceur.",
+        "zh": "米饭和牛奶的简单混合，煮至柔软、奶油般的稠度。温热食用，并搭配水果带来一丝甜味。",
+        "ja": "米と牛乳のシンプルな混合物を、柔らかくクリーミーな状態になるまで調理します。温かく果物と一緒に提供され、ほんのり甘さを加えます。",
+        "pt": "Uma mistura simples de arroz e leite, cozido até uma consistência cremosa e suave. Servido quente com frutas para um toque de doçura.",
+        "zh-cn": "米饭和牛奶的简单混合，煮至柔软、奶油般的稠度。温热食用，并搭配水果带来一丝甜味。"
     },
     "CookZ_RicePuddingBox_Opened_DS": {
         "en": "@CookZ_RicePuddingBox_DS @&CookZ_EatUp"
     },
     "CookZ_MushroomRisottoBox_DN": {
         "en": "Mushroom Risotto",
-        "de": "Pilzrisotto"
+        "de": "Pilzrisotto",
+        "cs": "Houbové rizoto",
+        "ru": "Грибное ризотто",
+        "pl": "Risotto z grzybami",
+        "it": "Risotto ai funghi",
+        "es": "Risotto de setas",
+        "fr": "Risotto aux champignons",
+        "zh": "蘑菇烩饭",
+        "ja": "きのこリゾット",
+        "pt": "Risoto de cogumelos",
+        "zh-cn": "蘑菇烩饭"
     },
     "CookZ_MushroomRisottoBox_DS": {
         "en": "Rice cooked with mushrooms, simple and filling. It’s creamy and packs a solid, earthy flavor.",
-        "de": "Reis, gekocht mit Pilzen, einfach und sättigend. Es ist cremig und hat einen soliden, erdigen Geschmack."
+        "de": "Reis, gekocht mit Pilzen, einfach und sättigend. Es ist cremig und hat einen soliden, erdigen Geschmack.",
+        "cs": "Rýže vařená s houbami, jednoduchá a výživná. Je krémová a má pevnou, zemitou chuť.",
+        "ru": "Рис, приготовленный с грибами, простой и сытный. Кремовый, с насыщенным, землистым вкусом.",
+        "pl": "Ryż gotowany z grzybami, prosty i sycący. Jest kremowy i ma solidny, ziemisty smak.",
+        "it": "Riso cotto con funghi, semplice e sostanzioso. È cremoso e ha un sapore robusto e terroso.",
+        "es": "Arroz cocido con setas, simple y saciante. Es cremoso y tiene un sabor fuerte y terroso.",
+        "fr": "Riz cuit avec des champignons, simple et nourrissant. Il est crémeux et a une saveur solide et terreuse.",
+        "zh": "蘑菇炖饭，简单而有营养。它是奶油状的，具有浓郁的泥土风味。",
+        "ja": "キノコで調理されたリゾット、シンプルで満腹感があり、クリーミーで土のような味わい。",
+        "pt": "Arroz cozido com cogumelos, simples e nutritivo. É cremoso e tem um sabor forte e terroso.",
+        "zh-cn": "蘑菇炖饭，简单而有营养。它是奶油状的，具有浓郁的泥土风味。"
     },
     "CookZ_MushroomRisottoBox_Opened_DS": {
         "en": "@CookZ_MushroomRisottoBox_DS @&CookZ_EatUp"
     },
     "CookZ_PilafBox_DN": {
         "en": "Pilaf",
-        "de": "Pilaw"
+        "de": "Pilaw",
+        "cs": "Pilaf",
+        "ru": "Пилаф",
+        "pl": "Pilaw",
+        "it": "Pilaf",
+        "es": "Pilaf",
+        "fr": "Pilaf",
+        "zh": "皮拉夫",
+        "ja": "ピラフ",
+        "pt": "Pilaf",
+        "zh-cn": "皮拉夫"
     },
     "CookZ_PilafBox_DS": {
         "en": "Rice mixed with bell peppers and tomatoes, offering a satisfying, savory dish that’s both fresh and hearty.",
-        "de": "Reis, gemischt mit Paprika und Tomaten, bietet ein zufriedenstellendes, herzhaftes Gericht, das frisch und sättigend ist."
+        "de": "Reis, gemischt mit Paprika und Tomaten, bietet ein zufriedenstellendes, herzhaftes Gericht, das frisch und sättigend ist.",
+        "cs": "Rýže smíchaná s paprikami a rajčaty, nabízející uspokojivý, slaný pokrm, který je čerstvý a vydatný.",
+        "ru": "Рис, смешанный с болгарским перцем и помидорами, представляет собой удовлетворяющее, сытное блюдо, которое одновременно свежее и сытное.",
+        "pl": "Ryż wymieszany z papryką i pomidorami, oferujący satysfakcjonujące, pikantne danie, które jest zarówno świeże, jak i sycące.",
+        "it": "Riso mescolato con peperoni e pomodori, che offre un piatto soddisfacente e saporito, fresco e sostanzioso.",
+        "es": "Arroz mezclado con pimientos y tomates, ofreciendo un plato sabroso y satisfactorio que es tanto fresco como reconfortante.",
+        "fr": "Riz mélangé avec des poivrons et des tomates, offrant un plat satisfaisant et savoureux, à la fois frais et nourrissant.",
+        "zh": "米饭与甜椒和番茄混合，提供一道令人满意、咸香的菜肴，既新鲜又丰盛。",
+        "ja": "米とピーマン、トマトを混ぜたもので、満足感のある、風味豊かな料理で、新鮮でありながらボリューム満点です。",
+        "pt": "Arroz misturado com pimentões e tomates, oferecendo um prato saboroso e satisfatório, que é ao mesmo tempo fresco e substancial.",
+        "zh-cn": "米饭与甜椒和番茄混合，提供一道令人满意、咸香的菜肴，既新鲜又丰盛。"
     },
     "CookZ_PilafBox_Opened_DS": {
         "en": "@CookZ_PilafBox_DS @&CookZ_EatUp"
     },
     "CookZ_GaghBox_DN": {
         "en": "Gagh",
-        "de": "Gagh"
+        "de": "Gagh",
+        "cs": "Gagh",
+        "ru": "Гаг",
+        "pl": "Gagh",
+        "it": "Gagh",
+        "es": "Gagh",
+        "fr": "Gagh",
+        "zh": "加格",
+        "ja": "ガグ",
+        "pt": "Gagh",
+        "zh-cn": "加格"
     },
     "CookZ_GaghBox_DS": {
         "en": "Earth-style Gagh made with cooked worms, offering a hearty, savory dish that’s strange but solid.",
-        "de": "Gagh im Erdstil, aus gekochten Würmern, ein herzhaftes, würziges Gericht – seltsam, aber gut."
+        "de": "Gagh im Erdstil, aus gekochten Würmern, ein herzhaftes, würziges Gericht – seltsam, aber gut.",
+        "cs": "Gagh v zemském stylu, připravený z vařených červů, nabízející syté, slané jídlo, které je zvláštní, ale chutné.",
+        "ru": "Гаг в земном стиле, приготовленный из вареных червей, сытное, пикантное блюдо, странное, но крепкое.",
+        "pl": "Gagh w stylu ziemskim z gotowanymi robakami, oferujące sycące, słone danie, które jest dziwne, ale solidne.",
+        "it": "Gagh in stile terrestre preparato con vermi cotti, un piatto sostanzioso e saporito, strano ma solido.",
+        "es": "Gagh estilo tierra hecho con gusanos cocidos, ofreciendo un plato sustancioso y sabroso, raro pero sólido.",
+        "fr": "Gagh à la mode terrestre, fait avec des vers cuits, un plat copieux et savoureux, étrange mais solide.",
+        "zh": "地球风味的加格，用煮熟的虫子做，提供一顿丰盛的咸味菜肴，既奇特又实在。",
+        "ja": "地球スタイルのガグ、調理された虫を使って作られた、ヘルシーで風味豊かな料理。奇妙だが確実に満足できる。",
+        "pt": "Gagh ao estilo da Terra feito com vermes cozidos, oferecendo um prato substancioso e saboroso, estranho mas sólido.",
+        "zh-cn": "地球风味的加格，用煮熟的虫子做，提供一顿丰盛的咸味菜肴，既奇特又实在。"
     },
     "CookZ_GaghBox_Opened_DS": {
         "en": "@CookZ_GaghBox_DS @&CookZ_EatUp"
     },
     "CookZ_HaggisBox_DN": {
         "en": "Haggis with Mashed Potatoes",
-        "de": "Haggis mit Kartoffelpüree"
+        "de": "Haggis mit Kartoffelpüree",
+        "cs": "Haggis s bramborovou kaší",
+        "ru": "Хаггис с картофельным пюре",
+        "pl": "Haggis z puree ziemniaczanym",
+        "it": "Haggis con purè di patate",
+        "es": "Haggis con puré de patatas",
+        "fr": "Haggis avec purée de pommes de terre",
+        "zh": "哈吉斯配土豆泥",
+        "ja": "ハギスとマッシュポテト",
+        "pt": "Haggis com purê de batatas",
+        "zh-cn": "哈吉斯配土豆泥"
     },
     "CookZ_HaggisBox_DS": {
         "en": "Cooked spiced meat, paired with mashed potatoes. A straightforward meal that’ll fill you up without any fuss.",
-        "de": "Gekochtes, gewürztes Fleisch, dazu Kartoffelpüree. Ein einfaches Gericht, das satt macht und keine großen Umstände braucht."
+        "de": "Gekochtes, gewürztes Fleisch, dazu Kartoffelpüree. Ein einfaches Gericht, das satt macht und keine großen Umstände braucht.",
+        "cs": "Vařené kořeněné maso, podávané s bramborovou kaší. Jednoduché jídlo, které vás zasytí bez zbytečných složitostí.",
+        "ru": "Приготовленное приправленное мясо с картофельным пюре. Простой прием пищи, который насытит вас без лишних хлопот.",
+        "pl": "Gotowane przyprawione mięso, podane z puree ziemniaczanym. Prosty posiłek, który zaspokoi głód bez zbędnych komplikacji.",
+        "it": "Carne speziata cotta, accompagnata da purè di patate. Un pasto semplice che ti sazierà senza complicazioni.",
+        "es": "Carne cocida con especias, acompañada de puré de patatas. Una comida sencilla que te llenará sin complicaciones.",
+        "fr": "Viande épicée cuite, accompagnée de purée de pommes de terre. Un repas simple qui vous remplira sans tracas.",
+        "zh": "煮熟的香料肉，配土豆泥。一顿简单的餐点，能让你饱腹，不会有任何麻烦。",
+        "ja": "調理されたスパイス肉、マッシュポテトと一緒に提供。簡単な食事で、手間なく満腹になります。",
+        "pt": "Carne temperada cozida, acompanhada de purê de batatas. Uma refeição simples que vai te satisfazer sem complicações.",
+        "zh-cn": "煮熟的香料肉，配土豆泥。一顿简单的餐点，能让你饱腹，不会有任何麻烦。"
     },
     "CookZ_HaggisBox_Opened_DS": {
         "en": "@CookZ_HaggisBox_DS @&CookZ_EatUp"
     },
     "CookZ_StuffedPeppersBox_DN": {
         "en": "Stuffed Peppers",
-        "de": "Gefüllte Paprika"
+        "de": "Gefüllte Paprika",
+        "cs": "Plněné papriky",
+        "ru": "Фаршированные перцы",
+        "pl": "Papryki faszerowane",
+        "it": "Peperoni ripieni",
+        "es": "Pimientos rellenos",
+        "fr": "Poivrons farcis",
+        "zh": "填馅椒",
+        "ja": "ピーマンの詰め物",
+        "pt": "Pimentos recheados",
+        "zh-cn": "填馅椒"
     },
     "CookZ_StuffedPeppersBox_DS": {
         "en": "Bell peppers filled with meat and cooked to bring out rich flavors. It’s a hearty dish that’s both filling and straightforward.",
-        "de": "Paprika, gefüllt mit Fleisch, gekocht bis die Aromen gut durchgezogen sind. Ein herzhaftes Gericht, das satt macht und unkompliziert ist."
+        "de": "Paprika, gefüllt mit Fleisch, gekocht bis die Aromen gut durchgezogen sind. Ein herzhaftes Gericht, das satt macht und unkompliziert ist.",
+        "cs": "Papriky plněné masem, vařené tak, aby se chutě dobře propojily. Je to syté jídlo, které je výživné a jednoduché.",
+        "ru": "Перцы, фаршированные мясом, готовятся до тех пор, пока вкусы не станут яркими. Это сытное блюдо, которое насыщает и легко готовится.",
+        "pl": "Papryki faszerowane mięsem, gotowane, aż smaki się dobrze połączą. To sycące danie, które jest zarówno pożywne, jak i proste.",
+        "it": "Peperoni ripieni di carne, cotti per far emergere i sapori ricchi. È un piatto sostanzioso, che è sia nutriente che semplice.",
+        "es": "Pimientos rellenos de carne, cocidos para que los sabores se fusionen. Es un plato sustancioso que es tanto nutritivo como sencillo.",
+        "fr": "Poivrons farcis de viande, cuits pour révéler des saveurs riches. C'est un plat copieux, à la fois nourrissant et simple.",
+        "zh": "甜椒填充肉类，煮至味道浓郁。它是一道丰盛的菜肴，既饱腹又简单。",
+        "ja": "肉を詰めたピーマン、味がしっかりと出るまで調理されます。栄養豊富でシンプルな、満足感のある料理です。",
+        "pt": "Pimentões recheados com carne, cozidos para liberar sabores ricos. É um prato substancioso, que é tanto nutritivo quanto simples.",
+        "zh-cn": "甜椒填充肉类，煮至味道浓郁。它是一道丰盛的菜肴，既饱腹又简单。"
     },
     "CookZ_StuffedPeppersBox_Opened_DS": {
         "en": "@CookZ_StuffedPeppersBox_DS @&CookZ_EatUp"
     },
     "CookZ_PommdoenerBox_DN": {
         "en": "Pommdoener",
-        "de": "Pommdöner"
+        "de": "Pommdöner",
+        "cs": "Pommdöner",
+        "ru": "Понмдёнер",
+        "pl": "Pommdöner",
+        "it": "Pommdoener",
+        "es": "Pommdoener",
+        "fr": "Pommdoener",
+        "zh": "Pommdöner",
+        "ja": "ポムドナー",
+        "pt": "Pommdoener",
+        "zh-cn": "Pommdöner"
     },
     "CookZ_PommdoenerBox_DS": {
         "en": "Fries topped with döner meat, all packed into a box. A simple, no-nonsense meal that’s both tasty and filling.",
-        "de": "Pommes mit Dönerfleisch, alles in einer Box. Ein einfaches, solides Gericht, das lecker und sättigend ist."
+        "de": "Pommes mit Dönerfleisch, alles in einer Box. Ein einfaches, solides Gericht, das lecker und sättigend ist.",
+        "cs": "Hranolky mit Dönerfleisch, všechno zabalené v boxu. Jednoduché, ale chutné a syté jídlo.",
+        "ru": "Картофель фри с мясом донера, все в одной коробке. Простое, но вкусное и сытное блюдо.",
+        "pl": "Frytki z mięsem döner, wszystko włożone do pudełka. Proste, smaczne i sycące danie.",
+        "it": "Patatine fritte con carne di döner, il tutto confezionato in una scatola. Un pasto semplice, ma gustoso e saziante.",
+        "es": "Papas fritas con carne de döner, todo empaquetado en una caja. Una comida simple, sabrosa y sustanciosa.",
+        "fr": "Frites garnies de viande de döner, le tout dans une boîte. Un repas simple, savoureux et copieux.",
+        "zh": "薯条上面加了烤肉，全部装入盒子中。简单、实用的美味餐，既好吃又令人满足。",
+        "ja": "ドネル肉をのせたフライドポテト、すべてがボックスに詰め込まれています。シンプルでありながら、味も満足感もある食事です。",
+        "pt": "Fritas cobertas com carne de döner, tudo embalado em uma caixa. Uma refeição simples, sem frescura, que é saborosa e satisfatória.",
+        "zh-cn": "薯条上面加了烤肉，全部装入盒子中。简单、实用的美味餐，既好吃又令人满足。"
     },
     "CookZ_PommdoenerBox_Opened_DS": {
         "en": "@CookZ_PommdoenerBox_DS @&CookZ_EatUp"
     },
     "CookZ_BangersAndMashBox_DN": {
         "en": "Bangers And Mash",
-        "de": "Bratwürste mit Kartoffelpüree"
+        "de": "Bratwürste mit Kartoffelpüree",
+        "cs": "Klobásy a bramborová kaše",
+        "ru": "Колбаски с картофельным пюре",
+        "pl": "Kiełbaski z puree ziemniaczanym",
+        "it": "Salsicce e purè",
+        "es": "Salchichas con puré de papas",
+        "fr": "Saucisses et purée de pommes de terre",
+        "zh": "香肠配土豆泥",
+        "ja": "ソーセージとマッシュポテト",
+        "pt": "Salsichas com purê de batata",
+        "zh-cn": "香肠配土豆泥"
     },
     "CookZ_BangersAndMashBox_DS": {
         "en": "Sausages served with creamy mashed potatoes. A classic and simple comfort food that fills you up.",
-        "de": "Bratwürste, serviert mit cremigem Kartoffelpüree. Ein klassisches und einfaches Gericht, das satt macht."
+        "de": "Bratwürste, serviert mit cremigem Kartoffelpüree. Ein klassisches und einfaches Gericht, das satt macht.",
+        "cs": "Klobásy podávané s krémovou bramborovou kaší. Klasické a jednoduché jídlo, které vás zasytí.",
+        "ru": "Колбаски, поданные с кремовым картофельным пюре. Классическое и простое утешающее блюдо, которое насытит.",
+        "pl": "Kiełbaski podane z kremowym puree ziemniaczanym. Klasyczne, proste jedzenie, które cię nasyci.",
+        "it": "Salsicce servite con purè di patate cremoso. Un classico e semplice comfort food che ti riempie.",
+        "es": "Salchichas servidas con puré de papas cremoso. Un plato clásico y simple que te llena.",
+        "fr": "Saucisses servies avec une purée de pommes de terre crémeuse. Un plat classique et simple qui vous rassasie.",
+        "zh": "香肠配上奶油土豆泥。一道经典简单的舒适食品，吃了让人满足。",
+        "ja": "クリーミーなマッシュポテトと一緒に提供されるソーセージ。クラシックでシンプルなコンフォートフードで、満腹感を与えます。",
+        "pt": "Salsichas servidas com purê de batata cremoso. Um prato clássico e simples que vai te encher.",
+        "zh-cn": "香肠配上奶油土豆泥。一道经典简单的舒适食品，吃了让人满足。"
     },
     "CookZ_BangersAndMashBox_Opened_DS": {
         "en": "@CookZ_BangersAndMashBox_DS @&CookZ_EatUp"
     },
     "CookZ_CurrywurstBox_DN": {
         "en": "Currywurst",
-        "de": "Currywurst"
+        "de": "Currywurst",
+        "cs": "Currywurst",
+        "ru": "Курривурст",
+        "pl": "Currywurst",
+        "it": "Currywurst",
+        "es": "Currywurst",
+        "fr": "Currywurst",
+        "zh": "咖喱香肠",
+        "ja": "カリーブルスト",
+        "pt": "Currywurst",
+        "zh-cn": "咖喱香肠"
     },
     "CookZ_CurrywurstBox_DS": {
         "en": "A grilled sausage topped with a tangy curry sauce. It’s a popular, quick snack that’s packed with flavor.",
-        "de": "Eine Bratwurst, bedeckt mit einer würzigen Currysauce. Ein beliebter, schneller Snack voller Geschmack."
+        "de": "Eine Bratwurst, bedeckt mit einer würzigen Currysauce. Ein beliebter, schneller Snack voller Geschmack.",
+        "cs": "Grilovaná klobása, pokrytá pikantní curry omáčkou. Oblíbená, rychlá svačina plná chuti.",
+        "ru": "Гриль-колбаска, покрытая пикантным карри соусом. Популярная, быстрая закуска с насыщенным вкусом.",
+        "pl": "Grillowana kiełbasa polana pikantnym sosem curry. Popularna, szybka przekąska pełna smaku.",
+        "it": "Salsiccia alla griglia con salsa al curry piccante. Uno spuntino veloce e popolare, ricco di sapore.",
+        "es": "Una salchicha a la parrilla cubierta con una salsa de curry picante. Es un bocadillo rápido y popular, lleno de sabor.",
+        "fr": "Une saucisse grillée garnie d'une sauce au curry piquante. Un encas rapide et populaire, plein de saveur.",
+        "zh": "烤香肠配上浓郁的咖喱酱。这是一个受欢迎的快捷小吃，味道十足。",
+        "ja": "グリルされたソーセージにピリッとしたカレーソースをかけたもの。人気のある速攻スナックで、味わい深い。",
+        "pt": "Uma salsicha grelhada coberta com molho de curry picante. Um lanche rápido e popular, cheio de sabor.",
+        "zh-cn": "烤香肠配上浓郁的咖喱酱。这是一个受欢迎的快捷小吃，味道十足。"
     },
     "CookZ_CurrywurstBox_Opened_DS": {
         "en": "@CookZ_CurrywurstBox_DS @&CookZ_EatUp"
     },
     "CookZ_StuffedMushroomsBox_DN": {
         "en": "Stuffed Mushrooms",
-        "de": "Gefüllte Pilze"
+        "de": "Gefüllte Pilze",
+        "cs": "Plněné houby",
+        "ru": "Фаршированные грибы",
+        "pl": "Faszerowane grzyby",
+        "it": "Funghi ripieni",
+        "es": "Champiñones rellenos",
+        "fr": "Champignons farcis",
+        "zh": "酿蘑菇",
+        "ja": "詰め物をしたキノコ",
+        "pt": "Cogumelos recheados",
+        "zh-cn": "酿蘑菇"
     },
     "CookZ_StuffedMushroomsBox_DS": {
         "en": "Tender mushrooms filled with melted cheese. A small, flavorful dish that’s perfect as a snack or appetizer.",
-        "de": "Zarte Pilze, gefüllt mit geschmolzenem Käse. Ein kleines, geschmackvolles Gericht, das perfekt als Snack oder Vorspeise dient."
+        "de": "Zarte Pilze, gefüllt mit geschmolzenem Käse. Ein kleines, geschmackvolles Gericht, das perfekt als Snack oder Vorspeise dient.",
+        "cs": "Jemné houby plněné roztaveným sýrem. Malé, chutné jídlo, ideální jako svačina nebo předkrm.",
+        "ru": "Нежные грибы, фаршированные расплавленным сыром. Маленькое, вкусное блюдо, идеально подходящее как закуска или аперитив.",
+        "pl": "Miękkie grzyby faszerowane roztopionym serem. Małe, smaczne danie, idealne jako przekąska lub przystawka.",
+        "it": "Funghi teneri ripieni di formaggio fuso. Un piccolo piatto saporito, perfetto come spuntino o antipasto.",
+        "es": "Champiñones tiernos rellenos de queso derretido. Un pequeño y sabroso plato perfecto como bocadillo o aperitivo.",
+        "fr": "Champignons tendres farcis de fromage fondu. Un petit plat savoureux, parfait comme encas ou entrée.",
+        "zh": "嫩蘑菇里塞满了融化的奶酪。一个小巧、美味的菜肴，适合作为小吃或开胃菜。",
+        "ja": "柔らかいキノコに溶けたチーズを詰めました。軽食や前菜にぴったりの小さな美味しい料理です。",
+        "pt": "Cogumelos tenros recheados com queijo derretido. Um prato pequeno e saboroso, perfeito como lanche ou aperitivo.",
+        "zh-cn": "嫩蘑菇里塞满了融化的奶酪。一个小巧、美味的菜肴，适合作为小吃或开胃菜。"
     },
     "CookZ_StuffedMushroomsBox_Opened_DS": {
         "en": "@CookZ_StuffedMushroomsBox_DS @&CookZ_EatUp"
     },
     "CookZ_RabbitRoastBox_DN": {
         "en": "Rabbit Roast",
-        "de": "Kaninchenbraten"
+        "de": "Kaninchenbraten",
+        "cs": "Králík pečený",
+        "ru": "Запечённый кролик",
+        "pl": "Pieczony królik",
+        "it": "Arrosto di coniglio",
+        "es": "Conejo asado",
+        "fr": "Rôti de lapin",
+        "zh": "烤兔肉",
+        "ja": "ローストウサギ",
+        "pt": "Coelho assado",
+        "zh-cn": "烤兔肉"
     },
     "CookZ_RabbitRoastBox_DS": {
         "en": "Roasted rabbit legs cooked with bell peppers and tomatoes. A rich, hearty meal with simple ingredients.",
-        "de": "Kaninchenkeulen, gebraten mit Paprika und Tomaten. Ein kräftiges Gericht aus einfachen Zutaten."
+        "de": "Kaninchenkeulen, gebraten mit Paprika und Tomaten. Ein kräftiges Gericht aus einfachen Zutaten.",
+        "cs": "Pečené králičí stehna, vařená s paprikou a rajčaty. Bohaté, vydatné jídlo z jednoduchých surovin.",
+        "ru": "Запечённые кроличьи ножки, приготовленные с перцем и помидорами. Сытное, насыщенное блюдо с простыми ингредиентами.",
+        "pl": "Pieczone nogi królika, gotowane z papryką i pomidorami. Bogate, sycące danie z prostych składników.",
+        "it": "Cosce di coniglio arrostite cotte con peperoni e pomodori. Un pasto ricco e sostanzioso con ingredienti semplici.",
+        "es": "Piernas de conejo asadas cocinadas con pimientos y tomates. Una comida rica y abundante con ingredientes simples.",
+        "fr": "Cuisses de lapin rôties cuites avec des poivrons et des tomates. Un repas riche et copieux avec des ingrédients simples.",
+        "zh": "烤兔腿与彩椒和番茄一同烹饪。一道丰富而丰盛的菜肴，采用简单的食材。",
+        "ja": "ローストしたウサギの足をピーマンとトマトで調理。シンプルな食材を使った、豊かでボリューム満点の料理です。",
+        "pt": "Pernas de coelho assadas cozidas com pimentões e tomates. Uma refeição rica e reconfortante com ingredientes simples.",
+        "zh-cn": "烤兔腿与彩椒和番茄一同烹饪。一道丰富而丰盛的菜肴，采用简单的食材。"
     },
     "CookZ_RabbitRoastBox_Opened_DS": {
         "en": "@CookZ_RabbitRoastBox_DS @&CookZ_EatUp"
     },
     "CookZ_NuggiesAndFriesBox_DN": {
         "en": "Nuggies And Fries",
-        "de": "Hähnchennuggets und Pommes"
+        "de": "Hähnchennuggets und Pommes",
+        "cs": "Nuggets a hranolky",
+        "ru": "Наггетсы и картофель фри",
+        "pl": "Nuggetsy i frytki",
+        "it": "Nuggets e patatine fritte",
+        "es": "Nuggets y papas fritas",
+        "fr": "Nuggets de poulet et frites",
+        "zh": "鸡块和薯条",
+        "ja": "チキンナゲットとフライドポテト",
+        "pt": "Nuggets de frango e batatas fritas",
+        "zh-cn": "鸡块和薯条"
     },
     "CookZ_NuggiesAndFriesBox_DS": {
         "en": "Crispy chicken nuggets served with fries. A quick, filling meal that’s hard to resist.",
-        "de": "Knusprige Hähnchennuggets, serviert mit Pommes. Ein schnelles, sättigendes Essen, das immer geht."
+        "de": "Knusprige Hähnchennuggets, serviert mit Pommes. Ein schnelles, sättigendes Essen, das immer geht.",
+        "cs": "Křupavé kuřecí nuggets podávané s hranolkami. Rychlé a syté jídlo, kterému nelze odolat.",
+        "ru": "Хрустящие куриные наггетсы с картофелем фри. Быстрое и сытное блюдо, от которого трудно отказаться.",
+        "pl": "Chrupiące nuggetsy z kurczaka podane z frytkami. Szybka, sycąca potrawa, której trudno się oprzeć.",
+        "it": "Nuggets di pollo croccanti serviti con patatine fritte. Un pasto veloce e sostanzioso, difficile da resistere.",
+        "es": "Nuggets de pollo crujientes servidos con papas fritas. Una comida rápida y saciante, difícil de resistir.",
+        "fr": "Nuggets de poulet croustillants servis avec des frites. Un repas rapide et rassasiant auquel il est difficile de résister.",
+        "zh": "脆皮鸡块配薯条。快速又满足的美味餐，令人难以抗拒。",
+        "ja": "カリカリのチキンナゲットにフライドポテトを添えて。素早くて満足感のある料理で、食べ過ぎてしまいます。",
+        "pt": "Nuggets de frango crocantes servidos com batatas fritas. Uma refeição rápida e farta, difícil de resistir.",
+        "zh-cn": "脆皮鸡块配薯条。快速又满足的美味餐，令人难以抗拒。"
     },
     "CookZ_NuggiesAndFriesBox_Opened_DS": {
         "en": "@CookZ_NuggiesAndFriesBox_DS @&CookZ_EatUp"
     },
     "CookZ_SchnitzelBox_DN": {
         "en": "Schnitzel",
-        "de": "Schnitzel"
+        "de": "Schnitzel",
+        "cs": "Svíčková",
+        "ru": "Шницель",
+        "pl": "Sznycel",
+        "it": "Cotoletta",
+        "es": "Escalope",
+        "fr": "Escalope",
+        "zh": "炸肉排",
+        "ja": "シュニッツェル",
+        "pt": "Schnitzel",
+        "zh-cn": "炸肉排"
     },
     "CookZ_SchnitzelBox_DS": {
         "en": "Thinly sliced meat, breaded and fried to a golden crisp. A no-fuss meal that satisfies every time.",
-        "de": "Dünn geschnittenes Fleisch, paniert und goldbraun gebraten. Ein unkompliziertes Gericht, das immer satt macht."
+        "de": "Dünn geschnittenes Fleisch, paniert und goldbraun gebraten. Ein unkompliziertes Gericht, das immer satt macht.",
+        "cs": "Tenké plátky masa, obalené a osmažené do zlatova. Jednoduché jídlo, které vždy uspokojí.",
+        "ru": "Тонкие ломтики мяса, обжаренные в панировке до золотистой корочки. Простое блюдо, которое всегда радует.",
+        "pl": "Cienkie kawałki mięsa, panierowane i smażone na złoty chrupiący kolor. Proste danie, które zawsze zaspokaja.",
+        "it": "Carne affettata sottilmente, impanata e fritta fino a doratura. Un pasto semplice che soddisfa ogni volta.",
+        "es": "Carne finamente rebanada, empanada y frita hasta quedar dorada y crujiente. Una comida sin complicaciones que siempre satisface.",
+        "fr": "Viande tranchée finement, panée et frite jusqu'à obtenir une croûte dorée. Un plat simple qui satisfait à chaque fois.",
+        "zh": "薄切肉片，裹上面包屑并炸至金黄酥脆。简单的餐点，每次都能满足。",
+        "ja": "薄切りの肉をパン粉で衣をつけて、黄金色に揚げたもの。シンプルで満足感のある料理です。",
+        "pt": "Carne finamente fatiada, empanada e frita até ficar crocante e dourada. Uma refeição simples que sempre satisfaz.",
+        "zh-cn": "薄切肉片，裹上面包屑并炸至金黄酥脆。简单的餐点，每次都能满足。"
     },
     "CookZ_SchnitzelBox_Opened_DS": {
         "en": "@CookZ_SchnitzelBox_DS @&CookZ_EatUp"
     },
     "CookZ_BiffALaNelsonBox_DN": {
         "en": "Biff à la Nelson",
-        "de": "Biff à la Nelson"
+        "de": "Biff à la Nelson",
+        "cs": "Biff à la Nelson",
+        "ru": "Бифф а-ля Нельсон",
+        "pl": "Biff à la Nelson",
+        "it": "Biff à la Nelson",
+        "es": "Biff à la Nelson",
+        "fr": "Biff à la Nelson",
+        "zh": "比夫·阿·拉·尼尔森",
+        "ja": "ビフ・ア・ラ・ネルソン",
+        "pt": "Biff à la Nelson",
+        "zh-cn": "比夫·阿·拉·尼尔森"
     },
     "CookZ_BiffALaNelsonBox_DS": {
         "en": "Tender meat served with potatoes and a rich beer sauce. Simple ingredients, but packed with flavor.",
-        "de": "Zartes Fleisch, serviert mit Kartoffeln und einer würzigen Biersoße. Einfache Zutaten, aber voller Geschmack."
+        "de": "Zartes Fleisch, serviert mit Kartoffeln und einer würzigen Biersoße. Einfache Zutaten, aber voller Geschmack.",
+        "cs": "Křehké maso podávané s bramborami a bohatou pivní omáčkou. Jednoduché ingredience, ale plné chuti.",
+        "ru": "Нежное мясо, поданное с картофелем и насыщенным пивным соусом. Простые ингредиенты, но полные вкуса.",
+        "pl": "Soczyste mięso podane z ziemniakami i bogatym sosem piwnym. Proste składniki, ale pełne smaku.",
+        "it": "Carne tenera servita con patate e una ricca salsa alla birra. Ingredienti semplici, ma ricchi di sapore.",
+        "es": "Carne tierna servida con papas y una rica salsa de cerveza. Ingredientes sencillos, pero llenos de sabor.",
+        "fr": "Viande tendre servie avec des pommes de terre et une riche sauce à la bière. Des ingrédients simples, mais pleins de saveur.",
+        "zh": "嫩肉配土豆和浓郁的啤酒酱。简单的食材，但味道十足。",
+        "ja": "柔らかい肉をジャガイモと豊かなビールソースで提供。シンプルな食材ながら、風味豊かです。",
+        "pt": "Carne tenra servida com batatas e um molho de cerveja rico. Ingredientes simples, mas cheios de sabor.",
+        "zh-cn": "嫩肉配土豆和浓郁的啤酒酱。简单的食材，但味道十足。"
     },
     "CookZ_BiffALaNelsonBox_Opened_DS": {
         "en": "@CookZ_BiffALaNelsonBox_DS @&CookZ_EatUp"
     },
     "CookZ_PorkAndAppleBox_DN": {
         "en": "Pork And Apple",
-        "de": "Schweinehaxe mit Apfelsoße"
+        "de": "Schweinehaxe mit Apfelsoße",
+        "cs": "Vepřo s jablečnou omáčkou",
+        "ru": "Свинина с яблочным соусом",
+        "pl": "Wieprzowina z sosem jabłkowym",
+        "it": "Maiale con salsa di mele",
+        "es": "Cerdo con salsa de manzana",
+        "fr": "Porc avec sauce aux pommes",
+        "zh": "猪肉与苹果酱",
+        "ja": "豚肉とアップルソース",
+        "pt": "Porco com molho de maçã",
+        "zh-cn": "猪肉与苹果酱"
     },
     "CookZ_PorkAndAppleBox_DS": {
         "en": "Roasted pork served with a tangy apple sauce and hearty potatoes. A rich and rustic meal with a touch of sweetness.",
-        "de": "Knusprige Schweinehaxe serviert mit einer fruchtigen Apfelsoße und kräftigen Kartoffeln. Ein reichhaltiges, rustikales Gericht mit einer süßen Note."
+        "de": "Knusprige Schweinehaxe serviert mit einer fruchtigen Apfelsoße und kräftigen Kartoffeln. Ein reichhaltiges, rustikales Gericht mit einer süßen Note.",
+        "cs": "Pečené vepřo podávané s pikantní jablečnou omáčkou a sytými bramborami. Bohaté a rustikální jídlo s nádechem sladkosti.",
+        "ru": "Запечённая свинина, поданная с острым яблочным соусом и сытными картофелями. Богатое и деревенское блюдо с ноткой сладости.",
+        "pl": "Pieczona wieprzowina podana z pikantnym sosem jabłkowym i sycącymi ziemniakami. Bogate i rustykalne danie z nutą słodyczy.",
+        "it": "Maiale arrosto servito con salsa di mele piccante e patate sostanziose. Un pasto ricco e rustico con un tocco di dolcezza.",
+        "es": "Cerdo asado servido con una salsa de manzana picante y papas contundentes. Una comida rica y rústica con un toque de dulzura.",
+        "fr": "Porc rôti servi avec une sauce aux pommes acidulée et des pommes de terre copieuses. Un repas riche et rustique avec une touche de douceur.",
+        "zh": "烤猪肉配酸甜的苹果酱和丰盛的土豆。一道丰富而质朴的菜肴，带有一丝甜味。",
+        "ja": "ローストした豚肉に、ピリッとしたアップルソースとボリューム満点のジャガイモを添えて。リッチで素朴な料理で、甘さがほんのり感じられます。",
+        "pt": "Porco assado servido com molho de maçã azedo e batatas robustas. Uma refeição rica e rústica com um toque de doçura.",
+        "zh-cn": "烤猪肉配酸甜的苹果酱和丰盛的土豆。一道丰富而质朴的菜肴，带有一丝甜味。"
     },
     "CookZ_PorkAndAppleBox_Opened_DS": {
         "en": "@CookZ_PorkAndAppleBox_DS @&CookZ_EatUp"
     },
     "CookZ_ChickenCordonBleuBox_DN": {
         "en": "Chicken Cordon Bleu",
-        "de": "Hähnchen Cordon Bleu"
+        "de": "Hähnchen Cordon Bleu",
+        "cs": "Kuřecí Cordon Bleu",
+        "ru": "Куриное Кordon Bleu",
+        "pl": "Kurczak Cordon Bleu",
+        "it": "Pollo Cordon Bleu",
+        "es": "Pollo Cordon Bleu",
+        "fr": "Poulet Cordon Bleu",
+        "zh": "蓝带鸡",
+        "ja": "チキン・コルドン・ブルー",
+        "pt": "Frango Cordon Bleu",
+        "zh-cn": "蓝带鸡"
     },
     "CookZ_ChickenCordonBleuBox_DS": {
         "en": "Breaded chicken breast stuffed with melted cheese. A simple yet satisfying dish with a crispy exterior and creamy filling.",
-        "de": "Paniertes Hähnchenbrustfilet, gefüllt mit geschmolzenem Käse. Ein einfaches, aber sättigendes Gericht mit knuspriger Hülle und cremiger Füllung."
+        "de": "Paniertes Hähnchenbrustfilet, gefüllt mit geschmolzenem Käse. Ein einfaches, aber sättigendes Gericht mit knuspriger Hülle und cremiger Füllung.",
+        "cs": "Panírované kuřecí prso plněné roztaveným sýrem. Jednoduché, ale uspokojivé jídlo s křupavou kůrkou a krémovou náplní.",
+        "ru": "Куриная грудка в панировке, начиненная расплавленным сыром. Простое, но удовлетворительное блюдо с хрустящей корочкой и кремовой начинкой.",
+        "pl": "Panierowana pierś z kurczaka nadziewana roztopionym serem. Proste, ale satysfakcjonujące danie o chrupiącej skórce i kremowym nadzieniu.",
+        "it": "Petto di pollo impanata ripieno di formaggio fuso. Un piatto semplice ma soddisfacente con una crosta croccante e un ripieno cremoso.",
+        "es": "Pechuga de pollo empanada rellena de queso derretido. Un plato simple pero satisfactorio con un exterior crujiente y un relleno cremoso.",
+        "fr": "Poitrine de poulet panée, farcie de fromage fondu. Un plat simple mais satisfaisant avec une croûte croquante et une garniture crémeuse.",
+        "zh": "裹上面包屑的鸡胸肉，里面填满了融化的奶酪。一道简单却令人满意的菜肴，外脆内软。",
+        "ja": "パン粉をまぶした鶏の胸肉に溶けたチーズを詰め込んだ料理。シンプルながら満足感のある、外はカリカリで中はクリーミーな一品。",
+        "pt": "Peito de frango empanado recheado com queijo derretido. Um prato simples, mas satisfatório, com crosta crocante e recheio cremoso.",
+        "zh-cn": "裹上面包屑的鸡胸肉，里面填满了融化的奶酪。一道简单却令人满意的菜肴，外脆内软。"
     },
     "CookZ_ChickenCordonBleuBox_Opened_DS": {
         "en": "@CookZ_ChickenCordonBleuBox_DS @&CookZ_EatUp"
     },
     "CookZ_RatatouilleBox_DN": {
         "en": "Ratatouille",
-        "de": "Ratatouille"
+        "de": "Ratatouille",
+        "cs": "Ratatouille",
+        "ru": "Рататуй",
+        "pl": "Ratatouille",
+        "it": "Ratatouille",
+        "es": "Ratatouille",
+        "fr": "Ratatouille",
+        "zh": "普罗旺斯炖菜",
+        "ja": "ラタトゥイユ",
+        "pt": "Ratatouille",
+        "zh-cn": "普罗旺斯炖菜"
     },
     "CookZ_RatatouilleBox_DS": {
         "en": "A savory vegetable medley featuring zucchini, potatoes, peppers, and tomatoes, all slow-cooked to bring out their natural flavors. A light and wholesome dish.",
-        "de": "Eine herzhafte Gemüse-Mischung aus Zucchini, Kartoffeln, Paprika und Tomaten, langsam gegart, um die natürlichen Aromen zu entfalten. Ein leichtes und gesundes Gericht."
+        "de": "Eine herzhafte Gemüse-Mischung aus Zucchini, Kartoffeln, Paprika und Tomaten, langsam gegart, um die natürlichen Aromen zu entfalten. Ein leichtes und gesundes Gericht.",
+        "cs": "Slaný zeleninový mix, obsahující cuketu, brambory, papriky a rajčata, pomalu vařené, aby se uvolnily přirozené chutě. Lehký a zdravý pokrm.",
+        "ru": "Сытная смесь овощей, включая кабачки, картофель, перец и помидоры, медленно приготовленных для раскрытия их натуральных вкусов. Легкое и полезное блюдо.",
+        "pl": "Sycąca mieszanka warzyw, w tym cukinia, ziemniaki, papryka i pomidory, wolno gotowane, by uwolnić ich naturalne smaki. Lekka i zdrowa potrawa.",
+        "it": "Un misto di verdure saporite, con zucchine, patate, peperoni e pomodori, cotti lentamente per esaltarne i sapori naturali. Un piatto leggero e salutare.",
+        "es": "Una mezcla sabrosa de verduras que incluye calabacines, papas, pimientos y tomates, cocinadas lentamente para resaltar sus sabores naturales. Un plato ligero y saludable.",
+        "fr": "Un mélange savoureux de légumes comprenant courgettes, pommes de terre, poivrons et tomates, tous cuits lentement pour faire ressortir leurs saveurs naturelles. Un plat léger et sain.",
+        "zh": "一道美味的蔬菜混合菜，包含西葫芦、土豆、辣椒和番茄，慢炖至释放天然风味。轻盈又健康的菜肴。",
+        "ja": "ズッキーニ、ジャガイモ、ピーマン、トマトなどの野菜を使った塩味のミックス。ゆっくりと煮込んでその自然な風味を引き出した軽くてヘルシーな料理。",
+        "pt": "Uma mistura de vegetais saborosos com abobrinha, batatas, pimentões e tomates, todos cozidos lentamente para realçar seus sabores naturais. Um prato leve e saudável.",
+        "zh-cn": "一道美味的蔬菜混合菜，包含西葫芦、土豆、辣椒和番茄，慢炖至释放天然风味。轻盈又健康的菜肴。"
     },
     "CookZ_RatatouilleBox_Opened_DS": {
         "en": "@CookZ_RatatouilleBox_DS @&CookZ_EatUp"
     },
     "CookZ_BakedPotatoVegBox_DN": {
         "en": "Baked Potato With Vegetables",
-        "de": "Ofenkartoffel mit Gemüse"
+        "de": "Ofenkartoffel mit Gemüse",
+        "cs": "Zapečený brambor s zeleninou",
+        "ru": "Запеченный картофель с овощами",
+        "pl": "Ziemniak zapiekany z warzywami",
+        "it": "Patata al forno con verdure",
+        "es": "Papas asadas con verduras",
+        "fr": "Pommes de terre au four avec légumes",
+        "zh": "烤土豆配蔬菜",
+        "ja": "野菜を添えた焼きポテト",
+        "pt": "Batata assada com vegetais",
+        "zh-cn": "烤土豆配蔬菜"
     },
     "CookZ_BakedPotatoVegBox_DS": {
         "en": "A baked potato topped with a mix of zucchini, bell peppers, tomatoes, and melted cheese. A filling, veggie-packed meal.",
-        "de": "Eine gebackene Kartoffel, belegt mit einer Mischung aus Zucchini, Paprika, Tomaten und geschmolzenem Käse. Ein sättigendes, gemüsereiches Gericht."
+        "de": "Eine gebackene Kartoffel, belegt mit einer Mischung aus Zucchini, Paprika, Tomaten und geschmolzenem Käse. Ein sättigendes, gemüsereiches Gericht.",
+        "cs": "Zapečený brambor pokrytý směsí cukety, paprik, rajčat a roztaveného sýra. Syté, zeleninové jídlo.",
+        "ru": "Запеченный картофель, покрытый смесью кабачков, перца, помидоров и расплавленного сыра. Сытное, овощное блюдо.",
+        "pl": "Ziemniak zapiekany z mieszanką cukinii, papryki, pomidorów i roztopionego sera. Syte, warzywne danie.",
+        "it": "Patata al forno con un mix di zucchine, peperoni, pomodori e formaggio fuso. Un pasto ricco e pieno di verdure.",
+        "es": "Papas asadas cubiertas con una mezcla de calabacines, pimientos, tomates y queso derretido. Una comida llena y rica en verduras.",
+        "fr": "Pommes de terre au four garnies d'un mélange de courgettes, poivrons, tomates et fromage fondu. Un plat consistant, riche en légumes.",
+        "zh": "烤土豆上铺满了西葫芦、辣椒、番茄和融化的奶酪。丰盛的蔬菜餐。",
+        "ja": "焼きポテトにズッキーニ、ピーマン、トマト、溶けたチーズをのせた一品。ボリューム満点で野菜たっぷり。",
+        "pt": "Batata assada coberta com uma mistura de abobrinha, pimentões, tomates e queijo derretido. Uma refeição farta e repleta de vegetais.",
+        "zh-cn": "烤土豆上铺满了西葫芦、辣椒、番茄和融化的奶酪。丰盛的蔬菜餐。"
     },
     "CookZ_BakedPotatoVegBox_Opened_DS": {
         "en": "@CookZ_BakedPotatoVegBox_DS @&CookZ_EatUp"
     },
     "CookZ_BakedPotatoMeatBox_DN": {
         "en": "Baked Potato With Meat",
-        "de": "Ofenkartoffel mit Fleisch"
+        "de": "Ofenkartoffel mit Fleisch",
+        "cs": "Zapečený brambor s masem",
+        "ru": "Запеченный картофель с мясом",
+        "pl": "Ziemniak zapiekany z mięsem",
+        "it": "Patata al forno con carne",
+        "es": "Papas asadas con carne",
+        "fr": "Pommes de terre au four avec viande",
+        "zh": "烤土豆配肉",
+        "ja": "焼きポテトと肉",
+        "pt": "Batata assada com carne",
+        "zh-cn": "烤土豆配肉"
     },
     "CookZ_BakedPotatoMeatBox_DS": {
         "en": "A warm baked potato filled with tender meat and cheese, creating a comforting and satisfying dish.",
-        "de": "Eine warme Ofenkartoffel, gefüllt mit zartem Fleisch und Käse. Ein einfaches, aber zufriedenstellendes Gericht."
+        "de": "Eine warme Ofenkartoffel, gefüllt mit zartem Fleisch und Käse. Ein einfaches, aber zufriedenstellendes Gericht.",
+        "cs": "Teplý zapečený brambor plněný jemným masem a sýrem, vytvářející pohodlné a uspokojivé jídlo.",
+        "ru": "Теплый запеченный картофель, наполненный нежным мясом и сыром. Уютное и удовлетворяющее блюдо.",
+        "pl": "Ciepły zapiekany ziemniak nadziewany delikatnym mięsem i serem, tworząc komfortowe i satysfakcjonujące danie.",
+        "it": "Una patata al forno ripiena di carne tenera e formaggio, creando un piatto confortevole e soddisfacente.",
+        "es": "Una papa asada rellena de carne tierna y queso, creando un plato reconfortante y satisfactorio.",
+        "fr": "Une pomme de terre au four garnie de viande tendre et de fromage, créant un plat réconfortant et satisfaisant.",
+        "zh": "温暖的烤土豆里填满了嫩肉和奶酪，形成一道令人安慰和满足的菜肴。",
+        "ja": "温かい焼きポテトに柔らかい肉とチーズを詰めた、心地よく満足感のある一品。",
+        "pt": "Uma batata assada recheada com carne macia e queijo, criando um prato reconfortante e satisfatório.",
+        "zh-cn": "温暖的烤土豆里填满了嫩肉和奶酪，形成一道令人安慰和满足的菜肴。"
     },
     "CookZ_BakedPotatoMeatBox_Opened_DS": {
         "en": "@CookZ_BakedPotatoMeatBox_DS @&CookZ_EatUp"
     },
     "CookZ_BakedPotatoFishBox_DN": {
         "en": "Baked Potato With Seafood",
-        "de": "Ofenkartoffel mit Meeresfrüchten"
+        "de": "Ofenkartoffel mit Meeresfrüchten",
+        "cs": "Zapečený brambor s mořskými plody",
+        "ru": "Запеченный картофель с морепродуктами",
+        "pl": "Ziemniak zapiekany z owocami morza",
+        "it": "Patata al forno con frutti di mare",
+        "es": "Papas asadas con mariscos",
+        "fr": "Pommes de terre au four avec fruits de mer",
+        "zh": "烤土豆配海鲜",
+        "ja": "焼きポテトとシーフード",
+        "pt": "Batata assada com frutos do mar",
+        "zh-cn": "烤土豆配海鲜"
     },
     "CookZ_BakedPotatoFishBox_DS": {
         "en": "A warm baked potato filled with melted cheese, fish, and caviar. A sophisticated combination of flavors that make for a unique and satisfying dish.",
-        "de": "Eine warme Ofenkartoffel, gefüllt mit geschmolzenem Käse, Fisch und Kaviar. Eine raffinierte Kombination aus Aromen, die dieses Gericht besonders macht."
+        "de": "Eine warme Ofenkartoffel, gefüllt mit geschmolzenem Käse, Fisch und Kaviar. Eine raffinierte Kombination aus Aromen, die dieses Gericht besonders macht.",
+        "cs": "Teplý zapečený brambor plněný roztaveným sýrem, rybami a kaviárem. Rafované spojení chutí, které činí toto jídlo jedinečným a uspokojivým.",
+        "ru": "Теплый запеченный картофель, наполненный расплавленным сыром, рыбой и икрой. Изысканное сочетание вкусов, которое делает это блюдо уникальным и удовлетворяющим.",
+        "pl": "Ciepły zapiekany ziemniak nadziewany roztopionym serem, rybami i kawioru. Wyszukane połączenie smaków, które sprawia, że to danie jest wyjątkowe i satysfakcjonujące.",
+        "it": "Una patata al forno ripiena di formaggio fuso, pesce e caviale. Un raffinato connubio di sapori che rende questo piatto unico e soddisfacente.",
+        "es": "Una papa asada rellena de queso derretido, pescado y caviar. Una combinación sofisticada de sabores que hace de este plato algo único y satisfactorio.",
+        "fr": "Une pomme de terre au four garnie de fromage fondu, poisson et caviar. Une combinaison sophistiquée de saveurs qui rend ce plat unique et satisfaisant.",
+        "zh": "温暖的烤土豆里填满了融化的奶酪、鱼类和鱼子酱。复杂的味道组合，使这道菜独特且令人满足。",
+        "ja": "焼きポテトに溶けたチーズ、魚、キャビアを詰めた一品。洗練された味の組み合わせで、この料理をユニークで満足のいくものにしています。",
+        "pt": "Uma batata assada recheada com queijo derretido, peixe e caviar. Uma combinação sofisticada de sabores que torna este prato único e satisfatório.",
+        "zh-cn": "温暖的烤土豆里填满了融化的奶酪、鱼类和鱼子酱。复杂的味道组合，使这道菜独特且令人满足。"
     },
     "CookZ_BakedPotatoFishBox_Opened_DS": {
         "en": "@CookZ_BakedPotatoFishBox_DS @&CookZ_EatUp"
     },
     "CookZ_PaprikasKrumpliBox_DN": {
         "en": "Paprikas Krumpli",
-        "de": "Paprikas Krumpli"
+        "de": "Paprikas Krumpli",
+        "cs": "Paprikas Krumpli",
+        "ru": "Паприкаш с картошкой",
+        "pl": "Paprikas Krumpli",
+        "it": "Paprikas Krumpli",
+        "es": "Paprikas Krumpli",
+        "fr": "Paprikas Krumpli",
+        "zh": "胡椒土豆炖菜",
+        "ja": "パプリカス・クルンプリ",
+        "pt": "Paprikas Krumpli",
+        "zh-cn": "胡椒土豆炖菜"
     },
     "CookZ_PaprikasKrumpliBox_DS": {
         "en": "A traditional Hungarian dish of sausage, potatoes, and bell peppers, simmered to perfection for a simple, filling meal.",
-        "de": "Ein traditionelles ungarisches Gericht mit Wurst, Kartoffeln und Paprika, zusammen geschmort zu einem einfachen, kräftigen Essen."
+        "de": "Ein traditionelles ungarisches Gericht mit Wurst, Kartoffeln und Paprika, zusammen geschmort zu einem einfachen, kräftigen Essen.",
+        "cs": "Tradiční maďarské jídlo s klobásou, bramborami a paprikami, vařené k dokonalosti pro jednoduché, syté jídlo.",
+        "ru": "Традиционное венгерское блюдо с колбасой, картофелем и перцами, тушеное до совершенства для простого, сытного блюда.",
+        "pl": "Tradycyjne węgierskie danie z kiełbasą, ziemniakami i papryką, duszone do perfekcji, tworzące proste, sycące danie.",
+        "it": "Un piatto tradizionale ungherese con salsiccia, patate e peperoni, cotto a fuoco lento per un pasto semplice e sostanzioso.",
+        "es": "Un plato tradicional húngaro de salchichas, papas y pimientos, cocido a fuego lento hasta alcanzar la perfección, para una comida simple y sustanciosa.",
+        "fr": "Un plat traditionnel hongrois à base de saucisse, pommes de terre et poivrons, mijoté à la perfection pour un repas simple et copieux.",
+        "zh": "一道传统的匈牙利菜肴，由香肠、土豆和甜椒组成，慢炖至完美，简单又饱腹。",
+        "ja": "伝統的なハンガリー料理で、ソーセージ、ポテト、ピーマンを煮込んだシンプルで満足感のある料理。",
+        "pt": "Um prato tradicional húngaro de linguiça, batatas e pimentões, cozido até a perfeição para uma refeição simples e farta.",
+        "zh-cn": "一道传统的匈牙利菜肴，由香肠、土豆和甜椒组成，慢炖至完美，简单又饱腹。"
     },
     "CookZ_PaprikasKrumpliBox_Opened_DS": {
         "en": "@CookZ_PaprikasKrumpliBox_DS @&CookZ_EatUp"
@@ -325,154 +915,434 @@
 
     "CookZ_GoulashCan_DN": {
         "en": "Goulash",
-        "de": "Gulasch"
+        "de": "Gulasch",
+        "cs": "Guláš",
+        "ru": "Гуляш",
+        "pl": "Gulasz",
+        "it": "Gulasch",
+        "es": "Goulash",
+        "fr": "Goulash",
+        "zh": "炖肉",
+        "ja": "グラーシュ",
+        "pt": "Goulash",
+        "zh-cn": "炖肉"
     },
     "CookZ_GoulashCan_DS": {
         "en": "A hearty dish with meat, potatoes, and bell peppers, slow-cooked to bring out the deep, comforting flavors.",
-        "de": "Ein herzhaftes Gericht mit Fleisch, Kartoffeln und Paprika, langsam gekocht, um den vollen Geschmack zu entfalten und lange haltbar zu sein."
+        "de": "Ein herzhaftes Gericht mit Fleisch, Kartoffeln und Paprika, langsam gekocht, um den vollen Geschmack zu entfalten und lange haltbar zu sein.",
+        "cs": "Syté jídlo s masem, bramborami a paprikou, pomalu vařené, aby se projevily hluboké a útulné chutě.",
+        "ru": "Сытное блюдо с мясом, картофелем и болгарским перцем, медленно варится, чтобы раскрылись глубокие, утешительные вкусы.",
+        "pl": "Syte danie z mięsem, ziemniakami i papryką, duszone na wolnym ogniu, aby uwolnić głębokie, pocieszające smaki.",
+        "it": "Un piatto sostanzioso con carne, patate e peperoni, cotto lentamente per esaltare i sapori profondi e confortanti.",
+        "es": "Un plato sustancioso con carne, papas y pimientos, cocinado a fuego lento para resaltar los sabores profundos y reconfortantes.",
+        "fr": "Un plat copieux avec de la viande, des pommes de terre et des poivrons, cuit lentement pour faire ressortir les saveurs profondes et réconfortantes.",
+        "zh": "一款丰盛的菜肴，含有肉类、土豆和甜椒，慢炖以激发深沉舒适的味道。",
+        "ja": "肉、ジャガイモ、ピーマンを使ったボリュームのある料理で、深みのある快適な風味を引き出すためにゆっくりと調理されます。",
+        "pt": "Um prato substancioso com carne, batatas e pimentões, cozido lentamente para trazer à tona os sabores profundos e reconfortantes.",
+        "zh-cn": "一款丰盛的菜肴，含有肉类、土豆和甜椒，慢炖以激发深沉舒适的味道。"
     },
     "CookZ_GoulashCan_Opened_DS": {
         "en": "@CookZ_GoulashCan_DS @&CookZ_EatUp"
     },
     "CookZ_PumpkinSoupCan_DN": {
         "en": "Pumpkin Soup",
-        "de": "Kürbissuppe"
+        "de": "Kürbissuppe",
+        "cs": "Dýňová polévka",
+        "ru": "Тыквенный суп",
+        "pl": "Zupa dyniowa",
+        "it": "Zuppa di zucca",
+        "es": "Sopa de calabaza",
+        "fr": "Soupe de potiron",
+        "zh": "南瓜汤",
+        "ja": "かぼちゃスープ",
+        "pt": "Sopa de abóbora",
+        "zh-cn": "南瓜汤"
     },
     "CookZ_PumpkinSoupCan_DS": {
         "en": "A smooth and creamy soup made from pumpkin, offering a comforting, slightly sweet flavor perfect for cooler days.",
-        "de": "Eine cremige Suppe aus Kürbis, die einen angenehmen, leicht süßen Geschmack bietet – ideal für die kalte Jahreszeit."
+        "de": "Eine cremige Suppe aus Kürbis, die einen angenehmen, leicht süßen Geschmack bietet – ideal für die kalte Jahreszeit.",
+        "cs": "Hladká a krémová polévka z dýně, která nabízí pohodlnou, mírně sladkou chuť, ideální pro chladnější dny.",
+        "ru": "Гладкий и кремовый суп из тыквы, предлагающий утешительный, слегка сладковатый вкус, идеально подходящий для холодных дней.",
+        "pl": "Gładka i kremowa zupa z dyni, oferująca pocieszający, lekko słodkawy smak, idealna na chłodniejsze dni.",
+        "it": "Una zuppa liscia e cremosa fatta con la zucca, che offre un sapore confortante e leggermente dolce, perfetto per i giorni più freddi.",
+        "es": "Una sopa suave y cremosa hecha de calabaza, que ofrece un sabor reconfortante y ligeramente dulce, perfecto para los días más fríos.",
+        "fr": "Une soupe lisse et crémeuse à base de potiron, offrant une saveur réconfortante et légèrement sucrée, parfaite pour les jours plus frais.",
+        "zh": "一款顺滑浓郁的南瓜汤，带有舒适的微甜口味，非常适合寒冷的日子。",
+        "ja": "滑らかでクリーミーなかぼちゃのスープ、冷たい日々にぴったりの心地よくやや甘い風味。",
+        "pt": "Uma sopa suave e cremosa feita de abóbora, oferecendo um sabor reconfortante e ligeiramente doce, perfeito para dias mais frios.",
+        "zh-cn": "一款顺滑浓郁的南瓜汤，带有舒适的微甜口味，非常适合寒冷的日子。"
     },
     "CookZ_PumpkinSoupCan_Opened_DS": {
         "en": "@CookZ_PumpkinSoupCan_DS @&CookZ_EatUp"
     },
     "CookZ_FishSoupCan_DN": {
         "en": "Fish Soup",
-        "de": "Fischsuppe"
+        "de": "Fischsuppe",
+        "cs": "Rybí polévka",
+        "ru": "Рыбный суп",
+        "pl": "Zupa rybna",
+        "it": "Zuppa di pesce",
+        "es": "Sopa de pescado",
+        "fr": "Soupe de poisson",
+        "zh": "鱼汤",
+        "ja": "魚のスープ",
+        "pt": "Sopa de peixe",
+        "zh-cn": "鱼汤"
     },
     "CookZ_FishSoupCan_DS": {
         "en": "A light and flavorful soup made with fish, potatoes, and tomatoes. A simple yet satisfying dish, perfect for a quick meal.",
-        "de": "Eine leichte und geschmackvolle Suppe aus Fisch, Kartoffeln und Tomaten. Ein einfaches, aber sättigendes Gericht, ideal für eine schnelle Mahlzeit."
+        "de": "Eine leichte und geschmackvolle Suppe aus Fisch, Kartoffeln und Tomaten. Ein einfaches, aber sättigendes Gericht, ideal für eine schnelle Mahlzeit.",
+        "cs": "Lehká a chutná polévka z ryb, brambor a rajčat. Jednoduché, ale uspokojivé jídlo, ideální pro rychlý oběd.",
+        "ru": "Легкий и вкусный суп из рыбы, картофеля и помидоров. Простое, но сытное блюдо, идеально подходящее для быстрого обеда.",
+        "pl": "Lekka i smaczna zupa z ryb, ziemniaków i pomidorów. Proste, ale sycące danie, idealne na szybki posiłek.",
+        "it": "Una zuppa leggera e saporita a base di pesce, patate e pomodori. Un piatto semplice ma soddisfacente, perfetto per un pasto veloce.",
+        "es": "Una sopa ligera y sabrosa hecha con pescado, papas y tomates. Un plato sencillo pero satisfactorio, perfecto para una comida rápida.",
+        "fr": "Une soupe légère et savoureuse à base de poisson, pommes de terre et tomates. Un plat simple mais satisfaisant, parfait pour un repas rapide.",
+        "zh": "一款轻盈且美味的汤，包含鱼、土豆和番茄。简单却令人满足，完美适合快速餐点。",
+        "ja": "魚、ジャガイモ、トマトを使った軽くて風味豊かなスープ。シンプルで満足感のある料理で、素早い食事に最適です。",
+        "pt": "Uma sopa leve e saborosa feita com peixe, batatas e tomates. Um prato simples, mas satisfatório, perfeito para uma refeição rápida.",
+        "zh-cn": "一款轻盈且美味的汤，包含鱼、土豆和番茄。简单却令人满足，完美适合快速餐点。"
     },
     "CookZ_FishSoupCan_Opened_DS": {
         "en": "@CookZ_FishSoupCan_DS @&CookZ_EatUp"
     },
     "CookZ_UkhaCan_DN": {
         "en": "Ukha",
-        "de": "Ukha"
+        "de": "Ukha",
+        "cs": "Ukha",
+        "ru": "Уха",
+        "pl": "Ukha",
+        "it": "Ukha",
+        "es": "Ukha",
+        "fr": "Ukha",
+        "zh": "乌哈汤",
+        "ja": "ウハスープ",
+        "pt": "Ukha",
+        "zh-cn": "乌哈汤"
     },
     "CookZ_UkhaCan_DS": {
         "en": "A traditional fish soup made with fish, potatoes, and tomatoes, enhanced with a splash of alcohol for added depth and warmth.",
-        "de": "Eine traditionelle Fischsuppe aus Fisch, Kartoffeln und Tomaten, verfeinert mit einem Schuss Alkohol für mehr Tiefe und Wärme."
+        "de": "Eine traditionelle Fischsuppe aus Fisch, Kartoffeln und Tomaten, verfeinert mit einem Schuss Alkohol für mehr Tiefe und Wärme.",
+        "cs": "Tradiční rybí polévka z ryb, brambor a rajčat, obohacená o kapku alkoholu pro větší hloubku a teplo.",
+        "ru": "Традиционный рыбный суп из рыбы, картофеля и помидоров, улучшенный добавлением алкоголя для глубины и тепла.",
+        "pl": "Tradycyjna zupa rybna z ryb, ziemniaków i pomidorów, wzbogacona o odrobinę alkoholu, aby dodać głębi i ciepła.",
+        "it": "Una tradizionale zuppa di pesce con pesce, patate e pomodori, arricchita con un tocco di alcol per aggiungere profondità e calore.",
+        "es": "Una sopa tradicional de pescado hecha con pescado, papas y tomates, realzada con un toque de alcohol para darle más profundidad y calor.",
+        "fr": "Une soupe de poisson traditionnelle à base de poisson, pommes de terre et tomates, rehaussée d'une touche d'alcool pour plus de profondeur et de chaleur.",
+        "zh": "一款传统的鱼汤，包含鱼、土豆和番茄，加入一点酒精增添深度与温暖。",
+        "ja": "魚、ジャガイモ、トマトを使った伝統的な魚のスープ、アルコールを少し加えて深みと温かみを増しています。",
+        "pt": "Uma sopa tradicional de peixe feita com peixe, batatas e tomates, aprimorada com um toque de álcool para dar mais profundidade e calor.",
+        "zh-cn": "一款传统的鱼汤，包含鱼、土豆和番茄，加入一点酒精增添深度与温暖。"
     },
     "CookZ_UkhaCan_Opened_DS": {
         "en": "@CookZ_UkhaCan_DS @&CookZ_EatUp"
     },
     "CookZ_LecsoCan_DN": {
         "en": "Lecso",
-        "de": "Letscho"
+        "de": "Letscho",
+        "cs": "Lecso",
+        "ru": "Летшо",
+        "pl": "Lecso",
+        "it": "Lecso",
+        "es": "Lecso",
+        "fr": "Lecso",
+        "zh": "莱茨佐",
+        "ja": "レチョ",
+        "pt": "Lecso",
+        "zh-cn": "莱茨佐"
     },
     "CookZ_LecsoCan_DS": {
         "en": "A simple, flavorful dish made with bell peppers and tomatoes, cooked together to create a fresh, comforting stew.",
-        "de": "Ein einfaches, schmackhaftes Gericht aus Paprika und Tomaten, zusammen gekocht zu einem frischen, herzhaften Eintopf."
+        "de": "Ein einfaches, schmackhaftes Gericht aus Paprika und Tomaten, zusammen gekocht zu einem frischen, herzhaften Eintopf.",
+        "cs": "Jednoduché, chutné jídlo z papriky a rajčat, vařené společně, aby vytvořilo čerstvý, útulný guláš.",
+        "ru": "Простое, вкусное блюдо из болгарского перца и помидоров, готовится вместе, чтобы создать свежий, утешительный рагу.",
+        "pl": "Proste, smaczne danie z papryki i pomidorów, gotowane razem, tworzy świeży, pocieszający gulasz.",
+        "it": "Un piatto semplice e saporito preparato con peperoni e pomodori, cotti insieme per creare uno stufato fresco e confortante.",
+        "es": "Un plato simple y sabroso hecho con pimientos y tomates, cocidos juntos para crear un guiso fresco y reconfortante.",
+        "fr": "Un plat simple et savoureux à base de poivrons et de tomates, cuits ensemble pour créer un ragoût frais et réconfortant.",
+        "zh": "一道简单又美味的菜肴，由甜椒和番茄制成，炖煮在一起，创造出一锅新鲜、舒适的炖菜。",
+        "ja": "シンプルで風味豊かな料理で、ピーマンとトマトを一緒に煮込んで、新鮮で心地よいシチューを作ります。",
+        "pt": "Um prato simples e saboroso feito com pimentões e tomates, cozido junto para criar um guisado fresco e reconfortante.",
+        "zh-cn": "一道简单又美味的菜肴，由甜椒和番茄制成，炖煮在一起，创造出一锅新鲜、舒适的炖菜。"
     },
     "CookZ_LecsoCan_Opened_DS": {
         "en": "@CookZ_LecsoCan_DS @&CookZ_EatUp"
     },
     "CookZ_MysteryMeatCan_DN": {
         "en": "Mystery Meat",
-        "de": "Fleischgemisch Deluxe"
+        "de": "Fleischgemisch Deluxe",
+        "cs": "Tajemné maso",
+        "ru": "Таинственное мясо",
+        "pl": "Tajemnicze mięso",
+        "it": "Carne misteriosa",
+        "es": "Carne misteriosa",
+        "fr": "Viande mystérieuse",
+        "zh": "神秘肉",
+        "ja": "ミステリーミート",
+        "pt": "Carne misteriosa",
+        "zh-cn": "神秘肉"
     },
     "CookZ_MysteryMeatCan_DS": {
         "en": "A processed meat blend with a distinct, savory flavor and hearty texture. It’s simple, filling, and perfect for a quick meal.",
-        "de": "Eine Mischung aus verarbeitetem Fleisch mit einem markanten, herzhaften Geschmack und einer kräftigen Textur. Einfach, sättigend und perfekt für eine schnelle Mahlzeit."
+        "de": "Eine Mischung aus verarbeitetem Fleisch mit einem markanten, herzhaften Geschmack und einer kräftigen Textur. Einfach, sättigend und perfekt für eine schnelle Mahlzeit.",
+        "cs": "Míchané zpracované maso s výraznou, slanou chutí a sytou texturou. Jednoduché, syté a ideální pro rychlý oběd.",
+        "ru": "Смесь обработанного мяса с ярким, соленым вкусом и плотной текстурой. Простое, сытное и идеально подходящее для быстрого обеда.",
+        "pl": "Mieszanka przetworzonego mięsa o wyrazistym, słonym smaku i sycącej teksturze. Proste, sycące i idealne na szybki posiłek.",
+        "it": "Una miscela di carne lavorata con un sapore salato e una consistenza sostanziosa. È semplice, saziante e perfetta per un pasto veloce.",
+        "es": "Una mezcla de carne procesada con un sabor salado y una textura sustanciosa. Es simple, saciante y perfecta para una comida rápida.",
+        "fr": "Un mélange de viande transformée avec une saveur salée distincte et une texture nourrissante. C'est simple, rassasiant et parfait pour un repas rapide.",
+        "zh": "一种加工过的肉类混合物，具有独特的咸味和丰富的口感。简单、饱腹，非常适合快速餐点。",
+        "ja": "独特な塩味と豊かな食感を持つ加工肉のブレンド。シンプルで満腹感があり、素早い食事に最適です。",
+        "pt": "Uma mistura de carne processada com um sabor salgado distinto e uma textura substancial. É simples, satisfatório e perfeito para uma refeição rápida.",
+        "zh-cn": "一种加工过的肉类混合物，具有独特的咸味和丰富的口感。简单、饱腹，非常适合快速餐点。"
     },
     "CookZ_MysteryMeatCan_Opened_DS": {
         "en": "@CookZ_MysteryMeatCan_DS @&CookZ_EatUp"
     },
     "CookZ_ZucchiniCaviarCan_DN": {
         "en": "Zucchini Caviar",
-        "de": "Zucchini-Kaviar"
+        "de": "Zucchini-Kaviar",
+        "cs": "Caviar z cukety",
+        "ru": "Кавиар из цукини",
+        "pl": "Kawior z cukinii",
+        "it": "Caviale di zucchine",
+        "es": "Caviar de calabacín",
+        "fr": "Caviar de courgettes",
+        "zh": "西葫芦鱼子酱",
+        "ja": "ズッキーニキャビア",
+        "pt": "Caviar de abobrinha",
+        "zh-cn": "西葫芦鱼子酱"
     },
     "CookZ_ZucchiniCaviarCan_DS": {
         "en": "A veggie-based caviar made from zucchini, offering a fresh and earthy twist on the classic delicacy. Perfect as a garnish or spread.",
-        "de": "Ein Kaviar aus Zucchini, der einen frischen, geschmackvollen Twist auf das klassische Gericht bringt. Ideal als Beilage oder Aufstrich."
+        "de": "Ein Kaviar aus Zucchini, der einen frischen, geschmackvollen Twist auf das klassische Gericht bringt. Ideal als Beilage oder Aufstrich.",
+        "cs": "Zeleninový kaviár z cukety, který přináší čerstvý a zemitý twist na klasickou pochoutku. Ideální jako příloha nebo pomazánka.",
+        "ru": "Овощной кавиар из цукини с новым свежим и земляным поворотом на классический деликатес. Идеально подходит как гарнир или намазка.",
+        "pl": "Kawior na bazie warzyw z cukinii, oferujący świeży i ziemisty twist klasycznego przysmaku. Idealny jako dodatek lub pasta.",
+        "it": "Un caviar vegetale a base di zucchine, che offre una freschezza e una sfumatura terrosa sulla delicatessen classica. Perfetto come guarnizione o spalmato.",
+        "es": "Un caviar vegetal hecho con calabacines, que ofrece un giro fresco y terroso de la delicadeza clásica. Perfecto como acompañamiento o para untar.",
+        "fr": "Un caviar à base de légumes, fait à partir de courgettes, offrant une touche fraîche et terreuse sur la délicatesse classique. Idéal en garniture ou à tartiner.",
+        "zh": "一种基于蔬菜的鱼子酱，由西葫芦制成，给经典的美味带来了新鲜且富有大地风味的转折。非常适合作为配菜或涂抹酱。",
+        "ja": "ズッキーニを使った野菜ベースのキャビアで、クラシックなデリカシーに新鮮で土っぽいひねりを加えています。ガーニッシュやスプレッドとして最適です。",
+        "pt": "Um caviar à base de legumes feito com abobrinha, oferecendo uma reviravolta fresca e terrosa na iguaria clássica. Perfeito como guarnição ou pasta.",
+        "zh-cn": "一种基于蔬菜的鱼子酱，由西葫芦制成，给经典的美味带来了新鲜且富有大地风味的转折。非常适合作为配菜或涂抹酱。"
     },
     "CookZ_ZucchiniCaviarCan_Opened_DS": {
         "en": "@CookZ_ZucchiniCaviarCan_DS @&CookZ_EatUp"
     },
     "CookZ_CreamyTomatoSoupCan_DN": {
         "en": "Creamy Tomato Soup",
-        "de": "Tomatencremesuppe"
+        "de": "Tomatencremesuppe",
+        "cs": "Krémová rajčatová polévka",
+        "ru": "Крем-суп из томатов",
+        "pl": "Kremowa zupa pomidorowa",
+        "it": "Zuppa cremosa di pomodoro",
+        "es": "Sopa cremosa de tomate",
+        "fr": "Soupe crémeuse à la tomate",
+        "zh": "奶油番茄汤",
+        "ja": "クリーミートマトスープ",
+        "pt": "Sopa cremosa de tomate",
+        "zh-cn": "奶油番茄汤"
     },
     "CookZ_CreamyTomatoSoupCan_DS": {
         "en": "A smooth and velvety tomato soup, rich in flavor and perfectly creamy. Ideal for warming up on a chilly day.",
-        "de": "Eine cremige Tomatensuppe, die reich an Geschmack ist und perfekt zart daherkommt. Ideal, um sich an einem kühlen Tag zu wärmen."
+        "de": "Eine cremige Tomatensuppe, die reich an Geschmack ist und perfekt zart daherkommt. Ideal, um sich an einem kühlen Tag zu wärmen.",
+        "cs": "Hladká a sametová rajčatová polévka, bohatá na chuť a perfektně krémová. Ideální na zahřátí v chladném dni.",
+        "ru": "Гладкий и бархатистый томатный суп, насыщенный вкусом и идеально кремовый. Идеально подходит для согрева в холодный день.",
+        "pl": "Gładka i aksamitna zupa pomidorowa, bogata w smak i idealnie kremowa. Idealna do rozgrzania w chłodny dzień.",
+        "it": "Una zuppa di pomodoro liscia e vellutata, ricca di sapore e perfettamente cremosa. Ideale per riscaldarsi in una giornata fresca.",
+        "es": "Una sopa de tomate suave y aterciopelada, rica en sabor y perfectamente cremosa. Ideal para calentarse en un día frío.",
+        "fr": "Une soupe de tomate lisse et veloutée, riche en saveur et parfaitement crémeuse. Idéale pour se réchauffer lors d'une journée froide.",
+        "zh": "一款光滑细腻、味道丰富的番茄汤，口感奶油般顺滑。非常适合在寒冷的日子里温暖身体。",
+        "ja": "滑らかでベルベットのようなトマトスープ、豊かな風味と完璧にクリーミー。寒い日に温まるのに最適です。",
+        "pt": "Uma sopa de tomate suave e aveludada, rica em sabor e perfeitamente cremosa. Ideal para se aquecer em um dia frio.",
+        "zh-cn": "一款光滑细腻、味道丰富的番茄汤，口感奶油般顺滑。非常适合在寒冷的日子里温暖身体。"
     },
     "CookZ_CreamyTomatoSoupCan_Opened_DS": {
         "en": "@CookZ_CreamyTomatoSoupCan_DS @&CookZ_EatUp"
     },
     "CookZ_MushroomStroganoffCan_DN": {
         "en": "Mushroom Stroganoff",
-        "de": "Pilz-Stroganoff"
+        "de": "Pilz-Stroganoff",
+        "cs": "Houbový Stroganoff",
+        "ru": "Грибной Строганов",
+        "pl": "Stroganoff z grzybami",
+        "it": "Stroganoff ai funghi",
+        "es": "Stroganoff de champiñones",
+        "fr": "Stroganoff aux champignons",
+        "zh": "蘑菇斯特罗根诺夫",
+        "ja": "キノコのストロガノフ",
+        "pt": "Stroganoff de cogumelos",
+        "zh-cn": "蘑菇斯特罗根诺夫"
     },
     "CookZ_MushroomStroganoffCan_DS": {
         "en": "A delicious variation of Stroganoff, featuring mushrooms in a rich, creamy sauce. A satisfying and comforting dish for any occasion.",
-        "de": "Eine köstliche Variation des Stroganoff, bei der Pilze in einer cremigen Sauce serviert werden. Ein sättigendes Gericht für jeden Anlass."
+        "de": "Eine köstliche Variation des Stroganoff, bei der Pilze in einer cremigen Sauce serviert werden. Ein sättigendes Gericht für jeden Anlass.",
+        "cs": "Delikátní variace na Stroganoff, kde jsou houby v bohaté krémové omáčce. Spokojené a pohodlné jídlo pro každou příležitost.",
+        "ru": "Вкусная вариация Строганова, с грибами в богатом, кремовом соусе. Удовлетворяющее и уютное блюдо для любого случая.",
+        "pl": "Pyszna wariacja Stroganoffa, w której grzyby znajdują się w bogatym, kremowym sosie. Satysfakcjonujące i komfortowe danie na każdą okazję.",
+        "it": "Una deliziosa variazione dello Stroganoff, con funghi in una ricca e cremosa salsa. Un piatto soddisfacente e confortevole per ogni occasione.",
+        "es": "Una deliciosa variación del Stroganoff, con champiñones en una rica salsa cremosa. Un plato satisfactorio y reconfortante para cualquier ocasión.",
+        "fr": "Une délicieuse variation du Stroganoff, avec des champignons dans une sauce crémeuse et riche. Un plat satisfaisant et réconfortant pour toutes les occasions.",
+        "zh": "美味的斯特罗根诺夫变种，蘑菇配上浓郁奶油酱汁。是任何场合下都令人满足和舒适的菜肴。",
+        "ja": "豊かなクリーミーソースでキノコを使った美味しいストロガノフのバリエーション。どんな場面でも満足でき、快適な料理です。",
+        "pt": "Uma deliciosa variação do Stroganoff, com cogumelos em um molho cremoso e rico. Um prato satisfatório e reconfortante para qualquer ocasião.",
+        "zh-cn": "美味的斯特罗根诺夫变种，蘑菇配上浓郁奶油酱汁。是任何场合下都令人满足和舒适的菜肴。"
     },
     "CookZ_MushroomStroganoffCan_Opened_DS": {
         "en": "@CookZ_MushroomStroganoffCan_DS @&CookZ_EatUp"
     },
     "CookZ_BeefStewCan_DN": {
         "en": "Beef Stew",
-        "de": "Rindfleischeintopf"
+        "de": "Rindfleischeintopf",
+        "cs": "Hovězí guláš",
+        "ru": "Тушеная говядина",
+        "pl": "Gulasz wołowy",
+        "it": "Stufato di manzo",
+        "es": "Estofado de carne",
+        "fr": "Ragoût de boeuf",
+        "zh": "炖牛肉",
+        "ja": "ビーフシチュー",
+        "pt": "Ensopado de carne",
+        "zh-cn": "炖牛肉"
     },
     "CookZ_BeefStewCan_DS": {
         "en": "A savory beef stew with chunks of meat, peppers, tomatoes, and potatoes, creating a comforting and satisfying dish.",
-        "de": "Ein würziger Rindfleischeintopf mit Fleischstücken, Paprika, Tomaten und Kartoffeln, der ein wohltuendes und sättigendes Gericht ergibt."
+        "de": "Ein würziger Rindfleischeintopf mit Fleischstücken, Paprika, Tomaten und Kartoffeln, der ein wohltuendes und sättigendes Gericht ergibt.",
+        "cs": "Sytý hovězí guláš s kousky masa, paprikou, rajčaty a brambory, který vytváří pohodlné a uspokojivé jídlo.",
+        "ru": "Сытное тушеное мясо с кусочками мяса, перцем, помидорами и картофелем, создающее уютное и сытное блюдо.",
+        "pl": "Pyszny gulasz wołowy z kawałkami mięsa, papryką, pomidorami i ziemniakami, tworzący pocieszające i sycące danie.",
+        "it": "Un gustoso stufato di manzo con pezzi di carne, peperoni, pomodori e patate, creando un piatto confortante e soddisfacente.",
+        "es": "Un sabroso estofado de carne con trozos de carne, pimientos, tomates y papas, creando un plato reconfortante y satisfactorio.",
+        "fr": "Un ragoût de boeuf savoureux avec des morceaux de viande, des poivrons, des tomates et des pommes de terre, créant un plat réconfortant et satisfaisant.",
+        "zh": "一道美味的炖牛肉，配有肉块、辣椒、番茄和土豆，创造出一个令人舒适和满足的菜肴。",
+        "ja": "肉の塊、ピーマン、トマト、ジャガイモを使った美味しいビーフシチュー。心地よく満足感のある料理です。",
+        "pt": "Um ensopado de carne saboroso com pedaços de carne, pimentões, tomates e batatas, criando um prato reconfortante e satisfatório.",
+        "zh-cn": "一道美味的炖牛肉，配有肉块、辣椒、番茄和土豆，创造出一个令人舒适和满足的菜肴。"
     },
     "CookZ_BeefStewCan_Opened_DS": {
         "en": "@CookZ_BeefStewCan_DS @&CookZ_EatUp"
     },
     "CookZ_BoneBrothCan_DN": {
         "en": "Bone Broth",
-        "de": "Knochenbrühe"
+        "de": "Knochenbrühe",
+        "cs": "Kostní vývar",
+        "ru": "Костный бульон",
+        "pl": "Rosół kostny",
+        "it": "Brodo di ossa",
+        "es": "Caldo de huesos",
+        "fr": "Bouillon d'os",
+        "zh": "骨头汤",
+        "ja": "骨スープ",
+        "pt": "Caldo de ossos",
+        "zh-cn": "骨头汤"
     },
     "CookZ_BoneBrothCan_DS": {
         "en": "A rich, savory broth created by simmering bones in water, resulting in a deep, flavorful liquid.",
-        "de": "Eine reichhaltige, herzhafte Brühe, die durch das Köcheln von Knochen in Wasser entsteht und einen tiefen, aromatischen Geschmack bietet."
+        "de": "Eine reichhaltige, herzhafte Brühe, die durch das Köcheln von Knochen in Wasser entsteht und einen tiefen, aromatischen Geschmack bietet.",
+        "cs": "Bohatý, chutný vývar vytvořený vařením kostí ve vodě, což vede k hluboké, aromatické tekutině.",
+        "ru": "Богатый, насыщенный бульон, приготовленный путем варки костей в воде, дающий глубокую, ароматную жидкость.",
+        "pl": "Bogaty, aromatyczny rosół stworzony przez gotowanie kości w wodzie, co daje głęboki, pełny smak.",
+        "it": "Un brodo ricco e saporito creato facendo sobbollire le ossa in acqua, creando un liquido profondo e ricco di sapore.",
+        "es": "Un caldo rico y sabroso creado al cocer huesos en agua, resultando en un líquido profundo y lleno de sabor.",
+        "fr": "Un bouillon riche et savoureux créé en faisant mijoter des os dans l'eau, donnant un liquide profond et plein de saveur.",
+        "zh": "一种通过将骨头在水中慢炖而成的浓郁汤底，形成深沉、富有风味的液体。",
+        "ja": "骨を水で煮込んで作られる豊かで旨味のあるスープ。深みのある、風味豊かな液体が得られます。",
+        "pt": "Um caldo rico e saboroso criado ao ferver ossos em água, resultando em um líquido profundo e cheio de sabor.",
+        "zh-cn": "一种通过将骨头在水中慢炖而成的浓郁汤底，形成深沉、富有风味的液体。"
     },
     "CookZ_BoneBrothCan_Opened_DS": {
         "en": "@CookZ_BoneBrothCan_DS @&CookZ_EatUp"
     },
     "CookZ_AppleMarmaladeCan_DN": {
         "en": "Apple Marmalade",
-        "de": "Apfelmarmelade"
+        "de": "Apfelmarmelade",
+        "cs": "Jablečná marmeláda",
+        "ru": "Яблочная мармелада",
+        "pl": "Marmolada jabłkowa",
+        "it": "Marmellata di mele",
+        "es": "Mermelada de manzana",
+        "fr": "Marmelade de pomme",
+        "zh": "苹果果酱",
+        "ja": "リンゴマーマレード",
+        "pt": "Marmelada de maçã",
+        "zh-cn": "苹果果酱"
     },
     "CookZ_AppleMarmaladeCan_DS": {
         "en": "A sweet spread made from cooked apples, offering a mild, fruity flavor.",
-        "de": "Ein süßer Aufstrich aus gekochten Äpfeln, der einen milden, fruchtigen Geschmack bietet."
+        "de": "Ein süßer Aufstrich aus gekochten Äpfeln, der einen milden, fruchtigen Geschmack bietet.",
+        "cs": "Sladký džem vyrobený z vařených jablek, který nabízí jemnou, ovocnou chuť.",
+        "ru": "Сладкий намаз из вареных яблок с мягким, фруктовым вкусом.",
+        "pl": "Słodki dżem z gotowanych jabłek o łagodnym, owocowym smaku.",
+        "it": "Una dolce marmellata fatta con mele cotte, dal sapore delicato e fruttato.",
+        "es": "Una dulce mermelada hecha con manzanas cocidas, ofreciendo un sabor suave y afrutado.",
+        "fr": "Une pâte à tartiner sucrée à base de pommes cuites, offrant une saveur douce et fruitée.",
+        "zh": "由煮熟的苹果制成的甜美果酱，带有温和的水果风味。",
+        "ja": "煮たリンゴから作られた甘いスプレッドで、穏やかなフルーティーな風味があります。",
+        "pt": "Uma doce geleia feita de maçãs cozidas, oferecendo um sabor suave e frutado.",
+        "zh-cn": "由煮熟的苹果制成的甜美果酱，带有温和的水果风味。"
     },
     "CookZ_AppleMarmaladeCan_Opened_DS": {
         "en": "@CookZ_AppleMarmaladeCan_DS @&CookZ_EatUp"
     },
     "CookZ_PlumMarmaladeCan_DN": {
         "en": "Plum Marmalade",
-        "de": "Pflaumenmarmelade"
+        "de": "Pflaumenmarmelade",
+        "cs": "Švestková marmeláda",
+        "ru": "Сливовая мармелада",
+        "pl": "Marmolada śliwkowa",
+        "it": "Marmellata di prugne",
+        "es": "Mermelada de ciruela",
+        "fr": "Marmelade de prunes",
+        "zh": "李子果酱",
+        "ja": "プラムマーマレード",
+        "pt": "Marmelada de ameixa",
+        "zh-cn": "李子果酱"
     },
     "CookZ_PlumMarmaladeCan_DS": {
         "en": "A sweet, hearty spread made from plums, providing a strong fruity flavor and a good source of energy. It keeps well and lasts long.",
-        "de": "Ein süßer, nahrhafter Aufstrich aus Pflaumen, der einen kräftigen Fruchtgeschmack bietet und lange haltbar ist."
+        "de": "Ein süßer, nahrhafter Aufstrich aus Pflaumen, der einen kräftigen Fruchtgeschmack bietet und lange haltbar ist.",
+        "cs": "Sladký, výživný džem z švestek, který nabízí silnou ovocnou chuť a je dobrým zdrojem energie. Dobře se uchovává a dlouho vydrží.",
+        "ru": "Сладкая, питательная паста из слив, дающая яркий фруктовый вкус и являющаяся хорошим источником энергии. Хорошо хранится и долго сохраняется.",
+        "pl": "Słodka, pożywna marmolada ze śliwek, oferująca silny owocowy smak i będąca dobrym źródłem energii. Dobrze się przechowuje i długo trwa.",
+        "it": "Una dolce e nutriente marmellata di prugne, che offre un forte sapore fruttato e una buona fonte di energia. Si conserva bene e dura a lungo.",
+        "es": "Una dulce y nutritiva mermelada de ciruelas, que ofrece un fuerte sabor afrutado y una buena fuente de energía. Se conserva bien y dura mucho tiempo.",
+        "fr": "Une pâte à tartiner douce et nourrissante faite de prunes, offrant un goût fruité fort et une bonne source d'énergie. Se conserve bien et dure longtemps.",
+        "zh": "由李子制成的甜美且营养丰富的果酱，提供浓烈的水果风味和丰富的能量来源。它能很好地保存并持久。",
+        "ja": "プラムから作られた甘くて栄養豊富なスプレッドで、強いフルーティーな風味とエネルギー源を提供します。保存が良好で長持ちします。",
+        "pt": "Uma doce e nutritiva marmelada de ameixa, oferecendo um sabor frutado forte e uma boa fonte de energia. Conservar bem e dura muito tempo.",
+        "zh-cn": "由李子制成的甜美且营养丰富的果酱，提供浓烈的水果风味和丰富的能量来源。它能很好地保存并持久。"
     },
     "CookZ_PlumMarmaladeCan_Opened_DS": {
         "en": "@CookZ_PlumMarmaladeCan_DS @&CookZ_EatUp"
     },
     "CookZ_PearMarmaladeCan_DN": {
         "en": "Pear Marmalade",
-        "de": "Birnenmarmelade"
+        "de": "Birnenmarmelade",
+        "cs": "Hrušková marmeláda",
+        "ru": "Грушевое варенье",
+        "pl": "Marmolada gruszkowa",
+        "it": "Marmellata di pere",
+        "es": "Mermelada de pera",
+        "fr": "Marmelade de poire",
+        "zh": "梨子果酱",
+        "ja": "ペアマーマレード",
+        "pt": "Marmelada de pera",
+        "zh-cn": "梨子果酱"
     },
     "CookZ_PearMarmaladeCan_DS": {
         "en": "A sweet spread made from pears, offering a smooth flavor with a subtle fruitiness, and it stores well for long periods.",
-        "de": "Ein süßer Aufstrich aus Birnen, der einen milden, fruchtigen Geschmack bietet und gut lagerbar ist."
+        "de": "Ein süßer Aufstrich aus Birnen, der einen milden, fruchtigen Geschmack bietet und gut lagerbar ist.",
+        "cs": "Sladký džem z hrušek, který nabízí jemnou chuť s náznakem ovocnosti a dobře se uchovává na dlouhou dobu.",
+        "ru": "Сладкая паста из груш, предлагающая мягкий вкус с легкой фруктовой ноткой, хорошо хранится длительное время.",
+        "pl": "Słodki dżem z gruszek, oferujący gładki smak z subtelną owocowością i dobrze się przechowuje przez długi czas.",
+        "it": "Una dolce marmellata fatta con pere, che offre un sapore morbido con una sottile fruttosità, e si conserva bene per lunghi periodi.",
+        "es": "Una dulce mermelada hecha con peras, ofreciendo un sabor suave con una sutileza afrutada, y se conserva bien durante mucho tiempo.",
+        "fr": "Une pâte à tartiner sucrée à base de poires, offrant une saveur douce avec une subtile touche fruitée, et se conserve bien pendant longtemps.",
+        "zh": "由梨子制成的甜美果酱，提供柔和的风味和微妙的水果味，并且能够长时间保存。",
+        "ja": "梨から作られた甘いスプレッドで、滑らかな風味と微妙なフルーティーさがあり、長期間保存できます。",
+        "pt": "Uma doce geleia feita de peras, oferecendo um sabor suave com uma sutileza frutada, e conserva-se bem por longos períodos.",
+        "zh-cn": "由梨子制成的甜美果酱，提供柔和的风味和微妙的水果味，并且能够长时间保存。"
     },
     "CookZ_PearMarmaladeCan_Opened_DS": {
         "en": "@CookZ_PearMarmaladeCan_DS @&CookZ_EatUp"
@@ -483,107 +1353,367 @@
 
     "CookZ_Beef_Sausage_DN": {
         "en": "Beef Sausage",
-        "de": "Rindswurst"
+        "de": "Rindswurst",
+        "cs": "Hovězí klobása",
+        "ru": "Говяжья колбаса",
+        "pl": "Kiełbasa wołowa",
+        "it": "Salsiccia di manzo",
+        "es": "Salchicha de res",
+        "fr": "Saucisse de boeuf",
+        "zh": "牛肉香肠",
+        "ja": "牛肉ソーセージ",
+        "pt": "Linguiça de carne de vaca",
+        "zh-cn": "牛肉香肠"
     },
     "CookZ_Beef_Sausage_DS": {
         "en": "A rich, filling sausage made from beef, designed to provide sustained energy and last through the toughest conditions.",
-        "de": "Eine kräftige, sättigende Wurst aus Rindfleisch, die für langanhaltende Energie sorgt und auch in schwierigen Zeiten nicht an Nährwert verliert."
+        "de": "Eine kräftige, sättigende Wurst aus Rindfleisch, die für langanhaltende Energie sorgt und auch in schwierigen Zeiten nicht an Nährwert verliert.",
+        "cs": "Bohatá, výživná klobása z hovězího masa, navržená tak, aby poskytovala trvalou energii a vydržela i v nejtěžších podmínkách.",
+        "ru": "Насыщенная, сытная колбаса из говядины, предназначенная для обеспечения продолжительной энергии и выдерживающая самые трудные условия.",
+        "pl": "Bogata, sycąca kiełbasa z wołowiny, zaprojektowana w celu zapewnienia długotrwałej energii i przetrwania w najcięższych warunkach.",
+        "it": "Una salsiccia ricca e sostanziosa fatta con carne di manzo, progettata per fornire energia duratura e resistere alle condizioni più difficili.",
+        "es": "Una salchicha rica y sustanciosa hecha de carne de res, diseñada para proporcionar energía sostenida y durar en las condiciones más duras.",
+        "fr": "Une saucisse riche et nourrissante à base de boeuf, conçue pour fournir de l'énergie durable et durer dans les conditions les plus difficiles.",
+        "zh": "一款富有营养、充实的牛肉香肠，旨在提供持久的能量，能够在最艰难的条件下保持。",
+        "ja": "牛肉で作られた豊かで満腹感のあるソーセージで、持続的なエネルギーを提供し、最も過酷な状況にも耐えるように設計されています。",
+        "pt": "Uma linguiça rica e substancial feita de carne bovina, projetada para fornecer energia sustentada e resistir às condições mais difíceis.",
+        "zh-cn": "一款富有营养、充实的牛肉香肠，旨在提供持久的能量，能够在最艰难的条件下保持。"
     },
     "CookZ_Chicken_Sausage_DN": {
         "en": "Chicken Sausage",
-        "de": "Hühnerwurst"
+        "de": "Hühnerwurst",
+        "cs": "Kuřecí klobása",
+        "ru": "Куриная колбаса",
+        "pl": "Kiełbasa drobiowa",
+        "it": "Salsiccia di pollo",
+        "es": "Salchicha de pollo",
+        "fr": "Saucisse de poulet",
+        "zh": "鸡肉香肠",
+        "ja": "チキンソーセージ",
+        "pt": "Linguiça de frango",
+        "zh-cn": "鸡肉香肠"
     },
     "CookZ_Chicken_Sausage_DS": {
         "en": "A lean and nutrient-dense sausage made from chicken, offering a reliable source of energy that's easy to store and transport.",
-        "de": "Eine magere und nährstoffreiche Wurst aus Hähnchen, die eine zuverlässige Energiequelle bietet und sich gut lagern und transportieren lässt."
+        "de": "Eine magere und nährstoffreiche Wurst aus Hähnchen, die eine zuverlässige Energiequelle bietet und sich gut lagern und transportieren lässt.",
+        "cs": "Nízkotučná a výživná klobása z kuřecího masa, která poskytuje spolehlivý zdroj energie a je snadno skladovatelná a přenosná.",
+        "ru": "Постная и питательная колбаса из куриного мяса, предлагающая надежный источник энергии, который легко хранить и транспортировать.",
+        "pl": "Chuda i bogata w składniki odżywcze kiełbasa z kurczaka, oferująca niezawodne źródło energii, łatwa do przechowywania i transportu.",
+        "it": "Una salsiccia magra e ricca di nutrienti fatta con pollo, che offre una fonte affidabile di energia ed è facile da conservare e trasportare.",
+        "es": "Una salchicha magra y densa en nutrientes hecha de pollo, que ofrece una fuente confiable de energía fácil de almacenar y transportar.",
+        "fr": "Une saucisse maigre et riche en nutriments à base de poulet, offrant une source fiable d'énergie et facile à stocker et transporter.",
+        "zh": "一种低脂肪、富含营养的鸡肉香肠，提供可靠的能量来源，便于储存和运输。",
+        "ja": "鶏肉で作られた低脂肪で栄養豊富なソーセージで、信頼できるエネルギー源を提供し、保存や輸送が容易です。",
+        "pt": "Uma linguiça magra e rica em nutrientes feita de frango, oferecendo uma fonte confiável de energia que é fácil de armazenar e transportar.",
+        "zh-cn": "一种低脂肪、富含营养的鸡肉香肠，提供可靠的能量来源，便于储存和运输。"
     },
     "CookZ_Pig_Sausage_DN": {
         "en": "Pig Sausage",
-        "de": "Schweinswurst"
+        "de": "Schweinswurst",
+        "cs": "Vepřová klobása",
+        "ru": "Свиная колбаса",
+        "pl": "Kiełbasa wieprzowa",
+        "it": "Salsiccia di maiale",
+        "es": "Salchicha de cerdo",
+        "fr": "Saucisse de porc",
+        "zh": "猪肉香肠",
+        "ja": "豚肉ソーセージ",
+        "pt": "Linguiça de porco",
+        "zh-cn": "猪肉香肠"
     },
     "CookZ_Pig_Sausage_DS": {
         "en": "A rich, satisfying sausage made from pork, providing the necessary fuel to keep you going in the hardest of times.",
-        "de": "Eine reichhaltige, sättigende Wurst aus Schwein, die die nötige Energie liefert, um dich auch in schwierigen Zeiten durchzuhalten."
+        "de": "Eine reichhaltige, sättigende Wurst aus Schwein, die die nötige Energie liefert, um dich auch in schwierigen Zeiten durchzuhalten.",
+        "cs": "Bohatá, uspokojivá klobása z vepřového masa, která poskytuje potřebné palivo pro pokračování v těžkých časech.",
+        "ru": "Насыщенная, удовлетворительная колбаса из свинины, обеспечивающая необходимое топливо, чтобы поддерживать вас в самых трудных условиях.",
+        "pl": "Bogata, satysfakcjonująca kiełbasa z wieprzowiny, dostarczająca niezbędnej energii, aby utrzymać cię w trudnych czasach.",
+        "it": "Una salsiccia ricca e soddisfacente fatta con carne di maiale, che fornisce il carburante necessario per andare avanti nei momenti più difficili.",
+        "es": "Una salchicha rica y satisfactoria hecha de cerdo, proporcionando el combustible necesario para seguir adelante en los momentos más difíciles.",
+        "fr": "Une saucisse riche et satisfaisante à base de porc, fournissant le carburant nécessaire pour continuer dans les moments les plus difficiles.",
+        "zh": "一款富有营养、令人满足的猪肉香肠，提供在最艰难时期保持活力所需的能量。",
+        "ja": "豚肉で作られた豊かで満足感のあるソーセージで、最も過酷な状況でも進み続けるためのエネルギー源を提供します。",
+        "pt": "Uma linguiça rica e satisfatória feita de carne de porco, fornecendo o combustível necessário para continuar nos tempos mais difíceis.",
+        "zh-cn": "一款富有营养、令人满足的猪肉香肠，提供在最艰难时期保持活力所需的能量。"
     },
     "CookZ_Goat_Sausage_DN": {
         "en": "Goat Sausage",
-        "de": "Ziegenwurst"
+        "de": "Ziegenwurst",
+        "cs": "Kozí klobása",
+        "ru": "Козья колбаса",
+        "pl": "Kiełbasa kozia",
+        "it": "Salsiccia di capra",
+        "es": "Salchicha de cabra",
+        "fr": "Saucisse de chèvre",
+        "zh": "山羊香肠",
+        "ja": "ヤギ肉ソーセージ",
+        "pt": "Linguiça de cabra",
+        "zh-cn": "山羊香肠"
     },
     "CookZ_Goat_Sausage_DS": {
         "en": "A unique and flavorful sausage made from goat meat, compact and packed with protein, perfect for long-term storage.",
-        "de": "Eine einzigartige und aromatische Wurst aus Ziegenfleisch, kompakt und voller Eiweiß, ideal für die Vorratshaltung."
+        "de": "Eine einzigartige und aromatische Wurst aus Ziegenfleisch, kompakt und voller Eiweiß, ideal für die Vorratshaltung.",
+        "cs": "Jedinečná a chutná klobása z kozího masa, kompaktní a plná bílkovin, ideální pro dlouhodobé skladování.",
+        "ru": "Уникальная и ароматная колбаса из козьего мяса, компактная и насыщенная белком, идеально подходящая для долгосрочного хранения.",
+        "pl": "Unikalna i smaczna kiełbasa z mięsa koziego, zwarta i pełna białka, idealna do długoterminowego przechowywania.",
+        "it": "Una salsiccia unica e saporita fatta con carne di capra, compatta e ricca di proteine, perfetta per la conservazione a lungo termine.",
+        "es": "Una salchicha única y sabrosa hecha de carne de cabra, compacta y llena de proteínas, perfecta para almacenamiento a largo plazo.",
+        "fr": "Une saucisse unique et savoureuse à base de viande de chèvre, compacte et riche en protéines, parfaite pour le stockage à long terme.",
+        "zh": "一种独特且风味十足的山羊肉香肠，紧凑且富含蛋白质，非常适合长期储存。",
+        "ja": "ユニークで風味豊かなヤギ肉のソーセージで、コンパクトでタンパク質が豊富、長期保存に最適です。",
+        "pt": "Uma linguiça única e saborosa feita de carne de cabra, compacta e rica em proteínas, perfeita para armazenamento a longo prazo.",
+        "zh-cn": "一种独特且风味十足的山羊肉香肠，紧凑且富含蛋白质，非常适合长期储存。"
     },
     "CookZ_Bear_Sausage_DN": {
         "en": "Bear Sausage",
-        "de": "Bärenwurst"
+        "de": "Bärenwurst",
+        "cs": "Medvědí klobása",
+        "ru": "Медвежья колбаса",
+        "pl": "Kiełbasa z niedźwiedzia",
+        "it": "Salsiccia di orso",
+        "es": "Salchicha de oso",
+        "fr": "Saucisse d'ours",
+        "zh": "熊肉香肠",
+        "ja": "クマ肉ソーセージ",
+        "pt": "Linguiça de urso",
+        "zh-cn": "熊肉香肠"
     },
     "CookZ_Bear_Sausage_DS": {
         "en": "A bold sausage made from bear meat, packed with rich flavors and energy, sure to keep you fueled for the toughest challenges.",
-        "de": "Eine kräftige Wurst aus Bärenfleisch, vollgepackt mit reichhaltigem Geschmack und Energie, die dich durch die härtesten Herausforderungen bringt."
+        "de": "Eine kräftige Wurst aus Bärenfleisch, vollgepackt mit reichhaltigem Geschmack und Energie, die dich durch die härtesten Herausforderungen bringt.",
+        "cs": "Odvážná klobása z medvědího masa, plná bohaté chuti a energie, která tě udrží v chodu i v těch nejtěžších výzvách.",
+        "ru": "Смелая колбаса из медвежьего мяса, наполненная насыщенными вкусами и энергией, которая поможет вам преодолеть самые трудные испытания.",
+        "pl": "Odważna kiełbasa z mięsa niedźwiedzia, pełna bogatych smaków i energii, która pomoże ci przetrwać w najcięższych wyzwaniach.",
+        "it": "Una salsiccia audace fatta con carne di orso, ricca di sapori intensi ed energia, che ti manterrà energico per affrontare le sfide più difficili.",
+        "es": "Una salchicha audaz hecha de carne de oso, llena de sabores ricos y energía, que te mantendrá abastecido para los desafíos más difíciles.",
+        "fr": "Une saucisse audacieuse faite de viande d'ours, pleine de saveurs riches et d'énergie, qui vous permettra de relever les défis les plus difficiles.",
+        "zh": "一款大胆的熊肉香肠，充满丰富的风味和能量，帮助你应对最艰难的挑战。",
+        "ja": "熊肉で作られた大胆なソーセージで、豊かな風味とエネルギーが詰まっており、最も困難な挑戦を乗り越えるための力を提供します。",
+        "pt": "Uma linguiça ousada feita de carne de urso, cheia de sabores ricos e energia, que vai te manter abastecido para os desafios mais difíceis.",
+        "zh-cn": "一款大胆的熊肉香肠，充满丰富的风味和能量，帮助你应对最艰难的挑战。"
     },
     "CookZ_Sheep_Sausage_DN": {
         "en": "Sheep Sausage",
-        "de": "Schafwurst"
+        "de": "Schafwurst",
+        "cs": "Ovčí klobása",
+        "ru": "Овечья колбаса",
+        "pl": "Kiełbasa jagnięca",
+        "it": "Salsiccia di pecora",
+        "es": "Salchicha de oveja",
+        "fr": "Saucisse d'agneau",
+        "zh": "羊肉香肠",
+        "ja": "羊肉ソーセージ",
+        "pt": "Linguiça de ovelha",
+        "zh-cn": "羊肉香肠"
     },
     "CookZ_Sheep_Sausage_DS": {
         "en": "A tender yet hearty sausage made from sheep, offering a filling and long-lasting energy boost when supplies run low.",
-        "de": "Eine würzige Wurst aus Schaf, reich an Geschmack und Eiweiß, die langanhaltende Nahrung für längere Zeit ohne frische Vorräte bietet."
+        "de": "Eine würzige Wurst aus Schaf, reich an Geschmack und Eiweiß, die langanhaltende Nahrung für längere Zeit ohne frische Vorräte bietet.",
+        "cs": "Měkká, ale vydatná klobása z ovčího masa, která poskytuje výživný a dlouhotrvající energetický náboj, když zásoby docházejí.",
+        "ru": "Нежная, но сытная колбаса из овечьего мяса, обеспечивающая питательную и долговечную энергию, когда запасы иссякают.",
+        "pl": "Delikatna, ale sycąca kiełbasa z jagnięciny, która zapewnia sycącą i długotrwałą energię, gdy zapasy zaczynają się kończyć.",
+        "it": "Una salsiccia tenera ma sostanziosa fatta con carne di pecora, che offre un apporto energetico nutriente e duraturo quando le scorte scarseggiano.",
+        "es": "Una salchicha tierna pero sustanciosa hecha de carne de oveja, que ofrece un impulso energético nutritivo y duradero cuando los suministros escasean.",
+        "fr": "Une saucisse tendre mais nourrissante à base de viande de mouton, offrant un apport énergétique durable lorsque les réserves diminuent.",
+        "zh": "一种柔嫩而充实的羊肉香肠，当物资不足时提供持久的能量补充。",
+        "ja": "柔らかくて満腹感のある羊肉ソーセージで、物資が不足したときに長続きするエネルギーを提供します。",
+        "pt": "Uma linguiça macia, mas substancial feita de carne de ovelha, que oferece um impulso energético duradouro e nutritivo quando os suprimentos estão baixos.",
+        "zh-cn": "一种柔嫩而充实的羊肉香肠，当物资不足时提供持久的能量补充。"
     },
     "CookZ_Boar_Sausage_DN": {
         "en": "Boar Sausage",
-        "de": "Wildschweinwurst"
+        "de": "Wildschweinwurst",
+        "cs": "Klobása z divočáka",
+        "ru": "Колбаса из кабана",
+        "pl": "Kiełbasa z dzika",
+        "it": "Salsiccia di cinghiale",
+        "es": "Salchicha de jabalí",
+        "fr": "Saucisse de sanglier",
+        "zh": "野猪香肠",
+        "ja": "イノシシソーセージ",
+        "pt": "Linguiça de javali",
+        "zh-cn": "野猪香肠"
     },
     "CookZ_Boar_Sausage_DS": {
         "en": "A robust sausage made from wild boar, packed with rich, gamey flavor and long-lasting energy for the harshest conditions.",
-        "de": "Eine kräftige Wurst aus Wildschwein, vollgepackt mit intensivem, wildem Geschmack und langanhaltender Energie für die härtesten Bedingungen."
+        "de": "Eine kräftige Wurst aus Wildschwein, vollgepackt mit intensivem, wildem Geschmack und langanhaltender Energie für die härtesten Bedingungen.",
+        "cs": "Robustní klobása z divočáka, plná intenzivní, divoké chuti a dlouhotrvající energie pro nejtěžší podmínky.",
+        "ru": "Надежная колбаса из кабана, насыщенная богатым диким вкусом и долгосрочной энергией, подходящая для самых суровых условий.",
+        "pl": "Solidna kiełbasa z dzika, pełna intensywnego, dzikiego smaku i długotrwałej energii, idealna na najtrudniejsze warunki.",
+        "it": "Una salsiccia robusta fatta con carne di cinghiale, ricca di sapore selvatico e di energia duratura per le condizioni più difficili.",
+        "es": "Una salchicha robusta hecha de jabalí, llena de un rico sabor a caza y energía duradera para las condiciones más difíciles.",
+        "fr": "Une saucisse robuste à base de sanglier, riche en saveur sauvage et en énergie durable pour les conditions les plus difficiles.",
+        "zh": "一种由野猪制成的坚固香肠，充满浓郁的野味和持久的能量，适应最艰苦的环境。",
+        "ja": "野生イノシシから作られた力強いソーセージで、豊かな野生の風味と長時間持続するエネルギーを提供します。",
+        "pt": "Uma linguiça robusta feita de javali, rica em sabor selvagem e energia duradoura para as condições mais difíceis.",
+        "zh-cn": "一种由野猪制成的坚固香肠，充满浓郁的野味和持久的能量，适应最艰苦的环境。"
     },
     "CookZ_Deer_Sausage_DN": {
         "en": "Deer Sausage",
-        "de": "Rehwurst"
+        "de": "Rehwurst",
+        "cs": "Klobása z jelena",
+        "ru": "Олений колбаса",
+        "pl": "Kiełbasa z jelenia",
+        "it": "Salsiccia di cervo",
+        "es": "Salchicha de ciervo",
+        "fr": "Saucisse de cerf",
+        "zh": "鹿肉香肠",
+        "ja": "鹿肉ソーセージ",
+        "pt": "Linguiça de veado",
+        "zh-cn": "鹿肉香肠"
     },
     "CookZ_Deer_Sausage_DS": {
         "en": "A lean, flavorful sausage made from deer, packed with protein and energy to keep you moving in tough times.",
-        "de": "Eine magere, aromatische Wurst aus Hirschfleisch, vollgepackt mit Eiweiß und Energie, um dich in schwierigen Zeiten am Laufen zu halten."
+        "de": "Eine magere, aromatische Wurst aus Hirschfleisch, vollgepackt mit Eiweiß und Energie, um dich in schwierigen Zeiten am Laufen zu halten.",
+        "cs": "Klobása z jelena, nízkotučná a chutná, plná bílkovin a energie, která tě udrží v pohybu i v těžkých časech.",
+        "ru": "Постная, ароматная колбаса из оленины, полная белка и энергии, которая помогает вам двигаться в трудные времена.",
+        "pl": "Chuda, smaczna kiełbasa z jelenia, pełna białka i energii, abyś mógł się poruszać w trudnych czasach.",
+        "it": "Una salsiccia magra e saporita fatta con carne di cervo, ricca di proteine e di energia per mantenerti in movimento nei momenti difficili.",
+        "es": "Una salchicha magra y sabrosa hecha de carne de ciervo, llena de proteínas y energía para mantenerte en movimiento en tiempos difíciles.",
+        "fr": "Une saucisse maigre et savoureuse faite de viande de cerf, riche en protéines et en énergie pour vous maintenir en mouvement pendant les moments difficiles.",
+        "zh": "由鹿肉制成的瘦肉香肠，富含蛋白质和能量，帮助你在困难时期保持前进。",
+        "ja": "鹿肉から作られた低脂肪で風味豊かなソーセージで、タンパク質とエネルギーが豊富で、困難な時期でも動き続けることができます。",
+        "pt": "Uma linguiça magra e saborosa feita de carne de veado, rica em proteínas e energia para mantê-lo em movimento nos momentos difíceis.",
+        "zh-cn": "由鹿肉制成的瘦肉香肠，富含蛋白质和能量，帮助你在困难时期保持前进。"
     },
     "CookZ_Hare_Sausage_DN": {
         "en": "Hare Sausage",
-        "de": "Wildkaninchenwurst"
+        "de": "Wildkaninchenwurst",
+        "cs": "Klobása z divokého králíka",
+        "ru": "Кроличья колбаса",
+        "pl": "Kiełbasa z zająca",
+        "it": "Salsiccia di lepre",
+        "es": "Salchicha de liebre",
+        "fr": "Saucisse de lièvre",
+        "zh": "野兔香肠",
+        "ja": "野ウサギソーセージ",
+        "pt": "Linguiça de lebre",
+        "zh-cn": "野兔香肠"
     },
     "CookZ_Hare_Sausage_DS": {
         "en": "A hearty sausage made from hare, rich in protein and perfect for withstanding long stretches without fresh food.",
-        "de": "Eine magere, aromatische Wurst aus Hasenfleisch, die eine kompakte und langanhaltende Energiequelle für das Überleben bietet."
+        "de": "Eine magere, aromatische Wurst aus Hasenfleisch, die eine kompakte und langanhaltende Energiequelle für das Überleben bietet.",
+        "cs": "Sytá klobása z králičího masa, plná bílkovin a ideální pro dlouhé období bez čerstvého jídla.",
+        "ru": "Сытная колбаса из зайчатины, богатая белками и идеально подходящая для долгих промежутков времени без свежей пищи.",
+        "pl": "Syta kiełbasa z mięsa zająca, bogata w białko, doskonała na długie okresy bez świeżego jedzenia.",
+        "it": "Una salsiccia sostanziosa fatta con carne di lepre, ricca di proteine e perfetta per resistere a lunghi periodi senza cibo fresco.",
+        "es": "Una salchicha sustanciosa hecha de carne de liebre, rica en proteínas y perfecta para resistir largos períodos sin comida fresca.",
+        "fr": "Une saucisse copieuse à base de viande de lièvre, riche en protéines et parfaite pour supporter de longues périodes sans nourriture fraîche.",
+        "zh": "由野兔肉制成的丰盛香肠，富含蛋白质，完美适应长时间没有新鲜食物的情况。",
+        "ja": "ウサギ肉で作られたボリューム満点のソーセージで、タンパク質が豊富で、新鮮な食べ物がなくても長時間耐えることができます。",
+        "pt": "Uma linguiça substancial feita de carne de lebre, rica em proteínas e perfeita para suportar longos períodos sem comida fresca.",
+        "zh-cn": "由野兔肉制成的丰盛香肠，富含蛋白质，完美适应长时间没有新鲜食物的情况。"
     },
     "CookZ_Wolf_Sausage_DN": {
         "en": "Wolf Sausage",
-        "de": "Wolfswurst"
+        "de": "Wolfswurst",
+        "cs": "Klobása z vlka",
+        "ru": "Волчья колбаса",
+        "pl": "Kiełbasa wilcza",
+        "it": "Salsiccia di lupo",
+        "es": "Salchicha de lobo",
+        "fr": "Saucisse de loup",
+        "zh": "狼肉香肠",
+        "ja": "オオカミソーセージ",
+        "pt": "Linguiça de lobo",
+        "zh-cn": "狼肉香肠"
     },
     "CookZ_Wolf_Sausage_DS": {
         "en": "A hearty, wild sausage from wolf, designed to provide lasting nutrition and keep you strong when food is scarce.",
-        "de": "Eine herzhafte, wilde Wurst aus Wolfsfleisch, die langanhaltende Nährstoffe bietet und dich stark hält, wenn die Vorräte knapp sind."
+        "de": "Eine herzhafte, wilde Wurst aus Wolfsfleisch, die langanhaltende Nährstoffe bietet und dich stark hält, wenn die Vorräte knapp sind.",
+        "cs": "Sytá, divoká klobása z vlka, navržená tak, aby poskytovala dlouhodobou výživu a udržovala tě silného, když je jídlo vzácné.",
+        "ru": "Сытная дикая колбаса из волка, предназначенная для долгосрочного питания и поддержания силы, когда еда в дефиците.",
+        "pl": "Syta, dzika kiełbasa z wilka, zaprojektowana, by zapewnić długotrwałe odżywienie i utrzymać cię silnym, gdy jedzenie jest ograniczone.",
+        "it": "Una salsiccia sostanziosa e selvaggia di lupo, progettata per fornire nutrizione duratura e mantenerti forte quando il cibo scarseggia.",
+        "es": "Una salchicha sustanciosa y salvaje hecha de lobo, diseñada para proporcionar nutrición duradera y mantenerte fuerte cuando la comida escasea.",
+        "fr": "Une saucisse copieuse et sauvage de loup, conçue pour fournir une nutrition durable et vous garder fort lorsque la nourriture est rare.",
+        "zh": "由狼肉制成的丰盛野味香肠，旨在提供持久的营养并保持你在食物稀缺时的力量。",
+        "ja": "狼から作られた力強い野生のソーセージで、持続的な栄養を提供し、食糧が不足している時にあなたを強く保つように設計されています。",
+        "pt": "Uma linguiça selvagem e substancial feita de lobo, projetada para fornecer nutrição duradoura e manter você forte quando a comida escasseia.",
+        "zh-cn": "由狼肉制成的丰盛野味香肠，旨在提供持久的营养并保持你在食物稀缺时的力量。"
     },
     "CookZ_Human_Sausage_DN": {
         "en": "Human Sausage",
-        "de": "Menschenwurst"
+        "de": "Menschenwurst",
+        "cs": "Klobása z člověka",
+        "ru": "Человечья колбаса",
+        "pl": "Kiełbasa ludzka",
+        "it": "Salsiccia umana",
+        "es": "Salchicha humana",
+        "fr": "Saucisse humaine",
+        "zh": "人类香肠",
+        "ja": "人間ソーセージ",
+        "pt": "Linguiça humana",
+        "zh-cn": "人类香肠"
     },
     "CookZ_Human_Sausage_DS": {
         "en": "Made in the most extreme circumstances, this is a human sausage — something never meant to exist, only made when survival is at its bleakest.",
-        "de": "In extremsten Situationen hergestellt, eine Menschenwurst — etwas, das niemals hätte existieren dürfen, nur geschaffen, wenn das Überleben am dunkelsten ist."
+        "de": "In extremsten Situationen hergestellt, eine Menschenwurst — etwas, das niemals hätte existieren dürfen, nur geschaffen, wenn das Überleben am dunkelsten ist.",
+        "cs": "Vyrobeno za extrémních okolností, toto je lidská klobása — něco, co nikdy nemělo existovat, vyrobeno pouze, když je přežití nejsmutnější.",
+        "ru": "Создано в самых экстремальных условиях, это — человеческая колбаса, не предназначенная для существования, она была создана только тогда, когда выживание было на грани отчаяния.",
+        "pl": "Stworzona w najbardziej ekstremalnych warunkach, to ludzka kiełbasa — coś, co nigdy nie miało istnieć, stworzona tylko wtedy, gdy przetrwanie było w najciemniejszym momencie.",
+        "it": "Fatta nelle circostanze più estreme, questa è una salsiccia umana - qualcosa che non doveva mai esistere, creata solo quando la sopravvivenza è più disperata.",
+        "es": "Hecha en las circunstancias más extremas, esta es una salchicha humana, algo que nunca debió existir, solo hecha cuando la supervivencia está en su momento más oscuro.",
+        "fr": "Fabriquée dans les circonstances les plus extrêmes, voici une saucisse humaine — quelque chose qui n’aurait jamais dû exister, créée uniquement lorsque la survie est au plus bas.",
+        "zh": "在最极端的情况下制作，这是人类香肠——本不应存在的东西，只有在生存处于最黑暗时才会制作。",
+        "ja": "最も極端な状況で作られたこの人間ソーセージは、決して存在すべきではなかったもので、生存が最も絶望的な時にのみ作られます。",
+        "pt": "Feita nas circunstâncias mais extremas, esta é uma linguiça humana — algo que nunca deveria existir, feito apenas quando a sobrevivência está em seu momento mais sombrio.",
+        "zh-cn": "在最极端的情况下制作，这是人类香肠——本不应存在的东西，只有在生存处于最黑暗时才会制作。"
     },
     "CookZ_Fox_Sausage_DN": {
         "en": "Fox Sausage",
-        "de": "Fuchswurst"
+        "de": "Fuchswurst",
+        "cs": "Klobása z lišky",
+        "ru": "Лисья колбаса",
+        "pl": "Kiełbasa lisia",
+        "it": "Salsiccia di volpe",
+        "es": "Salchicha de zorro",
+        "fr": "Saucisse de renard",
+        "zh": "狐狸香肠",
+        "ja": "キツネソーセージ",
+        "pt": "Linguiça de raposa",
+        "zh-cn": "狐狸香肠"
     },
     "CookZ_Fox_Sausage_DS": {
         "en": "A flavorful sausage made from fox, providing the sustenance needed to keep going when supplies are limited.",
-        "de": "Eine aromatische Wurst aus Fuchs, die die nötige Nahrung liefert, um auch in knappen Zeiten weiterzumachen."
+        "de": "Eine aromatische Wurst aus Fuchs, die die nötige Nahrung liefert, um auch in knappen Zeiten weiterzumachen.",
+        "cs": "Aromatická klobása z lišky, která poskytuje potřebnou výživu k pokračování, když jsou zásoby omezené.",
+        "ru": "Ароматная колбаса из лисы, обеспечивающая необходимое питание для продолжения, когда запасы ограничены.",
+        "pl": "Aromatyczna kiełbasa z lisa, dostarczająca niezbędnej energii, aby kontynuować, gdy zapasy są ograniczone.",
+        "it": "Una salsiccia saporita fatta con carne di volpe, che fornisce la nutrizione necessaria per andare avanti quando le scorte sono limitate.",
+        "es": "Una salchicha sabrosa hecha de zorro, que proporciona la nutrición necesaria para seguir adelante cuando las provisiones son limitadas.",
+        "fr": "Une saucisse savoureuse faite de renard, fournissant la nutrition nécessaire pour continuer lorsque les provisions sont limitées.",
+        "zh": "由狐狸制成的美味香肠，在物资有限时提供继续前进所需的营养。",
+        "ja": "キツネから作られた風味豊かなソーセージで、物資が限られているときに進み続けるために必要な栄養を提供します。",
+        "pt": "Uma linguiça saborosa feita de raposa, fornecendo a nutrição necessária para continuar quando os suprimentos são limitados.",
+        "zh-cn": "由狐狸制成的美味香肠，在物资有限时提供继续前进所需的营养。"
     },
     "CookZ_Reindeer_Sausage_DN": {
         "en": "Reindeer Sausage",
-        "de": "Rentierwurst"
+        "de": "Rentierwurst",
+        "cs": "Klobása z soba",
+        "ru": "Олений колбаса",
+        "pl": "Kiełbasa z renifera",
+        "it": "Salsiccia di renna",
+        "es": "Salchicha de reno",
+        "fr": "Saucisse de renne",
+        "zh": "驯鹿香肠",
+        "ja": "トナカイソーセージ",
+        "pt": "Linguiça de rena",
+        "zh-cn": "驯鹿香肠"
     },
     "CookZ_Reindeer_Sausage_DS": {
         "en": "A flavorful, robust sausage from reindeer, providing long-lasting nourishment for survival situations.",
-        "de": "Eine würzige, kräftige Wurst aus Rentier, die langanhaltende Nahrung für Überlebenssituationen bietet."
+        "de": "Eine würzige, kräftige Wurst aus Rentier, die langanhaltende Nahrung für Überlebenssituationen bietet.",
+        "cs": "Aromatická, silná klobása z soba, která poskytuje dlouhotrvající výživu pro situace přežití.",
+        "ru": "Вкусная, насыщенная колбаса из оленя, обеспечивающая долгосрочное питание для ситуаций выживания.",
+        "pl": "Aromatyczna, mocna kiełbasa z renifera, zapewniająca długotrwałe odżywienie w sytuacjach przetrwania.",
+        "it": "Una salsiccia saporita e robusta di renna, che fornisce nutrimento duraturo per situazioni di sopravvivenza.",
+        "es": "Una salchicha sabrosa y robusta de reno, que proporciona nutrición duradera para situaciones de supervivencia.",
+        "fr": "Une saucisse savoureuse et robuste de renne, fournissant une nutrition de longue durée pour des situations de survie.",
+        "zh": "由驯鹿制成的美味、强劲的香肠，提供持久的营养，适用于生存情况。",
+        "ja": "トナカイから作られた風味豊かで力強いソーセージで、サバイバル状況で長持ちする栄養を提供します。",
+        "pt": "Uma linguiça saborosa e robusta feita de rena, fornecendo nutrição duradoura para situações de sobrevivência.",
+        "zh-cn": "由驯鹿制成的美味、强劲的香肠，提供持久的营养，适用于生存情况。"
     },
 
 
@@ -591,42 +1721,132 @@
 
     "CookZ_Cheese_DN": {
         "en": "Cheese",
-        "de": "Käse"
+        "de": "Käse",
+        "cs": "Sýr",
+        "ru": "Сыр",
+        "pl": "Ser",
+        "it": "Formaggio",
+        "es": "Queso",
+        "fr": "Fromage",
+        "zh": "奶酪",
+        "ja": "チーズ",
+        "pt": "Queijo",
+        "zh-cn": "奶酪"
     },
     "CookZ_Cheese_DS": {
         "en": "A piece of makeshift cheese. It almost tastes like the real thing.",
-        "de": "Ein Stück improvisierter Käse. Es schmeckt fast wie das Original."
+        "de": "Ein Stück improvisierter Käse. Es schmeckt fast wie das Original.",
+        "cs": "Kus provizorního sýra. Chuť je téměř jako originál.",
+        "ru": "Кусок импровизированного сыра. Почти как настоящее.",
+        "pl": "Kawałek prowizorycznego sera. Smakuje prawie jak prawdziwy.",
+        "it": "Un pezzo di formaggio improvvisato. Gusta quasi come quello vero.",
+        "es": "Un trozo de queso improvisado. Casi sabe como el real.",
+        "fr": "Un morceau de fromage de fortune. Il a presque le goût du vrai.",
+        "zh": "一块临时做成的奶酪，味道几乎像真正的奶酪。",
+        "ja": "仮作りのチーズの一片。本物に近い味がします。",
+        "pt": "Um pedaço de queijo improvisado. Quase tem o gosto do real.",
+        "zh-cn": "一块临时做成的奶酪，味道几乎像真正的奶酪。"
     },
     "CookZ_DisinfectRags_DN": {
         "en": "Disinfect",
-        "de": "Desinfizieren"
+        "de": "Desinfizieren",
+        "cs": "Dezinfikovat",
+        "ru": "Дезинфекция",
+        "pl": "Dezynfekować",
+        "it": "Disinfettare",
+        "es": "Desinfectar",
+        "fr": "Désinfecter",
+        "zh": "消毒",
+        "ja": "消毒",
+        "pt": "Desinfetar",
+        "zh-cn": "消毒"
     },
     
 
 
     "CookZ_Intro": {
         "en": "General Cooking Instructions",
-        "de": "Kochanweisungen"
+        "de": "Kochanweisungen",
+        "cs": "Obecné pokyny pro vaření",
+        "ru": "Общие инструкции по приготовлению",
+        "pl": "Ogólne instrukcje gotowania",
+        "it": "Istruzioni generali di cucina",
+        "es": "Instrucciones generales de cocina",
+        "fr": "Instructions générales de cuisine",
+        "zh": "一般烹饪说明",
+        "ja": "一般的な料理の手順",
+        "pt": "Instruções gerais de cozimento",
+        "zh-cn": "一般烹饪说明"
     },
     "CookZ_PackagingMaterials": {
         "en": "Packaging Materials",
-        "de": "Verpackungen"
+        "de": "Verpackungen",
+        "cs": "Obalové materiály",
+        "ru": "Упаковочные материалы",
+        "pl": "Materiały opakowaniowe",
+        "it": "Materiali per imballaggio",
+        "es": "Materiales de embalaje",
+        "fr": "Matériaux d'emballage",
+        "zh": "包装材料",
+        "ja": "梱包材料",
+        "pt": "Materiais de embalagem",
+        "zh-cn": "包装材料"
     },
     "CookZ_CannedDishes": {
         "en": "Canned Dishes",
-        "de": "Konserven"
+        "de": "Konserven",
+        "cs": "Konzervované pokrmy",
+        "ru": "Консервированные блюда",
+        "pl": "Dania w puszkach",
+        "it": "Piatti in scatola",
+        "es": "Platos en conserva",
+        "fr": "Plats en conserve",
+        "zh": "罐装菜肴",
+        "ja": "缶詰料理",
+        "pt": "Pratos enlatados",
+        "zh-cn": "罐装菜肴"
     },
     "CookZ_BoxedDishes": {
         "en": "Boxed Dishes",
-        "de": "Gerichte aus der Box"
+        "de": "Gerichte aus der Box",
+        "cs": "Jídla v krabicích",
+        "ru": "Блюда в коробках",
+        "pl": "Dania w pudełkach",
+        "it": "Piatti in scatola",
+        "es": "Platos en caja",
+        "fr": "Plats en boîte",
+        "zh": "盒装菜肴",
+        "ja": "箱入り料理",
+        "pt": "Pratos embalados",
+        "zh-cn": "盒装菜肴"
     },
     "CookZ_Sausages": {
         "en": "Sausages",
-        "de": "Wurst Spezialitäten"
+        "de": "Wurst Spezialitäten",
+        "cs": "Uzeniny",
+        "ru": "Колбасы",
+        "pl": "Kiełbasy",
+        "it": "Salsicce",
+        "es": "Embutidos",
+        "fr": "Saucisses",
+        "zh": "香肠",
+        "ja": "ソーセージ",
+        "pt": "Salsichas",
+        "zh-cn": "香肠"
     },
     "CookZ_Miscellaneous": {
         "en": "Miscellaneous",
-        "de": "Sonstiges"
+        "de": "Sonstiges",
+        "cs": "Různé",
+        "ru": "Разное",
+        "pl": "Inne",
+        "it": "Varie",
+        "es": "Varios",
+        "fr": "Divers",
+        "zh": "杂项",
+        "ja": "雑多な",
+        "pt": "Diversos",
+        "zh-cn": "杂项"
     },
 
 
@@ -635,15 +1855,45 @@
 
     "CookZ_Instructions": {
         "en": "You can cook using a pot, cauldron or pan. This book describes how you can combine ingredients to create nutritious dishes. If you do not follow the instructions correctly then the ingredients are cooked individually. Some dishes need packaging material like empty cans or boxes attached to the cooking equipment. Some dishes need water or a specific cooking equipment.",
-        "de": "Gerichte können in einem Kochtopf, Kessel oder Bratpfanne zubereitet werden. Dieses Buch beschreibt, wie Du Zutaten kombinieren kannst, um nahrhafte Gerichte zuzubereiten. Wenn du die Anweisungen nicht richtig befolgst, werden die Zutaten einzeln gekocht. Einige Gerichte benötigen Verpackungsmaterial wie leere Dosen oder Schachteln, die am Kochgeschirr befestigt werden. Manche Gerichte brauchen Wasser oder ein bestimmtes Kochgerät."
+        "de": "Gerichte können in einem Kochtopf, Kessel oder Bratpfanne zubereitet werden. Dieses Buch beschreibt, wie Du Zutaten kombinieren kannst, um nahrhafte Gerichte zuzubereiten. Wenn du die Anweisungen nicht richtig befolgst, werden die Zutaten einzeln gekocht. Einige Gerichte benötigen Verpackungsmaterial wie leere Dosen oder Schachteln, die am Kochgeschirr befestigt werden. Manche Gerichte brauchen Wasser oder ein bestimmtes Kochgerät.",
+        "cs": "Můžete vařit pomocí hrnce, kotle nebo pánve. Tato kniha popisuje, jak kombinovat ingredience pro přípravu výživných pokrmů. Pokud nebudete postupovat podle pokynů správně, ingredience se uvaří samostatně. Některé pokrmy potřebují obalový materiál, jako jsou prázdné plechovky nebo krabice připojené k vaření. Některé pokrmy potřebují vodu nebo specifické vaření.",
+        "ru": "Вы можете готовить с использованием кастрюли, котла или сковороды. Эта книга описывает, как комбинировать ингредиенты для создания питательных блюд. Если вы не будете следовать инструкциям правильно, ингредиенты будут готовиться по отдельности. Некоторые блюда требуют упаковочного материала, такого как пустые банки или коробки, прикрепленные к кухонным приборам. Некоторые блюда требуют воды или специального кухонного оборудования.",
+        "pl": "Możesz gotować używając garnka, kotła lub patelni. Ta książka opisuje, jak łączyć składniki, aby stworzyć pożywne dania. Jeśli nie będziesz postępować zgodnie z instrukcjami, składniki będą gotowane osobno. Niektóre dania wymagają materiałów opakowaniowych, takich jak puste puszki lub pudełka przymocowane do sprzętu kuchennego. Niektóre dania wymagają wody lub określonego sprzętu do gotowania.",
+        "it": "Puoi cucinare usando una pentola, un calderone o una padella. Questo libro descrive come combinare gli ingredienti per creare piatti nutrienti. Se non segui correttamente le istruzioni, gli ingredienti verranno cucinati separatamente. Alcuni piatti necessitano di materiali da imballaggio come lattine vuote o scatole da attaccare all'attrezzatura da cucina. Alcuni piatti richiedono acqua o un'attrezzatura di cottura specifica.",
+        "es": "Puedes cocinar usando una olla, caldereta o sartén. Este libro describe cómo combinar ingredientes para crear platos nutritivos. Si no sigues las instrucciones correctamente, los ingredientes se cocinarán por separado. Algunos platos necesitan material de embalaje como latas vacías o cajas unidas al equipo de cocina. Algunos platos necesitan agua o un equipo de cocina específico.",
+        "fr": "Vous pouvez cuisiner en utilisant une casserole, un chaudron ou une poêle. Ce livre décrit comment vous pouvez combiner des ingrédients pour créer des plats nutritifs. Si vous ne suivez pas correctement les instructions, les ingrédients seront cuits séparément. Certains plats nécessitent des matériaux d'emballage comme des boîtes vides ou des boîtes attachées à l'équipement de cuisine. Certains plats nécessitent de l'eau ou un équipement de cuisine spécifique.",
+        "zh": "你可以使用锅、锅炉或煎锅进行烹饪。本书描述了如何将食材结合起来制作营养丰富的菜肴。如果你没有正确按照说明操作，食材将被单独烹饪。一些菜肴需要包装材料，如空罐或箱子，并与烹饪设备连接。一些菜肴需要水或特定的烹饪设备。",
+        "ja": "鍋、かまど、またはフライパンを使って料理ができます。この本では、食材を組み合わせて栄養価の高い料理を作る方法を説明しています。指示通りに操作しない場合、食材は個別に調理されます。いくつかの料理には、空の缶や箱などの包装材料が必要で、調理器具に取り付けます。いくつかの料理には水や特定の調理器具が必要です。",
+        "pt": "Você pode cozinhar usando uma panela, caldeirão ou frigideira. Este livro descreve como combinar ingredientes para criar pratos nutritivos. Se você não seguir as instruções corretamente, os ingredientes serão cozidos separadamente. Alguns pratos precisam de materiais de embalagem, como latas vazias ou caixas presas ao equipamento de cozinha. Alguns pratos precisam de água ou equipamentos de cozinha específicos.",
+        "zh-cn": "你可以使用锅、锅炉或煎锅进行烹饪。本书描述了如何将食材结合起来制作营养丰富的菜肴。如果你没有正确按照说明操作，食材将被单独烹饪。一些菜肴需要包装材料，如空罐或箱子，并与烹饪设备连接。一些菜肴需要水或特定的烹饪设备。"
     },
     "CookZ_EmptyCanInstructions": {
         "en": "You can craft ten <b>empty cans</b> from a <b>metal sheet</b> using a <b>hacksaw</b>.",
-        "de": "Du kannst zehn <b>Leere Dosen</b> aus einem <b>Metallblech</b> mit einer <b>Metallsäge</b> herstellen."
+        "de": "Du kannst zehn <b>Leere Dosen</b> aus einem <b>Metallblech</b> mit einer <b>Metallsäge</b> herstellen.",
+        "cs": "Můžete vyrobit deset <b>prázdných plechovek</b> z <b>kovového plechu</b> pomocí <b>pily</b>.",
+        "ru": "Вы можете изготовить десять <b>пустых банок</b> из <b>металлического листа</b> с помощью <b>лопатки</b>.",
+        "pl": "Możesz stworzyć dziesięć <b>pustych puszek</b> z <b>blachy</b> używając <b>piły ręcznej</b>.",
+        "it": "Puoi creare dieci <b>lattine vuote</b> da un <b>foglio di metallo</b> utilizzando una <b>saw</b>.",
+        "es": "Puedes hacer diez <b>latas vacías</b> a partir de una <b>hoja de metal</b> utilizando una <b>sierra</b>.",
+        "fr": "Vous pouvez fabriquer dix <b>boîtes vides</b> à partir d'une <b>feuille métallique</b> à l'aide d'une <b>scie à métaux</b>.",
+        "zh": "你可以用<b>金属片</b>和<b>锯子</b>制作十个<b>空罐</b>。",
+        "ja": "金属板を使い、<b>ハクソウ</b>で<b>空の缶</b>を10個作れます。",
+        "pt": "Você pode criar dez <b>latas vazias</b> a partir de uma <b>folha de metal</b> usando uma <b>serra</b>.",
+        "zh-cn": "你可以用<b>金属片</b>和<b>锯子</b>制作十个<b>空罐</b>。"
     },
     "CookZ_EmptyBoxInstructions": {
         "en": "An <b>empty box</b> can be crafted from two pieces of <b>paper</b> or by using any <b>axe</b> or <b>knife</b> on <b>bark</b>.",
-        "de": "Eine <b>Leere Schachtel</b> kann aus zwei Stück <b>Papier</b> hergestellt werden oder aus <b>Baumrinde</b>, die mit einer <b>Axt</b> oder einem <b>Messer</b> bearbeitet wird."
+        "de": "Eine <b>Leere Schachtel</b> kann aus zwei Stück <b>Papier</b> hergestellt werden oder aus <b>Baumrinde</b>, die mit einer <b>Axt</b> oder einem <b>Messer</b> bearbeitet wird.",
+        "cs": "Prázdnou <b>krabici</b> lze vytvořit z dvou kusů <b>papíru</b> nebo použitím jakékoliv <b>sekery</b> nebo <b>nože</b> na <b>korku</b>.",
+        "ru": "Пустую <b>коробку</b> можно создать из двух кусочков <b>бумаги</b> или с помощью любого <b>топора</b> или <b>ножа</b> на <b>коре</b>.",
+        "pl": "Pustą <b>pudełko</b> można stworzyć z dwóch kawałków <b>papieru</b> lub za pomocą dowolnej <b>siekiery</b> lub <b>noża</b> na <b>korze</b>.",
+        "it": "Una <b>scatola vuota</b> può essere creata da due pezzi di <b>carta</b> o usando un <b>ascia</b> o un <b>coltello</b> sulla <b>corteccia</b>.",
+        "es": "Una <b>caja vacía</b> se puede fabricar a partir de dos piezas de <b>papel</b> o utilizando cualquier <b>hacha</b> o <b>cuchillo</b> sobre la <b>corteza</b>.",
+        "fr": "Une <b>boîte vide</b> peut être fabriquée à partir de deux morceaux de <b>papier</b> ou en utilisant n'importe quelle <b>hache</b> ou <b>couteau</b> sur de l'<b>écorce</b>.",
+        "zh": "可以用两块<b>纸</b>制作<b>空盒子</b>，或者使用任何<b>斧头</b>或<b>刀具</b>在<b>树皮</b>上制作。",
+        "ja": "<b>空の箱</b>は2つの<b>紙</b>から作成することができます、または<b>斧</b>や<b>ナイフ</b>を使って<b>樹皮</b>を削ることでも作れます。",
+        "pt": "Uma <b>caixa vazia</b> pode ser criada a partir de dois pedaços de <b>papel</b> ou usando qualquer <b>machado</b> ou <b>faca</b> na <b>casca</b>.",
+        "zh-cn": "可以用两块<b>纸</b>制作<b>空盒子</b>，或者使用任何<b>斧头</b>或<b>刀具</b>在<b>树皮</b>上制作。"
     },
 
 
@@ -652,35 +1902,115 @@
 
     "CookZ_Ingredient_AnyMeat": {
         "en": "Any Meat",
-        "de": "Beliebiges Fleisch"
+        "de": "Beliebiges Fleisch",
+        "cs": "Libovolné maso",
+        "ru": "Любое мясо",
+        "pl": "Dowolne mięso",
+        "it": "Qualsiasi carne",
+        "es": "Cualquier carne",
+        "fr": "N'importe quelle viande",
+        "zh": "任何肉类",
+        "ja": "どんな肉でも",
+        "pt": "Qualquer carne",
+        "zh-cn": "任何肉类"
     },
     "CookZ_Ingredient_AnyFish": {
         "en": "Any Fish",
-        "de": "Beliebiger Fisch"
+        "de": "Beliebiger Fisch",
+        "cs": "Libovolná ryba",
+        "ru": "Любая рыба",
+        "pl": "Dowolna ryba",
+        "it": "Qualsiasi pesce",
+        "es": "Cualquier pescado",
+        "fr": "N'importe quel poisson",
+        "zh": "任何鱼类",
+        "ja": "どんな魚でも",
+        "pt": "Qualquer peixe",
+        "zh-cn": "任何鱼类"
     },
     "CookZ_Ingredient_AnyFishFillet": {
         "en": "Any Fish Fillet",
-        "de": "Beliebiges Fischfilet"
+        "de": "Beliebiges Fischfilet",
+        "cs": "Libovolný filet z ryby",
+        "ru": "Любой рыбный филе",
+        "pl": "Dowolny filet rybny",
+        "it": "Qualsiasi filetto di pesce",
+        "es": "Cualquier filete de pescado",
+        "fr": "N'importe quel filet de poisson",
+        "zh": "任何鱼柳",
+        "ja": "どんな魚の切り身でも",
+        "pt": "Qualquer filé de peixe",
+        "zh-cn": "任何鱼柳"
     },
     "CookZ_Ingredient_AnyMushroom": {
         "en": "Any Mushroom",
-        "de": "Beliebiger Pilz"
+        "de": "Beliebiger Pilz",
+        "cs": "Libovolná houba",
+        "ru": "Любая гриба",
+        "pl": "Dowolny grzyb",
+        "it": "Qualsiasi fungo",
+        "es": "Cualquier hongo",
+        "fr": "N'importe quel champignon",
+        "zh": "任何蘑菇",
+        "ja": "どんなキノコでも",
+        "pt": "Qualquer cogumelo",
+        "zh-cn": "任何蘑菇"
     },
     "CookZ_Ingredient_AnyFruit": {
         "en": "Any Fruit",
-        "de": "Beliebiges Obst"
+        "de": "Beliebiges Obst",
+        "cs": "Libovolné ovoce",
+        "ru": "Любой фрукт",
+        "pl": "Dowolny owoc",
+        "it": "Qualsiasi frutta",
+        "es": "Cualquier fruta",
+        "fr": "N'importe quel fruit",
+        "zh": "任何水果",
+        "ja": "どんな果物でも",
+        "pt": "Qualquer fruta",
+        "zh-cn": "任何水果"
     },
     "CookZ_Ingredient_AnySausage": {
         "en": "Any Sausage",
-        "de": "Beliebige Wurst"
+        "de": "Beliebige Wurst",
+        "cs": "Libovolná klobása",
+        "ru": "Любая колбаса",
+        "pl": "Dowolna kiełbasa",
+        "it": "Qualsiasi salsiccia",
+        "es": "Cualquier salchicha",
+        "fr": "N'importe quelle saucisse",
+        "zh": "任何香肠",
+        "ja": "どんなソーセージでも",
+        "pt": "Qualquer linguiça",
+        "zh-cn": "任何香肠"
     },
     "CookZ_Ingredient_AnyBreadcrumb": {
         "en": "Crackers or Salty Sticks",
-        "de": "Cracker oder Salzstangen"
+        "de": "Cracker oder Salzstangen",
+        "cs": "Sušenky nebo slané tyčinky",
+        "ru": "Печенье или соленые палочки",
+        "pl": "Ciastka lub słone paluszki",
+        "it": "Cracker o bastoncini salati",
+        "es": "Galletas o palitos salados",
+        "fr": "Crackers ou bâtonnets salés",
+        "zh": "饼干或咸味小棒",
+        "ja": "クラッカーまたは塩味のスティック",
+        "pt": "Biscoitos ou palitos salgados",
+        "zh-cn": "饼干或咸味小棒"
     },
     "CookZ_Ingredient_AnyDisinfect": {
         "en": "Rags or Bandages",
-        "de": "Stofffetzen oder Verband"
+        "de": "Stofffetzen oder Verband",
+        "cs": "Hadry nebo obvazy",
+        "ru": "Тряпки или повязки",
+        "pl": "Szmatki lub bandaże",
+        "it": "Stracci o bende",
+        "es": "Trapos o vendas",
+        "fr": "Chiffons ou bandages",
+        "zh": "抹布或绷带",
+        "ja": "布切れや包帯",
+        "pt": "Panos ou bandagens",
+        "zh-cn": "抹布或绷带"
     },
 
 
@@ -688,26 +2018,86 @@
 
     "CookZ_UseA": {
         "en": "Use a",
-        "de": "Benutze"
+        "de": "Benutze",
+        "cs": "Použij",
+        "ru": "Используйте",
+        "pl": "Użyj",
+        "it": "Usa un",
+        "es": "Usa un",
+        "fr": "Utilisez un",
+        "zh": "使用一个",
+        "ja": "使用する",
+        "pt": "Use um",
+        "zh-cn": "使用一个"
     },
     "CookZ_WithWater": {
         "en": "with at least 500 ml of water",
-        "de": "mit mindestens 500 ml Wasser"
+        "de": "mit mindestens 500 ml Wasser",
+        "cs": "s alespoň 500 ml vody",
+        "ru": "с минимум 500 мл воды",
+        "pl": "z co najmniej 500 ml wody",
+        "it": "con almeno 500 ml di acqua",
+        "es": "con al menos 500 ml de agua",
+        "fr": "avec au moins 500 ml d'eau",
+        "zh": "至少500毫升水",
+        "ja": "少なくとも500mlの水を使って",
+        "pt": "com pelo menos 500 ml de água",
+        "zh-cn": "至少500毫升水"
     },
     "CookZ_UseEmptyCan": {
         "en": "Fill into an empty can.",
-        "de": "In eine leere Dose füllen."
+        "de": "In eine leere Dose füllen.",
+        "cs": "Napusť do prázdné plechovky.",
+        "ru": "Наполните в пустую банку.",
+        "pl": "Napełnij do pustej puszki.",
+        "it": "Riempi in una lattina vuota.",
+        "es": "Llena en una lata vacía.",
+        "fr": "Remplissez dans une boîte vide.",
+        "zh": "倒入空罐中。",
+        "ja": "空の缶に入れる。",
+        "pt": "Encha em uma lata vazia.",
+        "zh-cn": "倒入空罐中。"
     },
     "CookZ_UseEmptyBox": {
         "en": "Fill into an empty box.",
-        "de": "In eine leere Schachtel füllen."
+        "de": "In eine leere Schachtel füllen.",
+        "cs": "Napusť do prázdné krabice.",
+        "ru": "Наполните в пустую коробку.",
+        "pl": "Napełnij do pustego pudełka.",
+        "it": "Riempi in una scatola vuota.",
+        "es": "Llena en una caja vacía.",
+        "fr": "Remplissez dans une boîte vide.",
+        "zh": "倒入空盒子中。",
+        "ja": "空の箱に入れる。",
+        "pt": "Encha em uma caixa vazia.",
+        "zh-cn": "倒入空盒子中。"
     },
     "CookZ_AtLeastOne": {
         "en": "at least one",
-        "de": "mindestens ein"
+        "de": "mindestens ein",
+        "cs": "alespoň jeden",
+        "ru": "по крайней мере один",
+        "pl": "co najmniej jeden",
+        "it": "almeno uno",
+        "es": "al menos uno",
+        "fr": "au moins un",
+        "zh": "至少一个",
+        "ja": "少なくとも1つ",
+        "pt": "pelo menos um",
+        "zh-cn": "至少一个"
     },
     "CookZ_Or": {
         "en": "or",
-        "de": "oder"
+        "de": "oder",
+        "cs": "nebo",
+        "ru": "или",
+        "pl": "lub",
+        "it": "o",
+        "es": "o",
+        "fr": "ou",
+        "zh": "或",
+        "ja": "または",
+        "pt": "ou",
+        "zh-cn": "或"
     }
 }
