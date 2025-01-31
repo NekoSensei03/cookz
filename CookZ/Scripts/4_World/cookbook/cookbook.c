@@ -31,6 +31,8 @@ class CookZ_Cookbook
     static const string COOKING_INGREDIENT_PLUM                      = "Plum";
     static const string COOKING_INGREDIENT_PEAR                      = "Pear";
     static const string COOKING_INGREDIENT_APPLE                     = "Apple";
+    static const string COOKING_INGREDIENT_BANANA                    = "Banana";
+    static const string COOKING_INGREDIENT_ORANGE                    = "Orange";
 
     static const string COOKING_INGREDIENT_PIG_STEAK_MEAT            = "PigSteakMeat";
     static const string COOKING_INGREDIENT_WOLF_STEAK_MEAT           = "WolfSteakMeat";
@@ -477,6 +479,8 @@ class CookZ_Cookbook
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FRUIT, COOKING_INGREDIENT_PLUM);
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FRUIT, COOKING_INGREDIENT_PEAR);
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FRUIT, COOKING_INGREDIENT_APPLE);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FRUIT, COOKING_INGREDIENT_BANANA);
+        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FRUIT, COOKING_INGREDIENT_ORANGE);
 
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_VEG, COOKING_INGREDIENT_POTATO);
         Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_VEG, COOKING_INGREDIENT_GREEN_BELL_PEPPER);
