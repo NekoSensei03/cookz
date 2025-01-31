@@ -55,13 +55,18 @@ modded class Cooking
 
         if (!dish.doNotReplaceIngredients && done && !burned)
         {
-            // clear all items from cooking equipment (bottom to top for index safety)
             int sumQuantity = 0;
+            // collect agents from ingredients
+            int agents = 0;
+            // clear all items from cooking equipment (bottom to top for index safety)
+            // collect agents and ingredient quantity while doing that
             for (int j = cargo.GetItemCount() - 1; j >= 0; j--)
             {
                 ItemBase usedItem = ItemBase.Cast(cargo.GetItem(j));
                 if (usedItem)
                 {
+                    agents |= Edible_Base.GetFoodAgents(usedItem); // agent from config
+                    agents |= usedItem.GetAgents(); // agents from item
 					int itemQuantity = usedItem.GetQuantity();
                     if (usedItem.IsSplitable())
                     {
@@ -90,15 +95,36 @@ modded class Cooking
                     cooking_equipment.GetInventory().LocalDestroyEntity(usedItem);
                 }
             }
+            
+            // agents from water in cooking equipment
+            agents |= cooking_equipment.GetAgents();
+            // only keep agents that are not destroyed by cooking
+            agents &= eAgents.BRAIN | eAgents.HEAVYMETAL | eAgents.SALMONELLA;
+            // remove agents by chance
+            float chanceToRemoveBrainAgent      = GetDayZGame().GetCookZ_Config().ChanceToRemoveBrainAgent;
+            float chanceToRemoveHeavyMetalAgent = GetDayZGame().GetCookZ_Config().ChanceToRemoveHeavyMetalAgent;
+            float chanceToRemoveSalmonellaAgent = GetDayZGame().GetCookZ_Config().ChanceToRemoveSalmonellaAgent;
+            // 1.0 - [0,1) = (0,1] -> chance <= 0 will never trigger, chance >= 1 will always trigger
+            if (1.0 - Math.RandomFloat(0, 1) <= chanceToRemoveBrainAgent     ) agents &= ~eAgents.BRAIN;
+            if (1.0 - Math.RandomFloat(0, 1) <= chanceToRemoveHeavyMetalAgent) agents &= ~eAgents.HEAVYMETAL;
+            if (1.0 - Math.RandomFloat(0, 1) <= chanceToRemoveSalmonellaAgent) agents &= ~eAgents.SALMONELLA;
+            
             // remove ALL liquid for now so that spawned items will not get wet
             cooking_equipment.AddQuantity(-cooking_equipment.GetQuantity());
+
+            // get config temperature of created dish
+            int dishTemp = Math.Clamp(GetDayZGame().GetCookZ_Config().TemperaturOfCreatedDish, 0.0, 100.0);
+
             // add dish to cooking equipment
             int quantityPerDish = sumQuantity / dish.numDishes;
             for (int k = 0; k < dish.numDishes; k++)
             {
                 EntityAI createdDish = cooking_equipment.GetInventory().CreateInInventory(dish.name);
-                createdDish.SetTemperatureDirect(80);
-                createdDish.SetFrozen(false);
+                
+                createdDish.SetTemperatureDirect(dishTemp);
+                createdDish.SetFrozen(false); // set frozen false manually, because item can get frozen before temp is set
+                createdDish.InsertAgent(agents, 1);
+                
                 CookZ_ClosedDish createdClosedDish = CookZ_ClosedDish.Cast(createdDish);
                 if (createdClosedDish)
                 {
@@ -172,6 +198,12 @@ modded class Cooking
         
         //! state flags are in order: is_done, is_burned
         pStateFlags = new Param2<bool, bool>(false, false);
+
+        if (GetDayZGame().GetCookZ_Config().InstantCook)
+        {
+            pStateFlags.param1 = true;
+            return;
+        }
                 
         if (item_to_cook && item_to_cook.CanBeCooked())
         {

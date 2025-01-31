@@ -22,5 +22,25 @@ Boolean values are set by 1 to true and by 0 to false.
 
     // some ingredients have a quantity - this sets the minimum quantity to be used as an ingredient to 50%
     // must be 0 < MinIngredientQuantityPercent <= 100
-    "MinIngredientQuantityPercent": 50
+    "MinIngredientQuantityPercent": 50,
+
+    // the temperature a freshly cretated dish has - if kept longer in the cooking equipment, the temperature can still go up
+    // must be between 0 and 100
+    "TemperaturOfCreatedDish": 80.0,
+
+    // if an ingredient hast the brain agent, the chance that the created dish does NOT have the agent
+    // must be between 0.0 and 1.0 - 1.0 -> 100% chance the agent is removed, 0.0 0% chance the agent is removed
+    // note: in vanialla this is basically set to 0.0
+    "ChanceToRemoveBrainAgent": 1.0,
+
+    // same as "ChanceToRemoveBrainAgent" for the heavy metal agent
+    // note: in vanialla this is basically set to 0.0
+    "ChanceToRemoveHeavyMetalAgent": 1.0,
+
+    // same as "ChanceToRemoveBrainAgent" for the salmonella agent
+    // note: in vanialla this is basically set to 0.4 (for some steak types)
+    "ChanceToRemoveSalmonellaAgent": 1.0,
+
+    // are dishes cooked instantly - this is mostly for debugging and should not be changed
+    "InstantCook": 0
 }

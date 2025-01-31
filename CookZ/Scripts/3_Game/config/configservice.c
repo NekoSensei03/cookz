@@ -4,6 +4,11 @@ class CookZ_Config
     bool CanCraftEmptyCans;
     bool CanCraftEmptyBoxes;
     int MinIngredientQuantityPercent;
+    float TemperaturOfCreatedDish;
+    float ChanceToRemoveBrainAgent;
+    float ChanceToRemoveHeavyMetalAgent;
+    float ChanceToRemoveSalmonellaAgent;
+    bool InstantCook;
 };
 
 class CookZ_ConfigService
@@ -48,6 +53,11 @@ class CookZ_ConfigService
 		config.CanCraftEmptyCans = true;
 		config.CanCraftEmptyBoxes = true;
         config.MinIngredientQuantityPercent = 50;
+        config.TemperaturOfCreatedDish = 80.0;
+        config.ChanceToRemoveBrainAgent = 1.0;
+        config.ChanceToRemoveHeavyMetalAgent = 1.0;
+        config.ChanceToRemoveSalmonellaAgent = 1.0;
+        config.InstantCook = false;
     }
 };
 
