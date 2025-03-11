@@ -329,16 +329,31 @@ class CookZ_Cookbook
                 return null;
             }
 
-            string currentIngredientTypeName = itemInCookingEquipment.GetType();
-
-            CookZ_IngredientInEquipment ingredientInEquipment = ingredientsInEquipment.Get(currentIngredientTypeName);
-            if (!ingredientInEquipment)
+            // add ingredient by config-type - e.g. SodaCan_Pipsi, while the item-type is SodaCan_ColorBase
+            // but in a lot of cases config-type and item-type are identical
+            string currentIngredientCfgTypeName = itemInCookingEquipment.GetType();
+            CookZ_IngredientInEquipment cfgIngredientInEquipment = ingredientsInEquipment.Get(currentIngredientCfgTypeName);
+            if (!cfgIngredientInEquipment)
             {
-                ingredientInEquipment = new CookZ_IngredientInEquipment();
-                ingredientsInEquipment.Set(currentIngredientTypeName, ingredientInEquipment);
+                cfgIngredientInEquipment = new CookZ_IngredientInEquipment();
+                ingredientsInEquipment.Set(currentIngredientCfgTypeName, cfgIngredientInEquipment);
             }
-            ingredientInEquipment.quantity = ingredientInEquipment.quantity + quantity;
-            ingredientInEquipment.numItems = ingredientInEquipment.numItems + 1;
+            cfgIngredientInEquipment.quantity = cfgIngredientInEquipment.quantity + quantity;
+            cfgIngredientInEquipment.numItems = cfgIngredientInEquipment.numItems + 1;
+
+            // add ingredient by item-type if different from config-type
+            string currentIngredientItemTypeName = itemInCookingEquipment.Type().ToString();
+            if (currentIngredientItemTypeName != currentIngredientCfgTypeName)
+            {
+                CookZ_IngredientInEquipment itemIngredientInEquipment = ingredientsInEquipment.Get(currentIngredientItemTypeName);
+                if (!itemIngredientInEquipment)
+                {
+                    itemIngredientInEquipment = new CookZ_IngredientInEquipment();
+                    ingredientsInEquipment.Set(currentIngredientItemTypeName, itemIngredientInEquipment);
+                }
+                itemIngredientInEquipment.quantity = itemIngredientInEquipment.quantity + quantity;
+                itemIngredientInEquipment.numItems = itemIngredientInEquipment.numItems + 1;
+            }
         }
 
         // accumulate food groups
