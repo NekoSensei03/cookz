@@ -458,7 +458,15 @@ class CookZ_Cookbook
             }
 
             string currentIngredientTypeName = itemInCookingEquipment.GetType();
-            ingredientsInEquipment.Set(currentIngredientTypeName, AddOrCreate(ingredientsInEquipment.Get(currentIngredientTypeName), quantity, 1));
+
+            CookZ_IngredientInEquipment ingredientInEquipment = ingredientsInEquipment.Get(currentIngredientTypeName);
+            if (!ingredientInEquipment)
+            {
+                ingredientInEquipment = new CookZ_IngredientInEquipment();
+                ingredientsInEquipment.Set(currentIngredientTypeName, ingredientInEquipment);
+            }
+            ingredientInEquipment.quantity = ingredientInEquipment.quantity + quantity;
+            ingredientInEquipment.numItems = ingredientInEquipment.numItems + 1;
         }
 
         // accumulate food groups
@@ -540,6 +548,7 @@ class CookZ_Cookbook
         if (!groupIngredient)
         {
             groupIngredient = new CookZ_IngredientInEquipment();
+            ingredientMap.Set(group, groupIngredient);
         }
         CookZ_IngredientInEquipment specificIngredient = ingredientMap.Get(specific);
         if (specificIngredient)
@@ -547,17 +556,5 @@ class CookZ_Cookbook
             groupIngredient.quantity = groupIngredient.quantity + specificIngredient.quantity;
             groupIngredient.numItems = groupIngredient.numItems + specificIngredient.numItems;
         }
-        ingredientMap.Set(group, groupIngredient);
-    }
-
-    private CookZ_IngredientInEquipment AddOrCreate(ref CookZ_IngredientInEquipment ingredientInEquipment, int quantity, int numItems)
-    {
-        if (!ingredientInEquipment)
-        {
-            ingredientInEquipment = new CookZ_IngredientInEquipment();
-        }
-        ingredientInEquipment.quantity = ingredientInEquipment.quantity + quantity;
-        ingredientInEquipment.numItems = ingredientInEquipment.numItems + numItems;
-        return ingredientInEquipment;
     }
 }
