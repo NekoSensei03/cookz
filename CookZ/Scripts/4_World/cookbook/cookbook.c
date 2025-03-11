@@ -161,134 +161,6 @@ class CookZ_Cookbook
         }
     }
 
-    // ONLY FOR LOCAL DEVELOPMENT
-    // static map for calculating nutrition values - use the deputy for nutrition values
-    static ref map<string, string> anyIngredientMapToDeputy = InitDeputyMap();
-    static map<string, string> InitDeputyMap()
-    {
-        map<string, string> tempMap = new map<string, string>;
-        tempMap.Insert(COOKING_INGREDIENT_ANY_MEAT,         COOKING_INGREDIENT_PIG_STEAK_MEAT);
-        tempMap.Insert(COOKING_INGREDIENT_ANY_FRUIT,        COOKING_INGREDIENT_APPLE);
-        tempMap.Insert(COOKING_INGREDIENT_ANY_VEG,          COOKING_INGREDIENT_GREEN_BELL_PEPPER);
-        tempMap.Insert(COOKING_INGREDIENT_ANY_FISH,         COOKING_INGREDIENT_CARP_FILLET_MEAT);
-        tempMap.Insert(COOKING_INGREDIENT_ANY_FISH_FILLET,  COOKING_INGREDIENT_CARP_FILLET_MEAT);
-        tempMap.Insert(COOKING_INGREDIENT_ANY_MUSHROOM,     COOKING_INGREDIENT_BOLETUS_MUSHROOM);
-        tempMap.Insert(COOKING_INGREDIENT_ANY_SAUSAGE,      COOKING_INGREDIENT_BEEF_SAUSAGE);
-        tempMap.Insert(COOKING_INGREDIENT_ANY_BREADCRUMB,   COOKING_INGREDIENT_CRACKERS);
-        return tempMap;
-    }
-    // static maps for calculating energy/water/quantityMax value - for ingredients that do not have those (or reasonable values)
-    static ref map<string, int> ingredientMapToEnergy = InitEnergyMap();
-    static map<string, int> InitEnergyMap()
-    {
-        map<string, int> tempMap = new map<string, int>;
-        tempMap.Insert("Rice",                  100);
-        tempMap.Insert("PowderedMilk",          500);
-        tempMap.Insert("Worm",                  150);
-        tempMap.Insert("Guts",                  250);
-        tempMap.Insert("DisinfectantAlcohol",   200);
-        tempMap.Insert("PotatoSeed",            275);
-        tempMap.Insert("Bone",                  150);
-        tempMap.Insert("Rag",                   0);
-        return tempMap;
-    }
-    static ref map<string, int> ingredientMapToWater = InitWaterMap();
-    static map<string, int> InitWaterMap()
-    {
-        map<string, int> tempMap = new map<string, int>;
-        tempMap.Insert("Rice",                  50);
-        tempMap.Insert("PowderedMilk",          50);
-        tempMap.Insert("Worm",                  80);
-        tempMap.Insert("Guts",                  150);
-        tempMap.Insert("DisinfectantAlcohol",   0);
-        tempMap.Insert("PotatoSeed",            20);
-        tempMap.Insert("Bone",                  20);
-        tempMap.Insert("Rag",                   0);
-        return tempMap;
-    }
-    void CalculateNutritionValues(CookZ_Recipe recipe)
-    {
-        int totalEnergy = 0;
-        int totalWater = 0;
-        int totalQuantityMax = 0;
-        FoodStageType foodStageType = FoodStageType.BAKED;
-        if (recipe.needsWater)
-        {
-            foodStageType = FoodStageType.BOILED;
-        }
-        Print(string.Format("Nutrition Values for %1", recipe.name));
-        if (recipe.needsWater)
-        {
-            // 500ml - 100ml (lost by cooking) times water content
-            totalWater += (500 - 100) * 100;
-        }
-        foreach (CookZ_Ingredient ingredient : recipe.ingredients)
-        {
-            // map ingredient name to deputy - e.g. AnyMeat to specific meat
-            string ingredientName = ingredient.name;
-            if (anyIngredientMapToDeputy.Contains(ingredientName))
-            {
-                ingredientName = anyIngredientMapToDeputy.Get(ingredientName);
-            }
-
-            float itemEnergy;
-            if (ingredientMapToEnergy.Contains(ingredientName))
-            {
-                itemEnergy = ingredientMapToEnergy.Get(ingredientName);
-            }
-            else
-            {
-                itemEnergy = Edible_Base.GetFoodEnergy(null, ingredientName, foodStageType);
-                if (itemEnergy <= 0)
-                {
-                    itemEnergy = Edible_Base.GetFoodEnergy(null, ingredientName);
-                }
-            }
-
-            float itemWater;
-            if (ingredientMapToWater.Contains(ingredientName))
-            {
-                itemWater = ingredientMapToWater.Get(ingredientName);
-            }
-            else
-            {
-                itemWater = Edible_Base.GetFoodWater(null, ingredientName, foodStageType);
-                if (itemWater <= 0)
-                {
-                    itemWater = Edible_Base.GetFoodWater(null, ingredientName);
-                }
-            }
-
-            // use static quantity as default
-            int itemQuantityMax = GetGame().ConfigGetInt(string.Format("CfgVehicles %1 cookz_staticQuantity", ingredientName));
-            if (itemQuantityMax == 0)
-            {
-                itemQuantityMax = GetGame().ConfigGetInt(string.Format("CfgVehicles %1 varQuantityMax", ingredientName));
-            }
-
-            int itemQuantityTotalMax = itemQuantityMax * ingredient.quantity;
-            // special cases
-            if (recipe.name == "CookZ_BoneBrothCan" && ingredientName == "Bone")
-            {
-                itemQuantityTotalMax = 20 * 40;
-            }
-
-            Print(string.Format("   ingredient: %1, Q:%2, MQ:%3, E:%4, W:%5", ingredientName, ingredient.quantity, itemQuantityTotalMax, itemEnergy, itemWater));
-            totalQuantityMax += itemQuantityTotalMax;
-            totalEnergy += itemEnergy * itemQuantityTotalMax;
-            totalWater += itemWater * itemQuantityTotalMax;
-        }
-
-        if (totalQuantityMax > 0)
-        {
-            float relativeEnergy = totalEnergy / totalQuantityMax;
-            float relativeWater = totalWater / totalQuantityMax;
-            Print(string.Format("  QuantityMax: %1", totalQuantityMax));
-            Print(string.Format("  Energy:      %1", relativeEnergy));
-            Print(string.Format("  Water:       %1", relativeWater));
-        }
-    }
-
     // returns a recipe or null if no valid recipe detected
     CookZ_Recipe GetDishForIngredients(ItemBase cooking_equipment)
     {
@@ -555,6 +427,139 @@ class CookZ_Cookbook
         {
             groupIngredient.quantity = groupIngredient.quantity + specificIngredient.quantity;
             groupIngredient.numItems = groupIngredient.numItems + specificIngredient.numItems;
+        }
+    }
+
+    // ------------------------------------------------------------------------------------------------------------------------------------
+    // ONLY FOR LOCAL DEVELOPMENT
+    // ------------------------------------------------------------------------------------------------------------------------------------
+    
+    // static map for calculating nutrition values - use the deputy for nutrition values
+    static ref map<string, string> anyIngredientMapToDeputy = InitDeputyMap();
+    static map<string, string> InitDeputyMap()
+    {
+        map<string, string> tempMap = new map<string, string>;
+        tempMap.Insert(COOKING_INGREDIENT_ANY_MEAT,         COOKING_INGREDIENT_PIG_STEAK_MEAT);
+        tempMap.Insert(COOKING_INGREDIENT_ANY_FRUIT,        COOKING_INGREDIENT_APPLE);
+        tempMap.Insert(COOKING_INGREDIENT_ANY_VEG,          COOKING_INGREDIENT_GREEN_BELL_PEPPER);
+        tempMap.Insert(COOKING_INGREDIENT_ANY_FISH,         COOKING_INGREDIENT_CARP_FILLET_MEAT);
+        tempMap.Insert(COOKING_INGREDIENT_ANY_FISH_FILLET,  COOKING_INGREDIENT_CARP_FILLET_MEAT);
+        tempMap.Insert(COOKING_INGREDIENT_ANY_MUSHROOM,     COOKING_INGREDIENT_BOLETUS_MUSHROOM);
+        tempMap.Insert(COOKING_INGREDIENT_ANY_SAUSAGE,      COOKING_INGREDIENT_BEEF_SAUSAGE);
+        tempMap.Insert(COOKING_INGREDIENT_ANY_BREADCRUMB,   COOKING_INGREDIENT_CRACKERS);
+        return tempMap;
+    }
+
+    // static maps for calculating energy/water/quantityMax value - for ingredients that do not have those (or reasonable values)
+    static ref map<string, int> ingredientMapToEnergy = InitEnergyMap();
+    static map<string, int> InitEnergyMap()
+    {
+        map<string, int> tempMap = new map<string, int>;
+        tempMap.Insert("Rice",                  100);
+        tempMap.Insert("PowderedMilk",          500);
+        tempMap.Insert("Worm",                  150);
+        tempMap.Insert("Guts",                  250);
+        tempMap.Insert("DisinfectantAlcohol",   200);
+        tempMap.Insert("PotatoSeed",            275);
+        tempMap.Insert("Bone",                  150);
+        tempMap.Insert("Rag",                   0);
+        return tempMap;
+    }
+    static ref map<string, int> ingredientMapToWater = InitWaterMap();
+    static map<string, int> InitWaterMap()
+    {
+        map<string, int> tempMap = new map<string, int>;
+        tempMap.Insert("Rice",                  50);
+        tempMap.Insert("PowderedMilk",          50);
+        tempMap.Insert("Worm",                  80);
+        tempMap.Insert("Guts",                  150);
+        tempMap.Insert("DisinfectantAlcohol",   0);
+        tempMap.Insert("PotatoSeed",            20);
+        tempMap.Insert("Bone",                  20);
+        tempMap.Insert("Rag",                   0);
+        return tempMap;
+    }
+
+    void CalculateNutritionValues(CookZ_Recipe recipe)
+    {
+        int totalEnergy = 0;
+        int totalWater = 0;
+        int totalQuantityMax = 0;
+        FoodStageType foodStageType = FoodStageType.BAKED;
+        if (recipe.needsWater)
+        {
+            foodStageType = FoodStageType.BOILED;
+        }
+        Print(string.Format("Nutrition Values for %1", recipe.name));
+        if (recipe.needsWater)
+        {
+            // 500ml - 100ml (lost by cooking) times water content
+            totalWater += (500 - 100) * 100;
+        }
+        foreach (CookZ_Ingredient ingredient : recipe.ingredients)
+        {
+            // map ingredient name to deputy - e.g. AnyMeat to specific meat
+            string ingredientName = ingredient.name;
+            if (anyIngredientMapToDeputy.Contains(ingredientName))
+            {
+                ingredientName = anyIngredientMapToDeputy.Get(ingredientName);
+            }
+
+            float itemEnergy;
+            if (ingredientMapToEnergy.Contains(ingredientName))
+            {
+                itemEnergy = ingredientMapToEnergy.Get(ingredientName);
+            }
+            else
+            {
+                itemEnergy = Edible_Base.GetFoodEnergy(null, ingredientName, foodStageType);
+                if (itemEnergy <= 0)
+                {
+                    itemEnergy = Edible_Base.GetFoodEnergy(null, ingredientName);
+                }
+            }
+
+            float itemWater;
+            if (ingredientMapToWater.Contains(ingredientName))
+            {
+                itemWater = ingredientMapToWater.Get(ingredientName);
+            }
+            else
+            {
+                itemWater = Edible_Base.GetFoodWater(null, ingredientName, foodStageType);
+                if (itemWater <= 0)
+                {
+                    itemWater = Edible_Base.GetFoodWater(null, ingredientName);
+                }
+            }
+
+            // use static quantity as default
+            int itemQuantityMax = GetGame().ConfigGetInt(string.Format("CfgVehicles %1 cookz_staticQuantity", ingredientName));
+            if (itemQuantityMax == 0)
+            {
+                itemQuantityMax = GetGame().ConfigGetInt(string.Format("CfgVehicles %1 varQuantityMax", ingredientName));
+            }
+
+            int itemQuantityTotalMax = itemQuantityMax * ingredient.quantity;
+            // special cases
+            if (recipe.name == "CookZ_BoneBrothCan" && ingredientName == "Bone")
+            {
+                itemQuantityTotalMax = 20 * 40;
+            }
+
+            Print(string.Format("   ingredient: %1, Q:%2, MQ:%3, E:%4, W:%5", ingredientName, ingredient.quantity, itemQuantityTotalMax, itemEnergy, itemWater));
+            totalQuantityMax += itemQuantityTotalMax;
+            totalEnergy += itemEnergy * itemQuantityTotalMax;
+            totalWater += itemWater * itemQuantityTotalMax;
+        }
+
+        if (totalQuantityMax > 0)
+        {
+            float relativeEnergy = totalEnergy / totalQuantityMax;
+            float relativeWater = totalWater / totalQuantityMax;
+            Print(string.Format("  QuantityMax: %1", totalQuantityMax));
+            Print(string.Format("  Energy:      %1", relativeEnergy));
+            Print(string.Format("  Water:       %1", relativeWater));
         }
     }
 }
