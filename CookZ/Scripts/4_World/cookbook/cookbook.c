@@ -95,6 +95,91 @@ class CookZ_Cookbook
     static const string COOKING_INGREDIENT_ANY_DISINFECT      = "AnyDisinfect";
     static const string COOKING_INGREDIENT_ANY_BREADCRUMB     = "AnyBreadcrumb";
 
+    static ref map<string, ref array<string>> anyIngredientMap = InitAnyIngredientMap();
+    static map<string, ref array<string>> InitAnyIngredientMap()
+    {
+        map<string, ref array<string>> tempMap = new map<string, ref array<string>>;
+        tempMap.Insert(COOKING_INGREDIENT_ANY_MEAT, {
+            COOKING_INGREDIENT_PIG_STEAK_MEAT,
+            COOKING_INGREDIENT_WOLF_STEAK_MEAT,
+            COOKING_INGREDIENT_GOAT_STEAK_MEAT,
+            COOKING_INGREDIENT_BEAR_STEAK_MEAT,
+            COOKING_INGREDIENT_SHEEP_STEAK_MEAT,
+            COOKING_INGREDIENT_BOAR_STEAK_MEAT,
+            COOKING_INGREDIENT_COW_STEAK_MEAT,
+            COOKING_INGREDIENT_HUMAN_STEAK_MEAT,
+            COOKING_INGREDIENT_DEER_STEAK_MEAT,
+            COOKING_INGREDIENT_RABBIT_LEG_MEAT,
+            COOKING_INGREDIENT_CHICKEN_BREAST_MEAT,
+            COOKING_INGREDIENT_REINDEER_STEAK_MEAT,
+            COOKING_INGREDIENT_FOX_STEAK_MEAT
+        });
+        tempMap.Insert(COOKING_INGREDIENT_ANY_FRUIT, {
+            COOKING_INGREDIENT_PLUM,
+            COOKING_INGREDIENT_PEAR,
+            COOKING_INGREDIENT_APPLE,
+            COOKING_INGREDIENT_BANANA,
+            COOKING_INGREDIENT_ORANGE
+        });
+        tempMap.Insert(COOKING_INGREDIENT_ANY_VEG, {
+            COOKING_INGREDIENT_POTATO,
+            COOKING_INGREDIENT_GREEN_BELL_PEPPER,
+            COOKING_INGREDIENT_ZUCCHINI,
+            COOKING_INGREDIENT_TOMATO,
+            COOKING_INGREDIENT_PUMPKIN,
+            COOKING_INGREDIENT_SLICED_PUMPKIN
+        });
+        tempMap.Insert(COOKING_INGREDIENT_ANY_FISH, {
+            COOKING_INGREDIENT_CARP_FILLET_MEAT,
+            COOKING_INGREDIENT_MACKEREL_FILLET_MEAT,
+            COOKING_INGREDIENT_SARDINES,
+            COOKING_INGREDIENT_BITTERLINGS,
+            COOKING_INGREDIENT_WALLEYE_POLLOCK_FILLET_MEAT,
+            COOKING_INGREDIENT_STEELHEAD_TROUT_FILLET_MEAT
+        });
+        tempMap.Insert(COOKING_INGREDIENT_ANY_FISH_FILLET, {
+            COOKING_INGREDIENT_CARP_FILLET_MEAT,
+            COOKING_INGREDIENT_MACKEREL_FILLET_MEAT,
+            COOKING_INGREDIENT_WALLEYE_POLLOCK_FILLET_MEAT,
+            COOKING_INGREDIENT_STEELHEAD_TROUT_FILLET_MEAT
+        });
+        tempMap.Insert(COOKING_INGREDIENT_ANY_MUSHROOM, {
+            COOKING_INGREDIENT_AGARICUS_MUSHROOM,
+            COOKING_INGREDIENT_AURICULARIA_MUSHROOM,
+            COOKING_INGREDIENT_BOLETUS_MUSHROOM,
+            COOKING_INGREDIENT_LACTARIUS_MUSHROOM,
+            COOKING_INGREDIENT_MACROLEPIOTA_MUSHROOM,
+            COOKING_INGREDIENT_PLEUROTUS_MUSHROOM,
+            COOKING_INGREDIENT_AMANITA_MUSHROOM,
+            COOKING_INGREDIENT_PSILOCYBE_MUSHROOM,
+            COOKING_INGREDIENT_CRATERELLUS_MUSHROOM
+        });
+        tempMap.Insert(COOKING_INGREDIENT_ANY_SAUSAGE, {
+            COOKING_INGREDIENT_BEEF_SAUSAGE,
+            COOKING_INGREDIENT_CHICKEN_SAUSAGE,
+            COOKING_INGREDIENT_PIG_SAUSAGE,
+            COOKING_INGREDIENT_GOAT_SAUSAGE,
+            COOKING_INGREDIENT_BEAR_SAUSAGE,
+            COOKING_INGREDIENT_SHEEP_SAUSAGE,
+            COOKING_INGREDIENT_BOAR_SAUSAGE,
+            COOKING_INGREDIENT_DEER_SAUSAGE,
+            COOKING_INGREDIENT_HARE_SAUSAGE,
+            COOKING_INGREDIENT_WOLF_SAUSAGE,
+            COOKING_INGREDIENT_HUMAN_SAUSAGE,
+            COOKING_INGREDIENT_FOX_SAUSAGE,
+            COOKING_INGREDIENT_REINDEER_SAUSAGE
+        });
+        tempMap.Insert(COOKING_INGREDIENT_ANY_DISINFECT, {
+            COOKING_INGREDIENT_RAG,
+            COOKING_INGREDIENT_BANDAGE_DRESSING
+        });
+        tempMap.Insert(COOKING_INGREDIENT_ANY_BREADCRUMB, {
+            COOKING_INGREDIENT_CRACKERS,
+            COOKING_INGREDIENT_SALTY_STICKS
+        });
+        return tempMap;
+    }
+
     ref array<ref CookZ_Recipe> allRecipes;
 
     void CookZ_Cookbook()
@@ -357,92 +442,26 @@ class CookZ_Cookbook
         }
 
         // accumulate food groups
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_PIG_STEAK_MEAT);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_WOLF_STEAK_MEAT);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_GOAT_STEAK_MEAT);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_BEAR_STEAK_MEAT);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_SHEEP_STEAK_MEAT);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_BOAR_STEAK_MEAT);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_COW_STEAK_MEAT);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_HUMAN_STEAK_MEAT);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_DEER_STEAK_MEAT);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_RABBIT_LEG_MEAT);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_CHICKEN_BREAST_MEAT);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_REINDEER_STEAK_MEAT);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MEAT, COOKING_INGREDIENT_FOX_STEAK_MEAT);
-
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FRUIT, COOKING_INGREDIENT_PLUM);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FRUIT, COOKING_INGREDIENT_PEAR);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FRUIT, COOKING_INGREDIENT_APPLE);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FRUIT, COOKING_INGREDIENT_BANANA);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FRUIT, COOKING_INGREDIENT_ORANGE);
-
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_VEG, COOKING_INGREDIENT_POTATO);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_VEG, COOKING_INGREDIENT_GREEN_BELL_PEPPER);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_VEG, COOKING_INGREDIENT_ZUCCHINI);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_VEG, COOKING_INGREDIENT_TOMATO);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_VEG, COOKING_INGREDIENT_PUMPKIN);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_VEG, COOKING_INGREDIENT_SLICED_PUMPKIN);
-
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH, COOKING_INGREDIENT_CARP_FILLET_MEAT);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH, COOKING_INGREDIENT_MACKEREL_FILLET_MEAT);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH, COOKING_INGREDIENT_SARDINES);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH, COOKING_INGREDIENT_BITTERLINGS);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH, COOKING_INGREDIENT_WALLEYE_POLLOCK_FILLET_MEAT);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH, COOKING_INGREDIENT_STEELHEAD_TROUT_FILLET_MEAT);
-
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH_FILLET, COOKING_INGREDIENT_CARP_FILLET_MEAT);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH_FILLET, COOKING_INGREDIENT_MACKEREL_FILLET_MEAT);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH_FILLET, COOKING_INGREDIENT_WALLEYE_POLLOCK_FILLET_MEAT);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_FISH_FILLET, COOKING_INGREDIENT_STEELHEAD_TROUT_FILLET_MEAT);
-
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_AGARICUS_MUSHROOM);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_AURICULARIA_MUSHROOM);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_BOLETUS_MUSHROOM);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_LACTARIUS_MUSHROOM);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_MACROLEPIOTA_MUSHROOM);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_PLEUROTUS_MUSHROOM);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_AMANITA_MUSHROOM);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_PSILOCYBE_MUSHROOM);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_MUSHROOM, COOKING_INGREDIENT_CRATERELLUS_MUSHROOM);
-
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_BEEF_SAUSAGE);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_CHICKEN_SAUSAGE);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_PIG_SAUSAGE);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_GOAT_SAUSAGE);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_BEAR_SAUSAGE);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_SHEEP_SAUSAGE);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_BOAR_SAUSAGE);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_DEER_SAUSAGE);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_HARE_SAUSAGE);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_WOLF_SAUSAGE);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_HUMAN_SAUSAGE);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_FOX_SAUSAGE);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_SAUSAGE, COOKING_INGREDIENT_REINDEER_SAUSAGE);
-
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_DISINFECT, COOKING_INGREDIENT_RAG);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_DISINFECT, COOKING_INGREDIENT_BANDAGE_DRESSING);
-
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_BREADCRUMB, COOKING_INGREDIENT_CRACKERS);
-        Accumulate(ingredientsInEquipment, COOKING_INGREDIENT_ANY_BREADCRUMB, COOKING_INGREDIENT_SALTY_STICKS);
+        foreach (string group, array<string> ingredients : anyIngredientMap)
+        {
+            foreach (string ingredient : ingredients)
+            {
+                CookZ_IngredientInEquipment groupIngredient = ingredientsInEquipment.Get(group);
+                if (!groupIngredient)
+                {
+                    groupIngredient = new CookZ_IngredientInEquipment();
+                    ingredientsInEquipment.Set(group, groupIngredient);
+                }
+                CookZ_IngredientInEquipment specificIngredient = ingredientsInEquipment.Get(ingredient);
+                if (specificIngredient)
+                {
+                    groupIngredient.quantity = groupIngredient.quantity + specificIngredient.quantity;
+                    groupIngredient.numItems = groupIngredient.numItems + specificIngredient.numItems;
+                }
+            }
+        }
 
         return ingredientsInEquipment;
-    }
-
-    private void Accumulate(map<string, ref CookZ_IngredientInEquipment> ingredientMap, string group, string specific)
-    {
-        CookZ_IngredientInEquipment groupIngredient = ingredientMap.Get(group);
-        if (!groupIngredient)
-        {
-            groupIngredient = new CookZ_IngredientInEquipment();
-            ingredientMap.Set(group, groupIngredient);
-        }
-        CookZ_IngredientInEquipment specificIngredient = ingredientMap.Get(specific);
-        if (specificIngredient)
-        {
-            groupIngredient.quantity = groupIngredient.quantity + specificIngredient.quantity;
-            groupIngredient.numItems = groupIngredient.numItems + specificIngredient.numItems;
-        }
     }
 
     // ------------------------------------------------------------------------------------------------------------------------------------
