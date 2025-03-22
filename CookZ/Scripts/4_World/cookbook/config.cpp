@@ -27,7 +27,7 @@ class CfgVehicles
             canBeOpened = true;                 // does dish need to be opened before eating
             numDishes = 1;                      // number of dishes that will be created
             ingredients[] = {
-            "Potato,4",                         // <NAME>,<QUANITY>, name must be the food item name OR AnyMeat etc
+                "Potato,4",                     // <NAME>,<QUANITY>, name must be the food item name OR AnyMeat etc
                 "Lard,1"
             };
         };
@@ -307,6 +307,53 @@ class CfgVehicles
                 "Pear,4"
             };
         };
+        class CookZ_BoneBrothCan
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsWater = true;
+            needsEmptyCan = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "Bone,-1"
+            };
+        };
+        class CookZ_ChiliConCarneCan
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsEmptyCan = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "BakedBeansCan_Opened,1",
+                "AnyMeat,2",
+                "GreenBellPepper,1",
+                "Tomato,2"
+            };
+        };
+        class CookZ_SpaghettiWithMeatballsCan
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsEmptyCan = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "SpaghettiCan_Opened,1",
+                "AnyMeat,2"
+            };
+        };
+        class CookZ_PeachGoetterspeiseCan
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsWater = true;
+            needsEmptyCan = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "PeachesCan_Opened,1",
+                "Bone,10"
+            };
+        };
         class CookZ_Beef_Sausage
         {
             allowPot = true;
@@ -435,6 +482,16 @@ class CfgVehicles
             ingredients[] = {
                 "Guts,1",
                 "ReindeerSteakMeat,2"
+            };
+        };
+        class CookZ_Blood_Sausage
+        {
+            allowPot = true;
+            allowCauldron = true;
+            numDishes = 2;
+            ingredients[] = {
+                "Guts,1",
+                "AnyBlood,1"
             };
         };
         class CookZ_DisinfectRags
@@ -577,17 +634,6 @@ class CfgVehicles
                 "Tomato,1"
             };
         };
-        class CookZ_BoneBrothCan
-        {
-            allowPot = true;
-            allowCauldron = true;
-            needsWater = true;
-            needsEmptyCan = true;
-            canBeOpened = true;
-            ingredients[] = {
-                "Bone,-1"
-            };
-        };
         class CookZ_BakedPotatoVegBox
         {
             allowPot = true;
@@ -627,6 +673,31 @@ class CfgVehicles
                 "RedCaviar,2"
             };
         };
+        class CookZ_BakedPotatoBeansBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "PotatoSeed,2",
+                "CookZ_Cheese,1",
+                "BakedBeansCan_Opened,1"
+            };
+        };
+        class CookZ_RiceALaMaltaBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsWater = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "Rice,1",
+                "PowderedMilk,1",
+                "Marmalade,1"
+            };
+        };
         class CookZ_PaprikasKrumpliBox
         {
             allowPot = true;
@@ -638,6 +709,31 @@ class CfgVehicles
                 "AnySausage,1",
                 "Potato,2",
                 "GreenBellPepper,2"
+            };
+        };
+        class CookZ_FishSticksBox
+        {
+            allowPan = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "AnyFishFillet,1",
+                "AnyBreadcrumb,1",
+                "Lard,1"
+            };
+        };
+        class CookZ_PaellaBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsWater = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "Rice,1",
+                "ChickenBreastMeat,1",
+                "AnyFishFillet,1",
+                "Tomato,1"
             };
         };
     };

@@ -12,6 +12,9 @@ class CookZ_PearMarmaladeCan : CookZ_ClosedDish {}
 class CookZ_PlumMarmaladeCan : CookZ_ClosedDish {}
 class CookZ_MushroomStroganoffCan : CookZ_ClosedDish {}
 class CookZ_BoneBrothCan : CookZ_ClosedDish {}
+class CookZ_ChiliConCarneCan : CookZ_ClosedDish {}
+class CookZ_SpaghettiWithMeatballsCan : CookZ_ClosedDish {}
+class CookZ_PeachGoetterspeiseCan : CookZ_ClosedDish {}
 
 class CookZ_FishSoupCan_Opened: CookZ_OpenedDish {}
 class CookZ_GoulashCan_Opened: CookZ_OpenedDish {}
@@ -27,3 +30,6 @@ class CookZ_PearMarmaladeCan_Opened : CookZ_OpenedDish {}
 class CookZ_PlumMarmaladeCan_Opened : CookZ_OpenedDish {}
 class CookZ_MushroomStroganoffCan_Opened : CookZ_OpenedDish {}
 class CookZ_BoneBrothCan_Opened : CookZ_OpenedDish {}
+class CookZ_ChiliConCarneCan_Opened : CookZ_OpenedDish {}
+class CookZ_SpaghettiWithMeatballsCan_Opened : CookZ_OpenedDish {}
+class CookZ_PeachGoetterspeiseCan_Opened : CookZ_OpenedDish {}

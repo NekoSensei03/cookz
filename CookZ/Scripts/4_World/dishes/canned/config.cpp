@@ -361,6 +361,99 @@ class CfgVehicles
         };
     };
 
+    class CookZ_ChiliConCarneCan: SpaghettiCan
+    {
+        scope=2;
+        displayName="$STR_CookZ_ChiliConCarneCan_DN";
+        descriptionShort="$STR_CookZ_ChiliConCarneCan_DS";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\canned\canned_chili_con_carne_co.paa"
+        };
+    };
+    class CookZ_ChiliConCarneCan_Opened: SpaghettiCan_Opened
+    {
+        scope=2;
+        displayName="$STR_CookZ_ChiliConCarneCan_DN";
+        descriptionShort="$STR_CookZ_ChiliConCarneCan_Opened_DS";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\canned\canned_chili_con_carne_co.paa"
+        };
+        varQuantityInit=1250;
+        varQuantityMax=1250;
+        class Nutrition
+        {
+            energy=238;
+            water=24.8;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_SpaghettiWithMeatballsCan: SpaghettiCan
+    {
+        scope=2;
+        displayName="$STR_CookZ_SpaghettiWithMeatballsCan_DN";
+        descriptionShort="$STR_CookZ_SpaghettiWithMeatballsCan_DS";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\canned\canned_spaghetti_with_meatballs_co.paa"
+        };
+    };
+    class CookZ_SpaghettiWithMeatballsCan_Opened: SpaghettiCan_Opened
+    {
+        scope=2;
+        displayName="$STR_CookZ_SpaghettiWithMeatballsCan_DN";
+        descriptionShort="$STR_CookZ_SpaghettiWithMeatballsCan_Opened_DS";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\canned\canned_spaghetti_with_meatballs_co.paa"
+        };
+        varQuantityInit=900;
+        varQuantityMax=900;
+        class Nutrition
+        {
+            energy=244.444;
+            water=30.2222;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_PeachGoetterspeiseCan: SpaghettiCan
+    {
+        scope=2;
+        displayName="$STR_CookZ_PeachGoetterspeiseCan_DN";
+        descriptionShort="$STR_CookZ_PeachGoetterspeiseCan_DS";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\canned\canned_peach_goetterspeise_co.paa"
+        };
+    };
+    class CookZ_PeachGoetterspeiseCan_Opened: SpaghettiCan_Opened
+    {
+        scope=2;
+        displayName="$STR_CookZ_PeachGoetterspeiseCan_DN";
+        descriptionShort="$STR_CookZ_PeachGoetterspeiseCan_Opened_DS";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\canned\canned_peach_goetterspeise_co.paa"
+        };
+        varQuantityInit=800;
+        varQuantityMax=800;
+        class Nutrition
+        {
+            energy=150;
+            water=85;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
     class CookZ_AppleMarmaladeCan: SpaghettiCan
     {
         scope=2;

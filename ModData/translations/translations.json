@@ -908,7 +908,163 @@
     "CookZ_PaprikasKrumpliBox_Opened_DS": {
         "en": "@CookZ_PaprikasKrumpliBox_DS @&CookZ_EatUp"
     },
-    
+
+    "CookZ_FishSticksBox_DN": {
+        "en": "Fish Sticks",
+        "de": "Fischstäbchen",
+        "cs": "Rybí tyčinky",
+        "ru": "Рыбные палочки",
+        "pl": "Paluszki rybne",
+        "it": "Bastoncini di pesce",
+        "es": "Palitos de pescado",
+        "fr": "Bâtonnets de poisson",
+        "zh": "鱼条",
+        "ja": "フィッシュスティック",
+        "pt": "Palitos de peixe",
+        "zh-cn": "鱼条"
+    },
+    "CookZ_FishSticksBox_DS": {
+        "en": "Crispy fish sticks, easy to cook and packed with protein—perfect for staying strong in the wild.",
+        "de": "Knusprige Fischstäbchen, einfach zuzubereiten und reich an Protein – ideal, um in der Wildnis stark zu bleiben.",
+        "cs": "Křupavé rybí tyčinky, snadno se připravují a jsou plné bílkovin – ideální pro přežití v divočině.",
+        "ru": "Хрустящие рыбные палочки, легко готовятся и богаты белком — отличный выбор для выживания в дикой природе.",
+        "pl": "Chrupiące paluszki rybne, łatwe do przygotowania i pełne białka – idealne na przetrwanie w dziczy.",
+        "it": "Bastoncini di pesce croccanti, facili da cucinare e ricchi di proteine, perfetti per sopravvivenza nella natura.",
+        "es": "Crujientes palitos de pescado, fáciles de cocinar y llenos de proteínas, ideales para resistir en la naturaleza.",
+        "fr": "Bâtonnets de poisson croustillants, faciles à préparer et riches en protéines – parfaits pour survivre en pleine nature.",
+        "zh": "香脆鱼条，易于烹饪，富含蛋白质，是野外生存的理想食物。",
+        "ja": "サクサクのフィッシュスティック。調理が簡単で高タンパク、サバイバルに最適な食糧。",
+        "pt": "Palitos de peixe crocantes, fáceis de preparar e ricos em proteínas – ideais para se manter forte na selva.",
+        "zh-cn": "香脆鱼条，易于烹饪，富含蛋白质，是野外生存的理想食物。"
+    },
+    "CookZ_FishSticksBox_Opened_DS": {
+        "en": "@CookZ_FishSticksBox_DS @&CookZ_EatUp"
+    },
+
+    "CookZ_PaellaBox_DN": {
+        "en": "Paella",
+        "de": "Paella",
+        "cs": "Paella",
+        "ru": "Паэлья",
+        "pl": "Paella",
+        "it": "Paella",
+        "es": "Paella",
+        "fr": "Paella",
+        "zh": "西班牙炖饭",
+        "ja": "パエリア",
+        "pt": "Paella",
+        "zh-cn": "西班牙炖饭"
+    },
+    "CookZ_PaellaBox_DS": {
+        "en": "A rich dish of rice, chicken, fish, and tomatoes. Nutritious and filling—perfect for survival in harsh conditions.",
+        "de": "Ein reichhaltiges Gericht aus Reis, Huhn, Fisch und Tomaten. Nahrhaft und sättigend – perfekt zum Überleben unter harten Bedingungen.",
+        "cs": "Syté jídlo z rýže, kuřete, ryby a rajčat. Výživné a zasytí – ideální pro přežití v drsných podmínkách.",
+        "ru": "Сытное блюдо из риса, курицы, рыбы и томатов. Питательное и насыщающее — отличный выбор для выживания в суровых условиях.",
+        "pl": "Pożywne danie z ryżu, kurczaka, ryby i pomidorów. Syci i dostarcza energii – idealne do przetrwania w trudnych warunkach.",
+        "it": "Un piatto sostanzioso con riso, pollo, pesce e pomodori. Nutriente e saziante, perfetto per sopravvivere in condizioni difficili.",
+        "es": "Un plato sustancioso de arroz, pollo, pescado y tomate. Nutritivo y saciante, ideal para sobrevivir en condiciones difíciles.",
+        "fr": "Un plat copieux à base de riz, poulet, poisson et tomates. Nourrissant et rassasiant, parfait pour survivre en conditions difficiles.",
+        "zh": "由米饭、鸡肉、鱼和番茄制成的丰盛菜肴。营养丰富，填饱肚子，适合艰难环境下生存。",
+        "ja": "米、鶏肉、魚、トマトを使ったボリューム満点の料理。栄養豊富で満腹感があり、過酷な環境での生存に最適。",
+        "pt": "Um prato rico feito com arroz, frango, peixe e tomate. Nutritivo e satisfatório – ideal para sobreviver em condições difíceis.",
+        "zh-cn": "由米饭、鸡肉、鱼和番茄制成的丰盛菜肴。营养丰富，填饱肚子，适合艰难环境下生存。"
+    },
+    "CookZ_PaellaBox_Opened_DS": {
+        "en": "@CookZ_PaellaBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_BakedPotatoBeansBox_DN": {
+        "en": "Baked Potato with Beans",
+        "de": "Ofenkartoffel mit Bohnen",
+        "cs": "Pečený brambor s fazolemi",
+        "ru": "Печёный картофель с фасолью",
+        "pl": "Pieczony ziemniak z fasolą",
+        "it": "Patata al Forno con Fagioli",
+        "es": "Patata Asada con Frijoles",
+        "fr": "Pomme de Terre au Four avec Haricots",
+        "zh": "焗烤马铃薯配豆类",
+        "ja": "豆のベイクドポテト",
+        "pt": "Batata Assada com Feijão",
+        "zh-cn": "焗烤土豆配豆子"
+    },
+    "CookZ_BakedPotatoBeansBox_DS": {
+        "en": "A warm, hearty meal of baked potato topped with melted cheese and beans. High in calories—great for tough days in the wild.",
+        "de": "Eine warme, herzhafte Mahlzeit aus Ofenkartoffel mit geschmolzenem Käse und Bohnen. Kalorienreich – ideal für harte Tage in der Wildnis.",
+        "cs": "Teplé, syté jídlo – pečený brambor se sýrem a fazolemi. Vysoký obsah kalorií – skvělé do těžkých podmínek v divočině.",
+        "ru": "Тёплое и сытное блюдо: печёный картофель с расплавленным сыром и фасолью. Калорийно — то, что нужно для выживания в дикой природе.",
+        "pl": "Ciepły, sycący posiłek z pieczonym ziemniakiem, roztopionym serem i fasolą. Dużo kalorii – świetny wybór na trudne dni w dziczy.",
+        "it": "Un pasto caldo e sostanzioso con patata al forno, formaggio fuso e fagioli. Ricco di calorie – perfetto per giornate dure nella natura selvaggia.",
+        "es": "Una comida caliente y contundente: patata asada con queso derretido y frijoles. Alta en calorías, ideal para sobrevivir en la naturaleza.",
+        "fr": "Un repas chaud et copieux à base de pomme de terre au four, fromage fondu et haricots. Riche en calories – parfait pour les jours difficiles dans la nature.",
+        "zh": "一份温暖又饱足的餐点，由焗烤马铃薯、起司与豆类组成。高热量，是在野外艰困日子的理想选择。",
+        "ja": "焼いたポテトにとろけるチーズと豆をのせた温かくボリューム満点の料理。高カロリーで過酷な環境に最適。",
+        "pt": "Uma refeição quente e robusta com batata assada, queijo derretido e feijão. Alta em calorias – ideal para dias difíceis na selva.",
+        "zh-cn": "温暖又丰盛的餐食，由焗烤土豆、奶酪和豆子组成。高热量，非常适合野外生存的艰难时光。"
+    },
+    "CookZ_BakedPotatoBeansBox_Opened_DS": {
+        "en": "@CookZ_BakedPotatoBeansBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_RiceALaMaltaBox_DN": {
+        "en": "Rice à la Malta",
+        "de": "Reis à la Malta",
+        "cs": "Rýže à la Malta",
+        "ru": "Рис а-ля Мальта",
+        "pl": "Ryż à la Malta",
+        "it": "Riso à la Malta",
+        "es": "Arroz à la Malta",
+        "fr": "Riz à la Malta",
+        "zh": "马尔他米布丁",
+        "ja": "ライス・ア・ラ・マルタ",
+        "pt": "Arroz à la Malta",
+        "zh-cn": "马尔他米布丁"
+    },
+    "CookZ_RiceALaMaltaBox_DS": {
+        "en": "A creamy dessert made from milk rice and topped with sweet strawberry jam. Comforting and energy-rich—a welcome treat after a long day.",
+        "de": "Ein cremiges Dessert aus Milchreis mit süßer Erdbeermarmelade. Wohltuend und energiereich – eine willkommene Belohnung nach einem langen Tag.",
+        "cs": "Krémový dezert z mléčné rýže s jahodovým džemem. Uklidňující a plný energie – zasloužená odměna po náročném dni.",
+        "ru": "Нежный десерт из молочного риса с клубничным вареньем. Утешает и заряжает энергией — отличное угощение после тяжёлого дня.",
+        "pl": "Kremowy deser z ryżu na mleku z dodatkiem słodkiego dżemu truskawkowego. Kojący i energetyczny – miła nagroda po trudnym dniu.",
+        "it": "Un dessert cremoso a base di riso al latte con marmellata di fragole. Confortevole e ricco di energia – una delizia dopo una lunga giornata.",
+        "es": "Un postre cremoso hecho con arroz con leche y mermelada de fresa. Reconfortante y energético, perfecto para recargar fuerzas.",
+        "fr": "Un dessert onctueux à base de riz au lait, nappé de confiture de fraises. Réconfortant et riche en énergie – une douce récompense après l'effort.",
+        "zh": "由牛奶炖煮的米饭制成，上面淋有草莓果酱的奶香甜点。安抚人心、充满能量，是辛苦一天后的美味犒赏。",
+        "ja": "ミルクライスに甘いイチゴジャムをのせたクリーミーなデザート。心が安らぎ、エネルギー補給にも最適なご褒美。",
+        "pt": "Uma sobremesa cremosa feita com arroz ao leite e cobertura de geleia de morango. Confortante e energética – um agrado bem-vindo após um dia duro.",
+        "zh-cn": "用牛奶炖煮的米饭搭配草莓果酱制成的柔滑甜点。温暖人心、富含能量，是一天疲劳后的美好慰藉。"
+    },
+    "CookZ_RiceALaMaltaBox_Opened_DS": {
+        "en": "@CookZ_RiceALaMaltaBox_DS @&CookZ_EatUp"
+    },
+    "CookZ_PeachGoetterspeiseCan_DN": {
+        "en": "Wobbly Delight with Peaches",
+        "de": "Götterspeise mit Pfirsichen",
+        "cs": "Želatinový dezert s broskvemi",
+        "ru": "Желе с персиками",
+        "pl": "Galaretka z brzoskwiniami",
+        "it": "Gelatina con pesche",
+        "es": "Gelatina con melocotones",
+        "fr": "Gelée aux pêches",
+        "zh": "蜜桃果冻",
+        "ja": "ピーチ入りゼリー",
+        "pt": "Gelatina com pêssegos",
+        "zh-cn": "蜜桃果冻"
+    },
+    "CookZ_PeachGoetterspeiseCan_DS": {
+        "en": "A strange, wobbling dessert made from colored gelatin and canned peaches. Unnaturally sweet, eerily cheerful—and oddly comforting when the world’s falling apart.",
+        "de": "Ein seltsam wackelndes Dessert aus bunter Gelatine und Dosenpfirsichen. Unnatürlich süß, unheimlich fröhlich – und seltsam tröstlich, wenn alles zerfällt.",
+        "cs": "Podivný, třesoucí se dezert z barevné želatiny a konzervovaných broskví. Nepřirozeně sladký a znepokojivě veselý – ale překvapivě uklidňující v rozvráceném světě.",
+        "ru": "Странный дрожащий десерт из цветного желе и консервированных персиков. Неестественно сладкий, пугающе радостный — и неожиданно утешительный среди разрухи.",
+        "pl": "Dziwnie drgający deser z kolorowej galaretki i brzoskwiń z puszki. Nienaturalnie słodki, niepokojąco radosny – a jednak daje ukojenie w ruinach świata.",
+        "it": "Uno strano dessert tremolante fatto di gelatina colorata e pesche sciroppate. Inquietantemente dolce, insolitamente allegro – ma sorprendentemente confortante nel caos.",
+        "es": "Un extraño postre tembloroso hecho de gelatina de colores y melocotones enlatados. Inquietantemente dulce, anormalmente alegre—pero reconfortante en medio del colapso.",
+        "fr": "Un étrange dessert tremblotant à base de gélatine colorée et de pêches en conserve. Trop sucré, presque joyeux – mais rassurant au cœur du chaos.",
+        "zh": "由彩色果冻和罐头蜜桃制成的怪异甜点，诡异的甜味、异常的欢快——在崩塌世界中带来一丝安慰。",
+        "ja": "色付きゼラチンと缶詰ピーチでできた不思議なプルプルデザート。不自然な甘さと奇妙な陽気さ——崩壊した世界で、妙に心を落ち着かせてくれる。",
+        "pt": "Uma sobremesa estranha e trêmula feita com gelatina colorida e pêssegos em calda. Doce demais, assustadoramente alegre – e surpreendentemente reconfortante no meio do caos.",
+        "zh-cn": "由彩色果冻和罐头蜜桃制成的奇怪甜点。甜得反常，诡异地欢乐——在崩溃的世界中意外带来慰藉。"
+    },
+    "CookZ_PeachGoetterspeiseCan_Opened_DS": {
+        "en": "@CookZ_PeachGoetterspeiseCan_DS @&CookZ_EatUp"
+    },
     
     
 
@@ -1253,6 +1409,68 @@
     },
     "CookZ_BoneBrothCan_Opened_DS": {
         "en": "@CookZ_BoneBrothCan_DS @&CookZ_EatUp"
+    },
+    "CookZ_SpaghettiWithMeatballsCan_DN": {
+        "en": "Spaghetti with Meatballs",
+        "de": "Spaghetti mit Fleischbällchen",
+        "cs": "Špagety s masovými kuličkami",
+        "ru": "Спагетти с фрикадельками",
+        "pl": "Spaghetti z klopsikami",
+        "it": "Spaghetti con Polpette",
+        "es": "Espaguetis con Albóndigas",
+        "fr": "Spaghetti aux Boulettes",
+        "zh": "肉丸意大利面",
+        "ja": "スパゲッティとミートボール",
+        "pt": "Espaguete com Almôndegas",
+        "zh-cn": "肉丸意大利面"
+    },
+    "CookZ_SpaghettiWithMeatballsCan_DS": {
+        "en": "A comforting dish of pasta and savory meatballs, packed with energy to keep you going when supplies are scarce.",
+        "de": "Ein beruhigendes Gericht aus Pasta und herzhaften Fleischbällchen, voller Energie, um dich weiter zu bringen, wenn Vorräte knapp sind.",
+        "cs": "Uklidňující pokrm z těstovin a chutných masových kuliček, plný energie pro přežití, když zásoby docházejí.",
+        "ru": "Сытное блюдо из макарон и ароматных фрикаделек, наполняющее энергией в условиях нехватки припасов.",
+        "pl": "Pocieszające danie z makaronu i aromatycznych klopsików, pełne energii, gdy zapasy się kurczą.",
+        "it": "Un piatto confortante di pasta e polpette saporite, ricco di energia per sopravvivere quando le scorte scarseggiano.",
+        "es": "Un plato reconfortante de pasta con albóndigas sabrosas, repleto de energía para cuando los suministros escasean.",
+        "fr": "Un plat réconfortant de pâtes et boulettes savoureuses, plein d'énergie pour survivre quand les ressources manquent.",
+        "zh": "由意面和美味肉丸组成的安慰餐，在物资稀缺时提供所需能量。",
+        "ja": "パスタと風味豊かなミートボールの温かい一皿。物資が乏しい時でも活力を保つ。",
+        "pt": "Um prato reconfortante de massa e almôndegas saborosas, repleto de energia para quando os suprimentos estão escassos.",
+        "zh-cn": "由意面和美味肉丸组成的安慰餐，在物资稀缺时提供所需能量。"
+    },
+    "CookZ_SpaghettiWithMeatballsCan_Opened_DS": {
+        "en": "@CookZ_SpaghettiWithMeatballsCan_DS @&CookZ_EatUp"
+    },
+    "CookZ_ChiliConCarneCan_DN": {
+        "en": "Chili Con Carne",
+        "de": "Chili con Carne",
+        "cs": "Chili con Carne",
+        "ru": "Чили кон карне",
+        "pl": "Chili con Carne",
+        "it": "Chili con Carne",
+        "es": "Chili con Carne",
+        "fr": "Chili con Carne",
+        "zh": "辣味炖肉",
+        "ja": "チリコンカン",
+        "pt": "Chili com Carne",
+        "zh-cn": "辣味炖肉"
+    },
+    "CookZ_ChiliConCarneCan_DS": {
+        "en": "A hearty mix of beans, ground meat, tomato, and green bell pepper, slow-cooked to create a rich, nourishing stew that fuels survival.",
+        "de": "Eine herzhafte Mischung aus Bohnen, Hackfleisch, Tomaten und grüner Paprika, langsam gekocht, um einen kräftigen, nahrhaften Eintopf für das Überleben zu liefern.",
+        "cs": "Sytá směs fazolí, mletého masa, rajčat a zelené papriky, pomalu vařená k vytvoření vydatného dušeného pokrmu pro přežití.",
+        "ru": "Сытная смесь фасоли, фарша, томатов и зеленого перца, медленно приготовленная, чтобы создать насыщенное, питательное рагу для выживания.",
+        "pl": "Pożywna mieszanka fasoli, mielonego mięsa, pomidorów i zielonej papryki, gotowana na wolnym ogniu, aby stworzyć treściwy gulasz na przetrwanie.",
+        "it": "Un sostanzioso mix di fagioli, carne macinata, pomodoro e peperone verde, cotto lentamente per creare uno stufato ricco e nutriente per la sopravvivenza.",
+        "es": "Una mezcla contundente de frijoles, carne molida, tomate y pimiento verde, cocida lentamente para crear un guiso rico y nutritivo que ayuda a sobrevivir.",
+        "fr": "Un mélange copieux de haricots, viande hachée, tomate et poivron vert, mijoté lentement pour créer un ragoût riche et nourrissant pour survivre.",
+        "zh": "由豆类、碎肉、番茄和青椒慢炖而成的浓郁炖菜，为生存提供能量。",
+        "ja": "豆、ひき肉、トマト、そしてピーマンをじっくり煮込んだシチュー。生存のためのエネルギー源となる。",
+        "pt": "Uma mistura nutritiva de feijão, carne moída, tomate e pimentão verde, cozida lentamente para criar um ensopado rico que ajuda na sobrevivência.",
+        "zh-cn": "由豆类、碎肉、番茄和青椒慢炖而成的浓郁炖菜，为生存提供能量。"
+    },
+    "CookZ_ChiliConCarneCan_Opened_DS": {
+        "en": "@CookZ_ChiliConCarneCan_DS @&CookZ_EatUp"
     },
     "CookZ_AppleMarmaladeCan_DN": {
         "en": "Apple Marmalade",
@@ -1715,6 +1933,34 @@
         "pt": "Uma linguiça saborosa e robusta feita de rena, fornecendo nutrição duradoura para situações de sobrevivência.",
         "zh-cn": "由驯鹿制成的美味、强劲的香肠，提供持久的营养，适用于生存情况。"
     },
+    "CookZ_Blood_Sausage_DN": {
+        "en": "Blood Pudding",
+        "de": "Blutwurst",
+        "cs": "Krvavá klobása",
+        "ru": "Кровяная колбаса",
+        "pl": "Kaszanka",
+        "it": "Sanguinaccio",
+        "es": "Morcilla",
+        "fr": "Boudin noir",
+        "zh": "血肠",
+        "ja": "ブラッドプディング",
+        "pt": "Morcela",
+        "zh-cn": "血肠"
+    },
+    "CookZ_Blood_Sausage_DS": {
+        "en": "A thick, iron-rich sausage made from blood and offal. A strong source of nutrition when food is scarce.",
+        "de": "Eine dichte, eisenreiche Wurst aus Blut und Innereien. Eine kräftige Nahrungsquelle, wenn Nahrung knapp ist.",
+        "cs": "Hutná, železem bohatá klobása z krve a vnitřností. Silný zdroj výživy, když je jídla málo.",
+        "ru": "Плотная, богатая железом колбаса из крови и потрохов. Надёжный источник питания в условиях нехватки еды.",
+        "pl": "Gęsta, bogata w żelazo kiełbasa z krwi i podrobów. Mocne źródło pożywienia w czasach głodu.",
+        "it": "Una salsiccia densa e ricca di ferro fatta di sangue e interiora. Un'ottima fonte di nutrizione quando il cibo scarseggia.",
+        "es": "Un embutido denso y rico en hierro hecho con sangre y vísceras. Una fuente fuerte de nutrición en tiempos de escasez.",
+        "fr": "Une saucisse dense et riche en fer à base de sang et d’abats. Une source essentielle de nutrition en cas de pénurie.",
+        "zh": "一种浓稠、富含铁质的香肠，由血液和内脏制成，是食物短缺时的重要营养来源。",
+        "ja": "血と内臓で作られた濃厚で鉄分豊富なソーセージ。食料が不足した際の強力な栄養源。",
+        "pt": "Uma linguiça densa e rica em ferro feita com sangue e miúdos. Uma forte fonte de nutrição quando a comida é escassa.",
+        "zh-cn": "一种浓稠、富含铁质的香肠，由血液和内脏制成，是食物短缺时的重要营养来源。"
+    },
 
 
 
@@ -2012,6 +2258,20 @@
         "pt": "Panos ou bandagens",
         "zh-cn": "抹布或绷带"
     },
+    "CookZ_Ingredient_AnyBlood": {
+        "en": "Blood Bag",
+        "cs": "Vak s krví",
+        "de": "Blutbeutel",
+        "ru": "Пакет крови",
+        "pl": "Worek krwi",
+        "it": "Sacca di sangue",
+        "es": "Bolsa de sangre",
+        "fr": "Poche de sang",
+        "zh": "血袋",
+        "ja": "血液バッグ",
+        "pt": "Bolsa de sangue",
+        "zh-cn": "输血袋"
+    },
 
 
 
@@ -2099,5 +2359,19 @@
         "ja": "または",
         "pt": "ou",
         "zh-cn": "或"
+    },
+    "CookZ_Open": {
+        "en": "open",
+        "de": "offen",
+        "cs": "otevřeno",
+        "ru": "открыто",
+        "pl": "otwarte",
+        "it": "aperto",
+        "es": "abierto",
+        "fr": "ouvert",
+        "zh": "打开",
+        "ja": "開いている",
+        "pt": "aberto",
+        "zh-cn": "打开"
     }
 }

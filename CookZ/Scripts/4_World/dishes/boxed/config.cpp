@@ -886,6 +886,70 @@ class CfgVehicles
         };
     };
 
+    class CookZ_BakedPotatoBeansBox: CookZ_Box_Base
+    {
+        scope=2;
+        displayName="$STR_CookZ_BakedPotatoBeansBox_DN";
+        descriptionShort="$STR_CookZ_BakedPotatoBeansBox_DS";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_baked_potato_beans_co.paa"
+        };
+    };
+    class CookZ_BakedPotatoBeansBox_Opened: CookZ_BoxOpened_Base
+    {
+        scope=2;
+        displayName="$STR_CookZ_BakedPotatoBeansBox_DN";
+        descriptionShort="$STR_CookZ_BakedPotatoBeansBox_Opened_DS";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_baked_potato_beans_co.paa",
+            "CookZ\data\dishes\boxed\box_food_baked_potato_beans_co.paa"
+        };
+        varQuantityInit=1100;
+        varQuantityMax=1100;
+        class Nutrition
+        {
+            energy=265.909;
+            water=39.0909;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_RiceALaMaltaBox: CookZ_Box_Base
+    {
+        scope=2;
+        displayName="$STR_CookZ_RiceALaMaltaBox_DN";
+        descriptionShort="$STR_CookZ_RiceALaMaltaBox_DS";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_rice_a_la_malta_co.paa"
+        };
+    };
+    class CookZ_RiceALaMaltaBox_Opened: CookZ_BoxOpened_Base
+    {
+        scope=2;
+        displayName="$STR_CookZ_RiceALaMaltaBox_DN";
+        descriptionShort="$STR_CookZ_RiceALaMaltaBox_Opened_DS";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_rice_a_la_malta_co.paa",
+            "CookZ\data\dishes\boxed\box_food_rice_a_la_malta_co.paa"
+        };
+        varQuantityInit=1100;
+        varQuantityMax=1100;
+        class Nutrition
+        {
+            energy=190.909;
+            water=86.3636;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
     class CookZ_PaprikasKrumpliBox: CookZ_Box_Base
     {
         scope=2;
@@ -912,6 +976,70 @@ class CfgVehicles
         {
             energy=260.417;
             water=43.9167;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_FishSticksBox: CookZ_Box_Base
+    {
+        scope=2;
+        displayName="$STR_CookZ_FishSticksBox_DN";
+        descriptionShort="$STR_CookZ_FishSticksBox_DS";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_fish_sticks_co.paa"
+        };
+    };
+    class CookZ_FishSticksBox_Opened: CookZ_BoxOpened_Base
+    {
+        scope=2;
+        displayName="$STR_CookZ_FishSticksBox_DN";
+        descriptionShort="$STR_CookZ_FishSticksBox_Opened_DS";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_fish_sticks_co.paa",
+            "CookZ\data\dishes\boxed\box_food_fish_sticks_co.paa"
+        };
+        varQuantityInit=750;
+        varQuantityMax=750;
+        class Nutrition
+        {
+            energy=190;
+            water=24;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
+
+    class CookZ_PaellaBox: CookZ_Box_Base
+    {
+        scope=2;
+        displayName="$STR_CookZ_PaellaBox_DN";
+        descriptionShort="$STR_CookZ_PaellaBox_DS";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_paella_co.paa"
+        };
+    };
+    class CookZ_PaellaBox_Opened: CookZ_BoxOpened_Base
+    {
+        scope=2;
+        displayName="$STR_CookZ_PaellaBox_DN";
+        descriptionShort="$STR_CookZ_PaellaBox_Opened_DS";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\boxed\box_paella_co.paa",
+            "CookZ\data\dishes\boxed\box_food_paella_co.paa"
+        };
+        varQuantityInit=1225;
+        varQuantityMax=1225;
+        class Nutrition
+        {
+            energy=119.388;
+            water=92.2449;
             fullnessIndex=3;
             nutritionalIndex=1;
             toxicity=0;

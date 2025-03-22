@@ -85,6 +85,9 @@ class CookZ_Cookbook
     static const string COOKING_INGREDIENT_RAG                       = "Rag";
     static const string COOKING_INGREDIENT_BANDAGE_DRESSING          = "BandageDressing";
 
+    static const string COOKING_INGREDIENT_BLOOD_BAG_FULL            = "BloodBagFull";
+    static const string COOKING_INGREDIENT_BLOOD_BAG_IV              = "BloodBagIV";
+
     static const string COOKING_INGREDIENT_ANY_MEAT           = "AnyMeat";
     static const string COOKING_INGREDIENT_ANY_FRUIT          = "AnyFruit";
     static const string COOKING_INGREDIENT_ANY_VEG            = "AnyVeg";
@@ -94,6 +97,7 @@ class CookZ_Cookbook
     static const string COOKING_INGREDIENT_ANY_SAUSAGE        = "AnySausage";
     static const string COOKING_INGREDIENT_ANY_DISINFECT      = "AnyDisinfect";
     static const string COOKING_INGREDIENT_ANY_BREADCRUMB     = "AnyBreadcrumb";
+    static const string COOKING_INGREDIENT_ANY_BLOOD          = "AnyBlood";
 
     static ref map<string, ref array<string>> anyIngredientMap = InitAnyIngredientMap();
     static map<string, ref array<string>> InitAnyIngredientMap()
@@ -176,6 +180,10 @@ class CookZ_Cookbook
         tempMap.Insert(COOKING_INGREDIENT_ANY_BREADCRUMB, {
             COOKING_INGREDIENT_CRACKERS,
             COOKING_INGREDIENT_SALTY_STICKS
+        });
+        tempMap.Insert(COOKING_INGREDIENT_ANY_BLOOD, {
+            COOKING_INGREDIENT_BLOOD_BAG_FULL,
+            COOKING_INGREDIENT_BLOOD_BAG_IV
         });
         return tempMap;
     }
@@ -481,6 +489,7 @@ class CookZ_Cookbook
         tempMap.Insert(COOKING_INGREDIENT_ANY_MUSHROOM,     COOKING_INGREDIENT_BOLETUS_MUSHROOM);
         tempMap.Insert(COOKING_INGREDIENT_ANY_SAUSAGE,      COOKING_INGREDIENT_BEEF_SAUSAGE);
         tempMap.Insert(COOKING_INGREDIENT_ANY_BREADCRUMB,   COOKING_INGREDIENT_CRACKERS);
+        tempMap.Insert(COOKING_INGREDIENT_ANY_BLOOD,        COOKING_INGREDIENT_BLOOD_BAG_FULL);
         return tempMap;
     }
 
@@ -497,6 +506,7 @@ class CookZ_Cookbook
         tempMap.Insert("PotatoSeed",            275);
         tempMap.Insert("Bone",                  150);
         tempMap.Insert("Rag",                   0);
+        tempMap.Insert(COOKING_INGREDIENT_BLOOD_BAG_FULL, 400);
         return tempMap;
     }
     static ref map<string, int> ingredientMapToWater = InitWaterMap();
@@ -511,6 +521,7 @@ class CookZ_Cookbook
         tempMap.Insert("PotatoSeed",            20);
         tempMap.Insert("Bone",                  20);
         tempMap.Insert("Rag",                   0);
+        tempMap.Insert(COOKING_INGREDIENT_BLOOD_BAG_FULL, 100);
         return tempMap;
     }
 

@@ -29,6 +29,7 @@
 ** sausage  <a href="https://www.flaticon.com/free-icons/sausage" title="sausage icons">Sausage icons created by Mzipi - Flaticon</a>
 ** cheese   <a href="https://www.flaticon.com/free-icons/cheese-slice" title="cheese slice icons">Cheese slice icons created by icon-kreativ-schmiede - Flaticon</a>
 ** wheat    <a href="https://www.flaticon.com/free-icons/wheat" title="wheat icons">Wheat icons created by Freepik - Flaticon</a>
+** blood    <a href="https://www.flaticon.com/free-icons/blood" title="blood icons">Blood icons created by Good Ware - Flaticon</a>
 ** chicken  https://www.freepik.com/icon/hen_9516115 by Hen icon | Freepik
 ** wolf     https://www.freepik.com/icon/wolf_8531941 by Wolf icon | FreepikGeneric Glyph
 ** cow      <a href="https://www.flaticon.com/free-icons/cow" title="cow icons">Cow icons created by Freepik - Flaticon</a>

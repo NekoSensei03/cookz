@@ -36,6 +36,10 @@ ingredient_translation_map = {
     "RedCaviar": "#STR_RedCaviar0",
     "CookZ_Cheese": "#STR_CookZ_Cheese_DN",
     "DisinfectantAlcohol": "#STR_CfgVehicles_DisinfectantAlcohol0",
+    "BakedBeansCan_Opened": "#STR_BakedBeansCan0 (#STR_CookZ_Open)",
+    "SpaghettiCan_Opened": "#STR_SpaghettiCan0 (#STR_CookZ_Open)",
+    "PeachesCan_Opened": "#STR_PeachesCan0 (#STR_CookZ_Open)",
+    "Marmalade": "#STR_CfgVehicles_Marmalade0",
     "AnyMeat": "#STR_CookZ_Ingredient_AnyMeat",
     "AnyFish": "#STR_CookZ_Ingredient_AnyFish",
     "AnyMushroom": "#STR_CookZ_Ingredient_AnyMushroom",
@@ -44,6 +48,7 @@ ingredient_translation_map = {
     "AnySausage": "#STR_CookZ_Ingredient_AnySausage",
     "AnyBreadcrumb": "#STR_CookZ_Ingredient_AnyBreadcrumb",
     "AnyDisinfect": "#STR_CookZ_Ingredient_AnyDisinfect",
+    "AnyBlood": "#STR_CookZ_Ingredient_AnyBlood",
 }
 
 translation_map = {
@@ -202,7 +207,7 @@ def main():
                 "title": "#STR_CookZ_CannedDishes",
             },
             {
-                "filter": lambda recipe: re.match(r"^CookZ_.+_Sausage$", recipe.name) and recipe.name != "CookZ_Human_Sausage",
+                "filter": lambda recipe: re.match(r"^CookZ_.+_Sausage$", recipe.name) and recipe.name != "CookZ_Human_Sausage" and recipe.name != "CookZ_Blood_Sausage",
                 "output": "P:\\CookZ\\data\\cookbook\\04_sausage.html",
                 "title": "#STR_CookZ_Sausages",
             },

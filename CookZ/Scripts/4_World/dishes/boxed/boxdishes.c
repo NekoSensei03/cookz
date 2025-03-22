@@ -31,6 +31,10 @@ class CookZ_BakedPotatoVegBox : CookZ_Box_Base {}
 class CookZ_BakedPotatoMeatBox : CookZ_Box_Base {}
 class CookZ_BakedPotatoFishBox : CookZ_Box_Base {}
 class CookZ_PaprikasKrumpliBox : CookZ_Box_Base {}
+class CookZ_FishSticksBox : CookZ_Box_Base {}
+class CookZ_PaellaBox : CookZ_Box_Base {}
+class CookZ_BakedPotatoBeansBox : CookZ_Box_Base {}
+class CookZ_RiceALaMaltaBox : CookZ_Box_Base {}
 
 class CookZ_FriedPotatoesBox_Opened : CookZ_OpenedDish {}
 class CookZ_StirFryBox_Opened : CookZ_OpenedDish {}
@@ -56,3 +60,7 @@ class CookZ_BakedPotatoVegBox_Opened : CookZ_OpenedDish {}
 class CookZ_BakedPotatoMeatBox_Opened : CookZ_OpenedDish {}
 class CookZ_BakedPotatoFishBox_Opened : CookZ_OpenedDish {}
 class CookZ_PaprikasKrumpliBox_Opened : CookZ_OpenedDish {}
+class CookZ_FishSticksBox_Opened : CookZ_OpenedDish {}
+class CookZ_PaellaBox_Opened : CookZ_OpenedDish {}
+class CookZ_BakedPotatoBeansBox_Opened : CookZ_OpenedDish {}
+class CookZ_RiceALaMaltaBox_Opened : CookZ_OpenedDish {}

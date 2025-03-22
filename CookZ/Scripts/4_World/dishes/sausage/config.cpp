@@ -356,4 +356,25 @@ class CfgVehicles
             toxicity=0;
         };
     };
+
+    class CookZ_Blood_Sausage: CookZ_Sausage_Base
+    {
+        scope=2;
+        displayName="$STR_CookZ_Blood_Sausage_DN";
+        descriptionShort="$STR_CookZ_Blood_Sausage_DS";
+        hiddenSelectionsTextures[]=
+        {
+            "CookZ\data\dishes\sausage\sausage_blood_co.paa"
+        };
+		varQuantityInit=500;
+		varQuantityMax=500;
+        class Nutrition
+        {
+            energy=325;
+            water=125;
+            fullnessIndex=3;
+            nutritionalIndex=1;
+            toxicity=0;
+        };
+    };
 };
