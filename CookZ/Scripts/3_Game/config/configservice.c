@@ -8,6 +8,9 @@ class CookZ_Config
     float ChanceToRemoveBrainAgent;
     float ChanceToRemoveHeavyMetalAgent;
     float ChanceToRemoveSalmonellaAgent;
+    bool EnableCheeseDecay;
+    bool EnableSausageDecay;
+    bool EnableBoxAndCanDecay;
     bool InstantCook;
 };
 
@@ -57,6 +60,9 @@ class CookZ_ConfigService
         config.ChanceToRemoveBrainAgent = 1.0;
         config.ChanceToRemoveHeavyMetalAgent = 1.0;
         config.ChanceToRemoveSalmonellaAgent = 1.0;
+        config.EnableCheeseDecay = false;
+        config.EnableSausageDecay = false;
+        config.EnableBoxAndCanDecay = true;
         config.InstantCook = false;
     }
 };

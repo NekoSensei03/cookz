@@ -41,6 +41,15 @@ Boolean values are set by 1 to true and by 0 to false.
     // note: in vanialla this is basically set to 0.4 (for some steak types)
     "ChanceToRemoveSalmonellaAgent": 1.0,
 
+    // can cheese decay
+    "EnableCheeseDecay": 0,
+
+    // can sausages decay
+    "EnableSausageDecay": 0,
+
+    // can (open) boxes and cans decay
+    "EnableBoxAndCanDecay": 1,
+
     // are dishes cooked instantly - this is mostly for debugging and should not be changed
     "InstantCook": 0
 }

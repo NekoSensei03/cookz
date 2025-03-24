@@ -2,7 +2,7 @@ class CookZ_OpenedDish: Edible_Base
 {
     override bool CanDecay()
     {
-        return true;
+        return GetDayZGame().GetCookZ_Config().EnableBoxAndCanDecay;
     }
     
     override bool CanProcessDecay()

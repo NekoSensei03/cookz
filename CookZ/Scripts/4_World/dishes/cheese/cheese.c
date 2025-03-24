@@ -2,7 +2,7 @@ class CookZ_Cheese: Edible_Base
 {
 	override bool CanDecay()
 	{
-		return true;
+		return GetDayZGame().GetCookZ_Config().EnableCheeseDecay;
 	}
 
 	override bool CanProcessDecay()

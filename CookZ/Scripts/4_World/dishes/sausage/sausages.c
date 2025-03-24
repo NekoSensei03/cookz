@@ -2,7 +2,7 @@ class CookZ_Sausage_Base: Edible_Base
 {
 	override bool CanDecay()
 	{
-		return true;
+		return GetDayZGame().GetCookZ_Config().EnableSausageDecay;
 	}
 
 	override bool CanProcessDecay()
