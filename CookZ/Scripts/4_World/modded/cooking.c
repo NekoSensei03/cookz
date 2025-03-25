@@ -1,7 +1,7 @@
 modded class Cooking
 {
     // non edible items or edible items that have no food stage that should still be processed (based on gained temperature)
-    static ref array<typename> NON_EDIBLE_ITEMS = { Rag, BandageDressing, DisinfectantAlcohol, Rice, PowderedMilk, SodaCan_ColorBase, Snack_ColorBase, Bone };
+    static ref array<typename> NON_EDIBLE_ITEMS = { Rag, BandageDressing, DisinfectantAlcohol, Rice, PowderedMilk, SodaCan_ColorBase, Snack_ColorBase, Bone, Guts, BloodBagFull, BloodBagIV  };
 
     //COOKING PROCESS
     //--- Cooking with equipment (pot)
