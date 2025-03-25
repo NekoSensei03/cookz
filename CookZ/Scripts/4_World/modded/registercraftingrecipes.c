@@ -14,7 +14,7 @@ class CookZ_CraftEmptyCan extends RecipeBase
 {	
     override void Init()
     {
-        m_Name = "#Craft Empty Cans";
+        m_Name = "#Craft #STR_CookZ_EmptyCan_DN";
         m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
         m_AnimationLength = 0.5;//animation length in relative time units
         m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
@@ -87,7 +87,7 @@ class CookZ_CraftEmptyBoxFromPaper extends RecipeBase
 {	
     override void Init()
     {
-        m_Name = "#Craft Empty Box";
+        m_Name = "#Craft #STR_CookZ_EmptyBox_DN";
         m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
         m_AnimationLength = 0.5;//animation length in relative time units
         m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
@@ -160,7 +160,7 @@ class CookZ_CraftEmptyBoxFromBark extends RecipeBase
 {	
     override void Init()
     {
-        m_Name = "#Craft Empty Box";
+        m_Name = "#Craft #STR_CookZ_EmptyBox_DN";
         m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
         m_AnimationLength = 0.5;//animation length in relative time units
         m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
@@ -250,7 +250,7 @@ class CookZ_CraftCookbook extends RecipeBase
 {	
     override void Init()
     {
-        m_Name = "#Craft Cookbook";
+        m_Name = "#Craft #STR_CookZ_Cookbook";
         m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
         m_AnimationLength = 0.5;//animation length in relative time units
         m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision

@@ -129,14 +129,14 @@ class CfgVehicles
 
     class Pot: Bottle_Base
     {
-        attachments[]=
+        attachments[] +=
         {
             "CookZ_EmptyCans",
             "CookZ_EmptyBoxes"
         };
         class InventoryEquipment
         {
-            playerSlots[]=
+            playerSlots[] +=
             {
                 "Slot_CookZ_EmptyCans",
                 "Slot_CookZ_EmptyBoxes"
@@ -145,14 +145,14 @@ class CfgVehicles
     };
     class Cauldron: Bottle_Base
     {
-        attachments[]=
+        attachments[] +=
         {
             "CookZ_EmptyCans",
             "CookZ_EmptyBoxes"
         };
         class InventoryEquipment
         {
-            playerSlots[]=
+            playerSlots[] +=
             {
                 "Slot_CookZ_EmptyCans",
                 "Slot_CookZ_EmptyBoxes"
@@ -161,14 +161,14 @@ class CfgVehicles
     };
     class FryingPan: Inventory_Base
     {
-        attachments[]=
+        attachments[] +=
         {
             "CookZ_EmptyCans",
             "CookZ_EmptyBoxes"
         };
         class InventoryEquipment
         {
-            playerSlots[]=
+            playerSlots[] +=
             {
                 "Slot_CookZ_EmptyCans",
                 "Slot_CookZ_EmptyBoxes"

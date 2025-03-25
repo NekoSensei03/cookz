@@ -2373,5 +2373,19 @@
         "ja": "開いている",
         "pt": "aberto",
         "zh-cn": "打开"
-    }
+    },
+    "CookZ_Cookbook": {
+    "en": "Cookbook",
+    "de": "Kochbuch",
+    "cs": "Kuchařka",
+    "ru": "Кулинарная книга",
+    "pl": "Książka kucharska",
+    "it": "Ricettario",
+    "es": "Libro de cocina",
+    "fr": "Livre de cuisine",
+    "zh": "食谱",
+    "ja": "クックブック",
+    "pt": "Livro de receitas",
+    "zh-cn": "食谱"
+}
 }
