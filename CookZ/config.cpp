@@ -4,7 +4,7 @@ class CfgPatches
     {
         requiredAddons[] =
         {
-            "DZ_Data", "DZ_Gear_Medical"
+            "DZ_Data", "DZ_Gear_Medical", "DZ_Gear_Cooking", "DZ_Gear_Consumables", "DZ_Gear_Food", "DZ_Gear_Cultivation", "DZ_Gear_Drinks"
         };
     };
 };
