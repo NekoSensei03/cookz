@@ -1,5 +1,6 @@
 // all here is meant for marking items in a cooking equipment green if a recipe is met
-// i.e., trigger the check if an item or attachment is added or removed or if the water quantity changes
+// i.e., trigger the check if an item or attachment is added or removed or if the water or item quantity changes
+// (ingredient foodstage change might also be nice - but is neglected for now)
 
 modded class Icon
 {
@@ -22,42 +23,69 @@ modded class Icon
 modded class CargoContainer
 {
     void ~CargoContainer()
-	{
-		if ( m_Entity )
-		{
-            ItemBase itemBase = ItemBase.Cast(m_Entity);
-            if (itemBase)
-            {
-			    itemBase.GetOnItemQuantityChanged().Remove( ItemQuantityChanged );
-            }
-		}
-	}
-
-    override void SetEntity( EntityAI item, int cargo_index = 0, bool immedUpdate = true )
     {
-        super.SetEntity(item, cargo_index, immedUpdate);
-        ItemBase itemBase = ItemBase.Cast(m_Entity);
+        ItemBase itemBase = GetCookingEquipment();
         if (itemBase)
         {
-            itemBase.GetOnItemQuantityChanged().Insert( ItemQuantityChanged );
+            ClearGetOnItemQuantityChangedCallback(itemBase);
+            for (int i = 0; i < m_Cargo.GetItemCount(); i++)
+            {
+                ClearGetOnItemQuantityChangedCallback(m_Cargo.GetItem(i));
+            }
         }
     }
 
-    void ItemQuantityChanged(float delta)
+    override void SetEntity(EntityAI item, int cargo_index = 0, bool immedUpdate = true)
     {
-        UpdateItemBackGround();
+        super.SetEntity(item, cargo_index, immedUpdate);
+        ItemBase itemBase = GetCookingEquipment();
+        if (itemBase)
+        {
+            AddGetOnItemQuantityChangedCallback(itemBase);
+            for (int i = 0; i < m_Cargo.GetItemCount(); i++)
+            {
+                AddGetOnItemQuantityChangedCallback(m_Cargo.GetItem(i));
+            }
+        }
     }
 
     override void AddedToCargo(EntityAI item)
     {
         super.AddedToCargo(item);
-        UpdateItemBackGround();
+        if(GetCookingEquipment())
+        {
+            UpdateItemBackGround();
+            AddGetOnItemQuantityChangedCallback(item);
+        }
     }
 
-    override void RemovedFromCargo( EntityAI item )
+    override void RemovedFromCargo(EntityAI item)
     {
         super.RemovedFromCargo(item);
-        UpdateItemBackGround();
+        if(GetCookingEquipment())
+        {
+            UpdateItemBackGround();
+            ClearGetOnItemQuantityChangedCallback(item);
+        }
+    }
+
+    private void AddGetOnItemQuantityChangedCallback(EntityAI item)
+    {
+        ItemBase itemBase = ItemBase.Cast(item);
+        if (itemBase)
+        {
+            itemBase.GetOnItemQuantityChanged().Clear();
+            itemBase.GetOnItemQuantityChanged().Insert(ItemQuantityChanged);
+        }
+    }
+
+    private void ClearGetOnItemQuantityChangedCallback(EntityAI item)
+    {
+        ItemBase itemBase = ItemBase.Cast(item);
+        if (itemBase)
+        {
+            itemBase.GetOnItemQuantityChanged().Clear();
+        }
     }
 
     override void Refresh()
@@ -66,25 +94,20 @@ modded class CargoContainer
         UpdateItemBackGround();
     }
 
+    void ItemQuantityChanged(float delta, ItemBase target)
+    {
+        UpdateItemBackGround();
+    }
+
     void UpdateItemBackGround()
     {
-        if (!m_Cargo)
+        ItemBase cookingEquipment = GetCookingEquipment();
+        if(!cookingEquipment)
         {
             return;
         }
 
-        ItemBase cooking_equipment = ItemBase.Cast(m_Cargo.GetCargoOwner());
-        if (!cooking_equipment)
-        {
-            return;
-        }
-
-        if(cooking_equipment.Type() != Pot && cooking_equipment.Type() != Cauldron && cooking_equipment.Type() != FryingPan)
-        {
-            return;
-        }
-
-        bool holdsRecipe = CookZ_GetCookbook().GetDishForIngredients(cooking_equipment) != null;
+        bool holdsRecipe = CookZ_GetCookbook().GetDishForIngredients(cookingEquipment) != null;
 
         for (int i = 0; i < m_Cargo.GetItemCount(); i++)
         {
@@ -95,6 +118,27 @@ modded class CargoContainer
             }
         }
     }
+
+    private ItemBase GetCookingEquipment()
+    {
+        if (!m_Entity)
+        {
+            return null;
+        }
+
+        ItemBase item = ItemBase.Cast(m_Entity);
+        if (!item)
+        {
+            return null;
+        }
+
+        if (item.Type() == Pot || item.Type() == Cauldron || item.Type() == FryingPan)
+        {
+            return item;
+        }
+
+        return null;
+    }
 }
 
 modded class Attachments
@@ -102,12 +146,23 @@ modded class Attachments
     override void AttachmentAdded(EntityAI item, string slot, EntityAI parent)
     {
         super.AttachmentAdded(item, slot, parent);
-        m_Parent.Refresh();
+        if (IsCookingEquipment(parent))
+        {
+            m_Parent.Refresh();
+        }
     }
 
     override void AttachmentRemoved(EntityAI item, string slot, EntityAI parent)
     {
         super.AttachmentRemoved(item, slot, parent);
-        m_Parent.Refresh();
+        if (IsCookingEquipment(parent))
+        {
+            m_Parent.Refresh();
+        }
+    }
+
+    private bool IsCookingEquipment(EntityAI item)
+    {
+        return item.Type() == Pot || item.Type() == Cauldron || item.Type() == FryingPan;
     }
 }

@@ -2,7 +2,7 @@
 // need to be done in ItemBase as EntityAI cannot be modded
 modded class ItemBase
 {
-    //Called when an this item quantity is changed
+    // holds registered callbacks for quantity changes 
 	protected ref ScriptInvoker m_OnItemQuantityChanged;
 
     ScriptInvoker GetOnItemQuantityChanged()
@@ -14,13 +14,14 @@ modded class ItemBase
 		return m_OnItemQuantityChanged;
 	}
 
-    override void OnQuantityChanged(float delta)
+    override void OnVariablesSynchronized()
     {
-        super.OnQuantityChanged(delta);
+        float delta = m_VarQuantity - m_VarQuantityPrev;
+        super.OnVariablesSynchronized();
 
-        if(m_OnItemQuantityChanged)
+        if(delta != 0 && m_OnItemQuantityChanged)
         {
-			m_OnItemQuantityChanged.Invoke( delta, this );
+			m_OnItemQuantityChanged.Invoke(delta, this);
         }
     }
 }
