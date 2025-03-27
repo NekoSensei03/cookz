@@ -12,3 +12,4 @@ ModsMetaData/**/*.bisign
 !ModData
 ModData/*
 !ModData/translations/
+!ModData/typefiles/
