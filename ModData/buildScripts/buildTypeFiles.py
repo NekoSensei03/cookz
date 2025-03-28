@@ -1,4 +1,5 @@
 import re
+import json
 
 file_paths = [
     'P:\\CookZ\\config.cpp',
@@ -57,6 +58,35 @@ def write_items_txt(class_names, output_path='cookz_items.txt'):
         for class_name in class_names:
             f.write(f'{class_name}\n')
 
+def write_expansion_trader_example(class_names, output_file):
+    data = {
+        "m_Version": 12,
+        "DisplayName": "Cooking",
+        "Icon": "Frying Pan",
+        "Color": "2f9900",
+        "IsExchange": 0,
+        "InitStockPercent": 75.0,
+        "Items": []
+    }
+    for class_name in class_names:
+        if class_name.endswith("_Opened"):
+            continue
+        item_entry = {
+            "ClassName": class_name,
+            "MaxPriceThreshold": 20,
+            "MinPriceThreshold": 10,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 100,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        }
+        data["Items"].append(item_entry)
+
+    with open(output_file, "w") as f:
+        json.dump(data, f, indent=4)
+
 
 if __name__ == '__main__':
     results = find_cookz_classes(file_paths)
@@ -65,3 +95,5 @@ if __name__ == '__main__':
     print('Wrote types xml')
     write_items_txt(results, 'P:\\ModsMetaData\\@CookZ\\cookz_items.txt')
     print('Wrote items txt')
+    write_expansion_trader_example(results, 'P:\\ModsMetaData\\@CookZ\\cookz_expansion_trader_example.json')
+    print('Wrote expansion trader example json')
