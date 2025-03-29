@@ -1,8 +1,5 @@
 modded class Cooking
 {
-    // non edible items or edible items that have no food stage that should still be processed (based on gained temperature)
-    static ref array<typename> NON_EDIBLE_ITEMS = { Rag, BandageDressing, DisinfectantAlcohol, Rice, PowderedMilk, SodaCan_ColorBase, Snack_ColorBase, Bone, Guts, BloodBagFull, BloodBagIV, PotatoSeed, CookZ_Cheese, BakedBeansCan_Opened, SpaghettiCan_Opened, PeachesCan_Opened };
-
     //COOKING PROCESS
     //--- Cooking with equipment (pot)
     //Returns 1 if the item changed its cooking stage, 0 if not
@@ -236,28 +233,13 @@ modded class Cooking
                 pStateFlags.param1 = true;
             }
         }
-        else if (NonEdibleItemToProcess(pItem.Type())) // not edible, but flagged to be processed
+        else
         {
-            if (CookZ_IsNonEdibleFinished(pItem, cookingEquip))
+            if (CookZ_IsOtherFinished(pItem, cookingEquip))
             {
                 pStateFlags.param1 = true;
             }
         }
-        else // vanilla processing of non edible items
-        {
-            // this is vanilla - do not do it here so that items will not ruin before cooking finished
-            //pItem.DecreaseHealth("", "", PARAM_BURN_DAMAGE_COEF * 100);
-            AddTemperatureToItem(pItem, null, 0);
-        }
-    }
-
-    bool NonEdibleItemToProcess(typename typeToCheck) {
-        foreach (typename excludeType : NON_EDIBLE_ITEMS) {
-            if (typeToCheck == excludeType) {
-                return true;
-            }
-        }
-        return false;
     }
 
     //This is a dumped down version of Cooking.UpdateCookingState for items that are edible but not cookable (edible_item.CanBeCooked() == false)
@@ -289,10 +271,11 @@ modded class Cooking
         return false;
     }
 
-    //This is a dumped down version of Cooking.UpdateCookingState for items that are not edible.
+    //This is a dumped down version of Cooking.UpdateCookingState for items that can't be cooked and dont have a food stage.
     //Slowly add temperature to the item. Item is finished when temp is 100 - basically use the temperature as a timer.
-    //Used for non edible items, e.g. rags (disinfect) or edible items without a food stage, e.g. disinfected alcohol, rice, powdered milk.
-    protected bool CookZ_IsNonEdibleFinished(ItemBase pItem, ItemBase cooking_equipment)
+    //Used for items that can't be cooked and don't have a food statges, e.g. rags (disinfect), blood bags or edible items
+    //without a food stage, e.g. disinfected alcohol, rice, powdered milk, open cans.
+    protected bool CookZ_IsOtherFinished(ItemBase pItem, ItemBase cooking_equipment)
     {
         if (!pItem || !cooking_equipment)
         {
