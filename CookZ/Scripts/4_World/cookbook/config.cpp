@@ -13,7 +13,8 @@ class CfgVehicles
 {
     class CookZ_Recipes
     {
-    // add a recipes here
+
+        // --- Boxed Food ---
 
         class CookZ_FriedPotatoesBox            // name needs to be name of dish to be created
         {
@@ -138,6 +139,230 @@ class CfgVehicles
                 "Potato,2"
             };
         };
+        class CookZ_BangersAndMashBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsWater = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "AnySausage,1",
+                "Potato,2"
+            };
+        };
+        class CookZ_CurrywurstBox
+        {
+            allowPan = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "AnySausage,1",
+                "Lard,1",
+                "Potato,1",
+                "Tomato,1"
+            };
+        };
+        class CookZ_StuffedMushroomsBox
+        {
+            allowPan = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "AnyMushroom,4",
+                "CookZ_Cheese,1"
+            };
+        };
+        class CookZ_RabbitRoastBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "RabbitLegMeat,2",
+                "GreenBellPepper,2",
+                "Tomato,3"
+            };
+        };
+        class CookZ_NuggiesAndFriesBox
+        {
+            allowPan = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "ChickenBreastMeat,2",
+                "Potato,2",
+                "Lard,1"
+            };
+        };
+        class CookZ_SchnitzelBox
+        {
+            allowPan = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "AnyBreadcrumb,1",
+                "AnyMeat,2",
+                "Lard,1"
+            };
+        };
+        class CookZ_BiffALaNelsonBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "SodaCan_Kvass,1",
+                "AnyMeat,2",
+                "Potato,2"
+            };
+        };
+        class CookZ_PorkAndAppleBox
+        {
+            allowPan = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "PigSteakMeat,1",
+                "Potato,2",
+                "Apple,1",
+                "Lard,1"
+            };
+        };
+        class CookZ_ChickenCordonBleuBox
+        {
+            allowPan = true;
+            allowPot = true;
+            allowCauldron = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "AnyBreadcrumb,1",
+                "ChickenBreastMeat,2",
+                "CookZ_Cheese,1",
+                "Potato,1"
+            };
+        };
+        class CookZ_RatatouilleBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "Zucchini,1",
+                "Potato,2",
+                "GreenBellPepper,2",
+                "Tomato,1"
+            };
+        };
+        class CookZ_BakedPotatoVegBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "PotatoSeed,2",
+                "CookZ_Cheese,1",
+                "Zucchini,1",
+                "GreenBellPepper,1",
+                "Tomato,1"
+            };
+        };
+        class CookZ_BakedPotatoMeatBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "PotatoSeed,2",
+                "CookZ_Cheese,1",
+                "AnyMeat,2"
+            };
+        };
+        class CookZ_BakedPotatoFishBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "PotatoSeed,2",
+                "CookZ_Cheese,1",
+                "AnyFishFillet,1",
+                "RedCaviar,2"
+            };
+        };
+        class CookZ_BakedPotatoBeansBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "PotatoSeed,2",
+                "CookZ_Cheese,1",
+                "BakedBeansCan_Opened,1"
+            };
+        };
+        class CookZ_RiceALaMaltaBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsWater = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "Rice,1",
+                "PowderedMilk,1",
+                "Marmalade,1"
+            };
+        };
+        class CookZ_PaprikasKrumpliBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            allowPan = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "AnySausage,1",
+                "Potato,2",
+                "GreenBellPepper,2"
+            };
+        };
+        class CookZ_FishSticksBox
+        {
+            allowPan = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "AnyFishFillet,1",
+                "AnyBreadcrumb,1",
+                "Lard,1"
+            };
+        };
+        class CookZ_PaellaBox
+        {
+            allowPot = true;
+            allowCauldron = true;
+            needsWater = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "Rice,1",
+                "ChickenBreastMeat,1",
+                "AnyFishFillet,1",
+                "Tomato,1"
+            };
+        };
+
+        // --- Canned Food ---
+
         class CookZ_GoulashCan
         {
             allowPot = true;
@@ -354,6 +579,9 @@ class CfgVehicles
                 "Bone,10"
             };
         };
+
+        // --- Sausages ---
+
         class CookZ_Beef_Sausage
         {
             allowPot = true;
@@ -494,6 +722,9 @@ class CfgVehicles
                 "AnyBlood,1"
             };
         };
+
+        // --- Misc ---
+
         class CookZ_DisinfectRags
         {
             allowPot = true;
@@ -502,30 +733,6 @@ class CfgVehicles
             doNotReplaceIngredients = true;
             ingredients[] = {
                 "AnyDisinfect,-1"    // -1 any number of rag, bandage, ... > 0
-            };
-        };
-        class CookZ_BangersAndMashBox
-        {
-            allowPot = true;
-            allowCauldron = true;
-            needsWater = true;
-            needsEmptyBox = true;
-            canBeOpened = true;
-            ingredients[] = {
-                "AnySausage,1",
-                "Potato,2"
-            };
-        };
-        class CookZ_CurrywurstBox
-        {
-            allowPan = true;
-            needsEmptyBox = true;
-            canBeOpened = true;
-            ingredients[] = {
-                "AnySausage,1",
-                "Lard,1",
-                "Potato,1",
-                "Tomato,1"
             };
         };
         class CookZ_Cheese
@@ -537,203 +744,6 @@ class CfgVehicles
             ingredients[] = {
                 "Lard,2",
                 "PowderedMilk,2"
-            };
-        };
-        class CookZ_StuffedMushroomsBox
-        {
-            allowPan = true;
-            needsEmptyBox = true;
-            canBeOpened = true;
-            ingredients[] = {
-                "AnyMushroom,4",
-                "CookZ_Cheese,1"
-            };
-        };
-        class CookZ_RabbitRoastBox
-        {
-            allowPot = true;
-            allowCauldron = true;
-            needsEmptyBox = true;
-            canBeOpened = true;
-            ingredients[] = {
-                "RabbitLegMeat,2",
-                "GreenBellPepper,2",
-                "Tomato,3"
-            };
-        };
-        class CookZ_NuggiesAndFriesBox
-        {
-            allowPan = true;
-            needsEmptyBox = true;
-            canBeOpened = true;
-            ingredients[] = {
-                "ChickenBreastMeat,2",
-                "Potato,2",
-                "Lard,1"
-            };
-        };
-        class CookZ_SchnitzelBox
-        {
-            allowPan = true;
-            needsEmptyBox = true;
-            canBeOpened = true;
-            ingredients[] = {
-                "AnyBreadcrumb,1",
-                "AnyMeat,2",
-                "Lard,1"
-            };
-        };
-        class CookZ_BiffALaNelsonBox
-        {
-            allowPot = true;
-            allowCauldron = true;
-            needsEmptyBox = true;
-            canBeOpened = true;
-            ingredients[] = {
-                "SodaCan_Kvass,1",
-                "AnyMeat,2",
-                "Potato,2"
-            };
-        };
-        class CookZ_PorkAndAppleBox
-        {
-            allowPan = true;
-            needsEmptyBox = true;
-            canBeOpened = true;
-            ingredients[] = {
-                "PigSteakMeat,1",
-                "Potato,2",
-                "Apple,1",
-                "Lard,1"
-            };
-        };
-        class CookZ_ChickenCordonBleuBox
-        {
-            allowPan = true;
-            allowPot = true;
-            allowCauldron = true;
-            needsEmptyBox = true;
-            canBeOpened = true;
-            ingredients[] = {
-                "AnyBreadcrumb,1",
-                "ChickenBreastMeat,2",
-                "CookZ_Cheese,1",
-                "Potato,1"
-            };
-        };
-        class CookZ_RatatouilleBox
-        {
-            allowPot = true;
-            allowCauldron = true;
-            needsEmptyBox = true;
-            canBeOpened = true;
-            ingredients[] = {
-                "Zucchini,1",
-                "Potato,2",
-                "GreenBellPepper,2",
-                "Tomato,1"
-            };
-        };
-        class CookZ_BakedPotatoVegBox
-        {
-            allowPot = true;
-            allowCauldron = true;
-            needsEmptyBox = true;
-            canBeOpened = true;
-            ingredients[] = {
-                "PotatoSeed,2",
-                "CookZ_Cheese,1",
-                "Zucchini,1",
-                "GreenBellPepper,1",
-                "Tomato,1"
-            };
-        };
-        class CookZ_BakedPotatoMeatBox
-        {
-            allowPot = true;
-            allowCauldron = true;
-            needsEmptyBox = true;
-            canBeOpened = true;
-            ingredients[] = {
-                "PotatoSeed,2",
-                "CookZ_Cheese,1",
-                "AnyMeat,2"
-            };
-        };
-        class CookZ_BakedPotatoFishBox
-        {
-            allowPot = true;
-            allowCauldron = true;
-            needsEmptyBox = true;
-            canBeOpened = true;
-            ingredients[] = {
-                "PotatoSeed,2",
-                "CookZ_Cheese,1",
-                "AnyFishFillet,1",
-                "RedCaviar,2"
-            };
-        };
-        class CookZ_BakedPotatoBeansBox
-        {
-            allowPot = true;
-            allowCauldron = true;
-            needsEmptyBox = true;
-            canBeOpened = true;
-            ingredients[] = {
-                "PotatoSeed,2",
-                "CookZ_Cheese,1",
-                "BakedBeansCan_Opened,1"
-            };
-        };
-        class CookZ_RiceALaMaltaBox
-        {
-            allowPot = true;
-            allowCauldron = true;
-            needsWater = true;
-            needsEmptyBox = true;
-            canBeOpened = true;
-            ingredients[] = {
-                "Rice,1",
-                "PowderedMilk,1",
-                "Marmalade,1"
-            };
-        };
-        class CookZ_PaprikasKrumpliBox
-        {
-            allowPot = true;
-            allowCauldron = true;
-            allowPan = true;
-            needsEmptyBox = true;
-            canBeOpened = true;
-            ingredients[] = {
-                "AnySausage,1",
-                "Potato,2",
-                "GreenBellPepper,2"
-            };
-        };
-        class CookZ_FishSticksBox
-        {
-            allowPan = true;
-            needsEmptyBox = true;
-            canBeOpened = true;
-            ingredients[] = {
-                "AnyFishFillet,1",
-                "AnyBreadcrumb,1",
-                "Lard,1"
-            };
-        };
-        class CookZ_PaellaBox
-        {
-            allowPot = true;
-            allowCauldron = true;
-            needsWater = true;
-            needsEmptyBox = true;
-            canBeOpened = true;
-            ingredients[] = {
-                "Rice,1",
-                "ChickenBreastMeat,1",
-                "AnyFishFillet,1",
-                "Tomato,1"
             };
         };
     };
