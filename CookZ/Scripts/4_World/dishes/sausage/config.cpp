@@ -24,6 +24,9 @@ class CfgVehicles
 		itemSize[]={2,2};
 		weight=265;
 		varQuantityMin=0;
+        varTemperatureFreezeTime=1980;
+        varTemperatureThawTime=1980;
+        varTemperatureMax=120;
 		isMeleeWeapon=1;
 		model="CookZ\data\dishes\sausage\sausage.p3d";
         hiddenSelections[]=

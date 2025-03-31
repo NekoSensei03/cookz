@@ -25,6 +25,9 @@ class CfgVehicles
 		varQuantityInit=0;
 		varQuantityMin=0;
 		varQuantityMax=0;
+        varTemperatureFreezeTime=1980;
+        varTemperatureThawTime=1980;
+        varTemperatureMax=120;
 		isMeleeWeapon=1;
 		model="CookZ\data\dishes\boxed\food_box.p3d";
         hiddenSelections[]=
@@ -89,6 +92,9 @@ class CfgVehicles
 		itemSize[]={2,2};
 		weight=265;
 		varQuantityMin=0;
+        varTemperatureFreezeTime=1980;
+        varTemperatureThawTime=1980;
+        varTemperatureMax=120;
 		isMeleeWeapon=1;
 		model="CookZ\data\dishes\boxed\food_box_opened.p3d";
         hiddenSelections[]=

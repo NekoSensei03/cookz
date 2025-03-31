@@ -24,6 +24,9 @@ class CfgVehicles
 		itemSize[]={2,1};
 		weight=200;
 		varQuantityMin=0;
+		varTemperatureFreezeTime=1980;
+        varTemperatureThawTime=1980;
+        varTemperatureMax=120;
 		isMeleeWeapon=1;
 		model="CookZ\data\dishes\cheese\cookz_cheese.p3d";
         hiddenSelections[]=
