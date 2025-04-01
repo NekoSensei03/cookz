@@ -181,7 +181,7 @@ class CookZ_CraftEmptyBoxFromBark extends RecipeBase
 
         //INGREDIENTS
         //ingredient 1
-        InsertIngredient(0,"Bark_Oak");
+        InsertIngredient(0,"Bark_ColorBase");
 
         m_IngredientAddHealth[0] = 0;// 0 = do nothing
         m_IngredientSetHealth[0] = -1; // -1 = do nothing
