@@ -407,7 +407,8 @@ class CookZ_Cookbook
                 if (itemInCookingEquipment.GetQuantityMax() > 0)
                 {
                     float ingredientQuantityDecimal = itemInCookingEquipment.GetQuantity() / itemInCookingEquipment.GetQuantityMax();
-                    if (ingredientQuantityDecimal < minIngredientQuantityDecimal)
+                    // skip quantity check for BandageDressing - used for disinfecting. Would cause other ingredients to also fail. 
+                    if (ingredientQuantityDecimal < minIngredientQuantityDecimal && itemInCookingEquipment.Type() != BandageDressing)
                     {
                         // not enough percent of max quantity
                         return null;
