@@ -92,3 +92,4 @@ with open(output, 'r+', encoding='utf-8') as file:
     with open(output, 'w', encoding='utf-8') as file:
         for line in lines:
             file.write(line + ",\n")
+print(f'Updated {output} - {len(rows)} rows')
