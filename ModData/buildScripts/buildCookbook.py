@@ -40,6 +40,7 @@ ingredient_translation_map = {
     "SpaghettiCan_Opened": "#STR_SpaghettiCan0 (#STR_CookZ_Open)",
     "PeachesCan_Opened": "#STR_PeachesCan0 (#STR_CookZ_Open)",
     "Marmalade": "#STR_CfgVehicles_Marmalade0",
+    "CookZPlants_Dough": "#STR_CookZPlants_Dough_DN",
     "AnyMeat": "#STR_CookZ_Ingredient_AnyMeat",
     "AnyFish": "#STR_CookZ_Ingredient_AnyFish",
     "AnyMushroom": "#STR_CookZ_Ingredient_AnyMushroom",
@@ -154,10 +155,11 @@ def read_and_parse_input(file_path):
         content = file.read()
     return parse_recipe_file(content)
 
-def generate_recipes_html(title, recipes):
+def generate_recipes_html(title, recipes, extra = ""):
     """Generate the HTML content for a specific category of recipes."""
     cookbook_entries = [f"    {recipe.generate()}" for recipe in recipes]
-    return generate_html_by_body_content(f"    <h2>{title}</h2>\n{"\n".join(cookbook_entries)}")
+    body_content = f"    <h2>{title}</h2>\n{extra}{'\n'.join(cookbook_entries)}"
+    return generate_html_by_body_content(body_content)
 
 
 def generate_html_by_body_content(body_content):
@@ -181,48 +183,57 @@ def write_html_file(output_path, content):
         file.write(content)
 
 
-def process_recipes(recipes, filter_func, output_path, title):
+def process_recipes(recipes, filter_func, output_path, title, extra = ""):
     """Filter recipes, generate HTML, and write to a file."""
     filtered_recipes = [recipe for recipe in recipes if filter_func(recipe)]
-    file_content = generate_recipes_html(title, filtered_recipes)
+    file_content = generate_recipes_html(title, filtered_recipes, extra)
     write_html_file(output_path, file_content)
     logging.debug(f"Processed {len(filtered_recipes)} recipes for {title}.")
 
 
 def main():
-    input_path = 'P:\\CookZ\\Scripts\\4_World\\cookbook\\config.cpp'
+    cookz_input_path = 'P:\\CookZ\\Scripts\\4_World\\cookbook\\config.cpp'
+    plants_input_path = 'P:\\CookZPlants\\Scripts\\4_World\\cookbook\\config.cpp'
     try:
-        recipes = read_and_parse_input(input_path)
+        recipes = read_and_parse_input(cookz_input_path)
+        plant_recipes = read_and_parse_input(plants_input_path)
+        recipes.extend(plant_recipes)
 
         # Define filters and outputs for each category
         categories = [
             {
-                "filter": lambda recipe: recipe.needs_empty_box,
+                "filter": lambda recipe: not recipe.name.startswith("CookZPlants_") and recipe.needs_empty_box,
                 "output": "P:\\CookZ\\data\\cookbook\\02_boxed.html",
                 "title": "#STR_CookZ_BoxedDishes",
             },
             {
-                "filter": lambda recipe: recipe.needs_empty_can,
+                "filter": lambda recipe: not recipe.name.startswith("CookZPlants_") and recipe.needs_empty_can,
                 "output": "P:\\CookZ\\data\\cookbook\\03_canned.html",
                 "title": "#STR_CookZ_CannedDishes",
             },
             {
-                "filter": lambda recipe: re.match(r"^CookZ_.+_Sausage$", recipe.name) and recipe.name != "CookZ_Human_Sausage" and recipe.name != "CookZ_Blood_Sausage",
+                "filter": lambda recipe: not recipe.name.startswith("CookZPlants_") and re.match(r"^CookZ_.+_Sausage$", recipe.name) and recipe.name not in ["CookZ_Human_Sausage", "CookZ_Blood_Sausage"],
                 "output": "P:\\CookZ\\data\\cookbook\\04_sausage.html",
                 "title": "#STR_CookZ_Sausages",
             },
             {
-                "filter": lambda recipe: not (
+                "filter": lambda recipe: not recipe.name.startswith("CookZPlants_") and not (
                     re.match(r"^CookZ_.+_Sausage$", recipe.name) or recipe.needs_empty_can or recipe.needs_empty_box
                 ),
                 "output": "P:\\CookZ\\data\\cookbook\\05_misc.html",
                 "title": "#STR_CookZ_Miscellaneous",
             },
+            {
+                "filter": lambda recipe: recipe.name.startswith("CookZPlants_"),
+                "output": "P:\\CookZPlants\\data\\cookbook\\01_plant_dishes.html",
+                "extra": "    <p>#STR_CookZPlants_CookingInstructions</p>\n    <h2>#STR_CookZPlants_Dishes</h2>\n",
+                "title": "#STR_CookZPlants_CookingPlants",
+            },
         ]
 
         # Process each category
         for category in categories:
-            process_recipes(recipes, category["filter"], category["output"], category["title"])
+            process_recipes(recipes, category["filter"], category["output"], category["title"], category.get("extra", ""))
 
         # build intro page
         intro_body_content = (

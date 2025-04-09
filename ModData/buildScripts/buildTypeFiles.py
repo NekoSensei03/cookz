@@ -1,13 +1,7 @@
+import os
 import re
 import json
-
-file_paths = [
-    'P:\\CookZ\\config.cpp',
-    'P:\\CookZ\\Scripts\\4_World\\dishes\\boxed\\config.cpp',
-    'P:\\CookZ\\Scripts\\4_World\\dishes\\canned\\config.cpp',
-    'P:\\CookZ\\Scripts\\4_World\\dishes\\cheese\\config.cpp',
-    'P:\\CookZ\\Scripts\\4_World\\dishes\\sausage\\config.cpp',
-]
+import sys
 
 exclude_list = [
     'CookZ_BoxedDishes',
@@ -15,7 +9,13 @@ exclude_list = [
     'CookZ_Sausage'
 ]
 
-pattern = re.compile(r'class\s+(CookZ_\w+)\s*:')
+def find_all_config_files(root_dir):
+    config_files = []
+    for dirpath, _, filenames in os.walk(root_dir):
+        for file in filenames:
+            if file.lower() == 'config.cpp':
+                config_files.append(os.path.join(dirpath, file))
+    return config_files
 
 def find_cookz_classes(file_paths, exclude_contains=None):
     if exclude_contains is None:
@@ -35,7 +35,7 @@ def find_cookz_classes(file_paths, exclude_contains=None):
                     found_classes.append(class_name)
     return found_classes
 
-def write_types_xml(class_names, output_path='cookz_types.xml'):
+def write_types_xml(class_names, output_path):
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n')
         f.write('<types>\n')
@@ -53,7 +53,7 @@ def write_types_xml(class_names, output_path='cookz_types.xml'):
             f.write('    </type>\n')
         f.write('</types>\n')
 
-def write_items_txt(class_names, output_path='cookz_items.txt'):
+def write_items_txt(class_names, output_path):
     with open(output_path, 'w', encoding='utf-8') as f:
         for class_name in class_names:
             f.write(f'{class_name}\n')
@@ -87,13 +87,29 @@ def write_expansion_trader_example(class_names, output_file):
     with open(output_file, "w") as f:
         json.dump(data, f, indent=4)
 
-
 if __name__ == '__main__':
-    results = find_cookz_classes(file_paths)
-    print(f'Found {len(results)} items')
-    write_types_xml(results, 'P:\\ModsMetaData\\@CookZ\\cookz_types.xml')
-    print('Wrote types xml')
-    write_items_txt(results, 'P:\\ModsMetaData\\@CookZ\\cookz_items.txt')
-    print('Wrote items txt')
-    write_expansion_trader_example(results, 'P:\\ModsMetaData\\@CookZ\\cookz_expansion_trader_example.json')
-    print('Wrote expansion trader example json')
+    if len(sys.argv) != 2:
+        print("Usage: python script.py <mod_name>")
+        sys.exit(1)
+
+    mod_name = sys.argv[1]
+    root_directory = f'P:\\{mod_name}'
+    pattern = re.compile(rf'class\s+({re.escape(mod_name)}_\w+)\s*:')
+
+    config_files = find_all_config_files(root_directory)
+    print(f'Found {len(config_files)} config.cpp files in {root_directory}')
+
+    results = find_cookz_classes(config_files, exclude_list)
+    print(f'Found {len(results)} CookZ class definitions')
+
+    output_base = os.path.join('P:\\ModsMetaData', f'@{mod_name}')
+    os.makedirs(output_base, exist_ok=True)
+
+    write_types_xml(results, os.path.join(output_base, f'{mod_name.lower()}_types.xml'))
+    print('Wrote types XML')
+
+    write_items_txt(results, os.path.join(output_base, f'{mod_name.lower()}_items.txt'))
+    print('Wrote items TXT')
+
+    write_expansion_trader_example(results, os.path.join(output_base, f'{mod_name.lower()}_expansion_trader_example.json'))
+    print('Wrote expansion trader example JSON')
