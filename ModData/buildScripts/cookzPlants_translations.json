@@ -1,0 +1,340 @@
+{
+    "CookZPlants_WheatSeedsPack_DN": {
+        "en": "Packed Wheat Seeds",
+        "de": "Weizensamenpäckchen",
+        "cs": "Sáček pšeničných semínek",
+        "ru": "Пакет семян пшеницы",
+        "pl": "Saszetka z nasionami pszenicy",
+        "it": "Bustina di semi di grano",
+        "es": "Sobre de semillas de trigo",
+        "fr": "Sachet de graines de blé",
+        "zh": "小包小麦种子",
+        "ja": "小袋入りの小麦の種",
+        "pt": "Pacote de sementes de trigo",
+        "zh-cn": "小包小麦种子"
+    },
+    "CookZPlants_WheatSeedsPack_DS": {
+        "en": "A package of wheat seeds.",
+        "de": "Ein Päckchen mit Weizensamen.",
+        "cs": "Malý sáček s pšeničnými semeny.",
+        "ru": "Небольшой пакет с семенами пшеницы.",
+        "pl": "Mała paczka z nasionami pszenicy.",
+        "it": "Una bustina di semi di grano.",
+        "es": "Un sobre con semillas de trigo.",
+        "fr": "Un sachet contenant des graines de blé.",
+        "zh": "一小包小麦种子。",
+        "ja": "小麦の種が入った小袋です。",
+        "pt": "Um pacotinho de sementes de trigo.",
+        "zh-cn": "一小包小麦种子。"
+    },
+    "CookZPlants_WheatSeeds_DN": {
+        "en": "Wheat Seeds",
+        "de": "Weizensamen",
+        "cs": "Pšeničná semínka",
+        "ru": "Семена пшеницы",
+        "pl": "Nasiona pszenicy",
+        "it": "Semi di grano",
+        "es": "Semillas de trigo",
+        "fr": "Graines de blé",
+        "zh": "小麦种子",
+        "ja": "小麦の種",
+        "pt": "Sementes de trigo",
+        "zh-cn": "小麦种子"
+    },
+    "CookZPlants_WheatSeeds_DS": {
+        "en": "These seeds, if planted in the ground and given some loving care, will grow into wheat plants.",
+        "de": "Diese Samen wachsen zu Weizenpflanzen heran, wenn sie mit Liebe gepflegt werden.",
+        "cs": "Tato semínka vyrostou v pšenici, pokud je zasadíte a dobře se o ně postaráte.",
+        "ru": "Эти семена вырастут в пшеницу, если посадить их в землю и ухаживать за ними с любовью.",
+        "pl": "Te nasiona, odpowiednio posadzone i pielęgnowane, wyrosną w pszenicę.",
+        "it": "Questi semi, se piantati e curati con amore, cresceranno in piante di grano.",
+        "es": "Estas semillas, si se plantan y se cuidan con cariño, crecerán en plantas de trigo.",
+        "fr": "Ces graines, plantées et bien entretenues, donneront des plants de blé.",
+        "zh": "如果播种并细心照料，这些种子会长成小麦。",
+        "ja": "これらの種は、丁寧に植えて世話をすれば、小麦に育ちます。",
+        "pt": "Essas sementes, se plantadas e cuidadas com carinho, crescerão em plantas de trigo.",
+        "zh-cn": "如果播种并细心照料，这些种子会长成小麦。"
+    },
+    "CookZPlants_PlantWheat_DN": {
+        "en": "Wheat Plant",
+        "de": "Weizenpflanze",
+        "cs": "Pšeničná rostlina",
+        "ru": "Растение пшеницы",
+        "pl": "Roślina pszenicy",
+        "it": "Pianta di grano",
+        "es": "Planta de trigo",
+        "fr": "Plant de blé",
+        "zh": "小麦植株",
+        "ja": "小麦の植物",
+        "pt": "Planta de trigo",
+        "zh-cn": "小麦植株"
+    },
+    "CookZPlants_PlantWheat_DS": {
+        "en": "A tall, golden wheat plant. Harvest when ripe to start your journey toward homemade bread—or at least some nice flour.",
+        "de": "Eine hohe, goldene Weizenpflanze. Ernte sie im richtigen Moment – der erste Schritt zu hausgemachtem Brot oder zumindest etwas Mehl.",
+        "cs": "Vysoká, zlatá pšeničná rostlina. Sklízej ji, když dozraje – první krok k domácímu chlebu, nebo alespoň k mouce.",
+        "ru": "Высокое золотистое растение пшеницы. Убери урожай вовремя — и ты на пути к домашнему хлебу или хотя бы к муке.",
+        "pl": "Wysoka, złocista roślina pszenicy. Zbierz ją, gdy dojrzeje – pierwszy krok do domowego chleba, albo przynajmniej do mąki.",
+        "it": "Una pianta di grano alta e dorata. Raccoglila quando è matura – il primo passo verso del pane fatto in casa o almeno un po' di farina.",
+        "es": "Una alta planta de trigo dorado. Cosechala cuando esté madura: el primer paso hacia pan casero, o al menos un poco de harina.",
+        "fr": "Une grande plante de blé dorée. Récoltez-la bien mûre pour commencer votre aventure vers du pain maison – ou au moins de la bonne farine.",
+        "zh": "一株高大的金色小麦。成熟时收割，是通往自制面包（或至少做点面粉）的第一步。",
+        "ja": "背の高い金色の小麦の植物。よく熟したら収穫して、自家製パンへの第一歩を踏み出そう。あるいは、少なくとも少しの小麦粉に。",
+        "pt": "Uma alta planta de trigo dourada. Colha quando estiver madura para começar sua jornada rumo ao pão caseiro — ou pelo menos alguma boa farinha.",
+        "zh-cn": "一株高大的金色小麦。成熟时收割，是通往自制面包（或至少做点面粉）的第一步。"
+    },
+    "CookZPlants_WheatEars_DN": {
+        "en": "Wheat Ears",
+        "de": "Weizenähren",
+        "cs": "Pšeničné klasy",
+        "ru": "Колосья пшеницы",
+        "pl": "Kłosy pszenicy",
+        "it": "Spighe di grano",
+        "es": "Espigas de trigo",
+        "fr": "Épis de blé",
+        "zh": "成熟的小麦穗",
+        "ja": "小麦の穂",
+        "pt": "Espigas de trigo",
+        "zh-cn": "成熟的小麦穗"
+    },
+    "CookZPlants_WheatEars_DS": {
+        "en": "Golden ears of ripe wheat, fresh from the harvest. Ready to be milled into flour—or saved for future planting if you're feeling responsible.",
+        "de": "Goldene, reife Weizenähren – frisch geerntet. Ideal zum Mahlen zu Mehl… oder zum Aufheben für die nächste Aussaat, wenn du vorhast, vorbildlich zu sein.",
+        "cs": "Zlaté klasy zralé pšenice, čerstvě sklizené. Připravené na mletí mouky – nebo na další výsadbu, pokud se cítíš zodpovědně.",
+        "ru": "Золотистые зрелые колосья, только что с поля. Можно смолоть в муку… или приберечь на посев, если ты сегодня на волне ответственности.",
+        "pl": "Złote, dojrzałe kłosy pszenicy, prosto z pola. Idealne do zmielenia na mąkę – albo do przechowania na następny siew, jeśli masz taki nastrój.",
+        "it": "Spighe dorate di grano maturo, appena raccolte. Perfette da macinare in farina… o da conservare per la prossima semina, se ti senti diligente.",
+        "es": "Espigas doradas de trigo maduro, recién cosechadas. Listas para moler en harina… o guardar para la próxima siembra, si te sientes responsable.",
+        "fr": "Des épis de blé dorés et mûrs, tout juste récoltés. Parfaits pour faire de la farine… ou à garder pour la prochaine plantation, si vous êtes d’humeur sérieuse.",
+        "zh": "金黄色成熟的小麦穗，刚刚收割。可以磨成面粉——或者存起来，下次种植时再用（如果你够负责的话）。",
+        "ja": "収穫したての黄金色の小麦の穂。粉に挽くもよし、次の栽培に備えて取っておくもよし（責任感があれば）。",
+        "pt": "Espigas douradas de trigo maduro, recém-colhidas. Prontas para virar farinha — ou para guardar e plantar depois, se estiver no clima certo.",
+        "zh-cn": "金黄色成熟的小麦穗，刚刚收割。可以磨成面粉——或者存起来下次再种（如果你觉得自己够负责）。"
+    },
+    "CookZPlants_MortarAndPestle_DN": {
+        "en": "Mortar and Pestle",
+        "de": "Mörser und Stößel",
+        "cs": "Hmoždíř a tlouk",
+        "ru": "Ступка с пестиком",
+        "pl": "Moździerz z tłuczkiem",
+        "it": "Mortaio e pestello",
+        "es": "Mortero y mano",
+        "fr": "Mortier et pilon",
+        "zh": "研钵和研杵",
+        "ja": "すり鉢とすりこぎ",
+        "pt": "Pilão com almofariz",
+        "zh-cn": "研钵和研杵"
+    },
+    "CookZPlants_MortarAndPestle_DS": {
+        "en": "A well-worn mortar and pestle. Heavy, reliable, and perfect for when something needs to be ground down with care and a bit of elbow grease.",
+        "de": "Ein gut genutzter Mörser mit Stößel. Schwer, verlässlich und perfekt, wenn etwas mit Sorgfalt (und ein wenig Muskelkraft) zerkleinert werden muss.",
+        "cs": "Obouchaný hmoždíř s tloukem. Těžký, spolehlivý a ideální, když je třeba něco rozmělnit s péčí – a trochou síly.",
+        "ru": "Проверенная ступка с пестиком. Тяжёлая, надёжная — идеально подходит, когда нужно что-то тщательно перетереть с усилием.",
+        "pl": "Wysłużony moździerz z tłuczkiem. Ciężki i niezawodny — idealny, gdy coś trzeba porządnie rozdrobnić z odrobiną staranności i siły.",
+        "it": "Un mortaio consumato dal tempo. Pesante e affidabile, perfetto per quando serve macinare qualcosa con cura e un po’ di olio di gomito.",
+        "es": "Un mortero bien usado. Pesado y fiable, perfecto para cuando hace falta triturar algo con cuidado y un poco de esfuerzo.",
+        "fr": "Un mortier bien usé. Lourd, fiable, et parfait pour broyer ce qu’il faut avec soin et un soupçon d’huile de coude.",
+        "zh": "用旧的研钵和研杵。沉重可靠，适合在需要细致研磨时施展点力气。",
+        "ja": "使い込まれたすり鉢とすりこぎ。重くて信頼できる、丁寧に、そしてちょっと力を込めてすり潰す時にぴったり。",
+        "pt": "Um pilão com almofariz bem gasto. Pesado e confiável — ideal quando algo precisa ser moído com cuidado e um pouco de força.",
+        "zh-cn": "用旧的研钵和研杵。沉重可靠，适合在需要细致研磨时施展点力气。"
+    },
+    "CookZPlants_FlourBag_DN": {
+        "en": "Flour",
+        "de": "Mehl",
+        "cs": "Mouka",
+        "ru": "Мука",
+        "pl": "Mąka",
+        "it": "Farina",
+        "es": "Harina",
+        "fr": "Farine",
+        "zh": "面粉",
+        "ja": "小麦粉",
+        "pt": "Farinha",
+        "zh-cn": "面粉"
+    },
+    "CookZPlants_FlourBag_DS": {
+        "en": "A bag of flour. Dry, flavorless, and about as exciting as dirt—but surprisingly versatile. In a place like this, anything with this many uses feels almost valuable. Almost.",
+        "de": "Ein Sack Mehl. Trocken, geschmacklos und so spannend wie Erde – aber überraschend vielseitig. In einer Welt wie dieser fühlt sich so etwas fast wertvoll an. Fast.",
+        "cs": "Pytel mouky. Suchá, bez chuti a zábavná asi jako hlína – ale překvapivě univerzální. V tomhle světě je všechno, co má tolik využití, skoro cenné. Skoro.",
+        "ru": "Мешок муки. Сухая, безвкусная, и по интересности как грязь — но удивительно универсальная. В таких условиях всё, что можно использовать по-разному, почти ценность. Почти.",
+        "pl": "Worek mąki. Sucha, bez smaku i mniej ekscytująca niż kurz – ale zaskakująco wszechstronna. W tym świecie wszystko, co ma tyle zastosowań, jest prawie cenne. Prawie.",
+        "it": "Un sacco di farina. Secca, insipida e interessante quanto la polvere – ma sorprendentemente versatile. In un mondo così, qualcosa con così tanti usi è quasi prezioso. Quasi.",
+        "es": "Una bolsa de harina. Seca, sin sabor, y tan emocionante como el polvo—pero sorprendentemente versátil. En un lugar como este, algo con tantos usos casi parece valioso. Casi.",
+        "fr": "Un sac de farine. C’est sec, fade, et à peu près aussi excitant que de la poussière – mais étonnamment polyvalent. Dans un monde comme celui-ci, tout ce qui a autant d’usages semble presque précieux. Presque.",
+        "zh": "一袋面粉。干、无味、无聊得像尘土——但用途出奇地多。在这种地方，凡是能多用几次的东西，几乎都算是珍宝了。几乎。",
+        "ja": "小麦粉の袋。乾いてて、味もなく、土みたいに面白みはない——でも意外と使い道が多い。この世界では、それだけでもちょっとした価値がある。ちょっとだけね。",
+        "pt": "Um saco de farinha. Seca, sem gosto, e tão empolgante quanto poeira — mas surpreendentemente versátil. Num lugar como este, algo com tantos usos parece quase valioso. Quase.",
+        "zh-cn": "一袋面粉。干、无味、无聊得像尘土——但用途出奇地多。在这种地方，凡是能多用几次的东西，几乎都算是珍宝了。几乎。"
+    },
+    "CookZPlants_Dough_DN": {
+        "en": "Dough",
+        "de": "Teig",
+        "cs": "Těsto",
+        "ru": "Тесто",
+        "pl": "Ciasto",
+        "it": "Impasto",
+        "es": "Masa",
+        "fr": "Pâte",
+        "zh": "面团",
+        "ja": "生地",
+        "pt": "Massa",
+        "zh-cn": "面团"
+    },
+    "CookZPlants_Dough_DS": {
+        "en": "Sticky, heavy, and weirdly alive. It’s not much now, but with heat, luck, and lowered expectations, it might just become food.",
+        "de": "Klebrig, schwer und irgendwie lebendig. Im Moment nicht viel – aber mit Hitze, Glück und niedrigen Erwartungen wird vielleicht etwas Essbares draus.",
+        "cs": "Lepivé, těžké a trochu jako živé. Zatím nic moc, ale s trochou tepla, štěstí a nízkými nároky se z toho možná stane jídlo.",
+        "ru": "Липкое, тяжёлое и подозрительно живое. Пока не впечатляет — но с жаром, удачей и заниженными ожиданиями может превратиться в еду.",
+        "pl": "Lepkie, ciężkie i dziwnie żywe. Teraz nie wygląda najlepiej, ale z odrobiną ciepła, szczęścia i niskich oczekiwań — może się uda.",
+        "it": "Appiccicoso, pesante e stranamente vivo. Al momento non è granché, ma con un po’ di calore, fortuna e aspettative basse… potrebbe diventare cibo.",
+        "es": "Pegajosa, pesada y algo viva. Por ahora no promete mucho, pero con calor, suerte y expectativas bajas, puede que se convierta en comida.",
+        "fr": "Collante, lourde, et un peu vivante. Pour l’instant, ce n’est pas fameux – mais avec de la chaleur, un peu de chance et des attentes modestes, ça pourrait devenir mangeable.",
+        "zh": "又黏又重，还有点像活的。现在没啥看头，但加点火、点点运气，再放低点期待，也许真能吃。",
+        "ja": "ベタベタして重くて、なぜか生きてる感じがする。今はただの塊。でも、火と運と期待値の低さがあれば、食べ物になるかも。",
+        "pt": "Pegajosa, pesada e estranhamente viva. Por agora, não é grande coisa — mas com calor, sorte e expectativas baixas, pode até virar comida.",
+        "zh-cn": "又黏又重，还有点像活的。现在没啥看头，但加点火、点点运气，再放低点期待，也许真能吃。"
+    },
+
+
+
+
+
+    "&CookZPlants_EatUp": {
+        "en": "Eat up before it spoils.",
+        "de": "Nach dem Öffnen rasch verzehren.",
+        "cs": "Snězte to, než se zkazí.",
+        "ru": "Съешьте, пока не испортилось.",
+        "pl": "Zjedz, zanim się zepsuje.",
+        "it": "Mangia prima che vada a male.",
+        "es": "Cómelo antes de que se estropee.",
+        "fr": "Mangez avant que cela ne soit périmé.",
+        "zh": "在变质之前吃掉。",
+        "ja": "腐る前に食べてください。",
+        "pt": "Coma antes que estrague.",
+        "zh-cn": "在变质之前吃掉。"
+    },
+
+
+
+
+
+    "CookZPlants_PierogiBox_DN": {
+        "en": "Pierogi",
+        "de": "Pierogi",
+        "cs": "Pirohy",
+        "ru": "Пироги",
+        "pl": "Pierogi",
+        "it": "Pierogi",
+        "es": "Pierogi",
+        "fr": "Pierogi",
+        "zh": "皮罗格",
+        "ja": "ピエロギ",
+        "pt": "Pierogi",
+        "zh-cn": "皮罗格"
+    },
+    "CookZPlants_PierogiBox_DS": {
+        "en": "Warm, doughy, and suspiciously filling. Pierogi may not answer what’s inside them—but out here, you’re better off not asking.",
+        "de": "Warm, teigig und überraschend sättigend. Pierogi geben keine Antwort auf ihren Inhalt – aber hier draußen ist es besser, das auch nicht zu wissen.",
+        "cs": "Teplé, těstovité a podezřele syté. Pierogi ti nepoví, co je uvnitř – ale tady venku je lepší to stejně nevědět.",
+        "ru": "Тёплые, мягкие и подозрительно сытные. Что внутри пирогов — остаётся тайной. И, честно говоря, так даже лучше.",
+        "pl": "Ciepłe, miękkie i podejrzanie sycące. Co jest w środku? Lepiej nie pytać – szczególnie tutaj.",
+        "it": "Caldi, pastosi e stranamente sazianti. I pierogi non diranno cosa c’è dentro – ma in questo mondo, meglio così.",
+        "es": "Calientes, blandos y extrañamente saciantes. Los pierogi no explican qué llevan dentro, y en este lugar… mejor así.",
+        "fr": "Chaud, moelleux et étrangement nourrissant. Les pierogi ne disent pas ce qu'ils contiennent – et c’est peut-être mieux comme ça.",
+        "zh": "温热、软糯、意外地顶饱。至于里面是什么？在这种地方，还是别问为好。",
+        "ja": "あたたかくて、もちもちしてて、妙に満腹感がある。中身？…この世界では聞かないほうがいい。",
+        "pt": "Quente, macio e estranhamente satisfatório. Pierogi não revelam o recheio – e por aqui, é melhor assim.",
+        "zh-cn": "温热、软糯、意外地顶饱。至于里面是什么？在这种地方，还是别问为好。"
+    },
+    "CookZPlants_PierogiBox_Opened_DS": {
+        "en": "@CookZPlants_PierogiBox_DS @&CookZPlants_EatUp"
+    },
+
+
+
+
+
+
+
+    "CookZPlants_CookingPlants": {
+        "en": "Wheat-Based Recipes",
+        "de": "Weizen-Rezepte",
+        "cs": "Recepty z pšenice",
+        "ru": "Рецепты из пшеницы",
+        "pl": "Przepisy z pszenicy",
+        "it": "Ricette a base di grano",
+        "es": "Recetas con trigo",
+        "fr": "Recettes à base de blé",
+        "zh": "小麦料理",
+        "ja": "小麦を使ったレシピ",
+        "pt": "Receitas com trigo",
+        "zh-cn": "小麦料理"
+    },
+
+
+
+    "CookZPlants_CookingInstructions": {
+        "en": "Find <b>wheat seeds</b> and plant them to harvest <b>wheat ears</b>. Craft a <b>mortar and pestle</b> from a <b>large stone</b> using a <b>hammer</b>. Use the mortar and pestle to grind the <b>wheat ears</b> into <b>flour</b>. Knead <b>flour</b> and <b>water</b> into <b>dough</b> and use it in recipes.",
+        "de": "Finde <b>Weizensamen</b> und pflanze sie, um <b>Weizenähren</b> zu ernten. Stelle einen <b>Mörser und Stößel</b> aus einem <b>großen Stein</b> mit einem <b>Hammer</b> her. Zermahle die <b>Weizenähren</b> zu <b>Mehl</b>. Verknete <b>Mehl</b> mit <b>Wasser</b> zu <b>Teig</b> und verwende ihn in Rezepten.",
+        "cs": "Najdi <b>pšeničná semena</b> a zasaď je, abys sklidil <b>pšeničné klasy</b>. Vyrob <b>hmoždíř a tlouk</b> z <b>velkého kamene</b> pomocí <b>kladiva</b>. Rozemel <b>pšeničné klasy</b> na <b>mouku</b>. Z <b>mouky</b> a <b>vody</b> uhněť <b>těsto</b> a použij ho v receptech.",
+        "ru": "Найди <b>семена пшеницы</b> и посей их, чтобы получить <b>колосья пшеницы</b>. Создай <b>ступку с пестиком</b> из <b>большого камня</b> с помощью <b>молота</b>. Измельчи <b>колосья</b> в <b>муку</b>. Замеси <b>муку</b> с <b>водой</b> в <b>тесто</b> и используй его в рецептах.",
+        "pl": "Znajdź <b>nasiona pszenicy</b> i posadź je, aby zebrać <b>kłosy pszenicy</b>. Wykonaj <b>moździerz z tłuczkiem</b> z <b>dużego kamienia</b> za pomocą <b>młotka</b>. Zmiel <b>kłosy</b> na <b>mąkę</b>. Zagnieć <b>mąkę</b> z <b>wodą</b> w <b>ciasto</b> i użyj w przepisach.",
+        "it": "Trova <b>semi di grano</b> e piantali per raccogliere <b>spighe di grano</b>. Crea un <b>mortaio con pestello</b> da una <b>grossa pietra</b> usando un <b>martello</b>. Usa il mortaio per macinare le <b>spighe</b> in <b>farina</b>. Impasta <b>farina</b> e <b>acqua</b> per ottenere <b>impasto</b> e usalo nelle ricette.",
+        "es": "Encuentra <b>semillas de trigo</b> y plántalas para cosechar <b>espigas de trigo</b>. Fabrica un <b>mortero con mano</b> con una <b>piedra grande</b> usando un <b>martillo</b>. Usa el mortero para moler las <b>espigas</b> en <b>harina</b>. Amasa <b>harina</b> y <b>agua</b> para hacer <b>masa</b> y úsala en recetas.",
+        "fr": "Trouve des <b>graines de blé</b> et plante-les pour récolter des <b>épis de blé</b>. Fabrique un <b>mortier avec pilon</b> à partir d’une <b>grosse pierre</b> avec un <b>marteau</b>. Utilise-le pour moudre les <b>épis</b> en <b>farine</b>. Pétris <b>farine</b> et <b>eau</b> en <b>pâte</b> et utilise-la dans les recettes.",
+        "zh": "找到 <b>小麦种子</b> 并将其种下以收获 <b>小麦穗</b>。使用 <b>锤子</b> 敲打 <b>大石头</b> 制作 <b>研钵和研杵</b>。用它将 <b>小麦穗</b> 磨成 <b>面粉</b>。将 <b>面粉</b> 与 <b>水</b> 揉成 <b>面团</b>，然后用于食谱中。",
+        "ja": "<b>小麦の種</b> を見つけて植え、<b>小麦の穂</b> を収穫する。<b>大きな石</b> を <b>ハンマー</b> で使って <b>すり鉢とすりこぎ</b> を作る。<b>小麦の穂</b> を <b>小麦粉</b> に粉砕し、<b>小麦粉</b> と <b>水</b> をこねて <b>生地</b> を作り、レシピに使う。",
+        "pt": "Encontre <b>sementes de trigo</b> e plante para colher <b>espigas de trigo</b>. Crie um <b>pilão com almofariz</b> a partir de uma <b>pedra grande</b> usando um <b>martelo</b>. Use-o para moer as <b>espigas</b> em <b>farinha</b>. Amasse <b>farinha</b> com <b>água</b> para formar <b>massa</b> e use-a em receitas.",
+        "zh-cn": "找到 <b>小麦种子</b> 并将其种下以收获 <b>小麦穗</b>。使用 <b>锤子</b> 敲打 <b>大石头</b> 制作 <b>研钵和研杵</b>，将 <b>小麦穗</b> 磨成 <b>面粉</b>。将 <b>面粉</b> 与 <b>水</b> 揉成 <b>面团</b>，然后用于食谱中。"
+    },
+
+
+
+
+    "CookZPlants_Dishes": {
+        "en": "Dishes",
+        "de": "Gerichte",
+        "cs": "Jídla",
+        "ru": "Блюда",
+        "pl": "Dania",
+        "it": "Piatti",
+        "es": "Platos",
+        "fr": "Plats",
+        "zh": "菜肴",
+        "ja": "料理",
+        "pt": "Pratos",
+        "zh-cn": "菜肴"
+    },
+
+
+
+    "CookZPlants_UseMortarAndPestle": {
+        "en": "Grind",
+        "de": "Mahle",
+        "cs": "Rozemel",
+        "ru": "Измельчи",
+        "pl": "Zmień",
+        "it": "Maci­na",
+        "es": "Muele",
+        "fr": "Broie",
+        "zh": "研磨",
+        "ja": "すりつぶせ",
+        "pt": "Moer",
+        "zh-cn": "研磨"
+    },
+    "CookZPlants_KneadDough": {
+        "en": "Knead Dough",
+        "de": "Knete Teig",
+        "cs": "Uhněť těsto",
+        "ru": "Замеси тесто",
+        "pl": "Zagnieć ciasto",
+        "it": "Impasta",
+        "es": "Amasa",
+        "fr": "Pétris la pâte",
+        "zh": "揉面团",
+        "ja": "生地をこねろ",
+        "pt": "Sova a massa",
+        "zh-cn": "揉面团"
+    }
+}

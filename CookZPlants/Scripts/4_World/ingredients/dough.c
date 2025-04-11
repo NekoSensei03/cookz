@@ -1,0 +1,1 @@
+class CookZPlants_Dough: Inventory_Base {};
