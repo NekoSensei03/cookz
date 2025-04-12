@@ -26,5 +26,68 @@ class CfgVehicles
                 "CookZPlants_Dough,2"
             };
         };
+
+        // --- Pizza ---
+
+        class CookZPlants_MargheritaPizza
+        {
+            allowPan = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "CookZPlants_Dough,2",
+                "Tomato,2",
+                "CookZ_Cheese,2"
+            };
+        };
+        class CookZPlants_PepperoniPizza
+        {
+            allowPan = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "CookZPlants_Dough,2",
+                "Tomato,2",
+                "CookZ_Cheese,1",
+                "AnySausage,1"
+            };
+        };
+        class CookZPlants_SeafoodPizza
+        {
+            allowPan = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "CookZPlants_Dough,2",
+                "Tomato,2",
+                "CookZ_Cheese,1",
+                "AnyFishFillet,2"
+            };
+        };
+        class CookZPlants_VegetablePizza
+        {
+            allowPan = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "CookZPlants_Dough,2",
+                "Tomato,2",
+                "CookZ_Cheese,1",
+                "Zucchini,1",
+                "GreenBellPepper,1"
+            };
+        };
+        class CookZPlants_MushroomPizza
+        {
+            allowPan = true;
+            needsEmptyBox = true;
+            canBeOpened = true;
+            ingredients[] = {
+                "CookZPlants_Dough,2",
+                "Tomato,2",
+                "CookZ_Cheese,1",
+                "AnyMushroom,3"
+            };
+        };
     };
 };

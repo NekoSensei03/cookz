@@ -275,17 +275,17 @@
 
 
     "CookZPlants_CookingInstructions": {
-        "en": "Find <b>wheat seeds</b> and plant them to harvest <b>wheat ears</b>. Craft a <b>mortar and pestle</b> from a <b>large stone</b> using a <b>hammer</b>. Use the mortar and pestle to grind the <b>wheat ears</b> into <b>flour</b>. Knead <b>flour</b> and <b>water</b> into <b>dough</b> and use it in recipes.",
-        "de": "Finde <b>Weizensamen</b> und pflanze sie, um <b>Weizenähren</b> zu ernten. Stelle einen <b>Mörser und Stößel</b> aus einem <b>großen Stein</b> mit einem <b>Hammer</b> her. Zermahle die <b>Weizenähren</b> zu <b>Mehl</b>. Verknete <b>Mehl</b> mit <b>Wasser</b> zu <b>Teig</b> und verwende ihn in Rezepten.",
-        "cs": "Najdi <b>pšeničná semena</b> a zasaď je, abys sklidil <b>pšeničné klasy</b>. Vyrob <b>hmoždíř a tlouk</b> z <b>velkého kamene</b> pomocí <b>kladiva</b>. Rozemel <b>pšeničné klasy</b> na <b>mouku</b>. Z <b>mouky</b> a <b>vody</b> uhněť <b>těsto</b> a použij ho v receptech.",
-        "ru": "Найди <b>семена пшеницы</b> и посей их, чтобы получить <b>колосья пшеницы</b>. Создай <b>ступку с пестиком</b> из <b>большого камня</b> с помощью <b>молота</b>. Измельчи <b>колосья</b> в <b>муку</b>. Замеси <b>муку</b> с <b>водой</b> в <b>тесто</b> и используй его в рецептах.",
-        "pl": "Znajdź <b>nasiona pszenicy</b> i posadź je, aby zebrać <b>kłosy pszenicy</b>. Wykonaj <b>moździerz z tłuczkiem</b> z <b>dużego kamienia</b> za pomocą <b>młotka</b>. Zmiel <b>kłosy</b> na <b>mąkę</b>. Zagnieć <b>mąkę</b> z <b>wodą</b> w <b>ciasto</b> i użyj w przepisach.",
-        "it": "Trova <b>semi di grano</b> e piantali per raccogliere <b>spighe di grano</b>. Crea un <b>mortaio con pestello</b> da una <b>grossa pietra</b> usando un <b>martello</b>. Usa il mortaio per macinare le <b>spighe</b> in <b>farina</b>. Impasta <b>farina</b> e <b>acqua</b> per ottenere <b>impasto</b> e usalo nelle ricette.",
-        "es": "Encuentra <b>semillas de trigo</b> y plántalas para cosechar <b>espigas de trigo</b>. Fabrica un <b>mortero con mano</b> con una <b>piedra grande</b> usando un <b>martillo</b>. Usa el mortero para moler las <b>espigas</b> en <b>harina</b>. Amasa <b>harina</b> y <b>agua</b> para hacer <b>masa</b> y úsala en recetas.",
-        "fr": "Trouve des <b>graines de blé</b> et plante-les pour récolter des <b>épis de blé</b>. Fabrique un <b>mortier avec pilon</b> à partir d’une <b>grosse pierre</b> avec un <b>marteau</b>. Utilise-le pour moudre les <b>épis</b> en <b>farine</b>. Pétris <b>farine</b> et <b>eau</b> en <b>pâte</b> et utilise-la dans les recettes.",
+        "en": "Find <b>wheat seeds</b> and plant them to harvest <b>wheat ears.</b> Craft a <b>mortar and pestle</b> from a <b>large stone</b> using a <b>hammer.</b> Use the mortar and pestle to grind the <b>wheat ears</b> into <b>flour.</b> Knead <b>flour</b> and <b>water</b> into <b>dough</b> and use it in recipes.",
+        "de": "Finde <b>Weizensamen</b> und pflanze sie, um <b>Weizenähren</b> zu ernten. Stelle einen <b>Mörser und Stößel</b> aus einem <b>großen Stein</b> mit einem <b>Hammer</b> her. Zermahle die <b>Weizenähren</b> zu <b>Mehl.</b> Verknete <b>Mehl</b> mit <b>Wasser</b> zu <b>Teig</b> und verwende ihn in Rezepten.",
+        "cs": "Najdi <b>pšeničná semena</b> a zasaď je, abys sklidil <b>pšeničné klasy.</b> Vyrob <b>hmoždíř a tlouk</b> z <b>velkého kamene</b> pomocí <b>kladiva.</b> Rozemel <b>pšeničné klasy</b> na <b>mouku.</b> Z <b>mouky</b> a <b>vody</b> uhněť <b>těsto</b> a použij ho v receptech.",
+        "ru": "Найди <b>семена пшеницы</b> и посей их, чтобы получить <b>колосья пшеницы.</b> Создай <b>ступку с пестиком</b> из <b>большого камня</b> с помощью <b>молота.</b> Измельчи <b>колосья</b> в <b>муку.</b> Замеси <b>муку</b> с <b>водой</b> в <b>тесто</b> и используй его в рецептах.",
+        "pl": "Znajdź <b>nasiona pszenicy</b> i posadź je, aby zebrać <b>kłosy pszenicy.</b> Wykonaj <b>moździerz z tłuczkiem</b> z <b>dużego kamienia</b> za pomocą <b>młotka.</b> Zmiel <b>kłosy</b> na <b>mąkę.</b> Zagnieć <b>mąkę</b> z <b>wodą</b> w <b>ciasto</b> i użyj w przepisach.",
+        "it": "Trova <b>semi di grano</b> e piantali per raccogliere <b>spighe di grano.</b> Crea un <b>mortaio con pestello</b> da una <b>grossa pietra</b> usando un <b>martello.</b> Usa il mortaio per macinare le <b>spighe</b> in <b>farina.</b> Impasta <b>farina</b> e <b>acqua</b> per ottenere <b>impasto</b> e usalo nelle ricette.",
+        "es": "Encuentra <b>semillas de trigo</b> y plántalas para cosechar <b>espigas de trigo.</b> Fabrica un <b>mortero con mano</b> con una <b>piedra grande</b> usando un <b>martillo.</b> Usa el mortero para moler las <b>espigas</b> en <b>harina.</b> Amasa <b>harina</b> y <b>agua</b> para hacer <b>masa</b> y úsala en recetas.",
+        "fr": "Trouve des <b>graines de blé</b> et plante-les pour récolter des <b>épis de blé.</b> Fabrique un <b>mortier avec pilon</b> à partir d’une <b>grosse pierre</b> avec un <b>marteau.</b> Utilise-le pour moudre les <b>épis</b> en <b>farine.</b> Pétris <b>farine</b> et <b>eau</b> en <b>pâte</b> et utilise-la dans les recettes.",
         "zh": "找到 <b>小麦种子</b> 并将其种下以收获 <b>小麦穗</b>。使用 <b>锤子</b> 敲打 <b>大石头</b> 制作 <b>研钵和研杵</b>。用它将 <b>小麦穗</b> 磨成 <b>面粉</b>。将 <b>面粉</b> 与 <b>水</b> 揉成 <b>面团</b>，然后用于食谱中。",
         "ja": "<b>小麦の種</b> を見つけて植え、<b>小麦の穂</b> を収穫する。<b>大きな石</b> を <b>ハンマー</b> で使って <b>すり鉢とすりこぎ</b> を作る。<b>小麦の穂</b> を <b>小麦粉</b> に粉砕し、<b>小麦粉</b> と <b>水</b> をこねて <b>生地</b> を作り、レシピに使う。",
-        "pt": "Encontre <b>sementes de trigo</b> e plante para colher <b>espigas de trigo</b>. Crie um <b>pilão com almofariz</b> a partir de uma <b>pedra grande</b> usando um <b>martelo</b>. Use-o para moer as <b>espigas</b> em <b>farinha</b>. Amasse <b>farinha</b> com <b>água</b> para formar <b>massa</b> e use-a em receitas.",
+        "pt": "Encontre <b>sementes de trigo</b> e plante para colher <b>espigas de trigo.</b> Crie um <b>pilão com almofariz</b> a partir de uma <b>pedra grande</b> usando um <b>martelo.</b> Use-o para moer as <b>espigas</b> em <b>farinha.</b> Amasse <b>farinha</b> com <b>água</b> para formar <b>massa</b> e use-a em receitas.",
         "zh-cn": "找到 <b>小麦种子</b> 并将其种下以收获 <b>小麦穗</b>。使用 <b>锤子</b> 敲打 <b>大石头</b> 制作 <b>研钵和研杵</b>，将 <b>小麦穗</b> 磨成 <b>面粉</b>。将 <b>面粉</b> 与 <b>水</b> 揉成 <b>面团</b>，然后用于食谱中。"
     },
 
@@ -336,5 +336,163 @@
         "ja": "生地をこねろ",
         "pt": "Sova a massa",
         "zh-cn": "揉面团"
+    },
+
+
+
+    "CookZPlants_MargheritaPizza_DN": {
+        "en": "Margherita Pizza",
+        "de": "Pizza Margherita",
+        "cs": "Pizza Margherita",
+        "ru": "Пицца Маргарита",
+        "pl": "Pizza Margherita",
+        "it": "Pizza Margherita",
+        "es": "Pizza Margherita",
+        "fr": "Pizza Margherita",
+        "zh": "玛格丽塔披萨",
+        "ja": "マルゲリータピザ",
+        "pt": "Pizza Margherita",
+        "zh-cn": "玛格丽塔披萨"
+    },
+    "CookZPlants_MargheritaPizza_DS": {
+        "en": "A basic pizza with tomato and cheese. It’s simple, but it's food. In a world where most meals are canned or barely edible, this feels like a real meal.",
+        "de": "Eine einfache Pizza mit Tomaten und Käse. Es ist einfach, aber es ist Nahrung. In einer Welt, in der die meisten Mahlzeiten aus Dosen oder kaum genießbar sind, fühlt sich das wie eine richtige Mahlzeit an.",
+        "cs": "Jednoduchá pizza s rajčaty a sýrem. Je to základní, ale je to jídlo. V světě, kde většina jídel jsou konzervy nebo sotva jedlé, tohle je pořád jídlo.",
+        "ru": "Простая пицца с помидорами и сыром. Это просто, но это еда. В мире, где большинство приёмов пищи — это консервы или едва съедобное, это всё-таки полноценный прием пищи.",
+        "pl": "Prosta pizza z pomidorami i serem. Jest prosta, ale to wciąż jedzenie. W świecie, gdzie większość posiłków to konserwy lub ledwo jadalne rzeczy, to jest prawdziwy posiłek.",
+        "it": "Una pizza semplice con pomodori e formaggio. È semplice, ma è cibo. In un mondo dove la maggior parte dei pasti sono in scatola o difficili da mangiare, questa sembra una vera cena.",
+        "es": "Una pizza simple con tomate y queso. Es sencilla, pero es comida. En un mundo donde la mayoría de las comidas son enlatadas o apenas comestibles, esto se siente como una comida de verdad.",
+        "fr": "Une pizza simple avec tomates et fromage. C’est basique, mais c’est de la nourriture. Dans un monde où la plupart des repas sont en conserve ou à peine mangeables, cela ressemble à un vrai repas.",
+        "zh": "简单的披萨，配有番茄和奶酪。很基础，但至少能吃。在这个大多数食物是罐头或几乎无法食用的地方，这感觉像一顿正餐。",
+        "ja": "トマトとチーズを載せたシンプルなピザ。シンプルだが、食べられるものだ。ほとんどの食事が缶詰か食べるに耐えないものである世界では、これは本物の食事のように感じる。",
+        "pt": "Uma pizza simples com tomate e queijo. É simples, mas é comida. Em um mundo onde a maioria das refeições são enlatadas ou quase intragáveis, isso parece uma refeição de verdade.",
+        "zh-cn": "简单的披萨，配有番茄和奶酪。很基础，但至少能吃。在这个大多数食物是罐头或几乎无法食用的地方，这感觉像一顿正餐。"
+    },
+    "CookZPlants_MargheritaPizza_Opened_DS": {
+        "en": "@CookZPlants_MargheritaPizza_DS @&CookZPlants_EatUp"
+    },
+    "CookZPlants_PepperoniPizza_DN": {
+        "en": "Pepperoni Pizza",
+        "de": "Salamipizza",
+        "cs": "Pizza se salámem",
+        "ru": "Пицца с пепперони",
+        "pl": "Pizza pepperoni",
+        "it": "Pizza con salame",
+        "es": "Pizza con pepperoni",
+        "fr": "Pizza au salami",
+        "zh": "意大利香肠披萨",
+        "ja": "ペパロニピザ",
+        "pt": "Pizza de pepperoni",
+        "zh-cn": "意大利香肠披萨"
+    },
+    "CookZPlants_PepperoniPizza_DS": {
+        "en": "A pizza topped with pepperoni and cheese. It’s greasy, but it’s filling. In a place where decent food is rare, this is a welcome change from the usual scraps.",
+        "de": "Eine Pizza mit Salami und Käse. Sie ist fettig, aber sättigend. In einer Welt, in der anständiges Essen selten ist, ist dies eine willkommene Abwechslung von den üblichen Resten.",
+        "cs": "Pizza s plátky salámu a sýrem. Je mastná, ale zasytí. V místě, kde slušné jídlo je vzácnost, je to vítaná změna od běžných zbytků.",
+        "ru": "Пицца с пепперони и сыром. Она жирная, но сытная. В мире, где нормальная еда — редкость, это приятное разнообразие от привычных остатков.",
+        "pl": "Pizza z pepperoni i serem. Tłusta, ale sycąca. W miejscu, gdzie porządne jedzenie to rzadkość, to miła odmiana od zwykłych resztek.",
+        "it": "Una pizza con salame e formaggio. È unta, ma sazia. In un posto dove il cibo decente è raro, questa è una piacevole alternativa ai soliti avanzi.",
+        "es": "Una pizza con pepperoni y queso. Es grasosa, pero llena. En un lugar donde la comida decente escasea, esto es un cambio bienvenido de los restos habituales.",
+        "fr": "Une pizza avec salami et fromage. C’est gras, mais c’est nourrissant. Dans un endroit où la nourriture décente est rare, c’est un changement bienvenu par rapport aux restes habituels.",
+        "zh": "一款配有意大利香肠和奶酪的披萨。虽然油腻，但能填饱肚子。在一个优质食物稀缺的地方，这种食物比常见的残羹冷炙要好得多。",
+        "ja": "ペパロニとチーズが乗ったピザ。脂っこいけれど、満腹感はある。まともな食べ物が稀な場所では、いつもの残り物からの嬉しい変化だ。",
+        "pt": "Uma pizza com pepperoni e queijo. É gordurosa, mas satisfaz. Em um lugar onde comida decente é rara, isso é uma boa mudança dos restos habituais.",
+        "zh-cn": "一款配有意大利香肠和奶酪的披萨。虽然油腻，但能填饱肚子。在一个优质食物稀缺的地方，这种食物比常见的残羹冷炙要好得多。"
+    },
+    "CookZPlants_PepperoniPizza_Opened_DS": {
+        "en": "@CookZPlants_PepperoniPizza_DS @&CookZPlants_EatUp"
+    },
+    "CookZPlants_SeafoodPizza_DN": {
+        "en": "Seafood Pizza",
+        "de": "Meeresfrüchtepizza",
+        "cs": "Pizza s mořskými plody",
+        "ru": "Пицца с морепродуктами",
+        "pl": "Pizza z owocami morza",
+        "it": "Pizza ai frutti di mare",
+        "es": "Pizza de mariscos",
+        "fr": "Pizza aux fruits de mer",
+        "zh": "海鲜披萨",
+        "ja": "シーフードピザ",
+        "pt": "Pizza de frutos do mar",
+        "zh-cn": "海鲜披萨"
+    },
+    "CookZPlants_SeafoodPizza_DS": {
+        "en": "A pizza topped with a variety of seafood. A hearty, satisfying meal with the fresh taste of the ocean, offering a rich mix of flavors in each bite.",
+        "de": "Eine Pizza mit Meeresfrüchten. Eine herzhafte, sättigende Mahlzeit mit dem frischen Geschmack des Ozeans und einer reichen Mischung aus Aromen in jedem Bissen.",
+        "cs": "Pizza s mořskými plody. Syté, uspokojivé jídlo s čerstvou chutí oceánu, které nabízí bohatou směs chutí v každém kousku.",
+        "ru": "Пицца с морепродуктами. Сытное, насыщающее блюдо с свежим вкусом океана, предлагающее богатое сочетание вкусов в каждом кусочке.",
+        "pl": "Pizza z owocami morza. Sycące i satysfakcjonujące danie z świeżym smakiem oceanu, oferujące bogatą mieszankę smaków w każdym kęsie.",
+        "it": "Una pizza con frutti di mare. Un pasto sostanzioso e soddisfacente con il gusto fresco del mare, che offre un ricco mix di sapori in ogni morso.",
+        "es": "Una pizza con mariscos. Una comida sustanciosa y satisfactoria con el sabor fresco del océano, ofreciendo una rica mezcla de sabores en cada bocado.",
+        "fr": "Une pizza avec des fruits de mer. Un repas copieux et satisfaisant avec la fraîcheur du goût de l'océan, offrant un riche mélange de saveurs à chaque bouchée.",
+        "zh": "一款配有海鲜的披萨。丰盛且令人满足的餐点，带来海洋的鲜美味道，每一口都充满了丰富的风味。",
+        "ja": "海の幸が乗ったピザ。豊かで満足感のある食事で、海の新鮮な味わいが楽しめ、一口ごとに豊かな風味が広がります。",
+        "pt": "Uma pizza com frutos do mar. Uma refeição substancial e satisfatória com o sabor fresco do oceano, oferecendo uma rica mistura de sabores a cada mordida.",
+        "zh-cn": "一款配有海鲜的披萨。丰盛且令人满足的餐点，带来海洋的鲜美味道，每一口都充满了丰富的风味。"
+    },
+    "CookZPlants_SeafoodPizza_Opened_DS": {
+        "en": "@CookZPlants_SeafoodPizza_DS @&CookZPlants_EatUp"
+    },
+    "CookZPlants_VegetablePizza_DN": {
+        "en": "Vegetable Pizza",
+        "de": "Gemüsepizza",
+        "cs": "Zeleninová pizza",
+        "ru": "Овощная пицца",
+        "pl": "Pizza warzywna",
+        "it": "Pizza vegetariana",
+        "es": "Pizza de verduras",
+        "fr": "Pizza végétarienne",
+        "zh": "素食披萨",
+        "ja": "野菜ピザ",
+        "pt": "Pizza de vegetais",
+        "zh-cn": "素食披萨"
+    },
+    "CookZPlants_VegetablePizza_DS": {
+        "en": "A vegetable pizza, a rare meal in a world where fresh ingredients are hard to come by. When you manage to make one, it's a rewarding, satisfying experience.",
+        "de": "Eine Gemüsepizza, eine seltene Mahlzeit in einer Welt, in der frische Zutaten schwer zu finden sind. Wenn es gelingt, eine zu machen, ist es ein lohnendes und zufriedenstellendes Erlebnis.",
+        "cs": "Zeleninová pizza, vzácné jídlo ve světě, kde jsou čerstvé ingredience těžko dostupné. Když se podaří ji připravit, je to odměňující a uspokojivý zážitek.",
+        "ru": "Овощная пицца — редкое блюдо в мире, где свежие ингредиенты трудно достать. Когда удается приготовить такую пиццу, это сытное и удовлетворяющее занятие.",
+        "pl": "Pizza warzywna, rzadkie danie w świecie, gdzie świeże składniki są trudne do zdobycia. Kiedy uda się ją przygotować, to satysfakcjonujące i pełne zadowolenia doświadczenie.",
+        "it": "Una pizza vegetariana, un pasto raro in un mondo dove gli ingredienti freschi sono difficili da trovare. Quando riesci a prepararla, è un'esperienza gratificante e soddisfacente.",
+        "es": "Una pizza de verduras, una comida rara en un mundo donde los ingredientes frescos son difíciles de conseguir. Cuando logras hacerla, es una experiencia gratificante y satisfactoria.",
+        "fr": "Une pizza végétarienne, un repas rare dans un monde où les ingrédients frais sont difficiles à obtenir. Lorsqu'on parvient à la préparer, c'est une expérience gratifiante et satisfaisante.",
+        "zh": "一款蔬菜披萨，在一个新鲜食材难以获得的世界里是一道罕见的美食。当你成功制作出来时，这将是一次值得回报且令人满足的体验。",
+        "ja": "新鮮な食材が手に入りにくい世界で、珍しい野菜ピザ。作ることができれば、それは満足感を与えてくれる特別な経験です。",
+        "pt": "Uma pizza de vegetais, uma refeição rara em um mundo onde os ingredientes frescos são difíceis de encontrar. Quando você consegue prepará-la, é uma experiência gratificante e satisfatória.",
+        "zh-cn": "一款蔬菜披萨，在一个新鲜食材难以获得的世界里是一道罕见的美食。当你成功制作出来时，这将是一次值得回报且令人满足的体验。"
+    },
+    "CookZPlants_VegetablePizza_Opened_DS": {
+        "en": "@CookZPlants_VegetablePizza_DS @&CookZPlants_EatUp"
+    },
+    "CookZPlants_MushroomPizza_DN": {
+        "en": "Mushroom Pizza",
+        "de": "Pilzpizza",
+        "cs": "Houbová pizza",
+        "ru": "Пицца с грибами",
+        "pl": "Pizza grzybowa",
+        "it": "Pizza ai funghi",
+        "es": "Pizza de setas",
+        "fr": "Pizza aux champignons",
+        "zh": "蘑菇披萨",
+        "ja": "マッシュルームピザ",
+        "pt": "Pizza de cogumelos",
+        "zh-cn": "蘑菇披萨"
+    },
+    "CookZPlants_MushroomPizza_DS": {
+        "en": "A pizza topped with mushrooms, a hearty meal with earthy flavors. It requires patience to prepare, but the effort is rewarded with a satisfying and fulfilling dish.",
+        "de": "Eine Pizza mit Pilzen, eine gehaltvolle Mahlzeit mit erdigen Aromen. Die Zubereitung erfordert Geduld, doch der Aufwand wird mit einem befriedigenden und sättigenden Gericht belohnt.",
+        "cs": "Pizza s houbami, vydatné jídlo s houbovými chutěmi. Příprava vyžaduje trpělivost, ale úsilí se vyplatí v podobě uspokojivého a sytého pokrmu.",
+        "ru": "Пицца с грибами — сытное блюдо с земляными вкусами. Для приготовления потребуется терпение, но усилия окупятся сытным и удовлетворяющим блюдом.",
+        "pl": "Pizza z grzybami, sycące danie o grzybowych smakach. Przygotowanie wymaga cierpliwości, ale wysiłek zostanie wynagrodzony satysfakcjonującym i sycącym posiłkiem.",
+        "it": "Una pizza con funghi, un piatto sostanzioso con sapori terrosi. Richiede pazienza per essere preparata, ma l'impegno è ricompensato da un pasto soddisfacente e nutriente.",
+        "es": "Una pizza con setas, una comida sustanciosa con sabores terrosos. Requiere paciencia para prepararla, pero el esfuerzo se ve recompensado con un plato satisfactorio y completo.",
+        "fr": "Une pizza aux champignons, un plat copieux aux saveurs terreuses. Elle demande de la patience pour être préparée, mais l'effort est récompensé par un repas satisfaisant et nourrissant.",
+        "zh": "一款蘑菇披萨，带有浓郁的土味，是一顿令人满足的餐点。虽然制作需要耐心，但最终回报的是一顿令人满意且充实的美食。",
+        "ja": "マッシュルームが乗ったピザ。土のような風味が感じられる、満足感のある食事です。準備には時間がかかりますが、その努力が報われる、満足感と充実感を与えてくれる一品です。",
+        "pt": "Uma pizza de cogumelos, uma refeição substancial com sabores terrosos. Requer paciência para ser preparada, mas o esforço vale a pena, resultando em um prato satisfatório e gratificante.",
+        "zh-cn": "一款蘑菇披萨，带有浓郁的土味，是一顿令人满足的餐点。虽然制作需要耐心，但最终回报的是一顿令人满意且充实的美食。"
+    },
+    "CookZPlants_MushroomPizza_Opened_DS": {
+        "en": "@CookZPlants_MushroomPizza_DS @&CookZPlants_EatUp"
     }
 }

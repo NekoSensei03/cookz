@@ -9,4 +9,10 @@ modded class ModItemRegisterCallbacks
         pType.AddItemInHandsProfileIK("CookZPlants_FlourBag",         "dz/anims/workspaces/player/player_main/player_main_1h.asi",  pBehavior,  "dz/anims/anm/player/ik/gear/lard.anm");
         pType.AddItemInHandsProfileIK("CookZPlants_Dough",            "dz/anims/workspaces/player/player_main/player_main_1h.asi",  pBehavior,  "dz/anims/anm/player/ik/gear/apple.anm");
    };
+
+   override void RegisterTwoHanded(DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior)
+   {
+        pType.AddItemInHandsProfileIK("CookZ_Pizza_Base",             "dz/anims/workspaces/player/player_main/player_main_2h.asi",  pBehavior,  "dz/anims/anm/player/ik/two_handed/BatteryCar.anm");
+        pType.AddItemInHandsProfileIK("CookZ_PizzaOpened_Base",       "dz/anims/workspaces/player/player_main/player_main_2h.asi",  pBehavior,  "dz/anims/anm/player/ik/two_handed/BatteryCar.anm");
+   };
 };
