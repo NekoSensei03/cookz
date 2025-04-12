@@ -274,6 +274,9 @@ class CfgVehicles
         weight=160;
         cookz_staticQuantity=160;
         soundImpactType="organic";
+        varTemperatureInit=0;
+        varTemperatureMin=0;
+        varTemperatureMax=120;
         class Nutrition
         {
             energy=300;
