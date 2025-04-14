@@ -33,6 +33,7 @@ class CookZ_Cookbook
     static const string COOKING_INGREDIENT_APPLE                     = "Apple";
     static const string COOKING_INGREDIENT_BANANA                    = "Banana";
     static const string COOKING_INGREDIENT_ORANGE                    = "Orange";
+    static const string COOKING_INGREDIENT_KIWI                      = "Kiwi";
 
     static const string COOKING_INGREDIENT_PIG_STEAK_MEAT            = "PigSteakMeat";
     static const string COOKING_INGREDIENT_WOLF_STEAK_MEAT           = "WolfSteakMeat";
@@ -123,7 +124,8 @@ class CookZ_Cookbook
             COOKING_INGREDIENT_PEAR,
             COOKING_INGREDIENT_APPLE,
             COOKING_INGREDIENT_BANANA,
-            COOKING_INGREDIENT_ORANGE
+            COOKING_INGREDIENT_ORANGE,
+            COOKING_INGREDIENT_KIWI
         });
         tempMap.Insert(COOKING_INGREDIENT_ANY_VEG, {
             COOKING_INGREDIENT_POTATO,
